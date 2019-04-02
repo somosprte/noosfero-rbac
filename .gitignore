@@ -60,7 +60,7 @@ debian/noosfero/
 debian/noosfero-apache/
 
 # plugins
-public/plugins
+#public/plugins
 features/plugins/*
 plugins/solr/config/solr.yml
 /solr
