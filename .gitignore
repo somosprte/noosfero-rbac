@@ -1,4 +1,4 @@
-config/Gemfile
+#config/Gemfile
 
 .rbenv-*
 .vagrant
@@ -61,7 +61,7 @@ debian/noosfero-apache/
 
 # plugins
 #public/plugins
-features/plugins/*
+#features/plugins/*
 plugins/solr/config/solr.yml
 /solr
 
