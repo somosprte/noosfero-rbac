@@ -18,7 +18,7 @@ config/mongrel_cluster.yml
 config/unicorn.rb
 config/local.rb
 config/initializers/local.rb
-config/routes/plugins
+#config/routes/plugins
 
 
 tags
