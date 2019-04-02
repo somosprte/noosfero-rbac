@@ -1,0 +1,4 @@
+name: "Rbac | PRTE"
+layout: "application-prte"
+jquery_theme: "smoothness"
+icon_theme: [default, pidgin]

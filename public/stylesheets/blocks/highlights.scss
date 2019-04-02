@@ -1,0 +1,104 @@
+.highlights-block {
+  float: left;
+  background: transparent;
+  text-align: center;
+  z-index: 1;
+
+  a, a:visited {
+    text-decoration: none;
+  }
+
+  .highlights-container {
+    width: 100%;
+    height: 300px;
+    background: #000;
+    .highlights-image-link, .highlights-img1, .highlights-img2 {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+
+    .highlights-img1 {
+      position: absolute;
+      top: 0;
+      z-index: 1;
+      background-size: cover;
+      filter: blur(3px);
+      opacity: 0.5;
+
+    }
+
+    .highlights-img2 {
+      position: relative;
+      z-index: 2;
+      background-size: contain;
+    }
+  }
+
+  .highlights-label {
+    border: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    margin: 0;
+    padding: 10px 20px;
+    overflow: hidden;
+    z-index: 2;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    text-decoration: none;
+    text-align: left;
+    &.empty {
+      display: none;
+    }
+  }
+
+  .highlights-block-pager {
+    border: 0;
+    display: inline;
+    padding-right: 5px;
+    float: left;
+    position: static;
+    a {
+      text-decoration: none;
+      margin-left: 5px;
+    }
+    a.activeSlide:visited, a.activeSlide {
+      color: #000;
+    }
+  }
+}
+
+.block-config-options.HighlightsBlock-options {
+  min-width: 450px;
+
+  .image-data-line select {
+    width: 150px;
+  }
+
+  td {
+    text-align: center;
+  }
+
+  .image-data-line td {
+    padding-top: 7px;
+  }
+
+  .image-title {
+    white-space: nowrap;
+    border-bottom: 1px solid #CCC;
+    &:last-child {
+      border: none;
+    }
+    td {
+      padding-bottom: 7px;
+    }
+    span {
+      padding-right: 5px;
+    }
+  }
+}

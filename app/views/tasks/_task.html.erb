@@ -1,0 +1,98 @@
+<div class="task-box gray-border-top <%= task.class.name.underscore %>" id="task-<%= task.id %>">
+
+  <div class="task-requestor-img">
+    <%= render partial: 'tasks/task_icon', locals: { task: task } %>
+  </div>
+
+  <div class="task-description">
+
+    <div class='task-header'>
+      <div>
+        <%= render partial: 'tasks/task_title', locals: { task: task } %>
+        <span class="bullet-separator">•</span>
+        <div class="task-date"><%= show_time(task.created_at) %></div>
+      </div>
+
+      <div class='task-toolbar'>
+        <% if !@view_only && profile.try(:organization?) && @responsible_candidates.present? %>
+
+          <div class="task-responsible">
+            <% change_responsible_url = url_for :action => :change_responsible, :controller => :tasks %>
+            <%= select_tag "tasks[#{task.id}][responsible]",
+                           options_from_collection_for_select(@responsible_candidates, :id, :name,
+                                                              task.responsible.present? ? task.responsible.id : nil),
+                           :onchange => "change_task_responsible(this);",
+                           'data-old-responsible' => task.responsible.present? ? task.responsible.id : nil,
+                           'data-task' => task.id, 'data-url' => change_responsible_url, :prompt => _('Assign to...')%>
+          </div>
+
+        <% elsif @view_only && task.responsible.present? %>
+
+          <div class="task-responsible">
+            <span><%= _('Assigned to') + ' ' + task.responsible.name %></span>
+          </div>
+
+        <% end %>
+      </div>
+    </div>
+
+    <div class="task-information">
+      <%= task_information(task, params) %>
+    </div>
+
+    <% if task.accept_details %>
+      <%= link_to font_awesome('plus-circle', _('View task details')), '#!',
+                  :class => 'toggle-link task-view-datails-link show-details',
+                  :data => { :element => "task-view-details-#{task.id}" } %>
+
+      <%= link_to font_awesome('minus-circle', _('Hidden task details')), '#!',
+                  :class => 'toggle-link task-view-datails-link hidden-details',
+                  :data => { :element => "task-view-details-#{task.id}" } %>
+    <% end %>
+
+    <%= fields_for "tasks[#{task.id}][task]", task do |f| %>
+      <% if task.custom_fields_moderate %>
+        <div id="custom-field-information-<%=task.id%>" class='custom-field-information'>
+          <%= render partial: "tasks/#{task.class.name.underscore}_custom_fields", locals: { task: task } %>
+        </div>
+      <% end %>
+
+      <% if task.accept_details %>
+        <div id=<%= "task-view-details-#{task.id}" %> class='task-view-details' style='display:none'>
+          <div id="on-accept-information-<%=task.id%>">
+            <%= render partial: "tasks/#{task.class.name.underscore}_accept_details", locals: { task: task, f: f } %>
+          </div>
+        </div>
+      <% end %>
+
+      <% if task.footer %>
+        <div id="task-footer-<%=task.id%>">
+          <%= render partial: "tasks/#{task.class.name.underscore}_footer", locals: { task: task } %>
+        </div>
+      <% end %>
+
+      <% if task.reject_details %>
+        <div class='task-reject-explanation' style='display:none'>
+          <%= render :partial => partial_for_class(task.class, nil, :reject_details), :locals => {:task => task, :f => f} %>
+        </div>
+      <% end %>
+    <% end %>
+
+    <% unless @view_only %>
+      <% if task.custom_action_bar %>
+          <%= render :partial => partial_for_class(task.class, nil, :action_bar), :locals => {:task => task} %>
+      <% else %>
+        <div class="task-decisions">
+          <% [["accept", "finish", task.accept_disabled?],
+              ["reject", "cancel", task.reject_disabled?],
+              ["skip", "skip", task.skip_disabled?]].each do |task_name, task_action, is_disabled| %>
+
+              <%= labelled_radio_button(_(task_name.capitalize), "tasks[#{task.id}][decision]",
+                    task_action, task.default_decision == task_name, id: "decision-#{task_action}-#{task.id}",
+                    class: "task-#{task_name}-radio", disabled: is_disabled, task_id: "#{task.id}") %>
+          <% end %>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>

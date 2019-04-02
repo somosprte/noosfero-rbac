@@ -1,0 +1,14 @@
+<h1><%= _('Manage queries') %></h1>
+
+<% tabs = [] %>
+<% @forms.each do |kind, forms| %>
+  <% tabs << { title: _(kind.to_s.pluralize.humanize),
+               id: kind.to_s.pluralize,
+               content: (render partial: 'forms', locals: { kind: kind }) } %>
+<% end %>
+
+<%= render_tabs(tabs) %>
+
+<%= button_bar do %>
+  <%= button :back, _('Back'),  profile.admin_url %>
+<% end %>

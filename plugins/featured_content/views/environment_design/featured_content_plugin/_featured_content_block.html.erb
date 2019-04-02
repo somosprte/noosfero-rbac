@@ -1,0 +1,7 @@
+<% tokenized_articles = [] %>
+<% tokenized_articles = prepare_to_token_input(environment.portal_community.articles.find(@block.featured_content_plugin_selected.split(','))) if @block.featured_content_plugin_selected.present? %>
+<%=
+labelled_form_field(_('Escolha os artigos que serão exibidos'),
+token_input_field_tag('block[featured_content_plugin_selected]', 'search-articles', {:controller => 'featured_content_plugin_admin', :action => 'search_articles'}, {:token_limit => 3, :focus => false, :hint_text => _('Digite o título do artigo'), :pre_populate => tokenized_articles})
+)
+%>  

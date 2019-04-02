@@ -1,0 +1,9 @@
+<script>
+  $(document).ready(function() {
+    $(".task-actions .reject-task").click(function(){
+      let accept_details = $(this).closest('.task-description').find('.task-view-details').fadeIn()
+    })
+  })
+</script>
+
+<%= labelled_form_field(_('Rejection explanation'), f.text_area(:reject_explanation, :rows => 5)) %>

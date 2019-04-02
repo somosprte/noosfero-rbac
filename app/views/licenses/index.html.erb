@@ -1,0 +1,28 @@
+<div class="licenses-templates">
+  <h1><%= _('Manage licenses') %></h1>
+
+  <table>
+    <tr>
+      <th> <%= _('Name') %> </th>
+      <th> <%= _('Url reference') %> </th>
+      <th> <%= _('Actions') %> </th>
+    </tr>
+    <% @licenses.each do |license| %>
+      <tr>
+        <td><%= license.name %></td>
+        <td><%= license.url.present? ? link_to(truncate(license.url, :length => 60), license.url, :target => '_blank') : '' %></td>
+        <td class='actions'>
+          <%= button_without_text :edit, _('Edit'), :action => 'edit', :license_id => license.id %>
+          <%= button_without_text :trash, _('Remove'), {action: 'remove', license_id: license.id},
+                  method: 'post', data: {confirm: _('Are you sure you want to remove this license?')} %>
+        </td>
+      </tr>
+    <% end %>
+  </table>
+
+  <%= button_bar do %>
+    <%= button :back, _('Back to admin panel'), :controller => 'admin_panel' %>
+    <%= button(:add, _('Add a new license'), :action => 'create')%>
+  <% end %>
+
+</div>

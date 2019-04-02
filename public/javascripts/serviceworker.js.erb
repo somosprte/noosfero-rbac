@@ -1,0 +1,63 @@
+var CACHE_VERSION = <%= Noosfero::VERSION.to_json %>;
+var CACHE_NAME = CACHE_VERSION + '-sw-cache';
+
+function onInstall(event) {
+  console.log('[Serviceworker]', "Installing!", event);
+  event.waitUntil(
+    caches.open(CACHE_NAME).then(function(cache) {
+      // Retrieve urls to cache for this environment
+      fetch('/urls-to-cache').then(function(response) {
+        return response.json();
+      }).then(function(urls) {
+        cache.addAll(urls);
+      });
+    })
+  );
+}
+
+function onActivate(event) {
+  console.log('[Serviceworker]', "Activating!");
+  event.waitUntil(
+    caches.keys().then(function(keys) {
+      return Promise.all(
+        keys.filter(function(key) {
+          // Remove cached files that aren't from the current version
+          return key.indexOf(CACHE_VERSION) !== 0;
+        }).map(function(key) {
+          return caches.delete(key);
+        })
+      );
+    })
+  );
+}
+
+function onFetch(event) {
+  event.respondWith(
+    // Try to fetch from the network
+    fetch(event.request).catch(function() {
+      if (event.request.method == "GET") {
+        // If it is offline, retrieve from the cache
+        return caches.match(event.request).then(function(response) {
+          // If it is not cached, return the offline page
+          return response || caches.match("/offline");
+        })
+      }
+    })
+  );
+}
+
+function onPush(event) {
+  var data = event.data.json();
+  var title = data.title;
+  var body = data.body;
+  var icon = data.icon || '/assets/noosfero/logo-120x120.png';
+
+  event.waitUntil(
+    self.registration.showNotification(title, { body: body, icon: icon })
+  );
+};
+
+// self.addEventListener('install', onInstall);
+// self.addEventListener('activate', onActivate);
+// self.addEventListener('fetch', onFetch);
+self.addEventListener('push', onPush);

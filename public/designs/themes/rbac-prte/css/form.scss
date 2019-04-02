@@ -1,0 +1,160 @@
+.form-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-content {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+form {
+  text-align: center;
+  margin: 20px auto;
+}
+
+input,
+textarea {
+  border: 0;
+  outline: 0;
+  padding: 1em !important;
+  display: block;
+  width: 100%;
+  margin-top: 1em;
+  resize: none;
+  background: #fff !important;
+  border-radius: 10px !important;
+  height: auto !important;
+}
+
+.label-title {
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.formfieldline {
+  padding: 0px 0px !important;
+}
+
+.activity-gallery-plugin_activity-gallery #article-custom-fields-wrapper,
+.activity-gallery-plugin_activity-gallery .button-bar,
+.activity-gallery-plugin_activity-gallery .box-title,
+.activity-gallery-plugin_activity-gallery #category-ajax-selector,
+.activity-gallery-plugin_activity-gallery #edit-article-options,
+.activity-gallery-plugin_activity-gallery .inputosaurus-container {
+  display: none;
+}
+
+.activity-gallery-plugin_activity-gallery #change-image {
+  display: grid !important;
+}
+
+.buttom-gallery {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1em auto;
+  text-align: right;
+  flex-wrap: wrap;
+}
+
+// search Form
+.search-environment {
+  position: relative;
+  margin-bottom: 10px;
+  display: grid;
+}
+
+.search-environment input {
+  float: left;
+  width: 100%;
+  border: 3px solid #00ab4e !important;
+  padding: 5px !important;
+  height: 40px !important;
+  border-radius: 5px !important;
+  outline: none;
+  color: #9dbfaf;
+}
+
+.search-environment a {
+  position: absolute;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #00ab4e;
+  background: #00ab4e;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  top: 25%;
+}
+
+.environment-search-block form {
+  margin: 0 auto;
+}
+.environment-search-block {
+  padding: 10px !important;
+}
+
+// Map Form
+
+.map_form {
+  margin-bottom: 60px;
+}
+
+.map_form select {
+  float: left;
+  width: 100%;
+  border: 3px solid #00ab4e !important;
+  padding: 5px !important;
+  height: 40px !important;
+  border-radius: 5px !important;
+  outline: none;
+}
+
+.mapselect{
+  position: absolute;
+  right: 23px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #00ab4e;
+  background: #00ab4e;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 19px;
+  top: 57px;
+}
+
+
+#signup-form {
+  width: 50% !important;
+
+  .button-bar {
+    justify-content: center;
+}
+}
+
+#signup-username-section #signup-username-form-line #signup-domain {
+  max-width: 100% !important;
+}
+
+#signup-username-section #signup-username-form-line {
+  display: grid !important;
+}
+
+.required-fields-msg {
+  margin-top: 40px;
+}
+@media only screen and (max-width: 540px){
+  #signup-form {
+    width: 100% !important;
+  }
+}

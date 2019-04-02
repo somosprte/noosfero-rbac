@@ -1,0 +1,44 @@
+.controller-users td.actions {
+  text-align: center;
+}
+
+.controller-users .search-field #q {
+  width: 100%;
+}
+
+.controller-users .search-field a.button {
+  margin: 0;
+}
+
+.controller-users .search-field input[type='submit'] {
+  float: right;
+}
+
+#environment-profiles-search form {
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: #E6E6E6;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+.environment-profiles-results-header {
+  font-size: 0.9em;
+  padding: 0.375em 0px 0px 0px;
+  margin: 0 0 0.313em 0;
+  border-bottom: 0.125em dotted #999;
+  text-align: right;
+  display: block;
+}
+
+#environment-profiles-filter-title {
+  font-weight: bold;
+  font-size: 130%;
+  padding: 0.500em 0.500em 0.500em 0.500em;
+  line-height: 2.188em;
+  float: left;
+}
+
+.environment-profiles-results-footer {
+  float: right;
+}

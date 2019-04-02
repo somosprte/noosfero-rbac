@@ -1,0 +1,148 @@
+#!/bin/sh
+
+set -e
+
+if [ -e /etc/default/noosfero ]; then
+  . /etc/default/noosfero
+fi
+
+export RAILS_ENV=production
+
+ACTION="$1"
+if [ -z "$ACTION" ]; then
+  echo "usage: $0 start|stop|restart|run"
+  exit 1
+fi
+
+clear_cache() {
+  if test -w ./public; then
+    echo "Cleaning cache files"
+    rm -rf ./public/javascripts/cache*
+    rm -rf ./public/stylesheets/cache*
+  elif [ ! -z "$NOOSFERO_DATA_DIR" ] && [ -w "$NOOSFERO_DATA_DIR" ]; then
+    echo "Cleaning cache files"
+    rm -rf "$NOOSFERO_DATA_DIR"/cache/*
+  fi
+}
+
+app_server_start() {
+  ruby -S bundle exec unicorn_rails \
+    --config-file lib/noosfero/unicorn.rb \
+    --env "$RAILS_ENV" \
+    --daemonize
+}
+
+app_server_stop() {
+  # see unicorn_rails(1)
+  if [ -e tmp/pids/unicorn.pid ]; then
+    kill -s QUIT $(cat tmp/pids/unicorn.pid)
+  fi
+}
+
+app_server_restart() {
+  # see unicorn_rails(1) and "Signal handling" in unicorn documentation
+  kill -s USR2 $(cat tmp/pids/unicorn.pid)
+  sleep 5
+  kill -s QUIT $(cat tmp/pids/unicorn.pid.oldbin)
+}
+
+do_start() {
+  bundle exec rake db:migrate SCHEMA=/dev/null
+  clear_cache
+  environments_loop start
+  app_server_start
+}
+
+do_stop() {
+  # During Debian upgrades, it is possible that rails is not available (e.g.
+  # Lenny -> Squeeze), so the programs below might fail. If they do, we fall
+  # back to stopping the daemons by manually reading their PID files, killing
+  # them and wiping the PID files.
+
+  app_server_stop ||
+    stop_via_pid_file tmp/pids/unicorn.pid
+
+  environments_loop stop ||
+    stop_via_pid_file tmp/pids/delayed_job.pid tmp/pids/delayed_job.*.pid tmp/pids/feed-updater.*.pid
+}
+
+do_restart() {
+  bundle exec rake db:migrate SCHEMA=/dev/null
+  environments_loop stop ||
+    stop_via_pid_file tmp/pids/delayed_job.pid tmp/pids/delayed_job.*.pid tmp/pids/feed-updater.*.pid
+
+  clear_cache
+  app_server_restart
+
+  environments_loop start
+}
+
+stop_via_pid_file() {
+  for pidfile in $@; do
+    if [ -e "$pidfile" ]; then
+      pid=$(cat $pidfile)
+      echo "Sentign TERM signal to stop $pid ..."
+      kill -TERM "$pid"
+      rm -f $pidfile
+    fi
+  done
+}
+
+environments_loop() {
+  action="$1"
+  environments=$(find ./config/environments -name "*_${RAILS_ENV}.rb")
+  if [ "$environments" ]; then
+    for environment in $environments; do
+      env=$(basename $environment | cut -d. -f1)
+      RAILS_ENV=$env bundle exec ./script/delayed_job -i $env "$action"
+      RAILS_ENV=$env bundle exec ./script/feed-updater "$action" -i $env
+      ./script/whenever $action $env
+      RAILS_ENV=$env ./script/noosfero-plugins services "$action"
+      if [ ! -f /usr/share/noosfero/cache/private_files.pag ] && [ "$action" = "start" ]; then
+        RAILS_ENV=$env rake cache:private_files
+      fi
+    done
+  else
+    bundle exec ./script/delayed_job "$action"
+    bundle exec ./script/feed-updater "$action"
+    ./script/whenever $action
+    ./script/noosfero-plugins services "$action"
+    if [ ! -f /usr/share/noosfero/cache/private_files.pag ] && [ "$action" = "start" ]; then
+      rake cache:private_files
+    fi
+  fi
+}
+
+do_running() {
+  pids=$(sed "s/.*/& /" tmp/pids/unicorn.pid 2>/dev/null | tr -d '\n')
+  # passes if any of $pids exist, fails otherwise
+  kill -0 $pids > /dev/null 2>&1
+}
+
+case "$ACTION" in
+  start|stop)
+    do_$ACTION
+    ;;
+
+  run)
+    do_start
+    echo "=> Running in production mode. Hit ctrl-C to stop."
+    trap do_stop INT TERM
+    tail -n 0 -f log/production.log || true
+    ;;
+
+  restart)
+    do_restart
+    ;;
+
+  running)
+    do_running
+    ;;
+
+  *)
+    # `running` is not listed on purpose since it's not supposed to be a public
+    # API.
+    echo "usage: $0 start|stop|restart|run"
+    exit 1
+    ;;
+esac

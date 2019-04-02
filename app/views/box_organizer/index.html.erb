@@ -1,0 +1,34 @@
+<%= stylesheet_link_tag 'slick.css' %>
+<%= stylesheet_link_tag 'slick-theme.css' %>
+
+<h1><%= _('Editing sideboxes')%></h1>
+
+<div id="block-store">
+  <input type="text" id="block-store-filter" placeholder="<%= _('Filter blocks') %>" title="<%= _('Filter blocks') %>">
+  <div id="block-types">
+    <% @available_blocks.each do |block| %>
+      <div id="block-<%= block.name.to_css_class %>" class="block-type <%= block.name.to_css_class %>" data-block-type="<%= block.name %>" data-block-name="<%= _(block.pretty_name) %>">
+        <div class="button-bar">
+          <%= modal_link_to(font_awesome(:help), { action: 'show_block_type_info', type: block.name }, title: _('Help on this block'), class: 'help') %>
+        </div>
+        <div>
+          <%= display_icon(block) %>
+        </div>
+        <span><%= _(block.pretty_name) %></span>
+        <%= block_draggable("block-#{block.name.to_css_class}",
+                            :cursorAt => '{bottom: 30, left: 0}') %>
+      </div>
+    <% end %>
+  </div>
+</div>
+<div id="block-store-draggables"></div>
+
+<%= button_bar do %>
+  <% if profile.present? %>
+    <%= button(:back, _('Back to control panel'), profile_design_index_path(profile: profile.identifier)) %>
+  <% else %>
+    <%= button(:back, _('Back to administration'), admin_panel_index_path) %>
+  <% end %>
+<% end %>
+
+<script>initBlockStore();</script>

@@ -1,0 +1,5 @@
+span.generate-report-label
+  = t('views.admin.reports.generate')+':'
+span.generate-report-actions
+  = link_to_function t('views.admin.reports.orders_spreadsheet'), "orders.admin.select.report('#{url_for action: :report_orders, orders_method: orders_method}')"
+  = link_to_function t('views.admin.reports.products_spreadsheet'), "orders.admin.select.report('#{url_for action: :report_products, orders_method: orders_method}')"

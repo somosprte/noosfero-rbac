@@ -1,0 +1,22 @@
+
+en: &en
+  analytics_plugin:
+    lib:
+      plugin:
+        name: 'Access tracking'
+        description: 'Register the access of selected profiles'
+        panel_button: 'Access tracking'
+
+    views:
+      stats:
+        enable: "Enable tracking on the profile '%{profile}'"
+        anonymous: "Don't associate users' login"
+        config_save: "Configuration saved"
+        user: 'User'
+        initial_time: 'Time'
+        ip: 'IP'
+        pages: 'Pages'
+
+en_US:
+  <<: *en
+

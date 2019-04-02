@@ -1,0 +1,24 @@
+#!/bin/sh
+
+set -e
+
+say(){
+  if [ -t 1 ]; then
+    printf "\033[33;01m$0: $1\033[m\n"
+  fi
+}
+
+say "Upgrading code"
+
+last_passed=$(curl --silent --fail http://ci.noosfero.org/noosfero/LAST_SUCCESS_HEAD || true)
+if [ -n "$last_passed" ]; then
+  git fetch
+  git reset --hard "$last_passed"
+else
+  exit
+fi
+
+say "Compiling translations"
+rake noosfero:translations:compile 2>/dev/null || (echo "Translations compilation failed; run manually to check"; false)
+
+./script/production restart

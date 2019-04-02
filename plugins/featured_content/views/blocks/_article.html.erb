@@ -1,0 +1,31 @@
+<% unless article.nil? %>
+<div class="<%= classe %> gp-slide-item">
+      <a href="<%= url_for(article.url) %>" title="<%= article.name %>">
+      <div class="gp-slide-caption">
+      <div class="gp-entry-cats">Notícias</div>
+      <h2 class="gp-slide-caption-title">
+        <%= article.name %>
+      </h2>
+      <div class="gp-slide-caption-text">
+          <%= article.lead(200).html_safe%>
+      </div>
+    </div>
+
+    <div class="gp-post-thumbnail">
+      <img
+        src="<%= article.image.try(:public_filename) %>"
+        alt="<%= article.name %>"
+        class="gp-post-image gp-large-image"
+        draggable="false"
+      />
+
+      <img
+        src="<%= article.image.try(:public_filename) %>"
+        alt="<%= article.name %>"
+        class="gp-post-image gp-mobile-image"
+        draggable="false"
+      />
+    </div>
+  </a>
+</div>
+<% end %>

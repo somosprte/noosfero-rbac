@@ -1,0 +1,55 @@
+<div class="environment-profiles-results-header">
+  <div id="environment-profiles-filter-title">  
+    <%= filter_selector(@filter) %>
+  </div>
+  <div id="environment-profiles-filter-title">
+    <%= users_filter_title(@filter) %>
+    <% if @filter == 'recently_logged_users' %>
+      <%= number_field :filter_number_of_days, { controller: 'user', action: 'index' },
+        disabled: false, min:0, max:36500, placeholder: 'min 0, max 36500', style:'width: 8em' %>
+    <% else %>
+      <%= number_field :filter_number_of_days, { controller: 'user', action: 'index' },
+        disabled: true , placeholder: "Search users...", style:'height: 1.7em' %>
+    <% end %>
+  </div>
+</div>
+
+<table>
+  <colgroup>
+    <col width="50%">
+    <col width="25%">
+    <col width="25%">
+  </colgroup>
+  <tr>
+    <th><%= _('Member') %></th>
+    <th><%= _('Last login') %>  </th>
+    <th><%= _('Actions') %></th>
+  </tr>
+  <% @collection.each do |p| %>
+    <tr title="<%= p.name %>">
+      <td><%= link_to_profile p.short_name, p.identifier, :title => p.name %> </td>
+      <% if p.user.last_login_at != nil %>
+        <td style="text-align: center"><%= p.user.last_login_at.to_date %></td>
+      <%else%>
+        <td style="text-align: center"></td>
+      <%end%>
+      <td class='actions'>
+        <div class="members-buttons-cell">
+          <% if p.is_admin? %>
+            <%= button_without_text :user, _('Reset admin role'), {action: 'reset_admin_role', id: p, q: @q}, filter: @filter, data: {confirm: _("Do you want to reset this user as administrator?")} %>
+          <% else %>
+            <%= button_without_text :add_admin, _('Set admin role'), {action: 'set_admin_role', id: p, q: @q}, filter: @filter, data: {confirm: _("Do you want to set this user as administrator?")} %>
+          <% end %>
+          <% if !p.user.activated? %>
+            <%= button_without_text :ok, _('Activate user'), {action: 'activate', id: p, q: @q}, filter: @filter, data: {confirm: _("Do you want to activate this user?")} %>
+          <% else %>
+            <%= button_without_text :ban, _('Deactivate user'), {action: 'deactivate', id: p, q: @q}, filter: @filter, data: {confirm: _("Do you want to deactivate this user?")} %>
+          <% end %>
+          <%= button_without_text :trash, _('Remove'), {action: :destroy_user, id: p, q: @q}, method: :post, filter: @filter, data: {confirm: _("Do you want to remove this user?")} %>
+       </div>
+      </td>
+    </tr>
+  <% end %>
+</table>
+
+<%= pagination_links @collection, {:param_name => 'npage', :page_links => true} %>

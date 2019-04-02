@@ -1,0 +1,29 @@
+<% editing_profile ||= false %>
+
+<%= optional_field(profile, 'display_name', f.text_field(:display_name)) %>
+<% if profile.enterprise? %>
+  <%= optional_field(profile, 'business_name', f.text_field(:business_name)) %>
+<% end %>
+<%= optional_field(profile, 'description', f.text_area(:description, :rows => 5)) %> 
+<%= optional_field(profile, 'contact_person', f.text_field(:contact_person)) %>
+<%= optional_field(profile, 'contact_email', f.text_field(:contact_email)) %>
+<%= optional_field(profile, 'contact_phone', f.text_field(:contact_phone)) %>
+<%= optional_field(profile, 'legal_form', f.text_field(:legal_form)) %>
+<%= optional_field(profile, 'economic_activity', f.text_field(:economic_activity)) %>
+<%= optional_field(profile, 'management_information', f.text_area(:management_information, :rows => 5)) %>
+
+<%= render partial: 'shared/location_form', locals: { f: f, profile: profile } unless editing_profile %>
+
+<% if profile.community? %>
+  <%= optional_field(profile, 'language', f.text_field(:language)) %>
+<% end %>
+
+<% if profile.enterprise? %>
+  <%= optional_field(profile, 'organization_website', f.text_field(:organization_website)) %>
+  <%= optional_field(profile, 'historic_and_current_context', f.text_area(:historic_and_current_context, :rows => 5)) %>
+  <%= optional_field(profile, 'activities_short_description', f.text_area(:activities_short_description, :rows => 5)) %>
+  <%= optional_field(profile, 'acronym', f.text_field(:acronym)) %>
+  <%= optional_field(profile, 'foundation_year', f.text_field(:foundation_year)) %>
+<% end %>
+
+<%= javascript_include_tag('city_state_validation') %>

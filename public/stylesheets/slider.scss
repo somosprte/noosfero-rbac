@@ -1,0 +1,30 @@
+.slider {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.slider .ui-slider-range {
+  background: #73D216;
+}
+
+.slider-min-range .ui-slider-range {
+  background: #EF2929;
+}
+
+.slider label {
+  left: 20px;
+  position: absolute;
+  width: 200px;
+}
+
+.captcha-sliders {
+  position: relative;
+  float: left;
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.captcha-sliders-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}

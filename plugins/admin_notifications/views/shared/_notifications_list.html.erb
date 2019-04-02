@@ -1,0 +1,38 @@
+<div id="notification-plugin-notification-manager">
+  <h1><%= _("Notifications") %></h1>
+  <div class="buttons-bar">
+      <%= button :back, _('Back to control panel'), {:controller => 'admin_panel', :action => :index}, :method => :get %>
+      <%= button :new, _('New Notification'), {:action => :new}, :method => :get %>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th><%= _('Notifications') %></th>
+        <th colspan='3'><%= _('Actions') %></th>
+      </tr>
+    </thead>
+    <% @notifications.each do |notification| %>
+      <tr>
+        <td><%= truncate(notification.message.html_safe, length: 50,  :escape => false) %></td>
+        <td>
+          <% if notification.active? %>
+            <%= link_to font_awesome(:remove, _('Deactivate')), {:action => :change_status, :id => notification},
+                        :method => :post, :data => { :confirm => _("Do you want to change the status of this notification?")} %>
+          <% else %>
+            <%= link_to font_awesome(:check, _('Activate')), {:action => :change_status, :id => notification},
+                        :data => {:confirm => _("Do you want to change the status of this notification?")} %>
+          <% end %>
+        </td>
+        <td>
+          <%= link_to font_awesome(:edit, _('Edit')),
+                      {:action => 'edit', :id => notification.id} if !remove_content_button(:edit, notification) %>
+        </td>
+        <td>
+          <%= link_to font_awesome(:trash, _('Delete')), {:action => :destroy, :id => notification},
+                      :method => :delete, :data => { :confirm => _("Do you want to delete this notification?")} %>
+        </td>
+      </tr>
+    <% end %>
+  </table>
+</div>

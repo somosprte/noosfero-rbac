@@ -1,0 +1,242 @@
+div.pending-tasks {
+  padding: 10px;
+  border: 1px solid #BFC2BC;
+  margin-bottom: 20px;
+}
+
+#user .logged-in #pending-tasks-count {
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 3px;
+  text-decoration: none;
+  background-color: #F57900;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -khtml-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.controller-tasks #content .task-list {
+  margin: 30px 0px;
+  padding: 0px;
+}
+
+.controller-tasks #content .task-list ul {
+  padding-left: 0px;
+  list-style-type: none;
+}
+
+.task-box {
+  margin: 15px 0;
+  padding-top: 10px;
+  display: flex;
+  .task-requestor-img {
+    a {
+      display: inline-block;
+      img {
+        border-radius: 50%;
+      }
+    }
+  }
+  .task-description {
+    flex-grow: 1;
+    h3.task-title {
+      display: inline-block;
+      margin: 0px;
+    }
+    .task-date {
+      color: #90949c;
+      display: inline-block;
+      font-size: 12px;
+    }
+    .bullet-separator {
+      color: #90949c;
+      padding: 0px 2px;
+    }
+    .task-information {
+      font-size: 13px;
+      line-height: 18px;
+      padding: 2px 0px;
+      a {
+        font-size: 1em;
+        font-weight: 500;
+      }
+    }
+    .task-actions {
+      margin-top: 5px;
+      a.button {
+        padding: 2px 10px !important;
+        margin-right: 1px !important;
+      }
+    }
+  }
+}
+
+.task_box {
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #888;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+  padding: 6px 4px 9px 4px;
+  margin-top: 5px;
+  background: #EEE;
+}
+
+.task_title {
+  margin: 0px;
+  display: block;
+  line-height: 28px;
+  font-size: 120%;
+}
+
+.task_icon {
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.task_decisions {
+  float: right;
+  padding-right: 5px;
+}
+
+.task_information {
+  line-height: 18px;
+  padding: 2px 0px;
+  clear: right;
+}
+
+.task_information p {
+  margin: 0px;
+}
+
+.task_target {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.task-processed li {
+  background-color: rgb(240, 240, 240);
+  border-radius: 8px;
+  margin: 10px 0;
+  list-style-type: none;
+  padding: 12px;
+}
+
+.task-processed .task.status-3 {
+  background-color: rgb(205, 252, 218);
+}
+
+.task-processed .task.status-2 {
+  background-color: rgb(255, 203, 203);
+}
+
+.task-processed ul {
+  padding: 0;
+}
+
+.task-processed .task-list .task .title {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  color: rgb(44, 44, 44);
+}
+
+.task-processed .task .status {
+  float: right;
+  color: rgb(156, 156, 156);
+  font-weight: bold;
+}
+
+.task-processed .task .dates {
+  font-size: 11px;
+}
+
+.task-processed .task .closed-by {
+  font-size: 11px;
+}
+
+.task-processed .task .label {
+  font-weight: bold
+}
+
+.task-reject-explanation {
+  textarea {
+    border-radius: 5px;
+    width: 60%;
+    margin: 5px 0;
+  }
+  .reject-explanation-info {
+    color: red;
+  }
+}
+
+.task-description .task-header {
+  display: flex;
+  justify-content: space-between;
+  .task-view-datails-link {
+    color: #90949c;
+  }
+}
+
+.task-box a.task-view-datails-link {
+  margin: 10px 0;
+  display: inline-block;
+}
+
+.task-view-details {
+  padding: 10px 0;
+}
+
+.task-header {
+  .task-toolbar {
+    display: flex;
+    align-items: center;
+    .task-responsible {
+      margin-right: 20px;
+      span {
+        font-style: italic;
+      }
+    }
+  }
+}
+
+.task-community-custom-fields {
+  margin-top: 10px;
+  div.task-community-field {
+    margin-top: 5px;
+    margin-left: 10px;
+    span.field {
+      font-weight: 500
+    }
+  }
+}
+
+.task-comment-body {
+  font-style: italic;
+}
+
+.empty-tasks {
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.custom-task-decisions,
+.task-decisions {
+  margin-top: 10px;
+  text-align: right;
+  width: 100%;
+}
+
+.task-actions.button-bar {
+  display:flex;
+  justify-content: space-between;
+  margin-top: 20px;
+
+  select {
+    height: auto;
+  }
+}

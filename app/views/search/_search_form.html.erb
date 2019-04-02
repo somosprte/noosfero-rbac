@@ -1,0 +1,28 @@
+<div id='search-header'>
+  <%= assets_menu(@asset) %>
+</div>
+
+<div id='search-subheader'>
+  <%= assets_submenu(@asset) %>
+  <%= filters(@asset) if asset_class(@asset) == Enterprise %>
+</div>
+<div class="search-field">
+  <div class="search-form">
+    <span class="formfield">
+      <%= search_input_with_suggestions('query', @asset, @query, {:id => 'search-input', :size => 50, :placeholder => hint}) %>
+    </span>
+
+    <%= submit_button(:search, _('Search'), :id => 'search-button') %>
+  </div>
+  <%= filters(@asset) unless asset_class(@asset) == Enterprise %>
+</div>
+
+<%= render :partial => 'search_form_extra_fields' %>
+
+
+<% if @empty_query %>
+  <% hint = environment.search_hints[@asset] %>
+  <% if hint and !hint.blank? %>
+    <div class="search-hint"><%= hint %></div>
+  <% end %>
+<% end %>

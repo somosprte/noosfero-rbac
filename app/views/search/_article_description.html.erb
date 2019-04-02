@@ -1,0 +1,17 @@
+<% article = article_description %>
+
+<div class="search-article-description">
+  <span class="search-field-label"><%= _("Description") %>:</span>
+
+  <% content = article.abstract.present? ? article.abstract : article.to_html %>
+
+  <% if content.present? %>
+    <% description = strip_tags(content.to_s) %>
+    <% description.gsub!(/\s{2,}/, ' ') %>
+    <% description = excerpt description, description.first(3), radius: 200 %>
+
+    <span class="search-article-body"><%= description %></span>
+  <% else %>
+    <span class="search-field-none"><%= _('None') %></span>
+  <% end %>
+</div>

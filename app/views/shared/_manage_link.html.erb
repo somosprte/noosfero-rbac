@@ -1,0 +1,6 @@
+<a href='#!' title="<%= _('Manage %s') % _(kind)%>" class='menu-toggle'><%= title %></a>
+<ul class='noosfero-dropdown-menu submenu' id='<%= 'manage-' + kind %>'>
+    <% link.each do |link| %>
+      <li><%= link %></li>
+    <% end %>
+</ul>

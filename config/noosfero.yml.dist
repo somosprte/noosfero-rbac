@@ -1,0 +1,27 @@
+development:
+  mail_enabled: true
+  webmail_url: "http://localhost.localdomain/"
+  addthis_enabled: true
+  addthis_pub: your-user-name
+  addthis_logo: http://localhost:3000/images/logo-200x50.png
+  addthis_options: favorites, email, digg, delicious, technorati, slashdot, twitter, more
+  gravatar: mm
+  googlemaps_initial_zoom: 15
+  googlemaps_js_api_key: your-js-key
+  googlemaps_static_api_key: your-static-key
+  exception_recipients: [admin@example.com]
+  max_upload_size: 5MB
+  hours_until_user_activation_check: 72
+  exclude_profile_identifier_pattern: index(\..*)?|home(\..*)?
+  api_recaptcha_site_key:      '6LdsWAcTAAAAAChTUUD6yu9fCDhdIZzNd7F53zf-'
+  api_recaptcha_private_key:   '6LdsWAcTAAAAAB6maB_HalVyCc4asDAxPxloIMvY'
+  api_recaptcha_verify_uri:    'https://www.google.com/recaptcha/api/siteverify'  
+  delayed_attachment_fallback_original_image: false
+
+test:
+
+production:
+  api_recaptcha_site_key:      '6LcLPAcTAAAAAKsd0bxY_TArhD_A7OL19SRCW7_i'
+  api_recaptcha_private_key:   '6LcLPAcTAAAAAE36SN1M2w1I7Hn8upwXYZ_YQZ5-'
+  api_recaptcha_verify_uri:    'https://www.google.com/recaptcha/api/siteverify'
+  

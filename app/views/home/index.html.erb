@@ -1,0 +1,98 @@
+<% if @has_news %>
+  <h1><%= _('News') %></h1>
+  <% cache @news_cache_key, skip_digest: true do %>
+    <div id='highlighted-news'>
+      <% @highlighted_news.each_with_index do |highlighted, index| %>
+        <div class='highlighted-news-item post-<%= index + 1 %>'>
+          <h2><%= link_to(h(highlighted.title), highlighted.url, :class => 'post-title') %></h2>
+          <span class="post-date"><%= show_date(highlighted.published_at, true) %> </span>
+          <div class='headline'><%= raw highlighted.lead %></div>
+
+          <div class='highlighted-news-item-footer'>
+            <span class='highlighted-news-read-more'>
+              <%= link_to(_('Read more'), highlighted.url) %>
+            </span>
+            <% if environment.admins.include? current_person %>
+              <div class='order-options'>
+                <%= link_to({ action: :reorder, index: index, direction: 'up' },
+                            class: (index == 0 ? 'disabled' : '')) do %>
+                  <%= _('move up') %> <i class='fa fa-angle-up'></i>
+                <% end %>
+                <%= link_to({ action: :reorder, index: index, direction: 'down' },
+                              class: (index == (@portal_news.size - 1) ? 'disabled' : '')) do %>
+                  <%= _('move down') %> <i class='fa fa-angle-down'></i>
+                <% end %>
+                </a>
+              </div>
+            <% end %>
+          </div>
+          <br style='clear:both' />
+        </div>
+      <% end %>
+    </div>
+
+    <div class='sep'></div>
+
+    <div id='portal-news'>
+      <ul>
+        <% @portal_news.each_with_index do |news, index| %>
+          <li class='portal-news-item'>
+            <span class="post-date">
+              <%= show_date(news.published_at, true) %>
+            </span>
+            <%= link_to(h(news.title), news.url, class: 'post-title') %>
+            <% if environment.admins.include? current_person %>
+              <div class='order-options'>
+                <%= link_to({ action: :reorder, direction: 'up',
+                              index: index + @highlighted_news.size },
+                            class: (@highlighted_news.size == 0 ? 'disabled' : '')) do %>
+                  <%= _('move up') %> <i class='fa fa-angle-up'></i>
+                <% end %>
+                <%= link_to({ action: :reorder, direction: 'down',
+                              index: index + @highlighted_news.size },
+                            class: (index == (@portal_news.size - 1) ? 'disabled' : '')) do %>
+                  <%= _('move down') %> <i class='fa fa-angle-down'></i>
+                <% end %>
+              </div>
+            <% end %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+
+    <div class='sep'></div>
+
+    <% @area_news.each_with_index do |folder, i| %>
+      <%= content_tag(:div, :class => ["news-area", ['even', 'odd'][i%2]].join(' ')) do %>
+        <%= content_tag(:div, :class => 'news-area-inner-1') do %>
+          <%= content_tag(:div, :class => 'news-area-inner-2') do %>
+            <h3><%= link_to h(folder.title), folder.url %></h3>
+            <ul>
+              <% folder.news(environment.news_amount_by_folder, environment.area_news_show_not_highlighted).each do |news| %>
+                <li> <%= link_to(h(news.title), news.url) %></li>
+              <% end%>
+            </ul>
+            <%= link_to _('View more'), folder.url, :class => 'news-see-more'  %>
+          <% end %>
+        <% end %>
+      <% end %>
+    <% end %>
+  <% end %>
+<% else %>
+  <%= environment.description.html_safe %>
+<% end %>
+
+<% if environment.enabled?('search_in_home') %>
+  <div id='home-search' style='text-align: center'>
+    <%= form_tag :controller => 'search', :action => 'index' do %>
+
+      <div id='search-field' style='text-align: center;'>
+        <%= text_field_tag('query', '', :size => 50) %>
+        <%= submit_button(:search, _('Search')) %>
+      </div>
+
+    <% end %>
+  </div>
+<% end %>
+
+<br style='clear: both'/>

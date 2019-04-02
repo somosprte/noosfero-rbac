@@ -1,0 +1,46 @@
+body.mce-content-body,
+body.mce-content-body th,
+body.mce-content-body td {
+  font-size: 12px;
+}
+
+object,
+embed {
+  border: 1px dotted #cc0000;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #ffffcc;
+  display: block;
+  width: 150px;
+  height: 150px;
+  background-image: url(../designs/icons/tango/Tango/22x22/actions/media-playback-start.png);
+}
+
+body.mce-content-body h2 {
+  font-size: 18px;
+}
+
+body.mce-content-body h3 {
+  font-size: 16px
+}
+
+body.mce-content-body h4 {
+  font-size: 14px
+}
+
+body.mce-content-body h5 {
+  font-size: 13px
+}
+
+body.mce-content-body h6 {
+  font-size: 12px
+}
+
+body.mce-content-body h1,
+body.mce-content-body h2,
+body.mce-content-body h3,
+body.mce-content-body h4,
+body.mce-content-body h5,
+body.mce-content-body h6 {
+  margin: 10px 0px;
+}

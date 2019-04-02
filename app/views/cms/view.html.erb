@@ -1,0 +1,78 @@
+<%= javascript_include_tag 'cms.js' %>
+
+<h1>
+  <%= _('Content management') %>
+</h1>
+<% if @article %>
+  <%= path_to_parents @article %>
+<% end %>
+
+<div class="cms-header">
+
+  <%= button_bar do %>
+    <% parent_id = ((@article && @article.allow_children?) ? @article : nil) %>
+    <%= modal_button('new', _('New content'), url_for({:action => 'new', :parent_id => parent_id, :cms => true}).html_safe) %>
+  <% end %>
+
+  <% if profile.upload_quota.present? %>
+    <div class='quota-status'>
+      <span><%= link_to _('Your files'), { action: 'files' } %></span>
+      <span>
+        <%= _('(used %s of %s):') % [
+          number_to_human_size(profile.disk_usage),
+          number_to_human_size(profile.upload_quota.megabytes)
+        ] %>
+    </span>
+    <div class="progressbar" data-used-quota='<%= profile.disk_usage %>'
+         data-total-quota='<%= profile.upload_quota.megabytes %>'>
+    </div>
+    </div>
+  <% end %>
+
+</div>
+
+<table class='cms-articles'>
+
+  <thead>
+    <tr>
+      <th><%= _('Name') %></th>
+      <th></th>
+      <th><%= _('Last modified') %></th>
+      <th><%= _('Size') %></th>
+      <th><%= _('Actions') %></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% if @article %>
+      <tr>
+        <td>
+          <% if @article.parent %>
+            <%= link_to font_awesome(:reply, _('Parent Folder')), { action: 'view', id: @article.parent.id } %>
+          <% else %>
+            <%= link_to font_awesome(:reply, _('Parent Folder')), { action: 'index' } %>
+          <% end %>
+        </td>
+        <td></td>
+        <td>
+          <% if @article.parent %>
+            <%= time_ago_in_words(@article.parent.updated_at) %>
+          <% else %>
+            <span style="font-weight: 700;">-</span>
+          <% end %>
+        </td>
+        <td>-</td>
+        <td></td>
+      </tr>
+    <% end %>
+
+    <%= render 'view_items' %>
+  </tbody>
+
+</table>
+
+<%= button_bar do %>
+  <%= button(:back, _('Back to control panel'), controller: 'profile_editor') %>
+<% end %>
+
+<%= pagination_links @articles, {:param_name => 'npage', :page_links => true} %>

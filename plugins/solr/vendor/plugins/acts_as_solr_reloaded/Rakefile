@@ -1,0 +1,9 @@
+require 'rake'
+require 'rake/testtask'
+require 'rdoc/task'
+
+ENV['RAILS_ENV'] = "test"
+require_relative 'config/solr_environment'
+
+Dir["#{File.dirname(__FILE__)}/lib/tasks/*.rake"].sort.each { |ext| load ext }
+

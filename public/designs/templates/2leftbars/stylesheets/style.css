@@ -1,0 +1,34 @@
+.boxes {
+  display:flex;
+  justify-content: center;
+}
+
+.boxes .box-1 {
+  width: 50%;
+  order: 2;
+}
+
+.boxes .box-2,
+.boxes .box-3 {
+  order: 1;
+  width: 20%;
+  margin-right: 2%;
+}
+
+@media only screen and (max-width: 600px) {
+  .boxes {
+    flex-direction: column;
+  }
+  .boxes .box-1,
+  .boxes .box-2,
+  .boxes .box-3 {
+    margin: auto;
+    width: 90%;·
+  }
+}
+
+#profile-activity ul,
+#profile-network ul,
+#profile-wall ul {
+  width: 460px;
+}

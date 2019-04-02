@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<%= html_language %>" lang="<%= html_language %>" class="<%= h html_tag_classes %>">
+  <head>
+    <title><%= "#{user.try(:pending_tasks) && user.pending_tasks.count > 0 ? "(#{user.pending_tasks.count}) " : ""}#{h page_title.html_safe}" %></title>
+    <%= yield(:feeds) %>
+    <!--<meta http-equiv="refresh" content="1"/>-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <%=
+      theme_option(:meta_tags).map do |name, content|
+        tag 'meta', name: name, content: content
+      end.join("\n").html_safe if theme_option(:meta_tags)
+    %>
+
+    <% unless defined? MetadataPlugin and environment.enabled_plugins.include? 'MetadataPlugin' %>
+      <meta name="description" content="<%= @environment.name %>" />
+    <% end %>
+
+    <!-- site root -->
+    <meta property="noosfero:root" content="<%= Noosfero.root %>"/>
+
+    <link rel="shortcut icon" href="<%= image_path(theme_favicon) %>" type="image/x-icon" />
+    <%=
+      theme_option(:big_webapp_icons).map do |size, path|
+        tag('link', rel: 'apple-touch-icon', sizes: "#{size}x#{size}", href: path) +"\n"+
+        tag('link', rel: 'icon', type: 'image/png', sizes: "#{size}x#{size}", href: path)
+      end.join("\n").html_safe if theme_option(:big_webapp_icons)
+    %>
+
+    <%= noosfero_javascript %>
+    <%= noosfero_stylesheets %>
+
+    <%# Add custom tags/styles/etc via content_for %>
+    <%= yield :head %>
+    <%=
+      str = (@plugins.dispatch(:head_ending).map do |content|
+              if content.respond_to?(:call) then
+                instance_exec(&content).to_s
+              else
+                content.to_s
+              end
+            end)
+      safe_join(str, "\n")
+    %>
+
+    <script type="text/javascript">
+      DEFAULT_LOADING_MESSAGE = <%="'#{ _('loading...') }'".html_safe %>;
+      PERMANENT_NOTIFICATIONS = <%= @environment.permanent_notifications %>;
+      noosfero.profile = <%= (@profile.identifier if @profile).to_json.html_safe %>
+    </script>
+
+    <% if current_editor_is?(Article::Editor::TINY_MCE) %>
+      <%= render :file => 'shared/tiny_mce' %>
+    <% end %>
+
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+  </head>
+  <body class="<%= h body_classes %>">
+    <a href="#content" id="link-go-content"><span><%= _("Go to the content") %></span></a>
+    <%=
+      str = (@plugins.dispatch(:body_beginning).map do |content|
+              if content.respond_to?(:call) then
+                instance_exec(&content).to_s
+              else
+                content.to_s
+              end
+            end)
+      safe_join(str, "\n")
+    %>
+    <div id="noosfero">
+      <div id="global-header">
+        <%= global_header %>
+      </div>
+
+      <div id='wrap-1'>
+        <div id="theme-header">
+          <%= theme_header %>
+        </div>
+        <div id='wrap-2'>
+          <%= theme_user %>
+          <div id="navigation">
+            <h1 id="site-title">
+              <%= theme_site_title %>
+            </h1>
+            <ul id='navigation-actions'>
+              <%= theme_extra_navigation %>
+            </ul>
+            <div id="navigation-end"></div>
+          </div><!-- end id="navigation" -->
+          <div id="content">
+            <%= render 'layouts/content' %>
+          </div><!-- end id="content" -->
+        </div><!-- end id='wrap-2' -->
+      </div><!-- end id='wrap-1' -->
+    </div><!-- end id="noosfero" -->
+    <%= render_environment_features(:logged_in).html_safe if logged_in? %>
+    <div id="footer">
+      <div id="theme-footer">
+        <%= theme_footer %>
+      </div><!-- end id="theme-footer" -->
+      <div id="global-footer">
+        <%= global_footer %>
+      </div><!-- end id="global-footer" -->
+    </div><!-- end id="footer" -->
+    <%= noosfero_layout_features %>
+    <%= addthis_javascript.html_safe %>
+    <%=
+      str = (@plugins.dispatch(:body_ending).map do |content|
+              if content.respond_to?(:call) then
+                instance_exec(&content).html_safe
+              else
+                content.html_safe
+              end
+            end)
+      safe_join(str, "\n")
+    %>
+    <div id="noosfero-modal">
+      <div id="noosfero-modal-content" class="scrollbar">
+        <a id="close-modal" href="#!"><%= font_awesome :cancel %></a>
+        <div id="noosfero-modal-inner"></div>
+      </div>
+    </div>
+  </body>
+</html>

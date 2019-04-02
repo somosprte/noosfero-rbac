@@ -1,0 +1,83 @@
+<div id="footer-widgets">
+  <div class="container">
+    <div class="footer-widget footer-third">
+      <div id="custom_html-2" class="widget_text widget widget_custom_html">
+        <h3 class="widgettitle">Quem Somos</h3>
+        <div class="textwidget custom-html-widget">
+          <p class="img-footer">
+            <img
+              src="/designs/themes/rbac-prte/images/logo-rbac.svg"
+              alt="Rede Brasileira de Aprendizagem Criativa"
+              width="220"
+              height="92"
+            />
+          </p>
+          <p>
+            Somos uma rede de educadores, artistas, pesquisadores, empreendedores, alunos e outros interessados na
+            implementação de ambientes educacionais mais mão-na-massa, criativos e interessantes nas escolas,
+            universidades, espaços não-formais de aprendizagem e residências de todo o Brasil.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-widget footer-third">
+      <div id="custom_html-2" class="widget_text widget widget_custom_html">
+        <h3 class="widgettitle">blog</h3>
+        <div class="textwidget custom-html-widget">
+          <p>
+            <div class="recent-content-title">
+            <ul>
+              <% Person.find_by(name: "adminuser").articles.where(type: 'TextArticle', parent_id: Person.find_by(name: "adminuser").articles.where(slug: "blog-do-admin").first).each do |item| %>
+                <li class="blog-footer-list-item"> 
+                <% unless item.image.nil? %>
+                  <img class="thumb-item" src="<%= item.image.thumbnails.find_by(thumbnail: "thumb").public_filename %>"/>
+                <% end %>
+                <%= link_to(h(item.title), item.url)%>
+                <div class="data"> 
+                  <time class="meta-date">
+                    <i class="far fa-clock"></i>
+                    <%=item.created_at.strftime("%m-%d-%y")%>
+                  </time>
+                  <span class="meta-date">
+                    <i class="far fa-eye"></i>
+                    <%=item.hits%> Views
+                  </span>
+                </div>
+                </li>
+
+              <% end %>
+            </ul>
+          </div>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-widget footer-third">
+      <div id="custom_html-2" class="widget_text widget widget_custom_html">
+        <h3 class="widgettitle">apoio</h3>
+        <div class="textwidget custom-html-widget">
+          <p class="img-footer">
+            <img
+              src="/designs/themes/rbac-prte/images/mb_mitmedialab.png"
+              alt="Mit Media Lab"
+              width="200"
+              height="100"
+            />
+          </p>
+          <p class="img-footer">
+            <img src="/designs/themes/rbac-prte/images/fund-lemann.png" alt="Fundação Lemann" width="200" height="62" />
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="copy">
+  <div class="container">
+    <div id="copy-text">
+      Copyright © 2019 Rede Brasileira de Aprendizagem Criativa. Todos os direitos reservados.
+    </div>
+  </div>
+</div>

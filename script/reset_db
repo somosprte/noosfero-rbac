@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+require_relative '../config/environment'
+
+system "rm #{Rails.root.join('tmp', '*.db')}"
+system "rm #{Rails.root.join('db', '*.db')}"
+system "rm -rf #{Rails.root.join('public', 'articles')}"
+system "rake db:migrate VERSION=0"
+system "rake db:migrate"
+system "#{Rails.root.join('script', 'anhetegua')}"
+system "rake db:test:prepare"

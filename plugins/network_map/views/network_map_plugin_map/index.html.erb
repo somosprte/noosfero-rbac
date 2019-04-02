@@ -1,0 +1,17 @@
+
+<%= content_tag('script', '', :src => "https://maps.google.com/maps/api/js?sensor=true&key=#{GoogleMaps.js_api_key}", :type => 'text/javascript') %>
+<%= javascript_include_tag('google_maps') %>
+
+<%= form_tag( { :controller => 'network_map_plugin_map' }, :class => 'map_form' ) do %>
+    <%= labelled_form_field(_('Qual mapa deseja visualizar?'), select_tag('type', options_for_select(@types, @type))) %>
+    <%#= submit_button( :login, _('Select') ) %>
+    <button type="submit" class="mapselect" id="environment-search-button">
+            <i class="fa fa-check"></i>
+          </button>
+    <%= labelled_form_field(_('Quem você deseja encontrar?'), text_field_tag(:query, @query)) %>     
+<% end %>
+
+
+<%= render partial: 'search/google_maps'%> 
+
+

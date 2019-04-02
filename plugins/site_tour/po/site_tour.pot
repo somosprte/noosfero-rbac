@@ -1,0 +1,122 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-12 14:04+0000\n"
+"PO-Revision-Date: 2018-06-12 14:04+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: ../lib/site_tour_plugin.rb:8
+msgid "A site tour to show users how to use the application."
+msgstr ""
+
+#: ../lib/site_tour_plugin/tour_block.rb:3
+msgid "Click to start tour!"
+msgstr ""
+
+#: ../lib/site_tour_plugin/tour_block.rb:15
+msgid "Site Tour Block"
+msgstr ""
+
+#: ../lib/site_tour_plugin/tour_block.rb:19
+msgid "Configure a step-by-step tour."
+msgstr ""
+
+#: ../views/blocks/tour.html.erb:4
+msgid "Help"
+msgstr ""
+
+#: ../views/box_organizer/site_tour_plugin/_tour_block.html.erb:4
+msgid "Display help button"
+msgstr ""
+
+#: ../views/box_organizer/site_tour_plugin/_tour_block.html.erb:8
+msgid "Tooltip Actions"
+msgstr ""
+
+#: ../views/box_organizer/site_tour_plugin/_tour_block.html.erb:9
+msgid ""
+"Special fields for description: {profile.name}, {profile.identifier}, {profile"
+".url}."
+msgstr ""
+
+#: ../views/box_organizer/site_tour_plugin/_tour_block.html.erb:11
+#: ../views/box_organizer/site_tour_plugin/_tour_block.html.erb:29
+msgid "Group Name"
+msgstr ""
+
+#: ../views/box_organizer/site_tour_plugin/_tour_block.html.erb:12
+#: ../views/box_organizer/site_tour_plugin/_tour_block.html.erb:30
+msgid "Selector"
+msgstr ""
+
+#: ../views/box_organizer/site_tour_plugin/_tour_block.html.erb:13
+msgid "Description"
+msgstr ""
+
+#: ../views/box_organizer/site_tour_plugin/_tour_block.html.erb:23
+msgid "New Tooltip"
+msgstr ""
+
+#: ../views/box_organizer/site_tour_plugin/_tour_block.html.erb:27
+msgid "Group Triggers"
+msgstr ""
+
+#: ../views/box_organizer/site_tour_plugin/_tour_block.html.erb:31
+msgid "Event"
+msgstr ""
+
+#: ../views/box_organizer/site_tour_plugin/_tour_block.html.erb:41
+msgid "New Group Trigger"
+msgstr ""
+
+#: ../views/box_organizer/site_tour_plugin/_tour_block_group_item.html.erb:15
+#: ../views/box_organizer/site_tour_plugin/_tour_block_item.html.erb:13
+msgid "Delete"
+msgstr ""
+
+#: ../views/site_tour_plugin_admin/index.html.erb:1
+msgid "Site Tour Settings"
+msgstr ""
+
+#: ../views/site_tour_plugin_admin/index.html.erb:5
+msgid "Tooltips (CSV format: language, group name, selector, description)"
+msgstr ""
+
+#: ../views/site_tour_plugin_admin/index.html.erb:6
+msgid ""
+"Group Triggers (CSV format: group name, selector, event (e.g. mouseenter, clic"
+"k))"
+msgstr ""
+
+#: ../views/site_tour_plugin_admin/index.html.erb:9
+msgid "Save"
+msgstr ""
+
+#: ../views/tour_actions.html.erb:16
+msgid "Next"
+msgstr ""
+
+#: ../views/tour_actions.html.erb:17
+msgid "Back"
+msgstr ""
+
+#: ../views/tour_actions.html.erb:18
+msgid "Skip"
+msgstr ""
+
+#: ../views/tour_actions.html.erb:19
+msgid "Finish"
+msgstr ""

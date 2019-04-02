@@ -1,0 +1,90 @@
+<%= stylesheet_link_tag 'tasks' %>
+
+<h1><%= _("%s's pending tasks") % profile.name %></h1>
+
+<%
+  type_collection = [[nil, _('All')]] + @task_types
+%>
+
+<% if !@failed.blank? %>
+  <div id="errorExplanation">
+    <% @failed.each do |error, tasks_descriptions|%>
+      <h2> <%= error %></h2>
+      <p><%=_("This error happened with the following tasks: ")%></p>
+      <ul>
+        <% tasks_descriptions.each do |description| %>
+            <li> <%= description %> </li>
+        <% end %>
+      </ul>
+    <% end %>
+  </div>
+<% end %>
+
+<%= form_tag '#', :method => 'post' do %>
+
+    <%= field_set_tag _('Filter'), :class => 'filter_fields' do %>
+        <%= hidden_field_tag 'search', 'true' %>
+        <p>
+          <%= labelled_select(_('Type of task')+': ', :filter_type, :first, :last, @filter_type,  type_collection, {:id => 'filter-type'}) %>
+        </p>
+        <p>
+          <%= labelled_text_field(_("Text filter")+': ', :filter_text, nil, {:id => 'filter-text-autocomplete',:value => @filter_text}) %>
+        </p>
+        <p>
+          <%= submit_button(:search, _('Search')) %>
+        </p>
+    <% end %>
+<% end %>
+<% if @tasks.empty? %>
+  <p class='empty-tasks'>
+    <em><%= _('No pending tasks for %s') % profile.name %></em>
+  </p>
+
+  <%= button_bar do %>
+    <%= button(:back, _('Back to control panel'), controller: 'profile_editor') %>
+  <% end %>
+
+<% else %>
+  <%= form_tag tasks_url(action: 'close') do%>
+
+
+    <% unless @view_only %>
+      <%= button_bar(:class => 'task-actions') do %>
+        <div>
+          <%# FiXME button(:edit, _('View my requests'), :action => 'list_requested') %>
+          <%# FIXME button('menu-mail',  _('Send request'), :action => 'new') %>
+          <%= button(:edit, _('View processed tasks'), :action => 'processed') %>
+        </div>
+        <div>
+          <%= labelled_select(_("Set all tasks to:"), 'set-decisions', 'first', 'last', nil,
+                [['',""],
+                  ['accept',_("Accept")],
+                  ['reject',_("Reject")],
+                  ['skip',_("Skip")]],
+                :id => "set-all-tasks-to") %>
+      </div>
+      <% end %>
+
+    <% end %>
+
+    <ul class='task-list'>
+
+      <div class="task_boxes">
+        <% @tasks.each do |task| %>
+          <%= render partial: partial_for_class(task.class, nil, nil), locals: { task: task } %>
+        <% end %>
+      </div>
+
+    </ul>
+
+    <%= pagination_links(@tasks, :params => { :filter_type => @filter_type,
+                                              :filter_text => @filter_text })%>
+    <%= button_bar do %>
+      <%= submit_button(:save, _('Save tasks')) %>
+      <%= button(:back, _('Back to control panel'), controller: 'profile_editor') %>
+    <% end %>
+
+  <% end %>
+<% end %>
+
+<%= javascript_include_tag 'tasks' %>

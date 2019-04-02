@@ -1,0 +1,45 @@
+#quota-by-profile {
+  .search-field {
+    display: flex;
+    .formfield {
+      padding-right: 5px;
+    }
+  }
+  .search-filters {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0;
+    select#order-filter {
+      margin-left: 5px;
+    }
+  }
+  .profile-list {
+    td {
+      text-align: center;
+    }
+    td:first-child {
+      text-align: left;
+    }
+    td:last-child {
+      text-align: right;
+    }
+    .pagination {
+      margin-top: 20px;
+    }
+  }
+}
+
+#quota-by-kind {
+  table {
+    .nested-row {
+      display: none;
+      td {
+        font-size: 10px;
+        font-style: italic;
+        &:nth-child(2) {
+          border-left: 1px solid #ddd;
+        }
+      }
+    }
+  }
+}

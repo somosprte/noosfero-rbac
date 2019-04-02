@@ -1,0 +1,27 @@
+<% extend PeopleBlockHelper %>
+
+<%= block_title(block.view_title(user), block.subtitle) %>
+
+<div>
+  <% unless block.profile_count(user) == 0 %>
+    <ul class='common-profile-list-block'>
+      <%= profiles_images_list(block.profile_list(user)) %>
+
+      <% unless block.name.blank? || block.address.blank? %>
+        <div class="common-profile-list-block">
+          <li class="vcard">
+            <div class="banner-div">
+              <%= link_to(
+                    content_tag('span', block.name, :class => 'banner-span' ),
+                    set_address_protocol(block.address),
+                    title: block.name
+                  ) %>
+            </div>
+          </li>
+        </div>
+      <% end %>
+    </ul>
+  <% else %>
+    <div class='common-profile-list-block-none'><%= _("This block has no content yet.") %></div>
+  <% end %>
+</div>

@@ -1,0 +1,121 @@
+#content {
+  background: #f1f1f1;
+  padding: 32px 0px;
+}
+
+.main-content {
+  border: 0px;
+  border-radius: 0px;
+  background: #fff;
+  padding: 10px 20px 20px 20px;
+}
+
+#content .block {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #fff;
+}
+.block-footer-content a.view-all {
+  display: none;
+}
+
+#content .block-title {
+  font-family: Roboto;
+  line-height: 18px;
+  font-weight: 400;
+  font-style: normal;
+  color: #000;
+  font-size: 14px !important;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.24s ease-in-out;
+  -moz-transition: opacity 0.24s ease-in-out;
+  transition: opacity 0.24s ease-in-out;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  clear: both;
+  text-transform: uppercase;
+  border-bottom: 3px solid #e93100;
+  padding-bottom: 11px;
+}
+
+.boxtitle {
+  font-family: Roboto;
+  line-height: 18px;
+  font-weight: 500;
+  font-style: normal;
+  color: #000;
+  font-size: 14px !important;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.24s ease-in-out;
+  -moz-transition: opacity 0.24s ease-in-out;
+  transition: opacity 0.24s ease-in-out;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  clear: both;
+  text-transform: uppercase;
+  border-bottom: 3px solid #e93100;
+  padding-bottom: 11px;
+  margin: 0 0 15px;
+}
+
+#block-1.block.main-block {
+  background: #f1f1f1;
+  padding: 0px 0px 0px 0px;
+}
+
+.main-content {
+  background: #f1f1f1;
+}
+
+#content .block .common-profile-list-block.vcard {
+  width: 15%;
+  min-width: 60px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.box-2 .common-profile-list-block span {
+  width: 58px;
+  display: none;
+}
+
+#content .block .block-footer-content {
+  margin-top: 0px;
+}
+
+#content .block .common-profile-list-block.vcard .profile_link {
+  padding-bottom: 0em;
+}
+
+a.button.btn-green,
+a.button.icon-search,
+a.button.icon-plus,
+a.button.icon-toggle-on,
+#wrap-2 a.button.btn-green,
+#wrap-2 a.button.icon-search,
+#wrap-2 a.button.icon-plus,
+#wrap-2 a.button.icon-toggle-on {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+}
+
+li.profile-activity-item.upload_image .upimg {
+  width: 100% !important;
+  height: auto !important; 
+}
+
+.upimg img {
+  width: 100% !important;
+  height: auto !important; 
+}
+
+#block-267{
+  .main-content{
+    background: #fff !important;
+  }
+}

@@ -1,0 +1,5 @@
+<div class="uploaded-file-description <%= 'empty' if generic.abstract.blank? %>">
+  <%= generic.abstract %>
+</div>
+
+<%= button(:download, _('Download'), generic.url, class:'download-link', option:'primary', size:'lg', :target => "_blank") %>

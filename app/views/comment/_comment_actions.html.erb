@@ -1,0 +1,15 @@
+<div class='comment-actions' data-comment-id=<%= comment.id%>>
+
+  <ul class = comment-action-bar>
+    <% links_action_bar.each do |action| %>
+            <li><%= action %></li>
+    <% end %>
+  </ul>
+
+  <%= link_to font_awesome(:ellipsis), '#!', class: 'menu-toggle', id: 'comment-options' %>
+  <ul class="noosfero-dropdown-menu">
+    <% links_submenu.each do |action| %>
+            <li><%= action %></li>
+    <% end %>
+  </ul>
+</div>

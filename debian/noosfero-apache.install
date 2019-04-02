@@ -1,0 +1,2 @@
+debian/apache2/virtualhost.conf                 etc/noosfero/apache
+debian/update-noosfero-apache                   usr/sbin

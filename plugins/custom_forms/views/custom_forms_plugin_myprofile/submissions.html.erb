@@ -1,0 +1,48 @@
+<h3><%= _('Submissions for %s') % @form.name %></h3>
+
+<% if @form.submissions.empty? %>
+  <%= _('There are no submissions for this form.') %>
+<% else %>
+
+  <div class="submissions-header">
+    <span>
+      <%= labelled_select(_('Sort by')+': ', :sort_by, :first, :last, @sort_by, [['created_at', _('Time')], ['author_name', c_('Author')]], :class => 'filter') %>
+    </span>
+    <%= link_to 'Result Overview', { controller: 'custom_forms_plugin_profile', action: 'review', id: @form.identifier } %>
+    <%= link_to 'Download as CSV', format: 'csv'  %>
+  </div>
+
+  <table class="action-table" summary='<%= _('Submissions') %>'>
+    <caption><%= _('Submissions') %></caption>
+    <thead>
+      <tr>
+        <th style='width: 50%'><%= c_('Author') %></th>
+        <th style='width: 50%'><%= _('Time') %></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @submissions.each do |submission| %>
+        <tr>
+          <% author = submission.profile.present? ? submission.profile.name : submission.author_name %>
+          <td>
+            <%= link_to(author, {:action => 'show_submission', :id => submission.id}) %>
+            <% if submission.has_imported_answers? %>
+              <span>*</span>
+            <% end %>
+          </td>
+          <td><%= time_format(submission.created_at) %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <p>* <%= _('imported submissions') %></p>
+
+  <%= pagination_links(@submissions) %>
+<% end %>
+
+<%= button_bar do %>
+  <%= button :back, _('Back to forms'), :action => 'index' %>
+<% end %>
+
+<%= javascript_include_tag 'order' %>

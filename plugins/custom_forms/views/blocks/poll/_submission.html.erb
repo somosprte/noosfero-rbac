@@ -1,0 +1,11 @@
+<% submission = form.submission_by(current_person) %>
+
+<% if submission.try(:id).present? %>
+  <%= fields_for :block_submission, submission do |f| %>
+    <%= render partial: 'shared/form_submission',
+               locals: { f: f, form: form, submission: submission } %>
+  <% end %>
+<% else %>
+  <%= render partial: 'shared/form',
+             locals: { form: form, submission: submission } %>
+<% end %>

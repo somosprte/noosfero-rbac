@@ -1,0 +1,90 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.3~rc2-1-ga15645d\n"
+"PO-Revision-Date: 2009-10-26 16:20-0300\n"
+"Last-Translator: Anahit Minassian <anahit.minassian@cooperation.net>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: hy\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Pootle 1.1.0\n"
+
+#, fuzzy
+msgid "Show user counter"
+msgstr "Վայր"
+
+#, fuzzy
+msgid "This block presents some statistics about your context."
+msgstr "Ձեր նախընտրած ձեռնարկությունները ցուցադրող բաժին"
+
+#, fuzzy
+msgid "Show hit counter"
+msgstr "Ամբողջ բովանդակությունը"
+
+#, fuzzy
+msgid "users"
+msgstr "մասնակից"
+
+#, fuzzy
+msgid "enterprises"
+msgstr "Կազմակերպություն Ձեռնարկություն"
+
+#, fuzzy
+msgid "Show comment counter"
+msgstr "Մեկնաբանությունների հաշվարկում"
+
+#, fuzzy
+msgid "communities"
+msgstr "Համայնքներ"
+
+#, fuzzy
+msgid "categories"
+msgstr "Կատեգորիաներ"
+
+#, fuzzy
+msgid "Show tag counter"
+msgstr "Ամբողջ բովանդակությունը"
+
+#, fuzzy
+msgid "Show category counter"
+msgstr "Նոր կատեգորիա"
+
+#, fuzzy
+msgid "Show community counter"
+msgstr "Մեկ համայնք"
+
+#, fuzzy
+msgid "Show enterprise counter"
+msgstr "%s-ի բոլոր ձեռնարկությունները"
+
+#, fuzzy
+msgid "Show product counter"
+msgstr "Ամբողջ բովանդակությունը"
+
+#: ../lib/statistics_block.rb:24
+msgid "Statistics for %s"
+msgstr "Վիճակագրություն"
+
+#: ../lib/statistics_plugin.rb:10
+msgid ""
+"A plugin that adds a block where you can see statistics of it's context."
+msgstr ""
+
+#: ../views/blocks/statistics.html.erb:23
+msgid "products"
+msgstr ""
+
+#: ../views/blocks/statistics.html.erb:58
+msgid "hits"
+msgstr ""
+
+#: ../views/box_organizer/_statistics_block.html.erb:34
+msgid "Show counter for communities with template %s"
+msgstr ""

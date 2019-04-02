@@ -1,0 +1,150 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-05-23 22:22+0000\n"
+"PO-Revision-Date: 2018-05-23 22:22+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: ../controllers/sniffer_plugin_myprofile_controller.rb:10
+msgid "Consumer interests updated"
+msgstr ""
+
+#: ../lib/sniffer_plugin.rb:8
+msgid "Sniffs product suppliers and consumers near to your enterprise."
+msgstr ""
+
+#: ../lib/sniffer_plugin/control_panel/consumer_interests.rb:6
+msgid "Consumer Interests"
+msgstr ""
+
+#: ../lib/sniffer_plugin/control_panel/opportunities_sniffer.rb:6
+#: ../views/sniffer_plugin_myprofile/search.html.erb:9
+msgid "Opportunities Sniffer"
+msgstr ""
+
+#: ../lib/sniffer_plugin/interests_block.rb:4
+msgid "Lists declared and inputs interests"
+msgstr ""
+
+#: ../lib/sniffer_plugin/interests_block.rb:8
+msgid "Lists interests"
+msgstr ""
+
+#: ../lib/sniffer_plugin/interests_block.rb:12
+msgid "Interests"
+msgstr ""
+
+#: ../lib/sniffer_plugin/interests_block.rb:16
+msgid "This block show interests of your profile or environment"
+msgstr ""
+
+#: ../views/blocks/interests.html.erb:12
+msgid "Edit %{inputs} and %{block.interests}"
+msgstr ""
+
+#: ../views/blocks/interests.html.erb:13
+msgid "products' inputs"
+msgstr ""
+
+#: ../views/blocks/interests.html.erb:14
+msgid "declared interests"
+msgstr ""
+
+#: ../views/blocks/interests.html.erb:23
+msgid "%{interest} from %{profile}"
+msgstr ""
+
+#: ../views/sniffer_plugin_myprofile/_product_search_box.html.erb:9
+msgid "Suppliers"
+msgstr ""
+
+#: ../views/sniffer_plugin_myprofile/_product_search_box.html.erb:14
+msgid "Consumers"
+msgstr ""
+
+#: ../views/sniffer_plugin_myprofile/_product_search_box.html.erb:19
+msgid "Both"
+msgstr ""
+
+#: ../views/sniffer_plugin_myprofile/_product_search_box.html.erb:25
+msgid "look for products..."
+msgstr ""
+
+#: ../views/sniffer_plugin_myprofile/_product_search_box.html.erb:54
+msgid "Maximum distance:"
+msgstr ""
+
+#: ../views/sniffer_plugin_myprofile/edit.html.erb:1
+msgid "Buyer interests"
+msgstr ""
+
+#: ../views/sniffer_plugin_myprofile/edit.html.erb:4
+msgid ""
+"Select here products and services categories that you have an interest on buyi"
+"ng. Then you can go to the Opportunity Sniffer and check out enterprises near "
+"you that offer such products. Type in some characters and choose your interest"
+"s from our list."
+msgstr ""
+
+#: ../views/sniffer_plugin_myprofile/edit.html.erb:15
+msgid "Type in a keyword"
+msgstr ""
+
+#: ../views/sniffer_plugin_myprofile/edit.html.erb:20
+msgid "Save"
+msgstr ""
+
+#: ../views/sniffer_plugin_myprofile/edit.html.erb:21
+#: ../views/sniffer_plugin_myprofile/search.html.erb:27
+msgid "Back to control panel"
+msgstr ""
+
+#: ../views/sniffer_plugin_myprofile/map_balloon.html.erb:12
+msgid "Can supply"
+msgstr ""
+
+#: ../views/sniffer_plugin_myprofile/map_balloon.html.erb:22
+msgid "May consum"
+msgstr ""
+
+#: ../views/sniffer_plugin_myprofile/map_balloon.html.erb:39
+#: ../views/sniffer_plugin_myprofile/my_map_balloon.html.erb:8
+msgid "Close"
+msgstr ""
+
+#: ../views/sniffer_plugin_myprofile/search.html.erb:11
+msgid "Up to %s km from you. %s result(s) found."
+msgstr ""
+
+#: ../views/sniffer_plugin_myprofile/search.html.erb:22
+msgid "Legend"
+msgstr ""
+
+#: ../views/sniffer_plugin_myprofile/search.html.erb:23
+msgid "your enterprise"
+msgstr ""
+
+#: ../views/sniffer_plugin_myprofile/search.html.erb:24
+msgid "suppliers"
+msgstr ""
+
+#: ../views/sniffer_plugin_myprofile/search.html.erb:25
+msgid "consumers"
+msgstr ""
+
+#: ../views/sniffer_plugin_myprofile/search.html.erb:26
+msgid "both"
+msgstr ""

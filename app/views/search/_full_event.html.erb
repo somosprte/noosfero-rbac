@@ -1,0 +1,27 @@
+<li class="search-event-item article-item">
+  <div class="search-content-first-column">
+    <%= render partial: 'image', object: event %>
+  </div>
+
+  <div class="noborder search-content-second-column">
+    <h2>
+      <%= link_to(event.title, event.url, :class => "search-result-title") %>
+    </h2>
+    <%= render partial: 'article_last_change', object: event %>
+
+    <% if event.start_date %>
+      <div class="search-article-event-date">
+        <span class="search-field-label"><%= _('Start date') %>: </span>
+        <span class="article-item-date"><%= show_date event.start_date %></span>
+      </div>
+    <% end %>
+    <% if event.end_date %>
+      <div class="search-article-event-date">
+        <span class="search-field-label"><%= _('End date') %>: </span>
+        <span class="article-item-date"><%= show_date event.end_date %></span>
+      </div>
+    <% end %>
+
+    <%= render partial: 'article_common', object: event %>
+  </div>
+</li>

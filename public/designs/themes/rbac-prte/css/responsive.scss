@@ -1,0 +1,28 @@
+@media only screen and (max-width: 767px) {
+  .footer-third {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  #main-nav {
+    display: none;
+  }
+
+  #navigation > ul > li.hamburger-menu {
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .boxes .box-1,
+  .boxes .box-2 {
+    margin: auto;
+    width: 90% !important;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  #navigation > ul > li.user-menu {
+    display: block;
+  }
+}

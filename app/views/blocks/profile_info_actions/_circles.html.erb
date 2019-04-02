@@ -1,0 +1,12 @@
+<div class="circles" id='circles-list'>
+
+  <%= form_for :circles, :url => {:controller => 'profile', :action => 'follow'}, :html => {:id => "follow-circles-form"}  do |f|%>
+    <%= render partial: "blocks/profile_info_actions/select_circles", :locals => {:circles => circles, :followed_profile => profile, :follower => current_person } %>
+
+    <div id="circle-actions">
+      <%= submit_button :ok, _("Follow"), {:id => "submit-button-set-circle-block"}%>
+      <%= button :cancel, _('Cancel'), '', :id => 'cancel-set-circle' %>
+    </div>
+  <% end %>
+</div>
+<%= javascript_include_tag 'select_circle_block' %>

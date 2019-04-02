@@ -1,0 +1,15 @@
+<div id="gp_slider_wrapper_1" class="gp-slider-wrapper gp-vc-element gp-slider gp-slider-two-cols ">
+  <div class="flex-viewport" style="overflow: hidden; position: relative;">
+    <ul class="slides">
+      <li class="clone" aria-hidden="true">
+      <%= render :partial => 'blocks/article', locals: {article: block.articles.first, classe: 'gp-slide gp-slide-small' } %>
+        <% i=0 %>
+          <% block.articles.each do |article| %>
+            <% i+=1 %> 
+            <% next if i==1 %>
+            <%= render :partial => 'blocks/article', locals: {article: article, classe: "gp-slide-#{i} gp-slide-small" } %>
+          <% end %>
+      </li>
+    </ul>
+  </div>
+</div>

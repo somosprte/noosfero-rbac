@@ -1,0 +1,13 @@
+<% search_label = _("O que deseja buscar?") %>
+<%= form_tag( { :controller => 'search', :action => 'articles'}, :class => 'search_form' ) do %>
+  <div class="search-environment" id="environment-search">
+    <span class="formfield">
+      <%= text_field_tag 'query', nil, :title => search_label, :placeholder => search_label %>
+      <button type="submit" class="searchButton" id="environment-search-button">
+        <i class="fa fa-search"></i>
+      </button>
+      <%#= submit_button(:search, _('Search'), :id => 'environment-search-button') %>
+    </span>
+    <%= hidden_field_tag :block, block.id if defined? block %>
+  </div>
+<% end %>  

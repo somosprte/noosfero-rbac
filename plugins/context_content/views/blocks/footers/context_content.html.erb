@@ -1,0 +1,16 @@
+<% contents = block.contents(@page)
+   unless contents.blank? %>
+    <div id="context_content_more_<%= block.id %>" class="more_button">
+      <% if contents.total_pages > 1 %>
+        <%= link_to(font_awesome('angle-left'),
+                    url_for(profile: block.owner.identifier, id: block.id, controller: 'context_content_plugin_profile', action: 'view_content', page: contents.previous_page, article_id: @page.id, direction: 'left'),
+                    class: "button icon-button #{contents.previous_page ? '' : 'disabled'}",
+                    remote: true) %>
+
+        <%= link_to(font_awesome('angle-right'),
+                    url_for(profile: block.owner.identifier, id: block.id, controller: 'context_content_plugin_profile', action: 'view_content', page: contents.next_page, article_id: @page.id, direction: 'right'),
+                    class: "button icon-button #{contents.next_page ? '' : 'disabled' }",
+                    remote: true) %>
+      <% end %>
+    </div>
+<% end %>

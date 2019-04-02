@@ -1,0 +1,21 @@
+<h1> <%= _('Basket options') %> </h1>
+
+<%= form_for :settings, url: {action: 'edit'}, html: {onsubmit: '$(this).ajaxSubmit()'} do |f| %>
+
+  <div>
+    <%= f.check_box :enabled, onchange: 'this.form.onsubmit()' %>
+    <%= f.label :enabled, _('Enable shopping basket')  %>
+  </div>
+
+<% end %>
+
+<fieldset id='delivery-settings'>
+  <label><%=_('Deliveries or pickups')%></label>
+  <%= render 'delivery_plugin/admin_method/index' %>
+</fieldset>
+
+<%= button_bar do %>
+  <%= button(:back, _('Back to control panel'), controller: 'profile_editor') %>
+<% end %>
+
+<%= javascript_include_tag 'plugins/shopping_cart/edit' %>

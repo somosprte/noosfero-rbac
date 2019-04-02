@@ -1,0 +1,28 @@
+<% if @errors %>
+  <div class="errorExplanation" id="errorExplanation">
+    <h2><%= n_('This file couldn\'t be saved', 'These %{num} files couldn\'t be saved', @errors.size) % { :num => @errors.size } %></h2>
+    <p><%= _('There were problems with the following files:') %> </p>
+    <ul>
+      <% for file in @uploaded_files %>
+        <% for msg in file.errors.full_messages %>
+          <li><strong><%= file.name %></strong> : <%= msg %></li>
+        <% end %>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<h1><%= _('Publish media') %></h1>
+
+<h3>
+  <%= _("Select the files you want to upload (max size %s):") %
+      number_to_human_size(max_upload_size_for(@profile)) %>
+</h3>
+
+<h5><%= (_('Uploading files to %s') % content_tag('code', @target)).html_safe%></h5>
+
+<%= render :partial => 'upload_file_form',
+           :locals => { :size => '45', back_to: @back_to, parent: @parent,
+                        :num_of_files => 3 } %>
+
+<%= javascript_include_tag 'cropped_image' %>

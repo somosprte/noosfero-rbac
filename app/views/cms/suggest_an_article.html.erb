@@ -1,0 +1,27 @@
+<%= error_messages_for 'task' %>
+
+<%= required_fields_message %>
+
+<%= labelled_form_for 'task' do |f| %>
+
+  <%= required labelled_form_field(_('Title'), text_field('task[article]', 'name', :size => 50)) %>
+
+  <%= labelled_form_field(_('Source'), text_field('task[article]', 'source_name')) %>
+
+  <%= labelled_form_field(_('Source URL'), text_field('task[article]', 'source')) %>
+
+  <% unless logged_in? %>
+    <%= required labelled_form_field(_('Your name'), text_field(:task, 'name')) %>
+    <%= required labelled_form_field(_('Email'), text_field(:task, 'email')) %>
+  <% end %>
+
+  <%= render :partial => 'shared/lead_and_body', :locals => {:object => 'task[article]'} %>
+
+  <%= hidden_field_tag('back_to', @back_to) %>
+
+  <%= captcha_tags(:suggest_article, nil, environment, profile) %>
+
+  <%= button_bar do %>
+    <%= submit_button :save, _('Save'), :cancel => @back_to %>
+  <% end %>
+<% end %>

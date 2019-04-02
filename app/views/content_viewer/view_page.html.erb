@@ -1,0 +1,86 @@
+<%
+  if @page.parent && @page.parent.has_posts? && @page.parent.feed
+    add_rss_feed_to_head(@page.parent.name, @page.parent.feed.url)
+  end
+%>
+
+<div id="article" class="<%= @page.css_class_name %>">
+
+<%= render :partial => 'confirm_unfollow' %>
+
+<script type="text/javascript">
+    window.ONE_COMMENT = "<%= _('One comment') %>";
+    window.COMMENT_PLURAL = "<%= _('comments') %>";
+    window.NO_COMMENT_YET = "<%= _('No comments yet') %>";
+</script>
+
+<div id="article-toolbar">
+  <%= render :partial => 'article_toolbar' %>
+</div>
+
+<%= render :partial => 'article_field_values', locals: { fields: @page.metadata['custom_fields'] || [] } %>
+
+<% if NOOSFERO_CONF['addthis_enabled'] %>
+  <%= render :partial => 'addthis' %>
+<% end %>
+
+<%= render partial: 'article_body', locals: { page: @page } %>
+
+<div class=<%= !@page.categories.empty? || !@page.tags.empty? ? "article-footer" : "" %> >
+  <% unless @page.categories.empty? %>
+    <div id="article-cat">
+      <h3><%= _('Categories') %></h3>
+      <div class="categories-cloud">
+        <%= safe_join(@page.categories.map {|item| link_to_category(item, false) }, " ") %>
+      </div>
+    </div>
+  <% end %>
+
+  <% unless @page.tags.empty? %>
+    <div id="article-tags">
+      <h3><%= _('Tags') %></h3>
+      <%= safe_join(@page.tags.map { |t| link_to(font_awesome(:tag, t), { controller: 'profile', profile: @profile.identifier, action: 'tags', id: t.name }, class: "tag") }, "\n") %>
+    </div>
+  <% end %>
+</div>
+
+<%= display_source_info(@page) %>
+
+<%= safe_join(@plugins.dispatch(:article_extra_contents, @page).collect { |content| instance_exec(&content) }, "") %>
+
+<% if @page.accept_comments? || @comments_count > 0 %>
+  <div class="comments" id="comments_list">
+
+    <h3 <%= 'class="no-comments-yet"'.html_safe if @comments_count == 0 %>>
+      <%= display_number_of_comments(@comments_count) %>
+    </h3>
+
+    <% if !@page.archived? && @page.accept_comments? %>
+      <div id='page-comment-form' class='page-comment-form'>
+        <%= render partial: 'comment/comment_form', locals: { url: { controller: :comment, action: :create }, display_link: true, cancel_triggers_hide: true } %>
+      </div>
+    <% end %>
+
+    <div class="comments-list-header">
+      <% if @comments.present? && @comments.count > 1 %>
+        <%= hidden_field_tag("page_url", url_for(:controller=>'content_viewer', :action=>'view_page', :profile=>profile.identifier, :page => @page.explode_path)) %>
+        <%= javascript_include_tag "comment_order.js" %>
+        <span><%= _('Order by') %></span>
+        <%= form_tag({:controller=>'content_viewer' , :action=>'view_page'}, {:method=>'get', :id=>"form_order"}) do %>
+          <%= select_tag 'comment_order', options_for_select({ _('Newest') => 'newest', _('Oldest') => 'oldest' }, @comment_order) %>
+        <% end %>
+      <% end %>
+    </div>
+
+    <ul class="article-comments-list" id="article-comments-list" data-page="<%= @page.id %>" 
+        data-comment-page="<%= @curr_page %>" data-profile="<%= @profile.identifier %>"
+    >
+      <% if @comments.present? %>
+        <%= render :partial => 'comment/comment', :collection => @comments %>
+      <% end %>
+    </ul>
+  </div><!-- end class="comments" -->
+<% end %>
+
+</div><!-- end id="article" -->
+<%= add_zoom_to_article_images %>

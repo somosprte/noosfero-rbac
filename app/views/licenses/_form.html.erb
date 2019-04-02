@@ -1,0 +1,11 @@
+<%= error_messages_for :license %>
+
+<%= form_for :license do |f| %>
+  <%= hidden_field_tag(:license_id, params[:license_id]) %>
+  <%= required labelled_form_field(_('Name'), f.text_field(:name)) %>
+  <%= labelled_form_field(_('License url'), f.text_field(:url)) %>
+
+ <%= button_bar do %>
+   <%= submit_button(:save, _('Save'), :cancel => { :action => 'index' })%>
+  <% end %>
+<% end %>

@@ -1,0 +1,131 @@
+$basic_button_color: #fff;
+$default_button: #346392;
+$default_button_hover: #27496d;
+$default_button_border: #6496c8;
+
+$red_button: #d9534f;
+$red_button_hover: #d43f3a;
+$red_button_border: #c9302c;
+
+$green_button: #5cb85c;
+$green_button_border: #4cae4c;
+$green_button_hover: #449d44;
+
+$orange_button: #ff9933;
+$orange_button_hover: #ff8c1a;
+
+.button-bar {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1em auto;
+  text-align: right;
+  flex-wrap: wrap;
+  @media only screen and (max-width: 540px) { justify-content: center; }
+}
+
+a.button,
+#wrap-2 a.button {
+  color: $default_button;
+  cursor: pointer;
+  display: inline-block;
+  background: transparent;
+  border: 0.063em solid;
+  border-radius: 0.250em;
+  font-size: 14px;
+  padding: 0.313em 0.750em;
+  margin-top: 0.250em;
+  margin-bottom: 0.125em;
+  box-sizing: border-box;
+  &:not(:last-child) { margin-right: 3px; }
+  @media only screen and (max-width: 768px) { margin-bottom: 5px; }
+  @media only screen and (max-width: 540px) { padding: 6px 8px !important; }
+  text-decoration: none;
+  text-align: center;
+
+  &:hover {
+    color: $basic_button_color;
+    background-color: $default_button;
+  }
+
+  &.btn-green,
+  &.icon-search,
+  &.icon-plus,
+  &.icon-toggle-on {
+    color: $basic_button_color;
+    background-color: $green_button;
+    border-color: $green_button_border;
+    &:hover {
+      background-color: $green_button_hover;
+    }
+  }
+
+  &.btn-red,
+  &.icon-delete,
+  &.icon-ban {
+    color: $basic_button_color;
+      background-color: $red_button;
+      border-color: $red_button;
+    &:hover {
+      background-color: $red_button_hover;
+    }
+  }
+
+  &.btn-red-reverse,
+  &.icon-alert,
+  &.icon-close {
+    color: $red_button;
+    border-color: $red_button;
+    &:hover {
+      color: $basic_button_color;
+      background-color: $red_button;
+    }
+  }
+
+  &.btn-blue,
+  &.icon-new,
+  &.icon-save,
+  &.icon-upload,
+  &.icon-login,
+  &.icon-ok {
+    color: $basic_button_color;
+    background-color: $default_button;
+    border-color: $default_button;
+    &:hover {
+      color: $basic_button_color;
+      background-color: $default_button_hover;
+    }
+  }
+
+  &.btn-orange,
+  &.icon-rss {
+    color: $basic_button_color;
+    background-color: $orange_button;
+    &:hover {
+      background-color: $orange_button_hover;
+    }
+  }
+
+  &.btn-orange-reverse {
+    color: $orange_button;
+    background-color: $basic_button_color;
+    &:hover {
+      color: $basic_button_color;
+      background-color: $orange_button;
+    }
+  }
+
+  &.without-text {
+    padding: 0.313em;
+    border: none;
+    background-color: transparent;
+    color: $default_button;
+    i.fa {
+      margin-right: 0;
+    }
+
+    &:hover {
+      color: $basic_button_color;
+      background-color: $default_button;
+    }
+  }
+}

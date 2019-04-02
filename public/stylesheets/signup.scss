@@ -1,0 +1,165 @@
+#url-check .suggested_usernames {
+  color: #005000;
+}
+
+#email-check,
+#fake-check,
+#password-check,
+#password-rate {
+  text-align: right;
+}
+
+p#password-check {
+  display: none;
+}
+
+#email-check p,
+#fake-check p,
+p#password-check,
+p#password-rate {
+  margin: 0;
+}
+
+.hidden {
+  visibility: hidden;
+  display: none;
+}
+
+.available {
+  color: #88BD00;
+}
+
+.unavailable {
+  color: #7f0000;
+}
+
+.checking {
+  color: #4A4A4A;
+}
+
+#email-check p,
+#password-rate p,
+#url-check p,
+#signup-form span.invalid,
+#signup-form span.validated,
+#url-check .suggested_usernames {
+  margin: 0;
+  font-size: 11px;
+  clear: both;
+}
+
+.action-account-signup #wrap-1 div.fieldWithErrors {
+  background: transparent;
+}
+
+.person_image_maxsize {
+  margin: 0 18px;
+  font: 13px sans-serif;
+  color: #BABABA;
+}
+
+#terms-of-use-box {
+  margin: 30px 0;
+  color: #4A4A4A;
+}
+
+#terms-of-use-box input[type=checkbox] {
+  border: 1px solid #FFA514;
+  background: #FFF;
+  width: auto;
+}
+
+#signup-form #terms-of-use-box label {
+  display: inline;
+  font-size: 16px;
+}
+
+#signup-form #terms-of-use-box label a {
+  color: #FF7F2A;
+}
+
+#content #signup-form .submit {
+  border: 0;
+  padding: 8px 36px 12px;
+  font-size: 17px;
+  background: none;
+  background-color: #6f6f6f;
+  color: #FFF;
+  text-align: center;
+  text-shadow: #424242 0 -1px 0;
+  border-radius: 7px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  max-height: none;
+  height: 39px;
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}
+
+.select-birth-date {
+  margin-left: 14px;
+}
+
+#thanks-for-signing {
+  font-size: 15px;
+  text-align: center;
+}
+
+#signup-form .formfieldline {
+  padding: 0;
+}
+
+#thanks-for-signing {
+  text-align: left;
+}
+
+#thanks-for-signing h3 {
+  color: #FF7F2A;
+  font-family: 'Liberation Sans', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  text-align: center;
+}
+
+#thanks-for-signing a {
+  color: #333;
+}
+
+#thanks-for-signing h4 {
+  color: #6D786E;
+  font-size: 20px;
+}
+
+#signup-form #result-short,
+#signup-form #result-bad {
+  color: #7f0000;
+  font-weight: normal;
+}
+
+#signup-form #result-good,
+#signup-form #result-strong {
+  color: #005000;
+  font-weight: normal;
+}
+
+#signup-form .g-recaptcha div:first-child {
+  width: auto !important;
+}
+
+.about-noosfero {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  width: 550px;
+  float: right;
+  margin-right: 40px;
+  @media only screen and (max-width: 1260px) {
+    display: none;
+  }
+  h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}

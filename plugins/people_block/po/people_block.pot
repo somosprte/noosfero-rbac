@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-12-12 13:31+0000\n"
+"PO-Revision-Date: 2018-12-12 13:31+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: ../lib/friends_block.rb:8
+msgid "Clicking a friend takes you to his/her homepage"
+msgstr ""
+
+#: ../lib/friends_block.rb:12
+msgid "friends"
+msgstr ""
+
+#: ../lib/friends_block.rb:13
+msgid "{#} friend"
+msgid_plural "{#} friends"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../lib/members_block.rb:11
+msgid "Clicking a member takes you to his/her homepage"
+msgstr ""
+
+#: ../lib/members_block.rb:15
+msgid "members"
+msgstr ""
+
+#: ../lib/members_block.rb:16
+msgid "{#} %s"
+msgstr ""
+
+#: ../lib/members_block.rb:38
+msgid "Show join leave button"
+msgstr ""
+
+#: ../lib/people_block.rb:8
+msgid "Clicking a person takes you to his/her homepage"
+msgstr ""
+
+#: ../lib/people_block.rb:12 ../lib/people_block_base.rb:17
+msgid "{#} People"
+msgstr ""
+
+#: ../lib/people_block_base.rb:9
+msgid "Random people"
+msgstr ""
+
+#: ../lib/people_block_plugin.rb:8
+msgid "A plugin that adds a people block"
+msgstr ""
+
+#: ../views/blocks/footers/friends.html.erb:5
+msgid "Some suggestions for you"
+msgstr ""
+
+#: ../views/blocks/footers/friends.html.erb:10
+msgid "See all suggestions"
+msgstr ""
+
+#: ../views/blocks/people_base.html.erb:25
+msgid "This block has no content yet."
+msgstr ""
+
+#: ../views/box_organizer/_people_block_base.html.erb:6
+msgid "Filter by role:"
+msgstr ""

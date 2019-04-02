@@ -1,0 +1,34 @@
+<h1><%= _('Status for comment') %></h1>
+
+<div id='comment-classification-status-list'>
+
+  <h2><%= _('Comment Informations') %></h2>
+  <div class="comment-classification-informations">
+    <%= link_to @comment.author_name, @comment.author_url, class: "comment-author-name" %>
+    <span class="comment-time"><span class="bullet-separator">•</span><%= show_time @comment.created_at %></span>
+    <p>"<%= @comment.body %>"</p>
+  </div>
+
+  <h2> <%= c_("History") %> </h2>
+
+  <ul class='comment-classification-history'>
+   <% @comment.comment_classification_plugin_comment_status_users.each do |relation| %>
+     <li>
+       <%= link_to relation.profile.name, relation.profile.url, :class => 'comment-classification-responsible' %>
+       <%= _("added the status") %>
+       <span class='comment-classification-status'><%= relation.status.name %></span>
+       <span class="comment-time"><span class="bullet-separator">•</span><%= show_time relation.created_at %></span>
+       <% unless relation.reason.blank? %>
+         <p class='comment-classification-reason'>
+           <span><%= _("Reason") %>:</span>
+           <%= relation.reason %>
+         </p>
+       <% end %>
+     </li>
+   <% end %>
+  </ul>
+
+  <h2> <%= _("Add a new status") %> </h2>
+
+  <%= render :partial => 'status_form' %>
+</div>

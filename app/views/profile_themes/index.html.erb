@@ -1,0 +1,44 @@
+<%= render :partial => 'themes/select_template' %>
+<%= render :partial => 'themes/select_theme' %>
+
+<% if environment.enabled?('user_themes') %>
+  <div id="user-themes" class="list-options">
+
+  <h2><%= _('My themes') %></h2>
+
+  <% for themes in profile.themes.in_groups_of(3)  %>
+    <div class="list-group">
+      <% for theme in themes %><%=
+        if theme
+
+          selected = theme.id == @current_theme
+          sel_html = selected ?
+            content_tag('big', _('(current)') ) :
+            button(:ok, _('Use this theme'), :action => 'set', :id => theme.id)
+
+          image = image_tag('/images/icons-app/design-editor.png', :alt => (_('The "%s" theme.') % theme.name))
+          theme_name = content_tag('strong', theme.name, :class => 'name')
+          use_link = sel_html
+          edit_link = button(:edit, _('Edit this theme'), :action => 'edit', :id => theme.id)
+          test_link = button(:eye, _('Test this theme'), :action => 'start_test', :id => theme.id)
+          links_container = content_tag(:div, use_link + edit_link + test_link)
+          content = image + theme_name + links_container
+
+          content_tag(:div, content, :class => 'theme-opt list-opt' + (selected ? ' selected' : ''))
+
+        end
+      %><% end %>
+    </div>
+  <% end %>
+
+  </div><!-- end id="user-themes" -->
+<% end %>
+
+<br style="clear:both" />
+
+<%= button_bar do %>
+  <%= button(:back, _('Back to control panel'), :controller => 'profile_editor') %>
+  <% if environment.enabled?('user_themes')  %>
+    <%= modal_button :add, _('New theme ...'), :action => 'new' %>
+  <% end %>
+<% end %>

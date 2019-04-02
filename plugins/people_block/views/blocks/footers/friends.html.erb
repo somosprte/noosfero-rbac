@@ -1,0 +1,13 @@
+<%= render partial: 'blocks/footers/view_all', locals: {:owner => block.owner.identifier, :controller => 'profile', :action => 'friends', :block_elements => block.profile_list} unless block.profile_count == 0 %>
+
+<% if !block.suggestions.empty? && user == block.owner %>
+  <div class='suggestions-block common-profile-list-block'>
+    <h4 class='block-subtitle'><%= _('Some suggestions for you') %></h4>
+    <div class='profiles-suggestions'>
+      <%= render :partial => 'shared/profile_suggestions_list', :locals => { :suggestions => block.suggestions, :collection => :friends_suggestions } %>
+    </div>
+    <div class='more-suggestions'>
+      <%= link_to _('See all suggestions'), block.owner.people_suggestions_url %>
+    </div>
+  </div>
+<% end %>

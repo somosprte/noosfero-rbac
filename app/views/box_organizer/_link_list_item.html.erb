@@ -1,0 +1,17 @@
+<tr <%= "class=link-list-template" if defined? template %>>
+    <td class='link-list-row'>
+      <%= icon_selector(link[:icon]) %>
+    </td>
+    <td>
+      <%= text_field_tag 'block[links][][name]', link[:name], :class => 'link-name' %>
+    </td>
+    <td>
+      <%= text_field_tag 'block[links][][address]', link[:address], :class => 'link-address' %>
+    </td>
+    <td>
+      <%= select_tag('block[links][][target]', options_for_select(LinkListBlock::TARGET_OPTIONS, link[:target])) %>
+    </td>
+    <td>
+      <%= link_to font_awesome(:remove), "#" , :class=>"delete-link-list-row" %>
+    </td>
+</tr>

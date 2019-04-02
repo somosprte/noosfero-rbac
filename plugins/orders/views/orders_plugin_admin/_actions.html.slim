@@ -1,0 +1,20 @@
+- wireframe_size = true if wireframe_size.nil?
+
+#actions-box class=("#{"wireframe-size" if wireframe_size}")
+  .labels
+    .select
+    span.with-selection
+      = t('views.actions.with_selection')
+    .clean
+
+  .buttons
+    .select
+      span.select-label= t('views.actions.select')+':'
+      span.select-actions
+        = link_to_function t('views.actions.all'), 'orders.admin.select.all()'
+        = link_to_function t('views.actions.none'), 'orders.admin.select.none()'
+    .with-selection
+      = render 'with_selection_actions', orders_method: orders_method
+    .other
+    .clean
+

@@ -1,0 +1,19 @@
+<%= javascript_tag do %>
+  // To display the title as html. Ref.: http://stackoverflow.com/a/14488776
+  $.widget("ui.dialog", $.extend({}, $.ui.dialog.prototype, {
+    _title: function(title) {
+      title.html(this.options.title);
+    }
+  }));
+
+  close_loading()
+  jQuery('#errorExplanation h2').hide()
+  jQuery('#errorExplanation p').hide()
+  jQuery('#errorExplanation').dialog({
+     modal: true,
+     width: 600,
+     resizable: false,
+     title: "<%= ui_icon('ui-icon-alert') %>Ops…",
+  });
+<% end %>
+<%= error_messages_for object_name %>

@@ -1,0 +1,62 @@
+<%= error_messages_for :form %>
+<%= required labelled_form_field _('Name'), f.text_field(:name) %>
+<% address_field = content_tag('code', "/profile/#{profile.identifier}/query/".html_safe + f.text_field(:identifier)).html_safe %>
+<%= required labelled_form_field(_('Address'), address_field) %>
+
+<h4><%= _('Change picture') %></h4>
+<% if @form.image && @form.image.valid? %>
+  <div id="upload_form_field">
+    <%= image_tag(@form.image.public_filename(:thumb)) %>
+    <p><%= f.file_field(:image) %></p>
+    <%= labelled_form_field _('Remove image'), f.check_box(:remove_image) %>
+  </div>
+<% else %>
+  <div id="upload_form_field">
+    <%= f.file_field(:image) %>
+  </div>
+<% end %>
+
+<%= content_tag('h4', _('Period')) %>
+<%= content_tag( 'small', _('What is the time limit for this %s to be filled?') % _(@kind)) %>
+<div class='formfieldline'>
+  <%= date_range_field('form[beginning]', 'form[ending]', @form.beginning, @form.ending,
+      { :time => true, :change_month => true, :change_year => true,
+        :date_format => 'yy-mm-dd', :time_format => 'hh:mm' }, { :size => 14 }) %>
+</div>
+
+<%= content_tag('h4', _('Access')) %>
+
+<%= content_tag( 'small', _('Who will be able to see and answer your query?')) %>
+<div class='formfieldline'>
+  <%= access_slider_field_tag('access', 'form[access]', profile, @form.access, @form.access_levels) %>
+</div>
+
+<br style='clear:both'/>
+
+<%= content_tag( 'small', _('When will the results of this query be displayed?')) %>
+<div class='formfieldline'>
+  <%= f.select(:access_result_options, access_result_options) %>
+</div>
+
+<% if profile.organization? %>
+  <%= content_tag('h4', _('Membership Query')) %>
+  <p>
+  <%= labelled_check_box _('Triggered on membership request as requirement for approval'), 'form[for_admission]', '1', @form.for_admission %>
+  <br/>
+  <%= labelled_check_box _('Triggered after membership'), 'form[on_membership]', '1', @form.on_membership %>
+  </p>
+<% end %>
+
+<%= content_tag('h4', _('Description')) %>
+<div class='formfieldline'>
+  <%= f.text_area(:description, :style => 'width: 100%', :class => current_editor('simple')) %>
+</div>
+
+<%= render partial: @kind, locals: {f: f} %>
+
+<%= button_bar do %>
+  <%= submit_button :save, c_('Save'), :cancel => {:action => 'index'}%>
+<% end %>
+
+<%= javascript_include_tag 'field' %>
+<%= javascript_include_tag 'identifier' %>

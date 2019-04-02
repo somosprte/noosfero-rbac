@@ -1,0 +1,32 @@
+<div id="manage_favorite_enterprises">
+
+  <h1><%= _("%s's favorite enterprises") % profile.name %></h1>
+
+  <% if @favorite_enterprises.empty? %>
+    <p class='no-results'>
+      <em>
+        <%= _('You have no favorite enterprises yet.') %>
+      </em>
+    </p>
+  <% else %>
+
+    <ul class="profile-list">
+      <% @favorite_enterprises.each do |enterprise| %>
+        <li>
+          <%= link_to_profile profile_image(enterprise).html_safe + enterprise.name,
+                              enterprise.identifier, :class => 'profile-link' %>
+          <div class="control">
+            <%= link_to(font_awesome(:remove), { action: 'remove', id: enterprise.id }, title: _('remove'), class: 'remove-favorite-enterprise') %>
+          </div>
+        </li>
+      <% end %>
+    </ul>
+
+    <%= pagination_links @favorite_enterprises, :param_name => 'npage' %>
+  <% end %>
+</div>
+
+
+<%= button_bar do %>
+  <%= button(:back, _('Back to control panel'), :controller => 'profile_editor') %>
+<% end %>

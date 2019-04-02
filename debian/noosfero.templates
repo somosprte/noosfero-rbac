@@ -1,0 +1,32 @@
+Template: noosfero/initial_domain
+Type: string
+Description: Domain name for your noosfero site
+ Enter the domain name that will be used for your Noosfero site. This domain
+ name will be automatically added to Noosfero's database. The Noosfero frontend
+ packages (such as noosfero-apache) will also automatically configure proper
+ virtual hosts to respond for this domain name.
+ .
+ If you do not enter a domain name here, you will have to make some further
+ manual configuration to have your frontend server properly configured.
+
+Template: noosfero/email_setup_warning
+Type: note
+Description: Noosfero needs a working e-mail setup
+ Noosfero needs a working e-mail setup to work properly. This is used for
+ example to send friendship request e-mails, password recovering e-mail and
+ moderation requests notifications.
+ .
+ Basically, your local MTA needs to deliver e-mail to the internet. Please
+ check /usr/share/doc/noosfero/README.Debian for detailed instructions on
+ setting this up.
+
+Template: noosfero/default_database_config
+Type: boolean
+Description: Do you want to use default local database configuration?
+ Noosfero provides a default database configurations in order to facilitate the
+ installation process. If you intend to use a local database or don't know how
+ to configure the database it's highly recommended that you answer "yes" on
+ this question.
+ .
+ If you want to use and external database or want a custom database configuration
+ answer "no" and configure your database manually.

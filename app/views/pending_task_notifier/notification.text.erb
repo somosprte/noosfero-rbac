@@ -1,0 +1,25 @@
+<%= _("Dear %s") % @person.name %>,
+
+<%= _("You have %d pending task(s).") % @tasks.size %>
+
+<%= safe_join(@tasks.map{|i| " * #{i.description}"}, "\n") %>
+
+<%= _("Click in address below to process task(s):") %>
+
+<%= @url_for_pending_tasks %>
+<% @organizations_with_pending_tasks.each do |organization| %>
+<% pending_tasks = @person.pending_tasks_for_organization(organization) %>
+<%= _("%s has %d pending task(s).") % [organization.name, pending_tasks.size] %>
+
+<%= safe_join(pending_tasks.map{|i| " * #{i.information}"}, "\n") %>
+
+<%= _("Click in address below to process task(s):") %>
+
+<%= url_for(:host => @default_hostname, :controller => 'tasks', :profile => organization.identifier) %>
+<% end %>
+
+<%= _('Greetings,') %>
+
+--
+<%= _('%s team.') % @environment.name %>
+<%= @url %>

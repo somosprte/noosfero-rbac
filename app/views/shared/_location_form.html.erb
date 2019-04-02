@@ -1,0 +1,41 @@
+<% if (profile.active_fields & Profile::LOCATION_FIELDS).present? ||
+      profile.active_fields.include?('location') %>
+  <h1><%= _('Location') %></h1>
+
+  <div id='address-and-location'>
+    <%= render partial: 'shared/address_fields',
+               locals: { profile: profile, f: f } %>
+
+    <% field = optional_field(profile, 'location') do %>
+      <p class='help-message'>
+        <%= _('Drag the balloon to set your location.') %>
+      </p>
+    <% end %>
+
+    <% unless field.blank? %>
+      <% if (profile.active_fields & Profile::LOCATION_FIELDS).present? %>
+        <div class='location-bar button-bar'>
+          <p class='help-message'>
+            <%= _('Fill an address to find it easier in the map') %>
+          </p>
+          <%= button_to_function :search, _('Locate in the map'), "addressToPoint()",
+                                 title: _("Locate the address informed above in the map below (note that you'll probably need to adjust the marker to get a precise position)")  %>
+        </div>
+      <% end %>
+
+      <div id='location-fields'>
+        <div style='overflow: hidden'>
+          <div id="location-map"></div>
+        </div>
+
+        <%= field %>
+
+        <%= f.hidden_field :lat, :id => 'profile_data_lat' %>
+        <%= f.hidden_field :lng, :id => 'profile_data_lng' %>
+
+        <%= content_tag('script', '', :src => "https://maps.googleapis.com/maps/api/js?key=#{GoogleMaps.js_api_key}", :type => 'text/javascript') %>
+        <%= content_tag('script', render(:partial => 'maps/google_map.js', :locals => { profile: profile }), :type => 'text/javascript') %>
+      </div>
+    <% end %>
+  </div>
+<% end %>

@@ -1,0 +1,20 @@
+.interest-tags-block ul {
+  padding: 0;
+  margin: 0;
+}
+
+.interest-tags-block li {
+    list-style: none;
+    float: left;
+    padding: 5px;
+    background: #212e3c;
+    border-radius: 5px;
+    margin: 2px;
+    color: #fff;
+    text-decoration: none;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+}

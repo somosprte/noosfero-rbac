@@ -1,0 +1,79 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-12-12 13:31+0000\n"
+"PO-Revision-Date: 2018-12-12 13:31+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: ../lib/pg_search_plugin.rb:11
+msgid "Search engine that uses Postgres Full-Text Search."
+msgstr ""
+
+#: ../lib/pg_search_plugin.rb:289
+msgid "True"
+msgstr ""
+
+#: ../lib/pg_search_plugin.rb:289
+msgid "False"
+msgstr ""
+
+#: ../lib/pg_search_plugin.rb:323
+msgid "Created at"
+msgstr ""
+
+#: ../lib/pg_search_plugin.rb:324
+msgid "Updated at"
+msgstr ""
+
+#: ../lib/pg_search_plugin.rb:325
+msgid "Extensions"
+msgstr ""
+
+#: ../lib/pg_search_plugin.rb:326
+msgid "Content types"
+msgstr ""
+
+#: ../lib/pg_search_plugin.rb:327
+msgid "Tags"
+msgstr ""
+
+#: ../lib/pg_search_plugin.rb:328
+msgid "Categories"
+msgstr ""
+
+#: ../lib/pg_search_plugin/search_helper.rb:6
+msgid "Refine options"
+msgstr ""
+
+#: ../lib/pg_search_plugin/search_helper.rb:18
+msgid "Undefined"
+msgstr ""
+
+#: ../lib/pg_search_plugin/search_helper.rb:29
+msgid "Clear filters"
+msgstr ""
+
+#: ../views/box_organizer/_profile_search_block.html.erb:3
+msgid "Enable advanced search"
+msgstr ""
+
+#: ../views/box_organizer/_profile_search_block.html.erb:4
+msgid "Customized Search Fields"
+msgstr ""
+
+#: ../views/profile_search/_facets.html.erb:3
+msgid "Advanced Search"
+msgstr ""

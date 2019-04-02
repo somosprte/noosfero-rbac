@@ -1,0 +1,12 @@
+<h1><%= h profile.name %></h1>
+
+<table>
+  <%= display_basic_information %>
+  <%= display_contact %>
+
+  <%= render :partial => 'common' %>
+
+  <%= render :partial => 'custom_fields'%>
+</table>
+
+

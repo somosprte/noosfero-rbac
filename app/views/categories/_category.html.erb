@@ -1,0 +1,32 @@
+<li>
+<div class='treeitem'>
+  <div class='category-name'>
+    <% unless category_color_style(category).empty? %>
+      <span class="color_marker" style="<%= category_color_style(category) %>" ></span>
+    <% end %>
+    <span id="general-categories"><%= category.name %></span>
+  </div>
+
+    <%= button_bar do %>
+      <%= button_without_text :add, _('Add subcategory'), :action => 'new', :parent_id => category %>
+      <%= button_without_text :edit, _('Edit'), :action => 'edit', :id => category %>
+
+      <% remove_message = if category.children.empty?
+                             _('Are you sure you want to remove "%s"?') % category.name
+                           else
+                             _('Are you sure you want to remove "%s" and all its subcategories?') % category.name
+                           end %>
+
+      <%= button_without_text :trash, _('Remove'), { action: 'remove', id: category, },
+            method: 'post', data: { confirm: remove_message} %>
+
+      <% unless category.children.empty? %>
+        <%= button_without_text :eye, _('Show/Hide subcategories'), "#category-sub-items-#{category.id}", :class => "show-button",
+              :id => "show-hide-button#{category.id}", :data => { :category => category.id } %>
+      <% end %>
+    <% end %>
+</div>
+
+<ul id="category-sub-items-<%= category.id %>" class="tree" style="display:none;"></ul>
+
+</li>

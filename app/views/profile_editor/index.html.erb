@@ -1,0 +1,45 @@
+<div id="profile-editor-index">
+
+  <h1 class="block-title">
+    <span class='control-panel-title'><%= h profile.short_name %></span>
+    <span class='control-panel-sep'>&#150;</span>
+    <span class='control-panel-subtitle'><%= _('Control Panel') %></span>
+  </h1>
+
+  <%= text_field_tag(:filter, nil, id: 'control-panel-filter', placeholder: _('Filter options')) %>
+
+  <% control_panel do %>
+    <% ControlPanel.ordered_sections(profile.environment).each do |section_identifier| %>
+      <% section_entries = ControlPanel.available_entries(section_identifier, user, profile, params) %>
+      <% if section_entries.present? %>
+        <div id='section-<%= section_identifier %>' class='section'>
+          <h2><%= ControlPanel.sections(profile.environment)[section_identifier][:name] %></h2>
+          <% section_entries.each do |entry| %>
+            <%= control_panel_button(entry, profile)%>
+          <% end %>
+        </div>
+      <% end %>
+    <% end %>
+    <p class="no-results"><em><%= _('There are no entries matching this filter.') %></em></p>
+  <% end %>
+
+  <% if profile.person? && environment.enabled?('enterprise_activation') %>
+
+      <div id='activation_enterprise'>
+      <%= form_tag({:controller => 'account', :action => 'activation_question'}, {:method => 'get'}) do %>
+        <p><strong><%= _('Activate your enterprise') %></strong></p>
+	<p><%= _("If you received a letter with information about your enterprise activation, add here the activation code that was sent.") %></p>
+	<p><%= environment.help_message_to_add_enterprise %> </p>
+        <%= labelled_form_field(_('Enterprise activation code') + ': ', text_field_tag('enterprise_code')) %>
+        <%= submit_button(:ok, _('Activate')) %>
+      <% end %>
+    </div>
+
+  <% end %>
+
+  <%= button_bar do %>
+    <%= button :back, _('Back to homepage'), profile.url %>
+  <% end %>
+</div>
+
+<%= javascript_include_tag 'cms' %>

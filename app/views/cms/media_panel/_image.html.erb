@@ -1,0 +1,9 @@
+<div class="item image" data-item="span" title="<%= @file.name %>">
+  <span>
+    <%= image_tag(@file.full_path) %>
+  </span>
+  <div class="controls image-controls">
+    <%= button_without_text :add, _('Add to the text'), '#', :class => 'add-to-text' %>
+    <%= button_without_text :zoom, _('Zoom in'), '#', :class => 'zoom' %>
+  </div>
+</div>

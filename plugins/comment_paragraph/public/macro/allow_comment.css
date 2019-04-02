@@ -1,0 +1,7 @@
+p.is-commentable {
+  background-color:#dddddd;
+  border-style: solid;
+  border-color:#bbbbbb;
+  border-width:2px;
+  padding: 10px;
+}

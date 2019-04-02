@@ -1,0 +1,8 @@
+<% unless folder.body.blank? %>
+  <div class="folder-description">
+    <%= folder.body %>
+  </div>
+<% end %>
+
+<%= list_contents contents: folder.children %>
+

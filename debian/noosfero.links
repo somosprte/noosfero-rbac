@@ -1,0 +1,17 @@
+var/tmp/noosfero                                    usr/share/noosfero/tmp
+var/log/noosfero                                    usr/share/noosfero/log
+var/cache/noosfero                                  usr/share/noosfero/cache
+etc/noosfero/database.yml                           usr/share/noosfero/config/database.yml
+etc/noosfero/unicorn.rb                             usr/share/noosfero/config/unicorn.rb
+etc/noosfero/plugins                                usr/share/noosfero/config/plugins
+etc/noosfero/noosfero.yml                           usr/share/noosfero/config/noosfero.yml
+etc/noosfero/local.rb                               usr/share/noosfero/config/local.rb
+var/lib/noosfero-data/index                         usr/share/noosfero/index
+var/lib/noosfero-data/cache                         usr/share/noosfero/public/javascripts/cache
+var/lib/noosfero-data/cache                         usr/share/noosfero/public/stylesheets/cache
+var/lib/noosfero-data/public/articles               usr/share/noosfero/public/articles
+var/lib/noosfero-data/public/image_uploads          usr/share/noosfero/public/image_uploads
+var/lib/noosfero-data/public/thumbnails             usr/share/noosfero/public/thumbnails
+usr/share/noosfero/public/designs/themes/noosfero   usr/share/noosfero/public/designs/themes/default
+usr/share/noosfero/public/designs/icons/tango       usr/share/noosfero/public/designs/icons/default
+usr/share/noosfero/script/noosfero-plugins          usr/sbin/noosfero-plugins

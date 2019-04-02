@@ -1,0 +1,6 @@
+<h1><%= h profile.name %></h1>
+
+<div id='profile-wall'>
+  <h3><%= _("%s's wall") % @profile.name %></h3>
+  <%= render :partial => 'profile_wall' %>
+</div>

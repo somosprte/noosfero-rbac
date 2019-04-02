@@ -1,0 +1,22 @@
+
+pt: &pt
+  analytics_plugin:
+    lib:
+      plugin:
+        name: 'Rastreio de accesso'
+        description: 'Registra o acesso de perfis selecionados'
+        panel_button: 'Rastreio de accesso'
+
+    views:
+      stats:
+        enable: "Ativar rastreio no perfil '%{profile}'"
+        anonymous: "Não associar login de usuários"
+        config_save: "Configuração salva"
+        user: 'Usuário'
+        initial_time: 'Horário'
+        ip: 'IP'
+        pages: 'Páginas'
+
+pt_BR:
+  <<: *pt
+

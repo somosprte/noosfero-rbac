@@ -1,0 +1,35 @@
+<% object ||= :article %>
+<% abstract_label ||= 'Lead' %>
+<% abstract_method ||= :abstract %>
+<% body_label ||= 'Text' %>
+<% body_method ||= :body %>
+<% editor_type = current_editor %>
+<% lead_id ||= 0%>
+<% f ||= false %>
+
+<% if @article %>
+  <%= file_field_or_thumbnail(_('Image:'), @article.image, 'article[image_builder]', 'article') %>
+<% end %>
+
+<%= button :add, _("Add Lead"), '#', :class => "lead-button", :article_id => "#article-lead-"+lead_id.to_s, :style => "margin-left: 0px;" %>
+<em><%= _('Used when a short version of your text is needed.') %></em>
+
+<div class='article-lead' id="article-lead-<%=lead_id.to_s%>">
+
+  <% abstract_options = {:style => 'width: 100%; height: 200px;', :class => editor_type} %>
+  <% if f %>
+    <%= labelled_form_field(_(abstract_label), f.text_area(abstract_method, abstract_options)) %>
+  <% else %>
+    <%= labelled_form_field(_(abstract_label), text_area(object, abstract_method, abstract_options)) %>
+  <% end %>
+</div>
+<div style="margin-top: 10px;">
+  <% body_options = {:style => 'width: 100%; height: 400px;', :class => editor_type} %>
+  <% if f %>
+    <%= labelled_form_field(_(body_label), f.text_area(body_method, body_options)) %>
+  <% else %>
+    <%= labelled_form_field(_(body_label), text_area(object, body_method, body_options)) %>
+  <% end %>
+</div>
+
+<%= javascript_include_tag 'article-lead-and-body'%>

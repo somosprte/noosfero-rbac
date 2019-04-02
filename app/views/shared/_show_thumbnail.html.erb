@@ -1,0 +1,13 @@
+<div>
+  <div id='actual-image'><%= image_tag(image.public_filename(:thumb)) %></div>
+  <%= render partial: 'shared/change_image',
+             locals: { for_attr: for_attr, display: 'none', type: type } %>
+</div>
+
+<%= button_to_function(:image, _('Change image'), 'display_change_image()', id: 'change-image-link' ) %>
+
+<% if image.present? && removable %>
+  <div id='image-builder-remove-checkbox'>
+    <%= labelled_form_field(_('Remove image'), check_box_tag("#{for_attr}[remove_image]", true, false))%>
+  </div>
+<% end %>

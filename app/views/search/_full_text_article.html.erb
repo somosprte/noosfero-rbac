@@ -1,0 +1,13 @@
+<li class="search-text-article-item article-item">
+  <div class="search-content-first-column">
+    <%= render partial: 'image', object: text_article %>
+  </div>
+
+  <div class="noborder search-content-second-column">
+    <h2>
+      <%= link_to(text_article.title, text_article.url, class: "search-result-title") %>
+    </h2>
+    <%= render partial: 'article_last_change', object: text_article %>
+    <%= render partial: 'article_common', object: text_article %>
+  </div>
+</li>

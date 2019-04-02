@@ -1,0 +1,32 @@
+.abuse-report {
+  margin-top: 15px;
+}
+
+.abuse-report-reason {
+  font-style: italic;
+  padding-left: 15px;
+}
+
+.abuse-report-header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  a.abuse-reporter-name {
+    color: #000;
+    font-weight: bold;
+  }
+  .abuse-report-time,
+  .fa-exclamation-circle {
+    color: #90949c;
+  }
+}
+
+.abuse-report-details {
+  display: none;
+  padding-left: 15px;
+}
+
+a.report-abuse-action {
+  border: none;
+  background: none;
+}

@@ -1,0 +1,37 @@
+@import 'base';
+
+$actions-bg: #D7FFB9;
+
+#actions-box {
+  background: $actions-bg;
+
+  &.wireframe-size {
+    padding: $padding ($wireframe-padding + $padding);
+  }
+
+  .labels {
+    font-weight: bold;
+
+    .select {
+      height: $height;
+    }
+  }
+
+  .buttons {
+    padding-top: $padding;
+
+    .select, .with-selection {
+      display: inline-block;
+      width: $module06;
+
+      .select-actions a, .generate-report-actions a {
+        padding: 0 $padding;
+
+        &:first-child {
+          border-right: 1px solid #aaa;
+        }
+      }
+    }
+  }
+}
+

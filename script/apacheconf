@@ -1,0 +1,28 @@
+#!/usr/bin/env ruby
+
+case ARGV.first
+when 'virtualhosts'
+  require_relative '../config/environment'
+
+  Environment.all.each do |environment|
+    domains = environment.domains.sort do |domain|
+      domain.is_default ? 0 : 1
+    end
+    if domains.empty?
+      domains << Domain.new(:name => 'localhost')
+    end
+    puts "# #{environment.name}"
+    puts "<VirtualHost *:80>"
+    server_directive = 'ServerName'
+    domains.each do |domain|
+      puts "  #{server_directive} #{domain.name}"
+      server_directive = 'ServerAlias'
+    end
+    puts "  Include /etc/noosfero/apache/virtualhost.conf"
+    puts "</VirtualHost>"
+  end
+  puts "# vim: ft=apache"
+else
+  puts "usage: %s virtualhosts" % $PROGRAM_NAME
+  exit 1
+end

@@ -1,0 +1,28 @@
+<% # FIXME This partil isn't used in new layout. Check if it is used by another themes and remove. %>
+<div id="user">
+  <% user = (session[:user] && User.find_by(id: session[:user])) || nil %>
+  <% if user.present? %>
+    <% user = user.person %>
+    <span class='logged-in'>
+    </span>
+  <% else %>
+    <span class='not-logged-in'>
+      <%= modal_link_to_login %>
+      <% @plugins.dispatch(:alternative_authentication_link).collect do |content|%>
+         <%= instance_exec(&content) %> 
+      <%end%>
+
+      <div id='inlineLoginBox' style='display: none;'>
+        <%= render :file => 'account/login', :locals => { :is_popin => true } %>
+      </div>
+
+      <% unless @plugins.dispatch(:allow_user_registration).include?(false) %>
+        <%= link_to_signup %>
+      <% end %>
+    </span>
+  <% end %>
+  <form action="/search/articles" id="top-search" class="search_form clean" method="get">
+    <input name="query" size="15" title="<%=_('Search...')%>" onfocus="this.form.className='focused';" onblur="this.form.className=''" />
+    <div><%=_('Press <strong>Enter</strong> to send the search query.').html_safe%></div>
+  </form>
+</div><!-- end id="user" -->

@@ -1,0 +1,7 @@
+<h1><%= _('Validators by Region') %></h1>
+
+<ul class='tree'>
+  <%= render :partial => 'region', :collection => @regions %>
+</ul>
+
+<%= button :back, _('Back to admin panel'), :controller => 'admin_panel' %>

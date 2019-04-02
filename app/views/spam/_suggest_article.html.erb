@@ -1,0 +1,21 @@
+<% render :layout => 'task', :locals => { :task => task } do %>
+  <% content_for :extra_buttons do %>
+    <%= button_to_function('down', _('Show details'), "toggleDetails(this, '#{_('Hide details')}', '#{_('Show details')}')" ) %>
+  <% end %>
+
+  <% content_for :extra_content do %>
+    <ul class="suggest-article-details" style="display: none">
+      <li><strong><%=_('Sent by')%></strong>: <%=task.name%> </li>
+      <li><strong><%=_('Email')%></strong>: <%=task.email%> </li>
+      <li><strong><%=_('Source')%></strong>: <%=task.article_object.source_name%> </li>
+      <li><strong><%=_('Source URL')%></strong>: <%=task.article_object.source%> </li>
+      <li><strong><%=_('Folder')%></strong>: <%=if (a = Article.find_by(id: task.article_object.parent_id)) then a.name else '<em>' + s_('Folder|none') + '</em>' end%> </li>
+      <li><strong><%=_('Lead')%></strong>: <%=task.article_object.abstract.blank? ? '<em>' + s_('Abstract|empty') + '</em>' : task.article_object.abstract%> </li>
+      <li><strong><%=_('Body')%></strong>:
+      <div class='suggest-article-body'>
+        <%= task.article_object.body %>
+      </div>
+      </li>
+    </ul>
+  <% end %>
+<% end %>

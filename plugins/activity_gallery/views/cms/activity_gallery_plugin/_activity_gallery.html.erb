@@ -1,0 +1,74 @@
+<div class="form-title">Inclusão de Atividade</div>
+<div id="change-image">
+
+    <a class="button with-text icon-plus icon-plus" href="#" onclick="add_new_image(this); return false;"><i class="fa fa-image" aria-hidden="true"></i>Definir imagem de capa</a>
+
+    <input type="file" name="article[image_builder][uploaded_data]" id="article_image_builder_uploaded_data" onchange="cropImage(this)" accept=".jpg, .gif, .png, .bmp" class="picture-input">
+
+    <div>Max size: 5.0 MB (.jpg, .gif, .png, .bmp, .tiff)</div>
+
+    <div class="formfieldline"><label class="formlabel" for="article_image_builder_label">Image Label:</label><div class="formfield type-text"><input type="text" name="article[image_builder][label]" id="article_image_builder_label"></div></div>
+
+    <a id="cancel-change-image-link" style="display: none" class="button with-text icon-cancel" href="#" onclick="hideen_change_image(); return false;"><i class="fa fa-times" aria-hidden="true"></i>Cancel</a>
+
+      <input type="hidden" name="article[image_builder][crop_x]" id="article_image_builder_crop_x" class="crop_x">
+  <input type="hidden" name="article[image_builder][crop_y]" id="article_image_builder_crop_y" class="crop_y">
+  <input type="hidden" name="article[image_builder][crop_w]" id="article_image_builder_crop_w" class="crop_w">
+  <input type="hidden" name="article[image_builder][crop_h]" id="article_image_builder_crop_h" class="crop_h">
+
+    <a id="crop-image-button" style="display: none" onclick="return noosfero.modal.inline('#crop-image')" class="" href="#"></a>
+    <div id="crop-image">
+  <h2>Crop your image:</h2>
+  <img id="cropbox" style="display: none; visibility: hidden; width: 0px; height: 0px;"><div class="jcrop-holder" style="width: 0px; height: 0px; position: relative; background-color: rgb(0, 0, 0);"><div style="position: absolute; z-index: 600;"><div style="width: 100%; height: 100%; z-index: 310; position: absolute; overflow: hidden;"><img style="border: none; visibility: visible; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; width: 0px; height: 0px;"><div class="jcrop-hline" style="position: absolute; opacity: 0.4;"></div><div class="jcrop-hline bottom" style="position: absolute; opacity: 0.4;"></div><div class="jcrop-vline right" style="position: absolute; opacity: 0.4;"></div><div class="jcrop-vline" style="position: absolute; opacity: 0.4;"></div><div class="jcrop-tracker" style="cursor: move; position: absolute; z-index: 360;"></div></div><div style="width: 100%; height: 100%; z-index: 320; display: block;"><div class="ord-n jcrop-dragbar" style="cursor: n-resize; position: absolute; z-index: 370;"></div><div class="ord-s jcrop-dragbar" style="cursor: s-resize; position: absolute; z-index: 371;"></div><div class="ord-e jcrop-dragbar" style="cursor: e-resize; position: absolute; z-index: 372;"></div><div class="ord-w jcrop-dragbar" style="cursor: w-resize; position: absolute; z-index: 373;"></div><div class="ord-n jcrop-handle" style="cursor: n-resize; position: absolute; z-index: 374; opacity: 0.5;"></div><div class="ord-s jcrop-handle" style="cursor: s-resize; position: absolute; z-index: 375; opacity: 0.5;"></div><div class="ord-e jcrop-handle" style="cursor: e-resize; position: absolute; z-index: 376; opacity: 0.5;"></div><div class="ord-w jcrop-handle" style="cursor: w-resize; position: absolute; z-index: 377; opacity: 0.5;"></div><div class="ord-nw jcrop-handle" style="cursor: nw-resize; position: absolute; z-index: 378; opacity: 0.5;"></div><div class="ord-ne jcrop-handle" style="cursor: ne-resize; position: absolute; z-index: 379; opacity: 0.5;"></div><div class="ord-se jcrop-handle" style="cursor: se-resize; position: absolute; z-index: 380; opacity: 0.5;"></div><div class="ord-sw jcrop-handle" style="cursor: sw-resize; position: absolute; z-index: 381; opacity: 0.5;"></div></div></div><div class="jcrop-tracker" style="width: 4px; height: 4px; position: absolute; top: -2px; left: -2px; z-index: 290; cursor: crosshair;"></div><input type="radio" class="jcrop-keymgr" style="position: fixed; left: -120px; width: 12px;"><img style="display: block; visibility: visible; width: 0px; height: 0px; border: none; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; opacity: 0.6;"></div>
+  <div class=" button-bar">
+    <a id="confirm-crop-image" class="button icon-cut with-text" title="Crop" href="#"><i class="fa fa-cut" aria-hidden="true"></i>Crop</a>
+</div></div>
+
+
+  </div>
+
+<div class="form-content">
+  <%= labelled_form_field(_('Título da Atividade'), text_field(:environment, :signup_welcome_text_subject, placeholder:'Título da Atividade')) %> 
+  <%= labelled_form_field(_('Breve descrição'), text_area(:article, :default_email, :rows => 3, :cols => 64)) %>
+  <label class="label-title">Sobre a Atividade</label>
+  <% editor_type = current_editor %>
+  <% body_label ||= 'Sobre a Atividade' %>
+  <% body_method ||= :body %> 
+  <div style="margin-top: 10px;">
+      <% body_options = {:style => 'width: 100%; height: 400px;', :class => editor_type} %>
+      <%= labelled_form_field(_(body_label), text_area(:activity, body_method, body_options)) %>
+    </div>
+  <%= labelled_form_field(_('Histórico/contexto'), text_area(:article, :default_email, :rows => 3, :cols => 64)) %> 
+  <%=labelled_form_field(_('Objetivos'), text_area(:article, :default_email, :rows => 3, :cols => 64)) %> 
+  <%=labelled_form_field(_('Escopo'), text_area(:article, :default_email, :rows => 3, :cols => 64)) %> 
+  <%=labelled_form_field(_('Público-alvo'), text_area(:article, :default_email, :rows => 3, :cols => 64)) %> 
+  <%=labelled_form_field(_('Pontes com o currículo'), text_area(:article, :default_email, :rows => 3, :cols => 64)) %> 
+  <%=labelled_form_field(_('Autores'), text_area(:article, :default_email, :rows => 3, :cols => 64)) %> 
+  <%=labelled_form_field(_('Co-autor(es)'), text_area(:article, :default_email, :rows => 3, :cols => 64)) %> 
+  <%=labelled_form_field(_('Organização (autora?)'), text_area(:article, :default_email, :rows => 3, :cols => 64)) %>
+  <label class="label-title">Metodologia de implementação</label>
+  <%= labelled_form_field(_('Organização do espaço'), text_area(:article, :default_email, :rows => 3, :cols => 64)) %>
+  <%= labelled_form_field(_('Passos para a implementação'), text_area(:article, :default_email, :rows => 3, :cols => 64)) %> 
+  <%= labelled_form_field(_('Materiais'), text_area(:article, :default_email, :rows => 3, :cols => 64)) %> 
+  <%= labelled_form_field(_('Materiais de suporte'), text_area(:article, :default_email, :rows => 3, :cols => 64)) %> 
+  <%= labelled_form_field(_('Licença'), text_area(:article, :default_email, :rows => 3, :cols => 64)) %> 
+  <%= labelled_form_field(_('Dicas e anotações sobre implementação'), text_area(:article, :default_email, :rows => 3, :cols => 64)) %> 
+  <%= labelled_form_field(_('Avaliação'), text_area(:article, :default_email, :rows => 3, :cols => 64)) %>
+  <%= labelled_form_field(_('Tempo de implementação'), text_area(:article, :default_email, :rows => 3, :cols => 64)) %>
+  <label class="label-title">Inspiração</label>
+  <%= labelled_form_field(_('Atividade inspirada em:'), text_area(:article, :default_email, :rows => 3, :cols => 64)) %>
+  <%= labelled_form_field(_('Referências bibliográficas'), text_area(:article, :default_email, :rows => 3, :cols => 64)) %>
+</div>
+
+<div class=" button-gallery">
+  <input type="submit" name="commit" value="Save" class="button with-text icon-save hidden-submit submit" /><a
+    class="button with-text icon-save"
+    href="#"
+    onclick="submit_form(this); return false;"
+    ><i class="fa fa-save" aria-hidden="true"></i>Save</a
+  >
+
+  <a class="button icon-cancel with-text" title="Cancel" href="http://localhost:3000/myprofile/adminuser"
+    ><i class="fa fa-times" aria-hidden="true"></i>Cancel</a
+  >
+</div>

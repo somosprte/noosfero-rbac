@@ -1,0 +1,9 @@
+<%= f.text_field 'tag_list', size: 64, value: value.join(','), :id => 'tag-list' %>
+
+<script>
+  jQuery('#tag-list').inputosaurus({
+    autoCompleteSource: <%= "'#{search_tags_cms_index_path(profile.identifier, :only_path => true)}',".html_safe %>
+    activateFinalResult : true
+  })
+</script>
+

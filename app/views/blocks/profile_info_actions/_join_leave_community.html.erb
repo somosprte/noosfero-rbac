@@ -1,0 +1,20 @@
+<div class='join-leave-button require-login-popup'>
+  <% if logged_in? %>
+    <% if profile.already_request_membership? user %>
+      <%= _('Your membership is waiting for approval') %>
+    <% else %>
+      <% if user.in? profile.members %>
+        <%= link_to font_awesome(:leave, _('Leave community')), profile.leave_url, class: 'leave-community' %>
+      <% else %>
+        <%= join_community_button({:logged => true}) %>
+      <% end %>
+    <% end %>
+  <% else %>
+    <%= join_community_button %>
+  <% end %>
+</div>
+
+<%= javascript_tag do %>
+  noosfero.add_and_join.locales.leaveConfirmation = <%= (_("Please confirm to leave the community '%{name}'") % {name: profile.name}).to_json %>
+<% end %>
+

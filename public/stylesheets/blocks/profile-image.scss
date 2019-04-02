@@ -1,0 +1,27 @@
+.profile-image-block {
+  text-align: center;
+
+  .profile-big-image.bg-pic,
+  .profile-big-image.img-pic {
+    width: 90%;
+    margin: auto;
+
+    a {
+      img {
+        border: 1px solid #888;
+        padding: 2px;
+        background: transparent;
+        width: 100%;
+        max-width: 156px;
+      }
+    }
+  }
+
+  ul {
+    padding: 0px;
+    li {
+      list-style: none;
+      margin-bottom: 8px;
+    }
+  }
+}

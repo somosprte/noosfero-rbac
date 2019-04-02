@@ -1,0 +1,1 @@
+ActivityGalleryPlugin.load_custom_routes
