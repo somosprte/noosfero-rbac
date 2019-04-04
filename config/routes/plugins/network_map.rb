@@ -1,0 +1,1 @@
+/noosfero/config/plugins/network_map/config/routes.rb

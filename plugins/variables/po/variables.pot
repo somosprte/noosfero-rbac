@@ -6,9 +6,10 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: 1.3~rc2-1-ga15645d\n"
-"POT-Creation-Date: 2015-10-30 16:35-0300\n"
-"PO-Revision-Date: 2015-08-06 17:21-0300\n"
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-04 19:11+0000\n"
+"PO-Revision-Date: 2019-04-04 19:11+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -17,14 +18,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: plugins/variables/lib/variables_plugin/macros/profile.rb:7
+#: ../lib/variables_plugin.rb:8
+msgid "A set of simple variables to be used in a macro context"
+msgstr ""
+
+#: ../lib/variables_plugin/macros/profile.rb:8
 msgid "Variables"
 msgstr ""
 
-#: plugins/variables/lib/variables_plugin/macros/profile.rb:13
+#: ../lib/variables_plugin/macros/profile.rb:14
 msgid "Select the desired variable"
-msgstr ""
-
-#: plugins/variables/lib/variables_plugin.rb:8
-msgid "A set of simple variables to be used in a macro context"
 msgstr ""

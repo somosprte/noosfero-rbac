@@ -1,4 +1,4 @@
-class DeserializeFieldsOnOauthClientPluginProvider < ActiveRecord::Migration[4.2]
+class DeserializeFieldsOnOauthClientPluginProvider < ActiveRecord::Migration[5.1]
 
   def up
     add_column :oauth_client_plugin_providers, :client_id, :text

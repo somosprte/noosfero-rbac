@@ -1,0 +1,1 @@
+/noosfero/config/plugins/activity_gallery/config/routes.rb
