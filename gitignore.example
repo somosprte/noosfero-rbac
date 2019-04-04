@@ -1,4 +1,6 @@
-#config/Gemfile
+.gitignore
+
+config/Gemfile
 
 .rbenv-*
 .vagrant
@@ -14,11 +16,11 @@ config/database.yml
 config/session.secret
 config/noosfero.yml
 config/mongrel_cluster.yml
-#config/plugins
+config/plugins
 config/unicorn.rb
 config/local.rb
 config/initializers/local.rb
-#config/routes/plugins
+config/routes/plugins
 
 
 tags
@@ -35,7 +37,7 @@ public/image_uploads
 public/thumbnails
 public/user_themes
 public/designs/themes/default
-# public/designs/themes/*
+public/designs/themes/*
 public/designs/icons/default
 
 # caches
@@ -60,15 +62,15 @@ debian/noosfero/
 debian/noosfero-apache/
 
 # plugins
-#public/plugins
-#features/plugins/*
+public/plugins
+features/plugins/*
 plugins/solr/config/solr.yml
 /solr
 
 # Docker
 .docker-sync/
 /Dockerfile
-# /docker-sync.yml
+/docker-sync.yml
 /docker-compose.yml
 
 # OSX trash
