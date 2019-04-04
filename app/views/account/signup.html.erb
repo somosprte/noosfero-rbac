@@ -1,4 +1,20 @@
 <h1><%= _('Sign up for %s!') % environment.name %></h1>
+<div class="oauth-login">
+  <% unless providers.empty? %>
+    <%= _('Login with:') %>
+  <% end %>
+  <% providers.each do |provider| %>
+    <span class="provider">
+      <%= link_to provider.image ? image_tag(provider.image.public_filename) : provider.name, "/plugin/oauth_client/#{provider.strategy}?id=#{provider.id}", :class => provider.strategy, :title => provider.name %>
+    </span>
+  <% end %>
+
+  <span class="provider">
+    <% unless Rails.env.production? %>
+      <%= link_to _('Developer Login'), "/plugin/oauth_client/developer", :class => 'developer' %>
+    <% end %>
+  </span>
+</div>
 
 <div id='signup-intro'>
   <%= environment.signup_intro.try(:html_safe) %>
