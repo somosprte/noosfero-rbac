@@ -125,6 +125,7 @@ function addressToPoint() {
      if (status == google.maps.GeocoderStatus.OK) {
        map.setCenter(results[0].geometry.location);
        marker.setPosition(results[0].geometry.location);
+       pointToAddress(marker.getPosition());
 
        jQuery('#profile_data_lat').val(results[0].geometry.location.lat());
        jQuery('#profile_data_lng').val(results[0].geometry.location.lng());
