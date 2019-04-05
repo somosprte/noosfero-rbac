@@ -22,7 +22,7 @@ msgid "Login with Oauth."
 msgstr ""
 
 #: plugins/oauth_client/controllers/public/oauth_client_plugin_public_controller.rb:12
-msgid "Failed to login"
+msgid "Falha ao fazer o login"
 msgstr ""
 
 #: plugins/oauth_client/controllers/public/oauth_client_plugin_public_controller.rb:30
@@ -113,7 +113,7 @@ msgid "Go back"
 msgstr ""
 
 #: plugins/oauth_client/views/auth/_oauth_login.html.erb:3
-msgid "Login with:"
+msgid "Fazer Login com:"
 msgstr ""
 
 #: plugins/oauth_client/views/auth/_oauth_login.html.erb:13
