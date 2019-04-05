@@ -23,6 +23,15 @@ msgstr "Bloco de galeria"
 msgid "Includes a block to display images from  a gallery."
 msgstr "Inclui um bloco para mostrar imagens de uma galeria."
 
+msgid "Next"
+msgstr "Próximo"
+
+msgid "Previous"
+msgstr "Anterior"
+
+msgid "Please, edit this block and choose some gallery"
+msgstr "Por favor, edite esse bloco e escolha alguma galeria"
+
 msgid "Fill in with the gallery ID:"
 msgstr "Preencha com o ID de uma galeria:"
 
@@ -48,12 +57,3 @@ msgstr[1] "A cada %d segundos"
 
 msgid "In groups of"
 msgstr "Em grupos de"
-
-msgid "Previous"
-msgstr "Anterior"
-
-msgid "Next"
-msgstr "Próximo"
-
-msgid "Please, edit this block and choose some gallery"
-msgstr "Por favor, edite esse bloco e escolha alguma galeria"

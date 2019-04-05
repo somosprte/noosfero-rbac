@@ -18,8 +18,13 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.11-dev\n"
 
+<<<<<<< HEAD
 msgid "New kind of content for organizations."
 msgstr "Neue Art von Beiträgen für Organisationen."
+=======
+msgid "RBAC activity gallery"
+msgstr ""
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 
 msgid "Notification successfully sent"
 msgstr "Benachrichtigung erfolgreich versandt"
@@ -27,8 +32,13 @@ msgstr "Benachrichtigung erfolgreich versandt"
 msgid "Notification not sent"
 msgstr "Benachrichtigung nicht versandt"
 
+<<<<<<< HEAD
 msgid "Work Assignment"
 msgstr "Zuweisung von Arbeiten"
+=======
+msgid "Activity Gallery"
+msgstr ""
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 
 msgid ""
 "Defines a work to be done by the members and receives their submissions about "
@@ -37,6 +47,7 @@ msgstr ""
 "Definiert ein Arbeit, die von den Mitgliedern erledigt werden muss, und empfän"
 "gt diese Arbeit."
 
+<<<<<<< HEAD
 msgid "Name"
 msgstr "Name"
 
@@ -48,6 +59,19 @@ msgstr "Nachricht"
 
 msgid "Subject"
 msgstr "Betreff"
+=======
+msgid "Subject"
+msgstr "Betreff"
+
+msgid "Message"
+msgstr "Nachricht"
+
+msgid "e-Mail"
+msgstr "E-Mail"
+
+msgid "Name"
+msgstr "Name"
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 
 msgid "Submission date"
 msgstr "Einreichungsdatum"
@@ -81,6 +105,7 @@ msgstr ""
 msgid "Send notification to: "
 msgstr "Sende Benachrichtigung an: "
 
+<<<<<<< HEAD
 msgid "Default email message:"
 msgstr "Standart E-Mail-Nachricht:"
 
@@ -89,6 +114,67 @@ msgstr "Die Einreichungen können von jedem gesehen werden"
 
 msgid "Allow users change submissions privacy?"
 msgstr "Nutzern erlauben, die Privatsphäre der Einreichungen zu verändern?"
+=======
+msgid "Título da Atividade"
+msgstr ""
+
+msgid "Breve descrição"
+msgstr ""
+
+msgid "Histórico/contexto"
+msgstr ""
+
+msgid "Objetivos"
+msgstr ""
+
+msgid "Escopo"
+msgstr ""
+
+msgid "Público-alvo"
+msgstr ""
+
+msgid "Pontes com o currículo"
+msgstr ""
+
+msgid "Autores"
+msgstr ""
+
+msgid "Co-autor(es)"
+msgstr ""
+
+msgid "Organização (autora?)"
+msgstr ""
+
+msgid "Organização do espaço"
+msgstr ""
+
+msgid "Passos para a implementação"
+msgstr ""
+
+msgid "Materiais"
+msgstr ""
+
+msgid "Materiais de suporte"
+msgstr ""
+
+msgid "Licença"
+msgstr ""
+
+msgid "Dicas e anotações sobre implementação"
+msgstr ""
+
+msgid "Avaliação"
+msgstr ""
+
+msgid "Tempo de implementação"
+msgstr ""
+
+msgid "Atividade inspirada em:"
+msgstr ""
+
+msgid "Referências bibliográficas"
+msgstr ""
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 
 msgid "Publish image or document"
 msgstr ""

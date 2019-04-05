@@ -23,10 +23,18 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.0\n"
 
+<<<<<<< HEAD
 #: plugins/google_cse/lib/google_cse_plugin.rb:8
 msgid "A plugin that uses the Google Custom Search as Noosfero general search engine."
 msgstr "Um plugin que utiliza a busca customizada do Google como busca geral do Noosfero."
 
 #: plugins/google_cse/views/google_cse_plugin/results.html.erb:2
+=======
+#: ../lib/google_cse_plugin.rb:8
+msgid "A plugin that uses the Google Custom Search as Noosfero general search engine."
+msgstr "Um plugin que utiliza a busca customizada do Google como busca geral do Noosfero."
+
+#: ../views/google_cse_plugin/results.html.erb:2
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "Loading"
 msgstr "Carregando"

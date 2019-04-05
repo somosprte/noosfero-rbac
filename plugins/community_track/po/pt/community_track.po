@@ -41,6 +41,7 @@ msgstr "Passo"
 msgid "Defines a step."
 msgstr "Define uma etapa."
 
+<<<<<<< HEAD
 msgid "Soon"
 msgstr "Logo"
 
@@ -50,6 +51,17 @@ msgstr "Entrar!"
 msgid "Closed"
 msgstr "Fechado"
 
+=======
+msgid "Closed"
+msgstr "Fechado"
+
+msgid "Join!"
+msgstr "Entrar!"
+
+msgid "Soon"
+msgstr "Logo"
+
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "should not be blank."
 msgstr "não deve ser nulo."
 

@@ -31,20 +31,38 @@ msgid "Notification not sent"
 msgstr "Benachrichtigung nicht versandt"
 
 #: ../lib/work_assignment_plugin/email_contact.rb:21
+<<<<<<< HEAD
 msgid "Name"
 msgstr "Name"
+=======
+msgid "Subject"
+msgstr "Betreff"
+
+#: ../lib/work_assignment_plugin/email_contact.rb:21
+msgid "Message"
+msgstr "Nachricht"
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 
 #: ../lib/work_assignment_plugin/email_contact.rb:21
 msgid "e-Mail"
 msgstr "E-Mail"
 
 #: ../lib/work_assignment_plugin/email_contact.rb:21
+<<<<<<< HEAD
 msgid "Message"
 msgstr "Nachricht"
 
 #: ../lib/work_assignment_plugin/email_contact.rb:21
 msgid "Subject"
 msgstr "Betreff"
+=======
+msgid "Name"
+msgstr "Name"
+
+#: ../lib/work_assignment_plugin/helper.rb:8
+msgid "Author"
+msgstr ""
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 
 #: ../lib/work_assignment_plugin/helper.rb:9
 msgid "Submission date"
@@ -58,11 +76,19 @@ msgstr "Versionen"
 msgid "View all versions"
 msgstr "Zeige alle Versionen"
 
+<<<<<<< HEAD
 #: ../lib/work_assignment_plugin/helper.rb:70
 msgid "Delete"
 msgstr "Löschen"
 
 #: ../lib/work_assignment_plugin/helper.rb:88
+=======
+#: ../lib/work_assignment_plugin/helper.rb:69
+msgid "Delete"
+msgstr "Löschen"
+
+#: ../lib/work_assignment_plugin/helper.rb:87
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "Edit"
 msgstr "Ändern"
 

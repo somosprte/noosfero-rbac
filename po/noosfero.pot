@@ -8,8 +8,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2019-04-02 15:21+0000\n"
 "PO-Revision-Date: 2019-04-02 15:21+0000\n"
+=======
+"POT-Creation-Date: 2019-04-04 19:11+0000\n"
+"PO-Revision-Date: 2019-04-04 19:11+0000\n"
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -375,12 +380,29 @@ msgid "Organization profiles"
 msgstr ""
 
 #: ../app/controllers/admin/organizations_controller.rb:9
+<<<<<<< HEAD
+=======
+#: ../app/helpers/link_list_block_helper.rb:34 ../app/models/circle.rb:32
+#: ../app/models/control_panel.rb:18 ../app/models/enterprise.rb:13
+#: ../app/views/templates/index.html.erb:7
+msgid "Enterprise"
+msgstr ""
+
+#: ../app/controllers/admin/organizations_controller.rb:9
+#: ../app/models/circle.rb:31 ../app/models/community.rb:9
+#: ../app/views/templates/index.html.erb:6
+msgid "Community"
+msgstr ""
+
+#: ../app/controllers/admin/organizations_controller.rb:9
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 #: ../app/views/cms/_blog.html.erb:73 ../app/views/cms/_rss_feed.html.erb:9
 #: ../app/views/memberships/index.html.erb:10
 #: ../app/views/tasks/index.html.erb:6 ../app/views/tasks/processed.html.erb:8
 msgid "All"
 msgstr ""
 
+<<<<<<< HEAD
 #: ../app/controllers/admin/organizations_controller.rb:9
 #: ../app/models/circle.rb:31 ../app/models/community.rb:9
 #: ../app/views/templates/index.html.erb:6
@@ -394,6 +416,8 @@ msgstr ""
 msgid "Enterprise"
 msgstr ""
 
+=======
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 #: ../app/controllers/admin/organizations_controller.rb:37
 msgid "%s enabled"
 msgstr ""
@@ -1769,6 +1793,7 @@ msgstr ""
 msgid "Reply"
 msgstr ""
 
+<<<<<<< HEAD
 #: ../app/helpers/content_viewer_helper.rb:9
 msgid "no comments yet"
 msgstr ""
@@ -1778,11 +1803,25 @@ msgstr ""
 msgid "One comment"
 msgstr ""
 
+=======
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 #: ../app/helpers/content_viewer_helper.rb:9 ../app/models/article.rb:800
 #: ../app/views/person_notifier/mailer/_profile_comments.html.erb:4
 msgid "%s comments"
 msgstr ""
 
+<<<<<<< HEAD
+=======
+#: ../app/helpers/content_viewer_helper.rb:9
+msgid "no comments yet"
+msgstr ""
+
+#: ../app/helpers/content_viewer_helper.rb:9
+#: ../app/views/content_viewer/view_page.html.erb:12
+msgid "One comment"
+msgstr ""
+
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 #: ../app/helpers/content_viewer_helper.rb:33
 msgid "This is a private content"
 msgstr ""
@@ -4853,6 +4892,7 @@ msgstr ""
 msgid "Invalid city or state name."
 msgstr ""
 
+<<<<<<< HEAD
 #: ../app/models/organization.rb:117 ../app/models/person.rb:316
 #: ../app/views/shared/_address_fields.html.erb:8
 msgid "District"
@@ -4862,6 +4902,8 @@ msgstr ""
 msgid "Address reference"
 msgstr ""
 
+=======
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 #: ../app/models/organization.rb:117
 msgid "Display name"
 msgstr ""
@@ -4879,6 +4921,18 @@ msgstr ""
 msgid "Contact email"
 msgstr ""
 
+<<<<<<< HEAD
+=======
+#: ../app/models/organization.rb:117 ../app/models/person.rb:316
+#: ../app/views/shared/_address_fields.html.erb:8
+msgid "District"
+msgstr ""
+
+#: ../app/models/organization.rb:117 ../app/models/person.rb:316
+msgid "Address reference"
+msgstr ""
+
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 #: ../app/models/person.rb:19
 #: ../app/views/content_viewer/_publishing_info.html.erb:22
 msgid "person"
@@ -4925,6 +4979,7 @@ msgstr ""
 #: ../app/models/person.rb:307
 #: ../app/views/profile_editor/_person_form.html.erb:22
 msgid "Nationality"
+<<<<<<< HEAD
 msgstr ""
 
 #: ../app/models/person.rb:307
@@ -4933,6 +4988,16 @@ msgid "Schooling"
 msgstr ""
 
 #: ../app/models/person.rb:307
+=======
+msgstr ""
+
+#: ../app/models/person.rb:307
+#: ../app/views/profile_editor/_person_form.html.erb:33
+msgid "Schooling"
+msgstr ""
+
+#: ../app/models/person.rb:307
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 #: ../app/views/profile_editor/_person_form.html.erb:59
 msgid "Area of study"
 msgstr ""
@@ -6852,6 +6917,10 @@ msgid "Parent folder:"
 msgstr ""
 
 #: ../app/views/cms/_general_fields.html.erb:8
+msgid "License"
+msgstr ""
+
+#: ../app/views/cms/_general_fields.html.erb:8
 #: ../app/views/search/_article_categories.html.erb:7
 #: ../app/views/search/_article_description.html.erb:15
 #: ../app/views/search/_article_tags.html.erb:7
@@ -6859,10 +6928,6 @@ msgstr ""
 #: ../app/views/search/_full_blog.html.erb:20
 #: ../app/views/search/_full_forum.html.erb:20
 msgid "None"
-msgstr ""
-
-#: ../app/views/cms/_general_fields.html.erb:8
-msgid "License"
 msgstr ""
 
 #: ../app/views/cms/_link_article.html.erb:3

@@ -189,15 +189,25 @@ msgstr "Passwort vergessen"
 msgid "Access denied"
 msgstr "Zugriff verweigert"
 
+<<<<<<< HEAD
+=======
+#: ../app/concerns/entitlement/levels.rb:3 ../app/models/forum.rb:41
+msgid "Logged users"
+msgstr "Angemeldete Benutzer"
+
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 #: ../app/concerns/entitlement/levels.rb:3
 #, fuzzy
 msgid "Visitors"
 msgstr "Geschichte"
 
+<<<<<<< HEAD
 #: ../app/concerns/entitlement/levels.rb:3 ../app/models/forum.rb:41
 msgid "Logged users"
 msgstr "Angemeldete Benutzer"
 
+=======
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 #: ../app/concerns/entitlement/levels.rb:4
 #, fuzzy
 msgid "Friends / Members"
@@ -357,17 +367,29 @@ msgstr "Lizenz konnte nicht entfernt werden"
 msgid "Organization profiles"
 msgstr "Organisationsprofile"
 
+<<<<<<< HEAD
 #: ../app/controllers/admin/organizations_controller.rb:9 ../app/views/cms/_blog.html.erb:73 ../app/views/cms/_rss_feed.html.erb:9 ../app/views/memberships/index.html.erb:10 ../app/views/tasks/index.html.erb:6 ../app/views/tasks/processed.html.erb:8
 msgid "All"
 msgstr "Alle"
+=======
+#: ../app/controllers/admin/organizations_controller.rb:9 ../app/helpers/link_list_block_helper.rb:34 ../app/models/circle.rb:32 ../app/models/control_panel.rb:18 ../app/models/enterprise.rb:13 ../app/views/templates/index.html.erb:7
+msgid "Enterprise"
+msgstr "Unternehmen"
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 
 #: ../app/controllers/admin/organizations_controller.rb:9 ../app/models/circle.rb:31 ../app/models/community.rb:9 ../app/views/templates/index.html.erb:6
 msgid "Community"
 msgstr "Community"
 
+<<<<<<< HEAD
 #: ../app/controllers/admin/organizations_controller.rb:9 ../app/helpers/link_list_block_helper.rb:34 ../app/models/circle.rb:32 ../app/models/control_panel.rb:18 ../app/models/enterprise.rb:13 ../app/views/templates/index.html.erb:7
 msgid "Enterprise"
 msgstr "Unternehmen"
+=======
+#: ../app/controllers/admin/organizations_controller.rb:9 ../app/views/cms/_blog.html.erb:73 ../app/views/cms/_rss_feed.html.erb:9 ../app/views/memberships/index.html.erb:10 ../app/views/tasks/index.html.erb:6 ../app/views/tasks/processed.html.erb:8
+msgid "All"
+msgstr "Alle"
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 
 #: ../app/controllers/admin/organizations_controller.rb:37
 msgid "%s enabled"
@@ -1566,6 +1588,13 @@ msgstr "Sind Sie sicher, dass Sie diesen Kommentar und alle Antworten entfernen 
 msgid "Reply"
 msgstr "Antworten"
 
+<<<<<<< HEAD
+=======
+#: ../app/helpers/content_viewer_helper.rb:9 ../app/models/article.rb:800 ../app/views/person_notifier/mailer/_profile_comments.html.erb:4
+msgid "%s comments"
+msgstr "%s Kommentare"
+
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 #: ../app/helpers/content_viewer_helper.rb:9
 #, fuzzy
 msgid "no comments yet"
@@ -1576,10 +1605,13 @@ msgstr "Bisher keine Kommentare"
 msgid "One comment"
 msgstr "Ein Kommentar"
 
+<<<<<<< HEAD
 #: ../app/helpers/content_viewer_helper.rb:9 ../app/models/article.rb:800 ../app/views/person_notifier/mailer/_profile_comments.html.erb:4
 msgid "%s comments"
 msgstr "%s Kommentare"
 
+=======
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 #: ../app/helpers/content_viewer_helper.rb:33
 #, fuzzy
 msgid "This is a private content"
@@ -4533,6 +4565,7 @@ msgstr "Regionalcode"
 msgid "Invalid city or state name."
 msgstr "Ungültiger Name für eine Stadt oder eine Region."
 
+<<<<<<< HEAD
 #: ../app/models/organization.rb:117 ../app/models/person.rb:316 ../app/views/shared/_address_fields.html.erb:8
 msgid "District"
 msgstr "Gebiet"
@@ -4541,6 +4574,8 @@ msgstr "Gebiet"
 msgid "Address reference"
 msgstr "Adressreferenz"
 
+=======
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 #: ../app/models/organization.rb:117
 msgid "Display name"
 msgstr "Namen anzeigen"
@@ -4553,6 +4588,17 @@ msgstr "Beschreibung"
 msgid "Contact email"
 msgstr "Kontakt-E-Mail"
 
+<<<<<<< HEAD
+=======
+#: ../app/models/organization.rb:117 ../app/models/person.rb:316 ../app/views/shared/_address_fields.html.erb:8
+msgid "District"
+msgstr "Gebiet"
+
+#: ../app/models/organization.rb:117 ../app/models/person.rb:316
+msgid "Address reference"
+msgstr "Adressreferenz"
+
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 #: ../app/models/person.rb:19 ../app/views/content_viewer/_publishing_info.html.erb:22
 msgid "person"
 msgstr "Person"
@@ -6347,14 +6393,24 @@ msgstr "Nutzungsbedingungen:"
 msgid "Parent folder:"
 msgstr "Übergeordneter Ordner:"
 
+<<<<<<< HEAD
 #: ../app/views/cms/_general_fields.html.erb:8 ../app/views/search/_article_categories.html.erb:7 ../app/views/search/_article_description.html.erb:15 ../app/views/search/_article_tags.html.erb:7 ../app/views/search/_display_results.html.erb:35 ../app/views/search/_full_blog.html.erb:20 ../app/views/search/_full_forum.html.erb:20
 msgid "None"
 msgstr "keine"
 
+=======
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 #: ../app/views/cms/_general_fields.html.erb:8
 msgid "License"
 msgstr "Lizenz"
 
+<<<<<<< HEAD
+=======
+#: ../app/views/cms/_general_fields.html.erb:8 ../app/views/search/_article_categories.html.erb:7 ../app/views/search/_article_description.html.erb:15 ../app/views/search/_article_tags.html.erb:7 ../app/views/search/_display_results.html.erb:35 ../app/views/search/_full_blog.html.erb:20 ../app/views/search/_full_forum.html.erb:20
+msgid "None"
+msgstr "keine"
+
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 #: ../app/views/cms/_link_article.html.erb:3
 msgid "Reference"
 msgstr "Referenz"

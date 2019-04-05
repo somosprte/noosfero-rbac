@@ -85,9 +85,7 @@ class NationalRegion < ApplicationRecord
       .find_by(national_region_code: country, national_region_type_id: NationalRegionType::COUNTRY)
 
     if(country_region)
-
-      nregion = NationalRegion.search_city(city, false, state);
-
+      nregion = NationalRegion.cities.with_parent(state).where(national_region_code: city).first
       if nregion == nil
         raise _('Invalid city or state name.')
       end

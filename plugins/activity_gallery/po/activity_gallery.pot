@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-30 18:45+0000\n"
-"PO-Revision-Date: 2018-08-30 18:45+0000\n"
+"POT-Creation-Date: 2019-04-04 19:12+0000\n"
+"PO-Revision-Date: 2019-04-04 19:12+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -19,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
 #: ../lib/activity_gallery_plugin.rb:8
-msgid "New kind of content for organizations."
+msgid "RBAC activity gallery"
 msgstr ""
 
 #: ../lib/activity_gallery_plugin.rb:62
@@ -30,12 +30,18 @@ msgstr ""
 msgid "Notification not sent"
 msgstr ""
 
-#: ../lib/activity_gallery_plugin/email_contact.rb:21
-msgid "Name"
+#: ../lib/activity_gallery_plugin/activity_gallery.rb:16
+msgid "Activity Gallery"
+msgstr ""
+
+#: ../lib/activity_gallery_plugin/activity_gallery.rb:20
+msgid ""
+"Defines a work to be done by the members and receives their submissions about "
+"this work."
 msgstr ""
 
 #: ../lib/activity_gallery_plugin/email_contact.rb:21
-msgid "e-Mail"
+msgid "Subject"
 msgstr ""
 
 #: ../lib/activity_gallery_plugin/email_contact.rb:21
@@ -43,7 +49,11 @@ msgid "Message"
 msgstr ""
 
 #: ../lib/activity_gallery_plugin/email_contact.rb:21
-msgid "Subject"
+msgid "e-Mail"
+msgstr ""
+
+#: ../lib/activity_gallery_plugin/email_contact.rb:21
+msgid "Name"
 msgstr ""
 
 #: ../lib/activity_gallery_plugin/helper.rb:9
@@ -66,14 +76,12 @@ msgstr ""
 msgid "Edit"
 msgstr ""
 
-#: ../lib/activity_gallery_plugin/activity_gallery.rb:16
-msgid "Work Assignment"
+#: ../views/activity_gallery_plugin_myprofile/edit_visibility.html.erb:16
+msgid "Save"
 msgstr ""
 
-#: ../lib/activity_gallery_plugin/activity_gallery.rb:20
-msgid ""
-"Defines a work to be done by the members and receives their submissions about "
-"this work."
+#: ../views/activity_gallery_plugin_myprofile/edit_visibility.html.erb:17
+msgid "Cancel"
 msgstr ""
 
 #: ../views/cms/_notify_text_field.html.erb:1
@@ -86,16 +94,84 @@ msgstr ""
 msgid "Send notification to: "
 msgstr ""
 
-#: ../views/cms/activity_gallery_plugin/_activity_gallery.html.erb:3
-msgid "Default email message:"
+#: ../views/cms/activity_gallery_plugin/_activity_gallery.html.erb:31
+msgid "Título da Atividade"
 msgstr ""
 
-#: ../views/cms/activity_gallery_plugin/_activity_gallery.html.erb:5
-msgid "The submissions can be viewed by anyone"
+#: ../views/cms/activity_gallery_plugin/_activity_gallery.html.erb:32
+msgid "Breve descrição"
 msgstr ""
 
-#: ../views/cms/activity_gallery_plugin/_activity_gallery.html.erb:7
-msgid "Allow users change submissions privacy?"
+#: ../views/cms/activity_gallery_plugin/_activity_gallery.html.erb:41
+msgid "Histórico/contexto"
+msgstr ""
+
+#: ../views/cms/activity_gallery_plugin/_activity_gallery.html.erb:42
+msgid "Objetivos"
+msgstr ""
+
+#: ../views/cms/activity_gallery_plugin/_activity_gallery.html.erb:43
+msgid "Escopo"
+msgstr ""
+
+#: ../views/cms/activity_gallery_plugin/_activity_gallery.html.erb:44
+msgid "Público-alvo"
+msgstr ""
+
+#: ../views/cms/activity_gallery_plugin/_activity_gallery.html.erb:45
+msgid "Pontes com o currículo"
+msgstr ""
+
+#: ../views/cms/activity_gallery_plugin/_activity_gallery.html.erb:46
+msgid "Autores"
+msgstr ""
+
+#: ../views/cms/activity_gallery_plugin/_activity_gallery.html.erb:47
+msgid "Co-autor(es)"
+msgstr ""
+
+#: ../views/cms/activity_gallery_plugin/_activity_gallery.html.erb:48
+msgid "Organização (autora?)"
+msgstr ""
+
+#: ../views/cms/activity_gallery_plugin/_activity_gallery.html.erb:50
+msgid "Organização do espaço"
+msgstr ""
+
+#: ../views/cms/activity_gallery_plugin/_activity_gallery.html.erb:51
+msgid "Passos para a implementação"
+msgstr ""
+
+#: ../views/cms/activity_gallery_plugin/_activity_gallery.html.erb:52
+msgid "Materiais"
+msgstr ""
+
+#: ../views/cms/activity_gallery_plugin/_activity_gallery.html.erb:53
+msgid "Materiais de suporte"
+msgstr ""
+
+#: ../views/cms/activity_gallery_plugin/_activity_gallery.html.erb:54
+msgid "Licença"
+msgstr ""
+
+#: ../views/cms/activity_gallery_plugin/_activity_gallery.html.erb:55
+msgid "Dicas e anotações sobre implementação"
+msgstr ""
+
+#: ../views/cms/activity_gallery_plugin/_activity_gallery.html.erb:56
+msgid "Avaliação"
+msgstr ""
+
+#: ../views/cms/activity_gallery_plugin/_activity_gallery.html.erb:57
+msgid "Tempo de implementação"
+msgstr ""
+
+#: ../views/cms/activity_gallery_plugin/_activity_gallery.html.erb:59
+msgid "Atividade inspirada em:"
+msgstr ""
+
+#: ../views/cms/activity_gallery_plugin/_activity_gallery.html.erb:60
+msgid "Referências bibliográficas"
 msgstr ""
 
 #: ../views/content_viewer/activity_gallery.html.erb:10
@@ -114,12 +190,4 @@ msgstr ""
 
 #: ../views/content_viewer/activity_gallery.html.erb:29
 msgid "Submissions"
-msgstr ""
-
-#: ../views/activity_gallery_plugin_myprofile/edit_visibility.html.erb:16
-msgid "Save"
-msgstr ""
-
-#: ../views/activity_gallery_plugin_myprofile/edit_visibility.html.erb:17
-msgid "Cancel"
 msgstr ""

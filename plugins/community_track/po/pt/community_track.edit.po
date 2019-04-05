@@ -23,7 +23,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.0\n"
 
+<<<<<<< HEAD
 #: ../controllers/public/community_track_plugin_public_controller.rb:41
+=======
+#: ../controllers/public/community_track_plugin_public_controller.rb:36
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "Select one community to proceed"
 msgstr "Selecione uma comunidade para prosseguir"
 
@@ -47,17 +51,29 @@ msgstr "Passo"
 msgid "Defines a step."
 msgstr "Define uma etapa."
 
+<<<<<<< HEAD
 #: ../lib/community_track_plugin/step_helper.rb:4 ../test/unit/community_track_plugin/step_helper_test.rb:33
 msgid "Soon"
 msgstr "Logo"
+=======
+#: ../lib/community_track_plugin/step_helper.rb:4
+msgid "Closed"
+msgstr "Fechado"
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 
 #: ../lib/community_track_plugin/step_helper.rb:4
 msgid "Join!"
 msgstr "Entrar!"
 
+<<<<<<< HEAD
 #: ../lib/community_track_plugin/step_helper.rb:4
 msgid "Closed"
 msgstr "Fechado"
+=======
+#: ../lib/community_track_plugin/step_helper.rb:4 ../test/unit/community_track_plugin/step_helper_test.rb:33
+msgid "Soon"
+msgstr "Logo"
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 
 #: ../lib/community_track_plugin/track.rb:16
 msgid "should not be blank."

@@ -36,20 +36,38 @@ msgid "Related Organizations"
 msgstr "Organizações Relacionadas"
 
 #: ../lib/related_organizations_block.rb:18
+<<<<<<< HEAD
 msgid "\"{#} #{display_type[:title]} enterprise\""
 msgid_plural " \"{#} #{display_type[:title]} enterprises\""
+=======
+#, fuzzy
+msgid "{#} #{display_type[:title]} enterprise"
+msgid_plural "{#} #{display_type[:title]} enterprises"
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgstr[0] "\"{#} #{display_type[:title]} empreendimento\""
 msgstr[1] "\"{#} #{display_type[:title]} empreendimentos\""
 
 #: ../lib/related_organizations_block.rb:20
+<<<<<<< HEAD
 msgid "\"{#} #{display_type[:title]} community\""
 msgid_plural " \"{#} #{display_type[:title]} communities\""
+=======
+#, fuzzy
+msgid "{#} #{display_type[:title]} community"
+msgid_plural "{#} #{display_type[:title]} communities"
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgstr[0] "\"{#} #{display_type[:title]} comunidade\""
 msgstr[1] "\"{#} #{display_type[:title]} comunidades\""
 
 #: ../lib/related_organizations_block.rb:22
+<<<<<<< HEAD
 msgid "\"{#} #{display_type[:title]} organization\""
 msgid_plural " \"{#} #{display_type[:title]} organizations\""
+=======
+#, fuzzy
+msgid "{#} #{display_type[:title]} organization"
+msgid_plural "{#} #{display_type[:title]} organizations"
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgstr[0] "\"{#} #{display_type[:title]} organização\""
 msgstr[1] "\"{#} #{display_type[:title]} organizações\""
 
@@ -121,5 +139,26 @@ msgstr "Adicionar uma nova %s"
 msgid "There are no sub-%s yet."
 msgstr "Não existe nenhuma sub-%s ainda."
 
+<<<<<<< HEAD
+=======
+#: ../lib/related_organizations_block.rb:18
+#~ msgid "\"{#} #{display_type[:title]} enterprise\""
+#~ msgid_plural " \"{#} #{display_type[:title]} enterprises\""
+#~ msgstr[0] "\"{#} #{display_type[:title]} empreendimento\""
+#~ msgstr[1] "\"{#} #{display_type[:title]} empreendimentos\""
+
+#: ../lib/related_organizations_block.rb:20
+#~ msgid "\"{#} #{display_type[:title]} community\""
+#~ msgid_plural " \"{#} #{display_type[:title]} communities\""
+#~ msgstr[0] "\"{#} #{display_type[:title]} comunidade\""
+#~ msgstr[1] "\"{#} #{display_type[:title]} comunidades\""
+
+#: ../lib/related_organizations_block.rb:22
+#~ msgid "\"{#} #{display_type[:title]} organization\""
+#~ msgid_plural " \"{#} #{display_type[:title]} organizations\""
+#~ msgstr[0] "\"{#} #{display_type[:title]} organização\""
+#~ msgstr[1] "\"{#} #{display_type[:title]} organizações\""
+
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 #~ msgid "Sub-groups"
 #~ msgstr "Sub-grupos"

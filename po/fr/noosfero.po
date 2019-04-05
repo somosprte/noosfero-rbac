@@ -159,14 +159,24 @@ msgstr ""
 msgid "Access denied"
 msgstr "Accès interdit"
 
+<<<<<<< HEAD
 #, fuzzy
 msgid "Visitors"
 msgstr "Histoire"
 
+=======
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "Logged users"
 msgstr "Utilisateurs connectés"
 
 #, fuzzy
+<<<<<<< HEAD
+=======
+msgid "Visitors"
+msgstr "Histoire"
+
+#, fuzzy
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "Friends / Members"
 msgstr "Amis"
 
@@ -291,14 +301,24 @@ msgstr "Licence ne peut être supprimée"
 msgid "Organization profiles"
 msgstr "Profils d'organisation"
 
+<<<<<<< HEAD
 msgid "All"
 msgstr "Tout"
+=======
+msgid "Enterprise"
+msgstr "Entreprise"
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 
 msgid "Community"
 msgstr "Communauté"
 
+<<<<<<< HEAD
 msgid "Enterprise"
 msgstr "Entreprise"
+=======
+msgid "All"
+msgstr "Tout"
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 
 msgid "%s enabled"
 msgstr "%s activé(e)"
@@ -1250,6 +1270,7 @@ msgstr "Êtes-vous sûr(e) que vous voulez supprimer ce commentaire et ses répo
 msgid "Reply"
 msgstr ""
 
+<<<<<<< HEAD
 msgid "no comments yet"
 msgstr "Pas de commentaire"
 
@@ -1259,6 +1280,17 @@ msgstr "Un commentaire"
 msgid "%s comments"
 msgstr "%s commentaires"
 
+=======
+msgid "%s comments"
+msgstr "%s commentaires"
+
+msgid "no comments yet"
+msgstr "Pas de commentaire"
+
+msgid "One comment"
+msgstr "Un commentaire"
+
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 #, fuzzy
 msgid "This is a private content"
 msgstr "Voir le contenu privé"
@@ -3660,6 +3692,7 @@ msgstr "Région"
 msgid "Invalid city or state name."
 msgstr "Ville ou département invalide."
 
+<<<<<<< HEAD
 msgid "District"
 msgstr "Quartier"
 
@@ -3675,6 +3708,23 @@ msgstr "Description"
 msgid "Contact email"
 msgstr "e-Mail de contact"
 
+=======
+msgid "Display name"
+msgstr "Nom affiché"
+
+msgid "Description"
+msgstr "Description"
+
+msgid "Contact email"
+msgstr "e-Mail de contact"
+
+msgid "District"
+msgstr "Quartier"
+
+msgid "Address reference"
+msgstr "Adresse de référence"
+
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 #, fuzzy
 msgid "person"
 msgstr "Personne"
@@ -5218,6 +5268,7 @@ msgstr "Conditions d'utilisation"
 msgid "Parent folder:"
 msgstr "Dossier parent :"
 
+<<<<<<< HEAD
 msgid "None"
 msgstr "Aucun(e)"
 
@@ -5236,6 +5287,26 @@ msgstr "Créer un nouveau groupe"
 msgid "Choose parent folder:"
 msgstr "Catégorie courante :"
 
+=======
+msgid "License"
+msgstr ""
+
+msgid "None"
+msgstr "Aucun(e)"
+
+#, fuzzy
+msgid "Reference"
+msgstr "Adresse :"
+
+#, fuzzy
+msgid "Create new folder"
+msgstr "Créer un nouveau groupe"
+
+#, fuzzy
+msgid "Choose parent folder:"
+msgstr "Catégorie courante :"
+
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "Name:"
 msgstr "Nom :"
 

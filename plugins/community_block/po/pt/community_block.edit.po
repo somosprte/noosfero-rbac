@@ -23,6 +23,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.0\n"
 
+<<<<<<< HEAD
 #: plugins/community_block/lib/community_block.rb:4
 msgid "Community block"
 msgstr "Bloco de comunidade"
@@ -32,5 +33,16 @@ msgid "Help for Community Description Block."
 msgstr "Ajuda para Bloco de Descrição de Comunidade."
 
 #: plugins/community_block/lib/community_block_plugin.rb:10
+=======
+#: ../lib/community_block.rb:4
+msgid "Community block"
+msgstr "Bloco de comunidade"
+
+#: ../lib/community_block.rb:8
+msgid "Help for Community Description Block."
+msgstr "Ajuda para Bloco de Descrição de Comunidade."
+
+#: ../lib/community_block_plugin.rb:10
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "A plugin that adds a block to show community description"
 msgstr "Um plugin que adiciona um bloco para mostrar descrição da comunidade"

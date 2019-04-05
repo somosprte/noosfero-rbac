@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-08-04 15:18+0000\n"
-"PO-Revision-Date: 2017-08-04 15:18+0000\n"
+"POT-Creation-Date: 2019-04-04 19:12+0000\n"
+"PO-Revision-Date: 2019-04-04 19:12+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -18,59 +18,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: ../lib/recent_content_block.rb:17
-msgid ""
-"This block displays all articles inside the blog you choose. You can edit the "
-"block to select which of your blogs is going to be displayed in the block."
+#: ../lib/featured_content_plugin.rb:8
+#: ../lib/featured_content_plugin/featured_content_block.rb:10
+msgid "Plugin that highlights only selected articles."
 msgstr ""
 
-#: ../lib/recent_content_plugin.rb:10
-msgid ""
-"A plugin that adds a block where you can display the content of any of your bl"
-"ogs."
+#:
+#: ../views/environment_design/featured_content_plugin/_featured_content_block.html.erb:4
+msgid "Escolha os artigos que serão exibidos"
 msgstr ""
 
-#: ../views/blocks/recent_content.html.erb:26
-#: ../views/blocks/recent_content.html.erb:35
-msgid "Read more"
-msgstr ""
-
-#: ../views/blocks/recent_content.html.erb:40
-msgid "View All"
-msgstr ""
-
-#: ../views/blocks/recent_content.html.erb:45
-msgid "This is the recent content block. Please edit it to show the content you want."
-msgstr ""
-
-#: ../views/box_organizer/_recent_content_block.html.erb:3
-msgid "No blogs found. Please add a blog in order to configure this block."
-msgstr ""
-
-#: ../views/box_organizer/_recent_content_block.html.erb:6
-msgid "Choose which blog should be displayed"
-msgstr ""
-
-#: ../views/box_organizer/_recent_content_block.html.erb:14
-msgid "Choose how the content should be displayed"
-msgstr ""
-
-#: ../views/box_organizer/_recent_content_block.html.erb:19
-msgid "Title only"
-msgstr ""
-
-#: ../views/box_organizer/_recent_content_block.html.erb:20
-msgid "Title and abstract"
-msgstr ""
-
-#: ../views/box_organizer/_recent_content_block.html.erb:21
-msgid "Full content"
-msgstr ""
-
-#: ../views/box_organizer/_recent_content_block.html.erb:28
-msgid "Choose how many items will be displayed"
-msgstr ""
-
-#: ../views/box_organizer/_recent_content_block.html.erb:33
-msgid "Display blog cover image"
+#:
+#: ../views/environment_design/featured_content_plugin/_featured_content_block.html.erb:5
+msgid "Digite o título do artigo"
 msgstr ""

@@ -65,9 +65,12 @@ msgstr "Se você não pode ver este email, %s."
 
 msgid "click here"
 msgstr "clique aqui"
+<<<<<<< HEAD
 
 msgid "cancel your subscription here"
 msgstr "cancele sua inscrição aqui"
+=======
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 
 msgid ""
 "This is an automatically generated email, please do not reply. If you do not w"
@@ -75,6 +78,12 @@ msgid ""
 msgstr ""
 "Este e-mail é gerado automaticamente, por favor não responda. Se você não dese"
 "ja continuar recebendo boletins informativos, %s."
+<<<<<<< HEAD
+=======
+
+msgid "cancel your subscription here"
+msgstr "cancele sua inscrição aqui"
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 
 msgid "Read more"
 msgstr "Leia mais"

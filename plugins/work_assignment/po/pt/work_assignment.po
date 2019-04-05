@@ -32,17 +32,33 @@ msgstr "Notificação enviada com sucesso"
 msgid "Notification not sent"
 msgstr "Notificação não enviada"
 
+<<<<<<< HEAD
 msgid "Name"
 msgstr "Nome"
+=======
+msgid "Subject"
+msgstr "Assunto"
+
+msgid "Message"
+msgstr "Mensagem"
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 
 msgid "e-Mail"
 msgstr "e-Mail"
 
+<<<<<<< HEAD
 msgid "Message"
 msgstr "Mensagem"
 
 msgid "Subject"
 msgstr "Assunto"
+=======
+msgid "Name"
+msgstr "Nome"
+
+msgid "Author"
+msgstr ""
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 
 msgid "Submission date"
 msgstr "Data de submissão"

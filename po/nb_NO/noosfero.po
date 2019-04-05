@@ -147,10 +147,17 @@ msgstr ""
 msgid "Access denied"
 msgstr ""
 
+<<<<<<< HEAD
 msgid "Visitors"
 msgstr ""
 
 msgid "Logged users"
+=======
+msgid "Logged users"
+msgstr ""
+
+msgid "Visitors"
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgstr ""
 
 msgid "Friends / Members"
@@ -269,13 +276,21 @@ msgstr ""
 msgid "Organization profiles"
 msgstr ""
 
+<<<<<<< HEAD
 msgid "All"
+=======
+msgid "Enterprise"
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgstr ""
 
 msgid "Community"
 msgstr ""
 
+<<<<<<< HEAD
 msgid "Enterprise"
+=======
+msgid "All"
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgstr ""
 
 msgid "%s enabled"
@@ -1183,6 +1198,7 @@ msgstr ""
 msgid "Reply"
 msgstr ""
 
+<<<<<<< HEAD
 msgid "no comments yet"
 msgstr ""
 
@@ -1192,6 +1208,17 @@ msgstr ""
 msgid "%s comments"
 msgstr ""
 
+=======
+msgid "%s comments"
+msgstr ""
+
+msgid "no comments yet"
+msgstr ""
+
+msgid "One comment"
+msgstr ""
+
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "This is a private content"
 msgstr ""
 
@@ -3365,12 +3392,15 @@ msgstr ""
 msgid "Invalid city or state name."
 msgstr ""
 
+<<<<<<< HEAD
 msgid "District"
 msgstr ""
 
 msgid "Address reference"
 msgstr ""
 
+=======
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "Display name"
 msgstr ""
 
@@ -3380,6 +3410,15 @@ msgstr ""
 msgid "Contact email"
 msgstr ""
 
+<<<<<<< HEAD
+=======
+msgid "District"
+msgstr ""
+
+msgid "Address reference"
+msgstr ""
+
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "person"
 msgstr ""
 
@@ -4776,10 +4815,17 @@ msgstr ""
 msgid "Parent folder:"
 msgstr ""
 
+<<<<<<< HEAD
 msgid "None"
 msgstr ""
 
 msgid "License"
+=======
+msgid "License"
+msgstr ""
+
+msgid "None"
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgstr ""
 
 msgid "Reference"

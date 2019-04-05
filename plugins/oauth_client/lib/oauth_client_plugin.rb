@@ -24,7 +24,7 @@ class OauthClientPlugin < Noosfero::Plugin
       if plugin.context.session[:oauth_data].present?
         render :partial => 'account/oauth_signup'
       else
-        ''
+        render :partial => 'auth/oauth_login', :locals => {:providers => environment.oauth_providers.enabled}
       end
     end
   end

@@ -158,14 +158,24 @@ msgid "Access denied"
 msgstr "Доступ запрещен"
 
 #, fuzzy
+<<<<<<< HEAD
 msgid "Visitors"
 msgstr "История"
 
 #, fuzzy
+=======
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "Logged users"
 msgstr "В системе как %s"
 
 #, fuzzy
+<<<<<<< HEAD
+=======
+msgid "Visitors"
+msgstr "История"
+
+#, fuzzy
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "Friends / Members"
 msgstr "Друзья"
 
@@ -299,14 +309,24 @@ msgstr "Адрес не может быть сохранен"
 msgid "Organization profiles"
 msgstr "метот утверждения"
 
+<<<<<<< HEAD
 msgid "All"
 msgstr ""
+=======
+msgid "Enterprise"
+msgstr "Компания"
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 
 msgid "Community"
 msgstr "Сообщество"
 
+<<<<<<< HEAD
 msgid "Enterprise"
 msgstr "Компания"
+=======
+msgid "All"
+msgstr ""
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 
 #, fuzzy
 msgid "%s enabled"
@@ -1333,6 +1353,13 @@ msgid "Reply"
 msgstr "Ответить"
 
 #, fuzzy
+<<<<<<< HEAD
+=======
+msgid "%s comments"
+msgstr "Опубликовать комментарий"
+
+#, fuzzy
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "no comments yet"
 msgstr "Нет комментариев"
 
@@ -1341,10 +1368,13 @@ msgid "One comment"
 msgstr "Комментарий"
 
 #, fuzzy
+<<<<<<< HEAD
 msgid "%s comments"
 msgstr "Опубликовать комментарий"
 
 #, fuzzy
+=======
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "This is a private content"
 msgstr "Просмотр частного контента"
 
@@ -1429,6 +1459,7 @@ msgstr "Воскресение"
 
 msgid "Mon"
 msgstr "Понедельник"
+<<<<<<< HEAD
 
 msgid "Tue"
 msgstr "Вторник"
@@ -1449,6 +1480,28 @@ msgstr "Суббота"
 msgid "%{month}"
 msgstr "%{day}.%{month}.%{year}"
 
+=======
+
+msgid "Tue"
+msgstr "Вторник"
+
+msgid "Wed"
+msgstr "Среда"
+
+msgid "Thu"
+msgstr "Четверг"
+
+msgid "Fri"
+msgstr "Пятница"
+
+msgid "Sat"
+msgstr "Суббота"
+
+#, fuzzy
+msgid "%{month}"
+msgstr "%{day}.%{month}.%{year}"
+
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "%{month} %{year}"
 msgstr "%{month} %{year}"
 
@@ -2286,12 +2339,21 @@ msgstr "Активировать"
 #, fuzzy
 msgid "Deativated users"
 msgstr "Управление пользователями"
+<<<<<<< HEAD
 
 #, fuzzy
 msgid "Recently logged users"
 msgstr "Пользователь"
 
 #, fuzzy
+=======
+
+#, fuzzy
+msgid "Recently logged users"
+msgstr "Пользователь"
+
+#, fuzzy
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "Filter"
 msgstr "Папка"
 
@@ -3691,6 +3753,7 @@ msgstr "%{requestor} приглашает вас присоединиться к
 
 msgid "%{requestor} is inviting you to join \"%{community}\" on %{system}."
 msgstr "%{requestor} приглашает вас присоединиться к \"%{community}\" в %{system}."
+<<<<<<< HEAD
 
 msgid "<user> is inviting you to join \"<community>\" on <environment>."
 msgstr "<user> приглашает Вас присоединиться к \"<community>\" в <environment>."
@@ -3714,6 +3777,31 @@ msgstr "URL:"
 msgid "Same page"
 msgstr "Домашняя страница"
 
+=======
+
+msgid "<user> is inviting you to join \"<community>\" on <environment>."
+msgstr "<user> приглашает Вас присоединиться к \"<community>\" в <environment>."
+
+msgid "name"
+msgstr "Имя"
+
+#, fuzzy
+msgid "title"
+msgstr "Название"
+
+#, fuzzy
+msgid "description"
+msgstr "Описание"
+
+#, fuzzy
+msgid "URL"
+msgstr "URL:"
+
+#, fuzzy
+msgid "Same page"
+msgstr "Домашняя страница"
+
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 #, fuzzy
 msgid "New tab"
 msgstr "Новый пост"
@@ -3810,6 +3898,7 @@ msgstr "Регион"
 msgid "Invalid city or state name."
 msgstr ""
 
+<<<<<<< HEAD
 #, fuzzy
 msgid "District"
 msgstr "Ограничения"
@@ -3818,6 +3907,8 @@ msgstr "Ограничения"
 msgid "Address reference"
 msgstr "Адрес:"
 
+=======
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "Display name"
 msgstr "Отображаемое имя"
 
@@ -3828,6 +3919,17 @@ msgid "Contact email"
 msgstr "Контактный email"
 
 #, fuzzy
+<<<<<<< HEAD
+=======
+msgid "District"
+msgstr "Ограничения"
+
+#, fuzzy
+msgid "Address reference"
+msgstr "Адрес:"
+
+#, fuzzy
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "person"
 msgstr "Личность"
 
@@ -5370,13 +5472,22 @@ msgstr "Правила пользования"
 #, fuzzy
 msgid "Parent folder:"
 msgstr "родительская папка"
+<<<<<<< HEAD
 
 msgid "None"
 msgstr "Нет"
+=======
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 
 msgid "License"
 msgstr ""
 
+<<<<<<< HEAD
+=======
+msgid "None"
+msgstr "Нет"
+
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 #, fuzzy
 msgid "Reference"
 msgstr "Адрес:"

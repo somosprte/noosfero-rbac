@@ -17,6 +17,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 3.4-dev\n"
 
+<<<<<<< HEAD
 #: plugins/gallery_block/lib/gallery_block.rb:16
 msgid "Gallery block"
 msgstr "Bloco de galeria"
@@ -50,11 +51,59 @@ msgid "No automatic transition"
 msgstr "Sem transição automática"
 
 #: plugins/gallery_block/views/box_organizer/_gallery_block.html.erb:13
+=======
+#: ../lib/gallery_block.rb:16
+msgid "Gallery block"
+msgstr "Bloco de galeria"
+
+#: ../lib/gallery_block_plugin.rb:7
+msgid "Includes a block to display images from  a gallery."
+msgstr "Inclui um bloco para mostrar imagens de uma galeria."
+
+#: ../test/unit/gallery_block_test.rb:55 ../views/blocks/gallery.html.erb:27
+msgid "Next"
+msgstr "Próximo"
+
+#: ../views/blocks/gallery.html.erb:4
+msgid "Previous"
+msgstr "Anterior"
+
+#: ../views/blocks/gallery.html.erb:43
+msgid "Please, edit this block and choose some gallery"
+msgstr "Por favor, edite esse bloco e escolha alguma galeria"
+
+#: ../views/box_organizer/_gallery_block.html.erb:4
+msgid "Fill in with the gallery ID:"
+msgstr "Preencha com o ID de uma galeria:"
+
+#: ../views/box_organizer/_gallery_block.html.erb:6
+msgid "Choose a gallery"
+msgstr "Escolha uma galeria"
+
+#: ../views/box_organizer/_gallery_block.html.erb:7
+msgid "%{gallery} (%{count} images)"
+msgstr "%{gallery} (%{count} imagens)"
+
+#: ../views/box_organizer/_gallery_block.html.erb:11
+msgid "Transition speed (in seconds)"
+msgstr "Velocidade da transição (em segundos)"
+
+#: ../views/box_organizer/_gallery_block.html.erb:13
+msgid "Image transition:"
+msgstr "Transição de imagens:"
+
+#: ../views/box_organizer/_gallery_block.html.erb:13
+msgid "No automatic transition"
+msgstr "Sem transição automática"
+
+#: ../views/box_organizer/_gallery_block.html.erb:13
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "Every 1 second"
 msgid_plural "Every %d seconds"
 msgstr[0] "A cada 1 segundo"
 msgstr[1] "A cada %d segundos"
 
+<<<<<<< HEAD
 #: plugins/gallery_block/views/box_organizer/_gallery_block.html.erb:15
 msgid "In groups of"
 msgstr "Em grupos de"
@@ -70,3 +119,8 @@ msgstr "Próximo"
 #: plugins/gallery_block/views/gallery_block.html.erb:43
 msgid "Please, edit this block and choose some gallery"
 msgstr "Por favor, edite esse bloco e escolha alguma galeria"
+=======
+#: ../views/box_organizer/_gallery_block.html.erb:15
+msgid "In groups of"
+msgstr "Em grupos de"
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
