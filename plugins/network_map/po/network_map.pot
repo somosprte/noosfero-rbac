@@ -1,0 +1,43 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-02 15:22+0000\n"
+"PO-Revision-Date: 2019-04-02 15:22+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: ../controllers/public/network_map_plugin_map_controller.rb:11
+msgid "People"
+msgstr ""
+
+#: ../controllers/public/network_map_plugin_map_controller.rb:12
+msgid "Enterprises"
+msgstr ""
+
+#: ../controllers/public/network_map_plugin_map_controller.rb:13
+msgid "Communities"
+msgstr ""
+
+#: ../lib/network_map_plugin.rb:8 ../lib/network_map_plugin.rb:12
+msgid "Show Persons and Communities location in map"
+msgstr ""
+
+#: ../views/network_map_plugin_map/index.html.erb:6
+msgid "Qual mapa deseja visualizar?"
+msgstr ""
+
+#: ../views/network_map_plugin_map/index.html.erb:11
+msgid "Quem você deseja encontrar?"
+msgstr ""
