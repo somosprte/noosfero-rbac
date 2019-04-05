@@ -22,7 +22,7 @@ textarea {
   padding: 1em !important;
   display: block;
   width: 100%;
-  margin-top: 1em;
+  margin-top: 0px;
   resize: none;
   background: #fff !important;
   border-radius: 10px !important;
@@ -118,7 +118,7 @@ textarea {
   outline: none;
 }
 
-.mapselect{
+.mapselect {
   position: absolute;
   right: 23px;
   width: 40px;
@@ -133,13 +133,12 @@ textarea {
   top: 57px;
 }
 
-
 #signup-form {
   width: 50% !important;
 
   .button-bar {
     justify-content: center;
-}
+  }
 }
 
 #signup-username-section #signup-username-form-line #signup-domain {
@@ -153,8 +152,39 @@ textarea {
 .required-fields-msg {
   margin-top: 40px;
 }
-@media only screen and (max-width: 540px){
+@media only screen and (max-width: 540px) {
   #signup-form {
     width: 100% !important;
   }
 }
+
+#signup-form .button-bar a.button {
+  width: auto !important;
+  height: auto !important;
+}
+
+a.button:hover,
+#wrap-2 a.button:hover {
+  background-color: #449d44 !important;
+}
+
+a.button.btn-blue:hover,
+a.button.icon-new:hover,
+a.button.icon-save:hover,
+a.button.icon-upload:hover,
+a.button.icon-login:hover,
+a.button.icon-ok:hover,
+#wrap-2 a.button.btn-blue:hover,
+#wrap-2 a.button.icon-new:hover,
+#wrap-2 a.button.icon-save:hover,
+#wrap-2 a.button.icon-upload:hover,
+#wrap-2 a.button.icon-login:hover,
+#wrap-2 a.button.icon-ok:hover {
+  background-color: #449d44 !important;
+}
+
+.members-buttons-cell{
+  display: flex;
+}
+
+
