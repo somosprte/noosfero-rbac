@@ -64,6 +64,7 @@ public/plugins
 features/plugins/*
 plugins/solr/config/solr.yml
 /solr
+plugins/rbac/config.yml
 
 # Docker
 .docker-sync/
