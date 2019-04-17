@@ -137,3 +137,7 @@ a.google_oauth2 {
 .oauth-login {
   display: inline-flex;
 }
+
+#content #address-and-location .location-bar a.button.with-text {
+  height: auto !important;
+} 
