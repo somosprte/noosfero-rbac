@@ -41,7 +41,7 @@ msgstr "usuários"
 
 #: ../views/blocks/statistics.html.erb:16
 msgid "enterprises"
-msgstr "empreendimentos"
+msgstr "Organizaçãos"
 
 #: ../views/blocks/statistics.html.erb:23
 msgid "products"
@@ -69,7 +69,7 @@ msgstr "Mostrar quantidade de comunidades"
 
 #: ../views/box_organizer/_statistics_block.html.erb:8
 msgid "Show enterprise counter"
-msgstr "Mostrar quantidade de empreendimentos solidários"
+msgstr "Mostrar quantidade de Organizaçãos solidários"
 
 #: ../views/box_organizer/_statistics_block.html.erb:12
 msgid "Show product counter"

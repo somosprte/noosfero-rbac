@@ -48,7 +48,7 @@ msgid "There is no basket."
 msgstr "Não há cesto."
 
 msgid "This enterprise doesn't have this product."
-msgstr "Este empreendimento não tem esse produto."
+msgstr "Este Organização não tem esse produto."
 
 msgid "The basket doesn't have this product."
 msgstr "O cesto não tem esse produto."
@@ -63,7 +63,7 @@ msgid "Wrong product id"
 msgstr "Id errado do produto"
 
 msgid "A shopping basket feature for enterprises"
-msgstr "Funcionalidade de cesto de compras para empreendimentos"
+msgstr "Funcionalidade de cesto de compras para Organizaçãos"
 
 msgid "Shopping"
 msgstr "Compras"
@@ -172,14 +172,14 @@ msgstr "Olá %s!"
 
 msgid "This is a notification e-mail about your buy request on the enterprise %s."
 msgstr ""
-"Esse é um email de notificação sobre o seu pedido de compra no empreendimento "
+"Esse é um email de notificação sobre o seu pedido de compra no Organização "
 "%s."
 
 msgid ""
 "The enterprise already received your buy request and will contact you for conf"
 "irmation."
 msgstr ""
-"O empreendimento já recebeu o seu pedido de compra e entrará em contato para c"
+"O Organização já recebeu o seu pedido de compra e entrará em contato para c"
 "onfirmação.confirmação."
 
 msgid "If you have any doubts about your order, write to us at: %s."

@@ -19,16 +19,16 @@
               friend: 'Quando eu fizer amizades'
               gallery_image: 'Quando eu adicionar imagens nos meus albuns'
               uploaded_file: 'Quando eu enviar novos documentos'
-              favorite_enterprise: 'Quando eu favoritar um empreendimento'
+              favorite_enterprise: 'Quando eu favoritar um Organização'
           enterprise:
-            memberships: "Empreendimentos dos quais faço parte"
-            favorites: "Meus empreendimentos favoritos" 
-            see_all: 'Ver empreendimentos'
-            label: "Publicar as novidades dos meus empreendimentos favoritos e daqueles que faço parte"
-            search_placeholder: "busque o empreendimento"
+            memberships: "Organizaçãos dos quais faço parte"
+            favorites: "Meus Organizaçãos favoritos" 
+            see_all: 'Ver Organizaçãos'
+            label: "Publicar as novidades dos meus Organizaçãos favoritos e daqueles que faço parte"
+            search_placeholder: "busque o Organização"
             favorites_how_to:
-              title: "Como adicionar empreendimentos favoritos"
-              body: "Para adicionar empreendimentos favoritos, basta você visitar a página do empreendimento desejado e clicar no botão %{favorite_button} que fica abaixo da logo do empreendimento, geralmente à esquerda."
+              title: "Como adicionar Organizaçãos favoritos"
+              body: "Para adicionar Organizaçãos favoritos, basta você visitar a página do Organização desejado e clicar no botão %{favorite_button} que fica abaixo da logo do Organização, geralmente à esquerda."
           community:
             label: "Publicar novidades das seguintes comunidades"
             search_placeholder: "escolha a comunidade"

@@ -15,7 +15,7 @@
             objects:
               blog_post: "Blogs' posts"
               event: 'Creation of events'
-              favorite_enterprise: 'Quando eu favoritar um empreendimento'
+              favorite_enterprise: 'Quando eu favoritar um Organização'
               forum: "Forum's topic posted"
               friend: 'New friendships'
               gallery_image: 'New images on my albuns'

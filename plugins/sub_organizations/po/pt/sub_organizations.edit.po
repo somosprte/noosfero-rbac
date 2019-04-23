@@ -43,9 +43,14 @@ msgid_plural " \"{#} #{display_type[:title]} enterprises\""
 #, fuzzy
 msgid "{#} #{display_type[:title]} enterprise"
 msgid_plural "{#} #{display_type[:title]} enterprises"
+<<<<<<< HEAD
 >>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgstr[0] "\"{#} #{display_type[:title]} empreendimento\""
 msgstr[1] "\"{#} #{display_type[:title]} empreendimentos\""
+=======
+msgstr[0] "\"{#} #{display_type[:title]} Organização\""
+msgstr[1] "\"{#} #{display_type[:title]} Organizaçãos\""
+>>>>>>> a019910eb4e525a364372eb57663f67a5b7a1c9a
 
 #: ../lib/related_organizations_block.rb:20
 <<<<<<< HEAD
@@ -117,7 +122,7 @@ msgstr "Criar nova sub-comunidade"
 
 #: ../views/sub_organizations_plugin_myprofile/index.html.erb:15
 msgid "Register a new sub-enterprise"
-msgstr "Registrar um novo sub-empreendimento"
+msgstr "Registrar um novo sub-Organização"
 
 #: ../views/sub_organizations_plugin_myprofile/index.html.erb:18
 msgid "Fill in the search field to find the groups that should be added as sub-group of this organization:"
@@ -144,8 +149,8 @@ msgstr "Não existe nenhuma sub-%s ainda."
 #: ../lib/related_organizations_block.rb:18
 #~ msgid "\"{#} #{display_type[:title]} enterprise\""
 #~ msgid_plural " \"{#} #{display_type[:title]} enterprises\""
-#~ msgstr[0] "\"{#} #{display_type[:title]} empreendimento\""
-#~ msgstr[1] "\"{#} #{display_type[:title]} empreendimentos\""
+#~ msgstr[0] "\"{#} #{display_type[:title]} Organização\""
+#~ msgstr[1] "\"{#} #{display_type[:title]} Organizaçãos\""
 
 #: ../lib/related_organizations_block.rb:20
 #~ msgid "\"{#} #{display_type[:title]} community\""

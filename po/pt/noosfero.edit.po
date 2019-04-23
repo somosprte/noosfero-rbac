@@ -284,11 +284,11 @@ msgstr "Campos de pessoa não atualizado com sucesso."
 
 #: ../app/controllers/admin/features_controller.rb:38
 msgid "Enterprise fields updated successfully."
-msgstr "Campos de empreendimento atualizados com sucesso."
+msgstr "Campos de Organização atualizados com sucesso."
 
 #: ../app/controllers/admin/features_controller.rb:40
 msgid "Enterprise fields not updated successfully."
-msgstr "Campos de empreendimento não atualizados com sucesso."
+msgstr "Campos de Organização não atualizados com sucesso."
 
 #: ../app/controllers/admin/features_controller.rb:48
 msgid "Community fields updated successfully."
@@ -358,8 +358,12 @@ msgstr "Todos"
 =======
 #: ../app/controllers/admin/organizations_controller.rb:9 ../app/helpers/link_list_block_helper.rb:34 ../app/models/circle.rb:32 ../app/models/control_panel.rb:18 ../app/models/enterprise.rb:13 ../app/views/templates/index.html.erb:7
 msgid "Enterprise"
+<<<<<<< HEAD
 msgstr "Empreendimento"
 >>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
+=======
+msgstr "Organização"
+>>>>>>> a019910eb4e525a364372eb57663f67a5b7a1c9a
 
 #: ../app/controllers/admin/organizations_controller.rb:9 ../app/models/circle.rb:31 ../app/models/community.rb:9 ../app/views/templates/index.html.erb:6
 msgid "Community"
@@ -425,7 +429,7 @@ msgstr "Comunidades"
 
 #: ../app/controllers/admin/profile_quotas_controller.rb:108 ../app/controllers/public/search_controller.rb:56 ../app/controllers/public/search_controller.rb:180 ../app/controllers/public/search_controller.rb:265 ../app/helpers/assets_helper.rb:10 ../app/models/enterprises_block.rb:12
 msgid "Enterprises"
-msgstr "Empreendimentos"
+msgstr "Organizaçãos"
 
 #: ../app/controllers/admin/profile_quotas_controller.rb:114
 msgid "Sort by name"
@@ -469,7 +473,7 @@ msgstr "Pessoa não encontrada. O modelo não pôde ser alterado."
 
 #: ../app/controllers/admin/templates_controller.rb:77
 msgid "Enterprise not found. The template could no be changed."
-msgstr "Empreendimento não encontrado. O modelo não pôde ser alterado."
+msgstr "Organização não encontrado. O modelo não pôde ser alterado."
 
 #: ../app/controllers/admin/trusted_sites_controller.rb:14
 msgid "New trusted site added."
@@ -949,7 +953,7 @@ msgstr "Você desbloqueou %s com sucesso. "
 
 #: ../app/controllers/public/profile_controller.rb:242
 msgid "You are not allowed to unblock enterprises in this environment."
-msgstr "Você não está autorizado a desbloquear empreendimentos neste ambiente."
+msgstr "Você não está autorizado a desbloquear Organizaçãos neste ambiente."
 
 #: ../app/controllers/public/profile_controller.rb:255
 msgid "Message successfully sent."
@@ -1053,7 +1057,7 @@ msgstr "%{time_ago}<hr /> \"%{text}\""
 
 #: ../app/helpers/action_tracker_helper.rb:91
 msgid "favorited enterprise %{title} %{time_ago}"
-msgstr "empreendimento favorito %{title} %{time_ago}"
+msgstr "Organização favorito %{title} %{time_ago}"
 
 #: ../app/helpers/application_helper.rb:110 ../app/helpers/boxes_helper.rb:329 ../app/helpers/link_list_block_helper.rb:23
 msgid "Help"
@@ -1181,7 +1185,7 @@ msgstr "Gerenciar %s"
 
 #: ../app/helpers/application_helper.rb:909
 msgid "My enterprises"
-msgstr "Meus empreendimentos"
+msgstr "Meus Organizaçãos"
 
 #: ../app/helpers/application_helper.rb:915
 msgid "My communities"
@@ -3409,7 +3413,7 @@ msgstr "validar"
 
 #: ../app/models/control_panel/favorite_enterprises.rb:4 ../app/models/favorite_enterprises_block.rb:4 ../app/models/favorite_enterprises_block.rb:12 ../app/models/favorite_enterprises_block.rb:20
 msgid "Favorite Enterprises"
-msgstr "Empreendimentos Favoritos"
+msgstr "Organizações Favoritos"
 
 #: ../app/models/control_panel/following.rb:20
 msgid "followers"
@@ -3429,7 +3433,7 @@ msgstr "comunidades"
 
 #: ../app/models/control_panel/groups.rb:20
 msgid "enterprises"
-msgstr "empreendimentos"
+msgstr "Organizações"
 
 #: ../app/models/control_panel/groups.rb:20
 msgid "organizations"
@@ -3750,7 +3754,7 @@ msgstr "Mensagem \"Empreendimento desabilitado\""
 
 #: ../app/models/disabled_enterprise_message_block.rb:8
 msgid "Shows a message for disabled enterprises."
-msgstr "Mostrar mensagem para empreendimentos desabilitados."
+msgstr "Mostrar mensagem para Organizações desabilitados."
 
 #: ../app/models/disabled_enterprise_message_block.rb:24
 msgid "Disabled enterprise"
@@ -3850,11 +3854,11 @@ msgstr "Ativação pendente para o empreendimento %{enterprise}."
 
 #: ../app/models/enterprises_block.rb:4
 msgid "{#} Enterprises"
-msgstr "{#} Empreendimentos"
+msgstr "{#} Organizações"
 
 #: ../app/models/enterprises_block.rb:8
 msgid "This block displays the enterprises where this user works."
-msgstr "Este block apresenta os empreendimentos onde este usuário trabalha."
+msgstr "Este block apresenta os Organizações onde este usuário trabalha."
 
 #: ../app/models/environment.rb:52
 msgid "View environment admin panel"
@@ -3942,7 +3946,7 @@ msgstr "Desabilitar busca por artigos "
 
 #: ../app/models/environment.rb:134
 msgid "Disable search for enterprises"
-msgstr "Desabilitar busca por empreendimentos"
+msgstr "Desabilitar busca por Organizações"
 
 #: ../app/models/environment.rb:135
 msgid "Disable search for people"
@@ -3990,15 +3994,15 @@ msgstr "Não permitir que usuários removam perfis"
 
 #: ../app/models/environment.rb:148
 msgid "Enable activation of enterprises"
-msgstr "Habilitar ativação de empreendimentos"
+msgstr "Habilitar ativação de Organizações"
 
 #: ../app/models/environment.rb:149
 msgid "Enterprises are disabled when created"
-msgstr "Empreendimentos são desabilitados quando criados"
+msgstr "Organizações são desabilitados quando criados"
 
 #: ../app/models/environment.rb:150
 msgid "Enterprises are validated when created"
-msgstr "Empreendimentos são validados quando criados"
+msgstr "Organizações são validados quando criados"
 
 #: ../app/models/environment.rb:152
 msgid "Media panel in WYSIWYG editor"
@@ -4078,7 +4082,7 @@ msgstr "Mostra no menu a lista de comunidades que o usuário pode gerenciar"
 
 #: ../app/models/environment.rb:172
 msgid "Display on menu the list of enterprises the user can manage"
-msgstr "Mostra no menu a lista de empreendimentos que o usuário pode gerenciar"
+msgstr "Mostra no menu a lista de Organizações que o usuário pode gerenciar"
 
 #: ../app/models/environment.rb:173
 msgid "Show content only to members"
@@ -4190,7 +4194,7 @@ msgstr "favoritos"
 
 #: ../app/models/favorite_enterprises_block.rb:8
 msgid "This block lists your favorite enterprises."
-msgstr "Este bloco lista os empreendimentos favoritos."
+msgstr "Este bloco lista os Organizações favoritos."
 
 #: ../app/models/feed_reader_block.rb:40
 msgid "Feed reader"
@@ -5516,7 +5520,7 @@ msgstr "Configurações relacionadas com empreendimento"
 
 #: ../app/views/admin_panel/index.html.erb:140
 msgid "Message for disabled enterprises"
-msgstr "Mensagem para empreendimentos desabilitados"
+msgstr "Mensagem para Organizações desabilitados"
 
 #: ../app/views/admin_panel/index.html.erb:146
 msgid "Validators by region"
@@ -7092,7 +7096,7 @@ msgstr "Validações de empreendimento processadas"
 
 #: ../app/views/enterprise_validation/index.html.erb:32
 msgid "See the list of processed enterprise validations"
-msgstr "Ver lista validações de empreendimentos processados"
+msgstr "Ver lista validações de Organizações processados"
 
 #: ../app/views/enterprise_validation/list_processed.html.erb:23
 msgid "See details"
@@ -7168,11 +7172,11 @@ msgstr "Eu quero adicionar %s como empreendimento favorito"
 
 #: ../app/views/favorite_enterprises/index.html.erb:3 ../app/views/profile/favorite_enterprises.html.erb:3
 msgid "%s's favorite enterprises"
-msgstr "Empreendimentos favoritos de %s"
+msgstr "Organizações favoritos de %s"
 
 #: ../app/views/favorite_enterprises/index.html.erb:8
 msgid "You have no favorite enterprises yet."
-msgstr "Você não tem empreendimentos favoritos ainda."
+msgstr "Você não tem Organizações favoritos ainda."
 
 #: ../app/views/favorite_enterprises/index.html.erb:19 ../app/views/followers/_profile_list.html.erb:13 ../app/views/friends/_profile_list.html.erb:13
 msgid "remove"
@@ -7184,7 +7188,7 @@ msgstr "Removendo empreendimento favorito: %s"
 
 #: ../app/views/favorite_enterprises/remove.html.erb:8
 msgid "Are you sure you want to remove %s from your favorite enterprise list?"
-msgstr "Tem certeza que quer remover %s da sua lista de empreendimentos favoritos?"
+msgstr "Tem certeza que quer remover %s da sua lista de Organizações favoritos?"
 
 #: ../app/views/favorite_enterprises/remove.html.erb:14
 msgid "Yes, I'm sure"
@@ -7988,7 +7992,7 @@ msgstr "Veja o conteúdo marcado com \"%s\" em todo o site"
 
 #: ../app/views/profile/enterprises.html.erb:3
 msgid "%s's enterprises"
-msgstr "Empreendimentos de %s"
+msgstr "Organizações de %s"
 
 #: ../app/views/profile/fans.html.erb:3
 msgid "%s's fans"
@@ -8220,7 +8224,7 @@ msgstr "Não, eu desisti"
 
 #: ../app/views/profile_editor/disable.html.erb:1
 msgid "Disabling '%s' enterprise"
-msgstr "Desabilitando empreendimentos '%s'"
+msgstr "Desabilitando Organizações '%s'"
 
 #: ../app/views/profile_editor/disable.html.erb:4
 msgid "Are you sure you want to disable %s?"
@@ -9773,7 +9777,7 @@ msgstr "Esse site usa o %{noosfero_url}, desenvolvido pela %{colivre_url} e é l
 #~ msgid "{#} enterprise"
 #~ msgid_plural "{#} enterprises"
 #~ msgstr[0] "{#} empreendimento"
-#~ msgstr[1] "{#} empreendimentos"
+#~ msgstr[1] "{#} Organizações"
 #~ msgid "Public profile"
 #~ msgstr "Perfil público"
 #~ msgid "Private profile"
@@ -9781,7 +9785,7 @@ msgstr "Esse site usa o %{noosfero_url}, desenvolvido pela %{colivre_url} e é l
 #~ msgid "RSS feed"
 #~ msgstr "Feed RSS"
 #~ msgid "Yes, I want to remove %s from my favorite enterprise list"
-#~ msgstr "Sim, quero remover %s da minha lista de empreendimentos favoritos"
+#~ msgstr "Sim, quero remover %s da minha lista de Organizações favoritos"
 #~ msgid ""
 #~ "Filter followed, friends or group of friends to send them a private "
 #~ "scrap..."

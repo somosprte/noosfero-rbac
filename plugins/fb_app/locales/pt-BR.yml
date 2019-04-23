@@ -9,10 +9,10 @@
     models:
       page_tab:
         types:
-          own_profile: 'Vitrine deste empreendimento'
-          profile: 'Vitrine de um único empreendimento'
-          other_profile: 'Vitrine de outro empreendimento'
-          profiles: 'Vitrine de mais de um empreendimento'
+          own_profile: 'Vitrine deste Organização'
+          profile: 'Vitrine de um único Organização'
+          other_profile: 'Vitrine de outro Organização'
+          profiles: 'Vitrine de mais de um Organização'
           query: 'Vitrine de produtos ou serviços escolhidos por busca livre'
     views:
       myprofile:
@@ -31,7 +31,7 @@
           explanation_title: 'Aguarde!'
           explanation_text: 'Em breve, este aplicativo poderá postar automaticamente no seu face as ações que você fizer! Por exemplo: quando você postar novos conteúdos no seu blog, enviar uma imagem, etc.'
           organization_redirect: '%{redirect_link} para postar atualizações %{type}, conecte o seu perfil pessoal ao facebook.'
-          organization_from_enterprise: 'deste empreendimento'
+          organization_from_enterprise: 'deste Organização'
           organization_from_community: 'desta comunidade'
           redirect_link: 'Clique aqui'
 
@@ -41,8 +41,8 @@
           catalog_title_label: 'Título'
           catalog_subtitle_label: 'Subtítulo'
           catalog_type_chooser_label: 'Tipo'
-          profile_chooser_label: 'Empreendimento'
-          profiles_chooser_label: 'Empreendimentos'
+          profile_chooser_label: 'Organização'
+          profiles_chooser_label: 'Organizaçãos'
           query_label: "Critérios para os produtos/serviços da vitrine"
           query_help: "Escreva as palavras separadas por espaço, e clique no botão abaixo para salvar."
           edit_button: "Editar vitrine '%{catalog_title}'"
@@ -58,7 +58,7 @@
 
         error:
           empty_title: 'Por favor, coloque um título para a sua vitrine.'
-          empty_settings: 'Por favor, selecione os empreendimentos solidários ou os termos de busca para sua vitrine.'
+          empty_settings: 'Por favor, selecione os Organizaçãos solidários ou os termos de busca para sua vitrine.'
 
       page_tab:
         edit_catalog: 'Editar vitrine'
@@ -66,9 +66,9 @@
         save: 'Salvar'
         added_notice: 'Parabéns: você acaba de publicar uma nova vitrine da Economia Solidária no Facebook!'
         profile:
-          placeholder: "selecione um empreendimento"
+          placeholder: "selecione um Organização"
         profiles:
-          placeholder: "selecione os empreendimentos"
+          placeholder: "selecione os Organizaçãos"
         query:
           placeholder: "escolha os produtos e serviços por palavras de busca"
         back_to_catalog: 'Voltar à vitrine'

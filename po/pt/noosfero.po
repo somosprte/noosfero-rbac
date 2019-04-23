@@ -2000,7 +2000,7 @@ msgid "Wall"
 msgstr "Mural"
 
 msgid "Send an e-mail"
-msgstr "Enviar e-mail"
+msgstr "Enviar Mensagem"
 
 msgid "Join"
 msgstr "Entrar"
@@ -3272,7 +3272,7 @@ msgid "Skip e-mail confirmation for new users"
 msgstr "Pular e-mail de confirmação para novos usuários"
 
 msgid "Send welcome e-mail to new users"
-msgstr "Enviar e-mail de boas vindas para novos usuários"
+msgstr "Enviar mensagem de boas vindas para novos usuários"
 
 msgid "Allow users to set the page to redirect after login"
 msgstr "Permite que os usuários configurem a página para redirecionar após o login"
@@ -3736,7 +3736,7 @@ msgid "Invite members"
 msgstr "Convidar membros"
 
 msgid "Send e-Mail to members"
-msgstr "Enviar e-mail para os membros"
+msgstr "Enviar mensagem para os membros"
 
 msgid "Manage custom roles"
 msgstr "Gerenciar papéis personalizados"
@@ -4683,7 +4683,7 @@ msgid "Since %{year}/%{month}"
 msgstr "Desde %{month}/%{year}"
 
 msgid "Send an e-mail to the administrators"
-msgstr "Enviar e-mail para os administradores"
+msgstr "Enviar mensagem para os administradores"
 
 msgid "Add as favorite"
 msgstr "Favoritar"
@@ -5446,7 +5446,7 @@ msgid "Click on the address below to cancel the notification of new comments:"
 msgstr "Clique no endereço abaixo para cancelar a notificação de novos comentários:"
 
 msgid "Send an e-mail to %s"
-msgstr "Enviar e-mail para %s"
+msgstr "Enviar mensagem para %s"
 
 msgid "Send an e-mail to administrators"
 msgstr "Enviar um e-mail para os administradores"
@@ -5745,7 +5745,7 @@ msgid ""
 "If this enterprise passes the criteria to be considered an solidarity enconomy"
 " enterprise, you can approve it by click the button below."
 msgstr ""
-"Se este Organização passar no critério para ser considerado um empreendimen"
+"Se este Organização passar no critério para ser considerado uma organização"
 "to de economia solidária, você pode aprová-lo clicando no botão abaixo."
 
 msgid "Reject"
@@ -6559,7 +6559,7 @@ msgid "%d Administrators"
 msgstr "%d Administradores"
 
 msgid "Send e-mail to members"
-msgstr "Enviar e-mail para os membros"
+msgstr "Enviar mensagem para os membros"
 
 msgid "Report reasons"
 msgstr "Razões da denúncia"
@@ -6775,7 +6775,7 @@ msgid ""
 "If you received a letter with information about your enterprise activation, ad"
 "d here the activation code that was sent."
 msgstr ""
-"Se você recebeu uma carta com informações sobre a ativação do seu empreendimen"
+"Se você recebeu uma carta com informações sobre a ativação da sua organização"
 "to, coloque aqui o código de ativação recebido."
 
 msgid "Enterprise activation code"
@@ -7248,7 +7248,7 @@ msgid "Leave"
 msgstr "Sair"
 
 msgid "Drag the balloon to set your location."
-msgstr "Arraste o balão para definir a sua localização."
+msgstr "Marque a opção público se deseja que sua localização seja exibida no Mapa"
 
 msgid "Fill an address to find it easier in the map"
 msgstr "Preencha um endereço para encontra-lo mais facilmente no mapa"
@@ -7715,7 +7715,7 @@ msgid "Export People list"
 msgstr "Exportar lista de pessoas"
 
 msgid "Send e-mail to users"
-msgstr "Enviar e-mail para os usuários"
+msgstr "Enviar mensagem para os usuários"
 
 msgid "Select the file format"
 msgstr "Selecione o formato do ficheiro"

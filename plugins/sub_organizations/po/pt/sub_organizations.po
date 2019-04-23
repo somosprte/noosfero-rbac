@@ -49,8 +49,8 @@ msgid_plural " \"{#} #{display_type[:title]} organizations\""
 #, fuzzy
 msgid "{#} #{display_type[:title]} enterprise"
 msgid_plural "{#} #{display_type[:title]} enterprises"
-msgstr[0] "\"{#} #{display_type[:title]} empreendimento\""
-msgstr[1] "\"{#} #{display_type[:title]} empreendimentos\""
+msgstr[0] "\"{#} #{display_type[:title]} Organização\""
+msgstr[1] "\"{#} #{display_type[:title]} Organizaçãos\""
 
 #, fuzzy
 msgid "{#} #{display_type[:title]} community"
@@ -103,7 +103,7 @@ msgid "Create a new sub-community"
 msgstr "Criar nova sub-comunidade"
 
 msgid "Register a new sub-enterprise"
-msgstr "Registrar um novo sub-empreendimento"
+msgstr "Registrar um novo sub-Organização"
 
 msgid ""
 "Fill in the search field to find the groups that should be added as sub-group "

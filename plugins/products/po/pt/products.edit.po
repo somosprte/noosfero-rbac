@@ -56,7 +56,7 @@ msgstr "removeu o produto %{title}"
 
 #: ../lib/ext/enterprise.rb:17
 msgid "Enterprises's profile"
-msgstr "Perfil do empreendimento"
+msgstr "Perfil do Organização"
 
 #: ../lib/ext/enterprise.rb:18
 msgid "Blog"
@@ -208,7 +208,7 @@ msgstr "Página Inicial"
 
 #: ../models/products_plugin/enterprise_homepage.rb:17
 msgid "Enterprise homepage"
-msgstr "Página inicial do empreendimento"
+msgstr "Página inicial do Organização"
 
 #: ../models/products_plugin/enterprise_homepage.rb:21
 msgid "Display the summary of profile."
@@ -436,7 +436,7 @@ msgstr "Adicionar insumos ou matéria-prima utilizados por este produto"
 
 #: ../views/products_plugin/page/_display_inputs.html.erb:11
 msgid "Add inputs or raw materials used by this product and give more transparency to consumers about your enterprise"
-msgstr "Adicione insumos ou matéria-prima usado por este produto e dê mais transparência aos consumidores sobre seu empreendimento"
+msgstr "Adicione insumos ou matéria-prima usado por este produto e dê mais transparência aos consumidores sobre seu Organização"
 
 #: ../views/products_plugin/page/_display_inputs.html.erb:15
 msgid "Add new input or raw material"
@@ -444,7 +444,7 @@ msgstr "Adicionar novo insumo ou matéria-prima"
 
 #: ../views/products_plugin/page/_display_inputs.html.erb:15
 msgid "Add new input or raw material used by this product and give more transparency to consumers about your enterprise"
-msgstr "Adicione novo insumo ou matéria-prime usado por este produto e dê mais transparência aos consumidores sobre seu empreendimento"
+msgstr "Adicione novo insumo ou matéria-prime usado por este produto e dê mais transparência aos consumidores sobre seu Organização"
 
 #: ../views/products_plugin/page/_display_inputs.html.erb:16
 msgid "Drag the input with the mouse to change the order"

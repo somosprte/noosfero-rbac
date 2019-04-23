@@ -19,7 +19,7 @@ msgid "Consumer interests updated"
 msgstr "Interesses de consumo atualizados"
 
 msgid "Sniffs product suppliers and consumers near to your enterprise."
-msgstr "Busca fornecedores e consumidores de produtos próximos ao seu empreendimento."
+msgstr "Busca fornecedores e consumidores de produtos próximos ao seu Organização."
 
 msgid "Consumer Interests"
 msgstr "Interesses de consumo"
@@ -76,7 +76,7 @@ msgid ""
 "s from our list."
 msgstr ""
 "Selecione aqui as categorias de produtos e serviços que você tem interesse em "
-"comprar. Com isso, empreendimentos saberão suas necessidades e poderão te faze"
+"comprar. Com isso, Organizaçãos saberão suas necessidades e poderão te faze"
 "r ofertas.Digite e escolha quais são seus interesses."
 
 msgid "Type in a keyword"
@@ -104,7 +104,7 @@ msgid "Legend"
 msgstr "Legenda"
 
 msgid "your enterprise"
-msgstr "seu empreendimento"
+msgstr "seu Organização"
 
 msgid "suppliers"
 msgstr "fornecedores"
