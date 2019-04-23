@@ -35,4 +35,7 @@ Noosfero::Application.configure do
   # send emails to /tmp/mails
   config.action_mailer.delivery_method = :file
 
+  #Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
+  config.force_ssl = true
+
 end
