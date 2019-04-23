@@ -39,7 +39,7 @@ colivre:
   type: 'Enterprise'
   identifier: 'colivre'
   environment_id: 1
-empreendimentoB:
+OrganizaçãoB:
   id: 6
   name: "emp B"
   type: 'Enterprise'

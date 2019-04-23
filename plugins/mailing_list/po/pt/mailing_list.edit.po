@@ -275,7 +275,7 @@ msgstr "Gerenciar comunidades"
 
 #: ../views/mailing_list_plugin_admin/index.html.erb:28
 msgid "Manage enterprises"
-msgstr "Gerenciar empreendimentos"
+msgstr "Gerenciar Organizaçãos"
 
 #: ../views/mailing_list_plugin_admin/manage_communities.html.erb:1 ../views/mailing_list_plugin_admin/manage_enterprises.html.erb:1 ../views/mailing_list_plugin_admin/manage_groups.html.erb:1
 msgid "Manage %s"

@@ -284,7 +284,7 @@ pt-BR: &pt-BR
       supplier:
         _new:
           title: "Adicionar fornecedor a %{profile}"
-          intro_help: "Comece a digitar o nome da organização que deseja adicionar. Procuraremos para ver se o fornecedor já existe no ambiente %{environment}. Caso ele não exista, você poderá criar um tipo de empreendimento que ficará visível APENAS em seu coletivo de consumo, e não no ambiente %{environment} como um todo. Se o fornecedor quiser entrar realmente no %{environment}, deve enviar uma mensagem para %{contact_email} fazendo o pedido."
+          intro_help: "Comece a digitar o nome da organização que deseja adicionar. Procuraremos para ver se o fornecedor já existe no ambiente %{environment}. Caso ele não exista, você poderá criar um tipo de Organização que ficará visível APENAS em seu coletivo de consumo, e não no ambiente %{environment} como um todo. Se o fornecedor quiser entrar realmente no %{environment}, deve enviar uma mensagem para %{contact_email} fazendo o pedido."
           query_placeholder: "busque %{terms.supplier.undefined_article.singular}"
           search: "Buscar"
           none_found: "%{terms.supplier.none.singular} foi encontrado. Por favor revise o texto da busca."
@@ -469,65 +469,65 @@ pt-BR: &pt-BR
         on_your:
           singular: "na sua rede"
       supplier:
-        singular: "empreendimento"
-        plural: "empreendimentos"
+        singular: "Organização"
+        plural: "Organizaçãos"
         one: "um"
         it:
           singular: "ele"
           plural: "eles"
         to:
-          singular: "a um empreendimento"
-          plural: "a empreendimentos"
+          singular: "a um Organização"
+          plural: "a Organizaçãos"
         to_it:
           singular: "a ele"
           plural: "a eles"
         to_article:
-          singular: "ao empreendimento"
-          plural: "aos empreendimentos"
+          singular: "ao Organização"
+          plural: "aos Organizaçãos"
         article:
-          singular: "o empreendimento"
-          plural: "os empreendimentos"
+          singular: "o Organização"
+          plural: "os Organizaçãos"
         by_article:
-          singular: "pelo empreendimento"
+          singular: "pelo Organização"
         undefined_article:
-          singular: "um empreendimento"
+          singular: "um Organização"
         new_undefined_article:
-          singular: "um novo empreendimento"
+          singular: "um novo Organização"
         to_it:
           singular: "a ele"
           plural: "a eles"
         to_article:
-          singular: "ao empreendimento"
-          plural: "aos empreendimentos"
+          singular: "ao Organização"
+          plural: "aos Organizaçãos"
         none:
-          singular: "nenhum empreendimento"
+          singular: "nenhum Organização"
         this:
-          singular: "este empreendimento"
+          singular: "este Organização"
         your:
-          singular: "seu empreendimento"
-          plural: "seus empreendimentos"
+          singular: "seu Organização"
+          plural: "seus Organizaçãos"
         from:
-          singular: "de empreendimento"
+          singular: "de Organização"
         from_article:
-          singular: "do empreendimento"
+          singular: "do Organização"
         from_which_article:
-          singular: "com que o empreendimento"
+          singular: "com que o Organização"
         of:
-          singular: "de empreendimento"
-          plural: "de empreendimentos"
+          singular: "de Organização"
+          plural: "de Organizaçãos"
         of_article:
-          singular: "do empreendimento"
-          plural: "dos empreendimentos"
+          singular: "do Organização"
+          plural: "dos Organizaçãos"
         of_this:
-          singular: "deste empreendimento"
+          singular: "deste Organização"
         of_another:
-          singular: "de outro empreendimento"
+          singular: "de outro Organização"
         with:
-          singular: "com empreendimento"
-          plural: "com empreendimentos"
+          singular: "com Organização"
+          plural: "com Organizaçãos"
         with_article:
-          singular: "com o empreendimento"
-          plural: "com os empreendimentos"
+          singular: "com o Organização"
+          plural: "com os Organizaçãos"
 
 pt_BR:
   <<: *pt-BR
