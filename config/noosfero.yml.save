@@ -1,0 +1,8 @@
+development:
+  api_recaptcha_site_key:      '6LcHrJsUAAAAAOv9x7Gwx0E7SQ2goCXBEdr6f_mb'
+  api_recaptcha_private_key:   '6LcHrJsUAAAAAEg4ed5sFsD1Qv6NTU6xdsbNhr4M'
+  api_recaptcha_verify_uri:    'https://www.google.com/recaptcha/api/siteverify'
+  googlemaps_js_api_key: AIzaSyCC0_jzbvh9Tpy_EUJJPG4nD17qwZAynyI
+  googlemaps_static_api_key: AIzaSyCC0_jzbvh9Tpy_EUJJPG4nD17qwZAynyI
+  googlemaps_geocoder_api_key: AIzaSyBMCJ63JXKWqHhwQUl-U_mhiM9wCrXS2oA
+googlemaps_max_zoom: 15 

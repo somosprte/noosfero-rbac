@@ -28,11 +28,25 @@ Noosfero::Application.configure do
   config.assets.digest = false
   # we have a lot of assets
   config.assets.debug = false
-
-
   config.consider_all_requests_local = true
 
   # send emails to /tmp/mails
-  config.action_mailer.delivery_method = :file
+  #config.action_mailer.delivery_method = :file
+ 
+  # Configuration
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.default_options = {from: 'noreply@portal.aprendizagemcriativa.org'}
+  config.action_mailer.smtp_settings = {
+        address:              'email-smtp.us-east-1.amazonaws.com',
+        port:                 587,
+        domain:               'portal.aprendizagemcriativa.org',
+        user_name:            'AKIA2SZCEJJ2CRVVLAP7',
+        password:             'BGAqrAuL+es1l/z7UKHOrYW5S3HuIRDaPfFhvR4WjM/+',
+        authentication:       'plain',
+        openssl_verify_mode: OpenSSL::SSL::VERIFY_NONE,
+        enable_starttls_auto: true }
+
+  # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
+  config.force_ssl = true
 
 end

@@ -6,6 +6,7 @@ LABEL Description="This dockerfile builds a noosfero development environment."
 EXPOSE 3000
 
 RUN apt-get update && apt-get install -y sudo cron nodejs postgresql-client
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y postfix
 
 WORKDIR /root
 RUN echo "IRB.conf[:SAVE_HISTORY] = 100" >> .irbrc
@@ -17,4 +18,5 @@ ADD . /noosfero/
 RUN ./script/quick-start -i
 
 ENTRYPOINT ["/noosfero/config/docker/dev/entrypoint.sh"]
+CMD ["bundle", "install"]
 CMD ["bundle", "exec", "rails", "s", "-b", "0.0.0.0"]
