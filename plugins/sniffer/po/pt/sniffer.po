@@ -76,7 +76,7 @@ msgid ""
 "s from our list."
 msgstr ""
 "Selecione aqui as categorias de produtos e serviços que você tem interesse em "
-"comprar. Com isso, Organizaçãos saberão suas necessidades e poderão te faze"
+"comprar. Com isso, Organizações saberão suas necessidades e poderão te faze"
 "r ofertas.Digite e escolha quais são seus interesses."
 
 msgid "Type in a keyword"

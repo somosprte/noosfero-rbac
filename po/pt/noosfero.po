@@ -158,21 +158,12 @@ msgstr "Código do esqueceu a Senha"
 msgid "Access denied"
 msgstr "Acesso negado"
 
-<<<<<<< HEAD
-msgid "Visitors"
-msgstr "Visitantes"
-
-msgid "Logged users"
-msgstr "Usuários logados"
-
-=======
 msgid "Logged users"
 msgstr "Usuários logados"
 
 msgid "Visitors"
 msgstr "Visitantes"
 
->>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "Friends / Members"
 msgstr "Amigos / Membros"
 
@@ -293,17 +284,6 @@ msgstr "A licença não pode ser removida"
 msgid "Organization profiles"
 msgstr "Perfis de organizações"
 
-<<<<<<< HEAD
-msgid "All"
-msgstr "Todos"
-
-msgid "Community"
-msgstr "Comunidade"
-
-msgid "Enterprise"
-msgstr "Empreendimento"
-
-=======
 msgid "Enterprise"
 msgstr "Organização"
 
@@ -313,7 +293,6 @@ msgstr "Núcleos e GTs"
 msgid "All"
 msgstr "Todos"
 
->>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "%s enabled"
 msgstr "%s habilitado"
 
@@ -1247,17 +1226,6 @@ msgstr "Você tem certeza que quer excluir este comentário e todas as suas resp
 msgid "Reply"
 msgstr "Responder"
 
-<<<<<<< HEAD
-msgid "no comments yet"
-msgstr "sem comentários ainda"
-
-msgid "One comment"
-msgstr "Um comentário"
-
-msgid "%s comments"
-msgstr "%s comentários"
-
-=======
 msgid "%s comments"
 msgstr "%s comentários"
 
@@ -1267,7 +1235,6 @@ msgstr "sem comentários ainda"
 msgid "One comment"
 msgstr "Um comentário"
 
->>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "This is a private content"
 msgstr "Esse é um conteúdo privado"
 
@@ -3564,15 +3531,6 @@ msgstr "Código de região"
 msgid "Invalid city or state name."
 msgstr "Nome da Cidade ou Estado inválidos."
 
-<<<<<<< HEAD
-msgid "District"
-msgstr "Bairro"
-
-msgid "Address reference"
-msgstr "Ponto de referência"
-
-=======
->>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "Display name"
 msgstr "Nome de exibição"
 
@@ -3582,15 +3540,12 @@ msgstr "Descrição"
 msgid "Contact email"
 msgstr "Email de contato"
 
-<<<<<<< HEAD
-=======
 msgid "District"
 msgstr "Bairro"
 
 msgid "Address reference"
 msgstr "Ponto de referência"
 
->>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "person"
 msgstr "pessoa"
 
@@ -5063,21 +5018,12 @@ msgstr "Termos de uso:"
 msgid "Parent folder:"
 msgstr "Pasta superior:"
 
-<<<<<<< HEAD
-msgid "None"
-msgstr "Nenhum(a)"
-
-msgid "License"
-msgstr "Licença"
-
-=======
 msgid "License"
 msgstr "Licença"
 
 msgid "None"
 msgstr "Nenhum(a)"
 
->>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "Reference"
 msgstr "Referência"
 

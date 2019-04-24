@@ -263,7 +263,7 @@
   * Adds ghostscript to install script of html5_video plugin (Matheus Richard) [c47086098]
   * Fixes event block tests (Matheus Richard) [03c1be886]
   * Preventing private constant explicit usage (Alax Alves) [747070e9f]
-  * Correção na página de Templates de Perfil (/admin/templates), a ação de 'Editar configurações', seja em Pessoas, Comunidade ou Organizaçãos, levava para uma página que não existe. (Caio) [764b97f74]
+  * Correção na página de Templates de Perfil (/admin/templates), a ação de 'Editar configurações', seja em Pessoas, Comunidade ou Organizações, levava para uma página que não existe. (Caio) [764b97f74]
   * Fixes signupt selenium tests (Gabriel Silva) [dcbf85309]
   * Fixes selenium tests (Gabriel Silva) [1276fa2f0]
   * Translated using Weblate (Portuguese) (Rebeca Moura) [9a5597497]

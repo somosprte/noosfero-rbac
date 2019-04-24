@@ -21,14 +21,14 @@
               uploaded_file: 'Quando eu enviar novos documentos'
               favorite_enterprise: 'Quando eu favoritar um Organização'
           enterprise:
-            memberships: "Organizaçãos dos quais faço parte"
-            favorites: "Meus Organizaçãos favoritos" 
-            see_all: 'Ver Organizaçãos'
-            label: "Publicar as novidades dos meus Organizaçãos favoritos e daqueles que faço parte"
+            memberships: "Organizações dos quais faço parte"
+            favorites: "Meus Organizações favoritos" 
+            see_all: 'Ver Organizações'
+            label: "Publicar as novidades dos meus Organizações favoritos e daqueles que faço parte"
             search_placeholder: "busque o Organização"
             favorites_how_to:
-              title: "Como adicionar Organizaçãos favoritos"
-              body: "Para adicionar Organizaçãos favoritos, basta você visitar a página do Organização desejado e clicar no botão %{favorite_button} que fica abaixo da logo do Organização, geralmente à esquerda."
+              title: "Como adicionar Organizações favoritos"
+              body: "Para adicionar Organizações favoritos, basta você visitar a página do Organização desejado e clicar no botão %{favorite_button} que fica abaixo da logo do Organização, geralmente à esquerda."
           community:
             label: "Publicar novidades das seguintes comunidades"
             search_placeholder: "escolha a comunidade"

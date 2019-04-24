@@ -32,25 +32,11 @@ msgstr "As sub-organizações não puderam ser salvas"
 msgid "Related Organizations"
 msgstr "Organizações Relacionadas"
 
-<<<<<<< HEAD
-msgid "\"{#} #{display_type[:title]} enterprise\""
-msgid_plural " \"{#} #{display_type[:title]} enterprises\""
-msgstr[0] "\"{#} #{display_type[:title]} empreendimento\""
-msgstr[1] "\"{#} #{display_type[:title]} empreendimentos\""
-
-msgid "\"{#} #{display_type[:title]} community\""
-msgid_plural " \"{#} #{display_type[:title]} communities\""
-msgstr[0] "\"{#} #{display_type[:title]} comunidade\""
-msgstr[1] "\"{#} #{display_type[:title]} comunidades\""
-
-msgid "\"{#} #{display_type[:title]} organization\""
-msgid_plural " \"{#} #{display_type[:title]} organizations\""
-=======
 #, fuzzy
 msgid "{#} #{display_type[:title]} enterprise"
 msgid_plural "{#} #{display_type[:title]} enterprises"
 msgstr[0] "\"{#} #{display_type[:title]} Organização\""
-msgstr[1] "\"{#} #{display_type[:title]} Organizaçãos\""
+msgstr[1] "\"{#} #{display_type[:title]} Organizações\""
 
 #, fuzzy
 msgid "{#} #{display_type[:title]} community"
@@ -61,7 +47,6 @@ msgstr[1] "\"{#} #{display_type[:title]} comunidades\""
 #, fuzzy
 msgid "{#} #{display_type[:title]} organization"
 msgid_plural "{#} #{display_type[:title]} organizations"
->>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgstr[0] "\"{#} #{display_type[:title]} organização\""
 msgstr[1] "\"{#} #{display_type[:title]} organizações\""
 

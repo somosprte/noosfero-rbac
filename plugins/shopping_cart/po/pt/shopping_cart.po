@@ -63,7 +63,7 @@ msgid "Wrong product id"
 msgstr "Id errado do produto"
 
 msgid "A shopping basket feature for enterprises"
-msgstr "Funcionalidade de cesto de compras para Organizaçãos"
+msgstr "Funcionalidade de cesto de compras para Organizações"
 
 msgid "Shopping"
 msgstr "Compras"

@@ -105,7 +105,7 @@ msgstr "%s pessoas encontradas"
 
 #: ../lib/solr_plugin/search_helper.rb:140
 msgid "%s enterprises found"
-msgstr "%s Organizaçãos encontrados"
+msgstr "%s Organizações encontrados"
 
 #: ../lib/solr_plugin/search_helper.rb:141
 msgid "%s communities found"

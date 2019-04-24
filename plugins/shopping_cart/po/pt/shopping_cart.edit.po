@@ -69,7 +69,7 @@ msgstr "Id errado do produto"
 
 #: ../lib/shopping_cart_plugin.rb:8
 msgid "A shopping basket feature for enterprises"
-msgstr "Funcionalidade de cesto de compras para Organizaçãos"
+msgstr "Funcionalidade de cesto de compras para Organizações"
 
 #: ../lib/shopping_cart_plugin.rb:31
 msgid "Shopping"

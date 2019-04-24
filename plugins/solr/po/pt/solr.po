@@ -84,7 +84,7 @@ msgid "%s people found"
 msgstr "%s pessoas encontradas"
 
 msgid "%s enterprises found"
-msgstr "%s Organizaçãos encontrados"
+msgstr "%s Organizações encontrados"
 
 msgid "%s communities found"
 msgstr "%s comunidades encontradas"
