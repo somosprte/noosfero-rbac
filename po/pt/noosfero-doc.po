@@ -688,14 +688,14 @@ msgid ""
 "First of all, you need to be at the page of the enterprise from which you "
 "are going to buy your products:"
 msgstr ""
-"Antes de mais nada, você precisa estar na página do Organização do qual "
+"Antes de mais nada, você precisa estar na página do empreendimento do qual "
 "vocêirá comprar seus produtos:"
 
 # type: Content of: <h1>
 #. type: Attribute 'alt' of: <p><img>
 #: doc/noosfero/plugins/shopping_cart.en.xhtml:14
 msgid "Enterprise Homepage"
-msgstr "Homepage do Organização"
+msgstr "Homepage do Empreendimento"
 
 # type: Content of: <p>
 #. type: Content of: <p>
@@ -705,8 +705,8 @@ msgid ""
 "Most of the enterprises has a link at the side bar directing you to their "
 "products&#8217; list:"
 msgstr ""
-"Agora você irá acessar a página dos produtos desse Organização. A maioria "
-"dos Organizações tem um link na barra lateral direcionando para a sua "
+"Agora você irá acessar a página dos produtos desse empreendimento. A maioria "
+"dos empreendimentos tem um link na barra lateral direcionando para a sua "
 "lista de produtos:"
 
 # type: Attribute 'alt' of: <ol><li><div><img>
@@ -729,7 +729,7 @@ msgstr ""
 #. type: Content of: <p>
 #: doc/noosfero/plugins/shopping_cart.en.xhtml:18
 msgid "/catalog/enterprise-identifier."
-msgstr "/catalog/identificador-do-Organização."
+msgstr "/catalog/identificador-do-empreendimento."
 
 # type: Content of: <h1>
 #. type: Content of: <h2>
@@ -745,7 +745,7 @@ msgid ""
 "shopping-cart plugin, you will see the button &#8216;Add to cart&#8217; on "
 "each product listed. This is how it looks like in the catalog:"
 msgstr ""
-"Depois de alcançar a lista de produtos, caso a o Organização habilitou o "
+"Depois de alcançar a lista de produtos, caso a o empreendimento habilitou o "
 "plugin shopping-cart, você irá ver o botão &#8216;Adicionar ao "
 "carrinho&#8217; em cada produto listado. Aqui como ele aparece no catálogo:"
 
@@ -820,8 +820,8 @@ msgid ""
 "buy with the other."
 msgstr ""
 "<span class=\"caps\">OBS</span>: você só pode adicionar produtos de um mesmo "
-"Organização no carrinho. Se você quer comprar produtos de um "
-"Organização diferente, você deve finalizar sua compra com um e então "
+"empreendimento no carrinho. Se você quer comprar produtos de um "
+"empreendimento diferente, você deve finalizar sua compra com um e então "
 "começar a nova compra com o outro."
 
 # type: Content of: <h1>
@@ -1113,9 +1113,9 @@ msgid ""
 "informations. Now the enterprise might contact you to discuss further "
 "details."
 msgstr ""
-"Esse botão irá enviar a sua requisição para o Organização e também irá "
+"Esse botão irá enviar a sua requisição para o empreendimento e também irá "
 "lhe mandar um email com o seu pedido para que você possa confirmar os seus "
-"produtos e as suas informações. Agora o Organização deve te contactar "
+"produtos e as suas informações. Agora o empreendimento deve te contactar "
 "para discutir demais detalhes."
 
 # type: Content of: <ul><li>
@@ -1637,7 +1637,7 @@ msgid ""
 "super type."
 msgstr ""
 "Você pode editar uma cota para os tipos padrão (Pessoa, Comunidade, e "
-"Organização), mas você também pode editar cotas para tipos personalizados "
+"Empreendimento), mas você também pode editar cotas para tipos personalizados "
 "criados no painel de administração. Se existir pelo menos um tipo "
 "personalizado, será possível exibi-los ao clicar no botão da linha do "
 "respectivo tipo pai."
@@ -1777,7 +1777,7 @@ msgid ""
 "<em>To find articles, communities, people, enterprises or products and "
 "services, an user in the system, can do a search.</em>"
 msgstr ""
-"<em>Para encontrar artigos, comunidades, pessoas, Organizações ou "
+"<em>Para encontrar artigos, comunidades, pessoas, empreendimentos ou "
 "produtos e serviços, o usuário que está navegando no sistema pode fazer uma "
 "busca.</em>"
 
@@ -1998,7 +1998,7 @@ msgstr ""
 msgid ""
 "<a href=\"/doc/navigation/searching-enterprises\">Finding enterprises</a>"
 msgstr ""
-"<a href=\"/doc/navigation/searching-enterprises\">Encontrar Organizações</"
+"<a href=\"/doc/navigation/searching-enterprises\">Encontrar empreendimentos</"
 "a>"
 
 # type: Content of: <ul><li>
@@ -2319,7 +2319,7 @@ msgid ""
 "homepage of choosen person."
 msgstr ""
 "Clicando em um dos resultados da busca, você será direcionada para a página "
-"inicial do Organização escolhido."
+"inicial do empreendimento escolhido."
 
 # type: Content of: <ul><li>
 #. type: Content of: <ul><li>
@@ -2516,7 +2516,7 @@ msgid ""
 "<em>When an user is navigating on the system, he can do a search to find "
 "articles, communities, people, enterprises or products.</em>"
 msgstr ""
-"<em>Para encontrar artigos, comunidades, pessoas, Organizações ou "
+"<em>Para encontrar artigos, comunidades, pessoas, empreendimentos ou "
 "produtos e serviços, o usuário que está navegando no sistema pode fazer uma "
 "busca no sistema.</em>"
 
@@ -2576,7 +2576,7 @@ msgid ""
 msgstr ""
 "A distância que você definir nesse campo será usada para encontrar o que "
 "você deseja. O portal irá procurar os artigos/pessoas/comunidades/eventos/"
-"Organizações/produtos que estejam até essa distância da cidade "
+"empreendimentos/produtos que estejam até essa distância da cidade "
 "especificada;"
 
 # type: Content of: <ol><li><ol><li>
@@ -2602,7 +2602,7 @@ msgid ""
 "all&#8221; link below the box."
 msgstr ""
 "Nesse exemplo, procuramos &#8220;free software&#8221; em artigos/pessoas/"
-"comunidades/eventos/Organizações/produtos. Então aparecerá um ecrã com o "
+"comunidades/eventos/empreendimentos/produtos. Então aparecerá um ecrã com o "
 "resultado da busca. Cada caixa reúne um tipo de informação com um número "
 "limitado de resultados. Para ver mais resultados de uma caixa, clique no "
 "link &#8220;Ver todos&#8221; logo abaixo da caixa."
@@ -2953,7 +2953,7 @@ msgid ""
 "homepage of the enterprise that has the product/service."
 msgstr ""
 "Clicando em um dos resultados da busca, você será direcionada para a página "
-"inicial do Organização que possui o produto ou serviço escolhido."
+"inicial do empreendimento que possui o produto ou serviço escolhido."
 
 # type: Content of: <h3>
 #. type: Content of: <h3>
@@ -2972,10 +2972,10 @@ msgid ""
 "map&#8221; button. Clicking on this button, the search results will be "
 "displayed on a map, with house icons indicating the location of enterprises."
 msgstr ""
-"Quando você está procurando produtos, serviços ou Organizações, e o "
+"Quando você está procurando produtos, serviços ou empreendimentos, e o "
 "sistema permite, você verá o botão &#8220;Mostrar no mapa&#8221;. Clicando "
 "nesse botão, o resultado da busca será mostrado num mapa, com ícones de "
-"casinhas indicando os lugares onde os Organizações estão."
+"casinhas indicando os lugares onde os empreendimentos estão."
 
 # type: Content of: <h1>
 #. type: Content of: <h1>
@@ -3033,7 +3033,7 @@ msgstr "Resultado da busca por comunidades mais ativas com exemplo"
 #. type: Content of: <h1>
 #: doc/noosfero/navigation/searching-enterprises.en.xhtml:1
 msgid "Finding enterprises"
-msgstr "Encontrar Organizações"
+msgstr "Encontrar empreendimentos"
 
 # type: Content of: <p>
 #. type: Content of: <p>
@@ -3042,34 +3042,34 @@ msgid ""
 "<em>To find an enterprise in the system, you can use the search specific for "
 "enterprises.</em>"
 msgstr ""
-"<em>Para encontrar um Organização no sistema, você pode usar a busca "
-"específica de Organizações.</em>"
+"<em>Para encontrar um empreendimento no sistema, você pode usar a busca "
+"específica de empreendimentos.</em>"
 
 # type: Content of: <p>
 #. type: Content of: <p>
 #: doc/noosfero/navigation/searching-enterprises.en.xhtml:9
 msgid "Find on top of page the term &#8220;Enterprises&#8221; and click on it:"
 msgstr ""
-"Localize na barra superior o termo &#8220;Organizações&#8221; e clique "
+"Localize na barra superior o termo &#8220;Empreendimentos&#8221; e clique "
 "nele:"
 
 # type: Attribute 'alt' of: <p><img>
 #. type: Attribute 'alt' of: <p><img>
 #: doc/noosfero/navigation/searching-enterprises.en.xhtml:10
 msgid "Enterprises on top menu"
-msgstr "Organizações no menu superior"
+msgstr "Empreendimentos no menu superior"
 
 # type: Attribute 'alt' of: <ol><li><p><img>
 #. type: Attribute 'alt' of: <ol><li><img>
 #: doc/noosfero/navigation/searching-enterprises.en.xhtml:13
 msgid "Enterprises search field"
-msgstr "Campo de busca dos Organizações"
+msgstr "Campo de busca dos empreendimentos"
 
 # type: Attribute 'alt' of: <ol><li><p><img>
 #. type: Attribute 'alt' of: <ol><li><img>
 #: doc/noosfero/navigation/searching-enterprises.en.xhtml:14
 msgid "Enterprises search results with example"
-msgstr "Resultado da busca por Organização com exemplo"
+msgstr "Resultado da busca por empreendimento com exemplo"
 
 # type: Content of: <ol><li>
 #. type: Content of: <ol><li>
@@ -3079,7 +3079,7 @@ msgid ""
 "homepage of choosen enterprise."
 msgstr ""
 "Clicando em um dos resultados da busca, você será direcionada para a página "
-"inicial do Organização escolhido."
+"inicial do empreendimento escolhido."
 
 # type: Content of: <h1>
 #. type: Content of: <h1>
@@ -3269,7 +3269,7 @@ msgid ""
 "Manage&#8221;. Assuming that you are a community administrator, click on "
 "&#8220;Manage&#8221; link."
 msgstr ""
-"Você verá a lista de grupos (comunidades/Organizações) que você é membro. "
+"Você verá a lista de grupos (comunidades/empreendimentos) que você é membro. "
 "Os grupos que você pode gerenciar são listados com um link &#8220;"
 "Gerenciar&#8221;. Supondo que você é administrador de uma comunidade, clique "
 "em &#8220;Gerenciar&#8221;."
@@ -3286,7 +3286,7 @@ msgstr ""
 #: doc/noosfero/enterprise/editing-enterprise-info.en.xhtml:13
 #: doc/noosfero/enterprise/editing-header-footer.en.xhtml:13
 msgid "Groups list with permission to manage enterprise"
-msgstr "Lista de grupos com permissão de gerenciar Organização"
+msgstr "Lista de grupos com permissão de gerenciar empreendimento"
 
 # type: Content of: <ol><li>
 #. type: Content of: <ol><li>
@@ -3896,7 +3896,7 @@ msgid ""
 "<strong>Members:</strong> Displays the members of the community. You can "
 "choose how many members will be displayed."
 msgstr ""
-"<strong>Integrantes:</strong> Apresenta os integrantes do Organizações. "
+"<strong>Integrantes:</strong> Apresenta os integrantes do empreendimentos. "
 "Você pode escolher quantos integrantes serão listados."
 
 # type: Attribute 'alt' of: <ol><li><ul><li><div><img>
@@ -5321,7 +5321,7 @@ msgid ""
 "communities or enterprises that you are member"
 msgstr ""
 "<strong>Divulgar:</strong> Deve ser utiizado para publicar seus artigos em "
-"comunidades ou Organizações que você faz parte;"
+"comunidades ou empreendimentos que você faz parte;"
 
 # type: Content of: <ol><li><ol><li><ul><li>
 #. type: Content of: <ol><li><ol><li>
@@ -6120,7 +6120,7 @@ msgstr ""
 #. type: Content of: <h1>
 #: doc/noosfero/enterprise/disabling-enterprise.en.xhtml:1
 msgid "Disabling an enterprise"
-msgstr "Desabilitar um Organização"
+msgstr "Desabilitar um empreendimento"
 
 # type: Content of: <p>
 #. type: Content of: <p>
@@ -6130,7 +6130,7 @@ msgid ""
 "that it appears in the system anymore, you can disable it by following this "
 "steps.</em>"
 msgstr ""
-"<em>Se você é administrador de um Organização e você nãoquer que ele "
+"<em>Se você é administrador de um empreendimento e você nãoquer que ele "
 "apareça mais no sistema, você pode desabilitá-lo seguindo esses passos.</em>"
 
 # type: Content of: <ol><li>
@@ -6143,10 +6143,10 @@ msgid ""
 "Manage&#8221;. Assuming that you are administrator of enterprise &#8220;My "
 "enterprise&#8221;, click on &#8220;Manage&#8221; link."
 msgstr ""
-"Aparecerá a lista de grupos (comunidades/Organizações) que você é membro. "
+"Aparecerá a lista de grupos (comunidades/empreendimentos) que você é membro. "
 "Os grupos que você pode gerenciar são listados com um link &#8220;"
-"Gerenciar&#8221;. Supondo que você é administrador do Organização &#8220;"
-"Meu Organização&#8221;, clique em &#8220;Gerenciar&#8221;."
+"Gerenciar&#8221;. Supondo que você é administrador do empreendimento &#8220;"
+"Meu empreendimento&#8221;, clique em &#8220;Gerenciar&#8221;."
 
 # type: Content of: <ol><li>
 #. type: Content of: <ol><li>
@@ -6155,14 +6155,14 @@ msgid ""
 "In enterprise&#8217;s control panel, click on &#8220;Disable "
 "Enterprise&#8221;"
 msgstr ""
-"No painel de controle do Organização, clique em &#8220;Gerenciar "
+"No painel de controle do empreendimento, clique em &#8220;Gerenciar "
 "Integrantes&#8221;"
 
 # type: Attribute 'alt' of: <ol><li><div><img>
 #. type: Attribute 'alt' of: <ol><li><img>
 #: doc/noosfero/enterprise/disabling-enterprise.en.xhtml:18
 msgid "Control panel with disable enterprise"
-msgstr "Painel de controle com desabilitar Organização"
+msgstr "Painel de controle com desabilitar empreendimento"
 
 # type: Content of: <ol><li>
 #. type: Content of: <ol><li>
@@ -6172,14 +6172,14 @@ msgid ""
 "disable the enterprise, click on &#8220;Yes, I want to disable&#8221;."
 msgstr ""
 "Você verá o ecrã de confirmação. Se você tiver certeza que deseja "
-"desabilitar o Organização, clique em &#8220;Sim, eu quero "
+"desabilitar o empreendimento, clique em &#8220;Sim, eu quero "
 "desabilitar&#8221;."
 
 # type: Attribute 'alt' of: <ol><li><div><img>
 #. type: Attribute 'alt' of: <ol><li><img>
 #: doc/noosfero/enterprise/disabling-enterprise.en.xhtml:20
 msgid "Enterprise disabling confirmation"
-msgstr "Confirmação da desabilitação do Organização"
+msgstr "Confirmação da desabilitação do empreendimento"
 
 # type: Content of: <h2>
 #. type: Content of: <h2>
@@ -6196,7 +6196,7 @@ msgstr "Tópicos Relacionados"
 msgid ""
 "<a href=\"/doc/enterprise/activating-enterprise\">Activating enterprise</a>"
 msgstr ""
-"<a href=\"/doc/enterprise/activating-enterprise\">Ativar Organização</a>"
+"<a href=\"/doc/enterprise/activating-enterprise\">Ativar empreendimento</a>"
 
 # type: Content of: <p>
 #. type: Content of: <p>
@@ -6205,7 +6205,7 @@ msgid ""
 "<em>You can customize the page of your enterprise, changing the template of "
 "it.</em>"
 msgstr ""
-"<em>Você pode personalizar a página de seu Organização, alterando seu "
+"<em>Você pode personalizar a página de seu empreendimento, alterando seu "
 "modelo.</em>"
 
 # type: Content of: <ul><li>
@@ -6224,7 +6224,7 @@ msgstr ""
 #. type: Content of: <h1>
 #: doc/noosfero/enterprise/activating-enterprise.en.xhtml:1
 msgid "Activating your enterprise"
-msgstr "Ativar seu Organização"
+msgstr "Ativar seu empreendimento"
 
 # type: Content of: <p>
 #. type: Content of: <p>
@@ -6233,8 +6233,8 @@ msgid ""
 "<em>If you have an enterprise that is registered in the system, you might "
 "have the activation code of the enterprise.</em>"
 msgstr ""
-"<em>Se você tem um Organização cadastrado no sistema, você deve ter o "
-"código de ativação do Organização.</em>"
+"<em>Se você tem um empreendimento cadastrado no sistema, você deve ter o "
+"código de ativação do empreendimento.</em>"
 
 # type: Content of: <p>
 #. type: Content of: <p>
@@ -6244,7 +6244,7 @@ msgid ""
 "After that, you can update information, add members, products and much more."
 "</em>"
 msgstr ""
-"<em>Este artigo mostra como você pode ativar seu Organização no sistema. "
+"<em>Este artigo mostra como você pode ativar seu empreendimento no sistema. "
 "Depois disso, você poderá atualizar as informações, adicionar integrantes, "
 "produtos e muito mais.</em>"
 
@@ -6256,14 +6256,14 @@ msgid ""
 "the enterprise activation code and click on &#8220;Activate&#8221;."
 msgstr ""
 "Abaixo das ações do painel de controle, você verá uma caixa. Preencha o "
-"campo com o código de ativação do Organização e clique em &#8220;"
+"campo com o código de ativação do empreendimento e clique em &#8220;"
 "Activar&#8221;."
 
 # type: Attribute 'alt' of: <ol><li><div><img>
 #. type: Attribute 'alt' of: <ol><li><img>
 #: doc/noosfero/enterprise/activating-enterprise.en.xhtml:17
 msgid "Control panel and enterprise activation box"
-msgstr "Painel de controle e caixa de ativação de Organização"
+msgstr "Painel de controle e caixa de ativação de empreendimento"
 
 # type: Content of: <ol><li>
 #. type: Content of: <ol><li>
@@ -6275,8 +6275,8 @@ msgid ""
 "on &#8220;Continue&#8221; button."
 msgstr ""
 "Você verá um ecrã com o primeiro passo da ativação, a pergunta sobre o "
-"Organização. Você deve preencher o campo com a resposta correta, ou seu "
-"Organização será bloqueado. Se você tiver certeza que sua resposta está "
+"empreendimento. Você deve preencher o campo com a resposta correta, ou seu "
+"empreendimento será bloqueado. Se você tiver certeza que sua resposta está "
 "correta, clique no botão &#8220;Continue&#8221;."
 
 # type: Attribute 'alt' of: <ol><li><div><img>
@@ -6295,7 +6295,7 @@ msgid ""
 "with it, choose the option &#8220;I read the terms of use and accepted them."
 "&#8221;. After that, click on &#8220;Continue&#8221; button."
 msgstr ""
-"Se a resposta estiver errada, o Organização será bloqueado e você "
+"Se a resposta estiver errada, o empreendimento será bloqueado e você "
 "precisará entrar em contato com o administrador do sistema para desbloqueá-"
 "lo. Se a resposta for correta, você passará para o passo 2. Neste passo, "
 "você deve ler os termos de uso e, se concordar com ele, escolher a opção "
@@ -6306,7 +6306,7 @@ msgstr ""
 #. type: Attribute 'alt' of: <ol><li><img>
 #: doc/noosfero/enterprise/activating-enterprise.en.xhtml:20
 msgid "Enterprise terms of use"
-msgstr "Termos de uso de Organização"
+msgstr "Termos de uso de Empreendimento"
 
 # type: Content of: <ol><li>
 #. type: Content of: <ol><li>
@@ -6316,15 +6316,15 @@ msgid ""
 "this screen, you can go to enterprise&#8217;s control panel and update it or "
 "go to your control panel."
 msgstr ""
-"Depois, você receberá uma confirmação que seu Organização foi ativado. "
-"Neste ecrã, você pode ir para o painel de controle do seu Organização e "
+"Depois, você receberá uma confirmação que seu empreendimento foi ativado. "
+"Neste ecrã, você pode ir para o painel de controle do seu empreendimento e "
 "atualizá-lo ou ir para o seu painel de controle."
 
 # type: Attribute 'alt' of: <ol><li><div><img>
 #. type: Attribute 'alt' of: <ol><li><img>
 #: doc/noosfero/enterprise/activating-enterprise.en.xhtml:21
 msgid "Conclusion of enterprise activation"
-msgstr "Conclusão da ativação de Organização"
+msgstr "Conclusão da ativação de empreendimento"
 
 # type: Content of: <ul><li>
 #. type: Content of: <ul><li>
@@ -6337,7 +6337,7 @@ msgid ""
 "settings</a>"
 msgstr ""
 "<a href=\"/doc/enterprise/editing-enterprise-info\">Editar informações/"
-"configurações do Organização</a>"
+"configurações do empreendimento</a>"
 
 # type: Content of: <ul><li>
 #. type: Content of: <ul><li>
@@ -6352,7 +6352,7 @@ msgstr ""
 #. type: Content of: <h1>
 #: doc/noosfero/enterprise/index.en.xhtml:1
 msgid "Enterprise features"
-msgstr "Funcionalidades de Organização"
+msgstr "Funcionalidades de empreendimento"
 
 # type: Content of: <p>
 #. type: Content of: <p>
@@ -6361,7 +6361,7 @@ msgid ""
 "<em>You can customize the page of your enterprise, changing the blocks that "
 "will be displayed on it.</em>"
 msgstr ""
-"<em>Você pode personalizar a página de seu Organização, alterando os "
+"<em>Você pode personalizar a página de seu empreendimento, alterando os "
 "blocos que serão mostrados nela.</em>"
 
 # type: Content of: <ol><li>
@@ -6373,16 +6373,16 @@ msgid ""
 "Manage&#8221;. Assuming that you are an enterprise administrator, click on "
 "&#8220;Manage&#8221; link."
 msgstr ""
-"Você verá a lista de grupos (comunidades/Organizações) que você é membro. "
+"Você verá a lista de grupos (comunidades/empreendimentos) que você é membro. "
 "Os grupos que você pode gerenciar são listados com um link &#8220;"
-"Gerenciar&#8221;. Supondo que você é administrador de um Organização, "
+"Gerenciar&#8221;. Supondo que você é administrador de um empreendimento, "
 "clique em &#8220;Gerenciar&#8221;."
 
 # type: Attribute 'alt' of: <ol><li><p><img>
 #. type: Attribute 'alt' of: <ol><li><img>
 #: doc/noosfero/enterprise/editing-sideboxes.en.xhtml:14
 msgid "Edit sideboxes on enterprise control panel"
-msgstr "Editar blocos laterais no painel de controle do Organização"
+msgstr "Editar blocos laterais no painel de controle do empreendimento"
 
 # type: Content of: <ol><li><ul><li>
 #. type: Content of: <ol><li><ul><li>
@@ -6393,7 +6393,7 @@ msgid ""
 "article is going to be displayed in the block."
 msgstr ""
 "<strong>Apresentar um de seus conteúdos:</strong> Este bloco apresenta um "
-"dos artigos do Organização. Você pode editar o bloco para selecionar qual "
+"dos artigos do empreendimento. Você pode editar o bloco para selecionar qual "
 "artigo será mostrado no bloco."
 
 # type: Content of: <ol><li><ul><li>
@@ -6404,7 +6404,7 @@ msgid ""
 "the enterprise. You can choose how many articles will be listed."
 msgstr ""
 "<strong>Últimas atualizações:</strong> Apresenta os conteúdos mais recentes "
-"do Organização. Você pode escolher quantos artigos serão listados."
+"do empreendimento. Você pode escolher quantos artigos serão listados."
 
 # type: Content of: <ol><li><ul><li>
 #. type: Content of: <ol><li><ul><li>
@@ -6418,10 +6418,10 @@ msgid ""
 msgstr ""
 "<strong>Links (menu estático):</strong> Você pode utilizá-lo para criar um "
 "menu de links. Você pode adicionar, remover e atualizar os links que "
-"desejar. Se você quiser um link para o blog do Organização, por exemplo, "
+"desejar. Se você quiser um link para o blog do empreendimento, por exemplo, "
 "você deve digitar &#8221;/{profile}/blog&#8221; no campo &#8220;"
 "Endereço&#8221;. O termo &#8220;{profile}&#8221;erá substituído pelo "
-"identificador do Organização."
+"identificador do empreendimento."
 
 # type: Content of: <ol><li><ul><li>
 #. type: Content of: <ol><li><ul><li>
@@ -6445,7 +6445,7 @@ msgid ""
 "<strong>Location map:</strong> Shows where the enterprise is on the material "
 "world."
 msgstr ""
-"<strong>Mapa de localização:</strong> Mostra a localização do Organização "
+"<strong>Mapa de localização:</strong> Mostra a localização do empreendimento "
 "no mundo real."
 
 # type: Content of: <ol><li><ul><li>
@@ -6455,7 +6455,7 @@ msgid ""
 "<strong>Members:</strong> Displays the members of the enterprise. You can "
 "choose how many members will be displayed."
 msgstr ""
-"<strong>Integrantes:</strong> Apresenta os integrantes do Organizações. "
+"<strong>Integrantes:</strong> Apresenta os integrantes do empreendimentos. "
 "Você pode escolher quantos integrantes serão listados."
 
 # type: Content of: <ol><li><ul><li>
@@ -6465,7 +6465,7 @@ msgid ""
 "<strong>Products:</strong> Displays the products of the enterprise. You can "
 "choose how many products will be displayed."
 msgstr ""
-"<strong>Produtos:</strong> Apresenta os produtos do Organização. Você "
+"<strong>Produtos:</strong> Apresenta os produtos do empreendimento. Você "
 "pode escolher quantos produtos serão mostrados."
 
 # type: Attribute 'alt' of: <ol><li><ul><li><div><img>
@@ -6483,7 +6483,7 @@ msgid ""
 "used on the contents. You can choose how many tags will be displayed."
 msgstr ""
 "<strong>Tags:</strong> Tags são criadas quando uma pessoa adiciona alguma "
-"tag no conteúdo criado no Organização. Este bloco apresentará as tags "
+"tag no conteúdo criado no empreendimento. Este bloco apresentará as tags "
 "utilizadas no conteúdo. Você pode escolher quantas tags serão mostradas."
 
 # type: Content of: <ol><li><ul><li>
@@ -6495,7 +6495,7 @@ msgid ""
 "environment and useful links."
 msgstr ""
 "<strong>Informações do perfil:</strong> Apresenta uma imagem e algumas "
-"informações básicas sobre o Organização, como há quanto tempo o perfil "
+"informações básicas sobre o empreendimento, como há quanto tempo o perfil "
 "faz parte do ambiente e links úteis."
 
 # type: Content of: <ol><li><ul><li>
@@ -6508,7 +6508,7 @@ msgstr "<strong>Minha rede:</strong> Este bloco apresenta alguns links."
 #. type: Attribute 'alt' of: <ol><li><ul><li><img>
 #: doc/noosfero/enterprise/editing-sideboxes.en.xhtml:36
 msgid "enterprise network block"
-msgstr "Bloco da rede do Organização"
+msgstr "Bloco da rede do empreendimento"
 
 # type: Content of: <ol><li><ul><li>
 #. type: Content of: <ol><li><ul><li>
@@ -6517,7 +6517,7 @@ msgid ""
 "<strong>Profile Image:</strong> This block presents the enterprise image."
 msgstr ""
 "<strong>Imagem do perfil:</strong> Este bloco apresenta a imagem do "
-"Organização."
+"empreendimento."
 
 # type: Content of: <ol><li><ul><li>
 #. type: Content of: <ol><li><ul><li>
@@ -6528,7 +6528,7 @@ msgid ""
 "select which image gallery will be displayed."
 msgstr ""
 "<strong>Slideshow:</strong> Este bloco apresenta as imagens de uma das "
-"galerias de imagens do Organização como uma apresentação de slides. Você "
+"galerias de imagens do empreendimento como uma apresentação de slides. Você "
 "pode editar o bloco para selecionar qual galeria de imagens será mostrada."
 
 # type: Content of: <ol><li><ul><li>
@@ -6538,14 +6538,14 @@ msgid ""
 "<strong>&#8220;Disabled enterprise&#8221; message:</strong> Shows a message "
 "for disabled enterprises."
 msgstr ""
-"<strong>Mensagem &#8220;Organização desabilitado&#8221;:</strong> "
-"Apresenta uma mensagem para Organizações desabilitados."
+"<strong>Mensagem &#8220;Empreendimento desabilitado&#8221;:</strong> "
+"Apresenta uma mensagem para empreendimentos desabilitados."
 
 # type: Content of: <h1>
 #. type: Attribute 'alt' of: <ol><li><ul><li><img>
 #: doc/noosfero/enterprise/editing-sideboxes.en.xhtml:39
 msgid "Disabled enterprise block"
-msgstr "Bloco de Organizações desabilitados"
+msgstr "Bloco de empreendimentos desabilitados"
 
 # type: Content of: <ul><li>
 #. type: Content of: <ul><li>
@@ -6558,7 +6558,7 @@ msgstr "<a href=\"/doc/enterprise/editing-appearance\">Editar aparência</a>"
 #. type: Content of: <h1>
 #: doc/noosfero/enterprise/managing-enterprise-members.en.xhtml:1
 msgid "Managing and adding members to an enterprise"
-msgstr "Gerenciar e adicionar integrantes em um Organização"
+msgstr "Gerenciar e adicionar integrantes em um empreendimento"
 
 # type: Content of: <p>
 #. type: Content of: <p>
@@ -6567,7 +6567,7 @@ msgid ""
 "<em>If you are an enterprise administrator, you can add or remove members "
 "from enterprise and also define which permissions each member will have</em>"
 msgstr ""
-"<em>Se você é administrador de um Organização, você pode adicionar e "
+"<em>Se você é administrador de um empreendimento, você pode adicionar e "
 "remover integrantes e também pode definir as permissões que cada membro "
 "terá</em>"
 
@@ -6580,9 +6580,9 @@ msgid ""
 "Manage&#8221;. Assuming that you are administrator of an enterprise&quot;, "
 "click on &#8220;Manage&#8221; link."
 msgstr ""
-"Aparecerá a lista de grupos (comunidades/Organizações) que você é membro. "
+"Aparecerá a lista de grupos (comunidades/empreendimentos) que você é membro. "
 "Os grupos que você pode gerenciar são listados com um link &#8220;"
-"Gerenciar&#8221;. Supondo que você é administrador de um Organização, "
+"Gerenciar&#8221;. Supondo que você é administrador de um empreendimento, "
 "clique em &#8220;Gerenciar&#8221;."
 
 # type: Content of: <ol><li>
@@ -6591,7 +6591,7 @@ msgstr ""
 msgid ""
 "In enterprise&#8217;s control panel, click on &#8220;Manage members&#8221;"
 msgstr ""
-"No painel de controle do Organização, clique em &#8220;Gerenciar "
+"No painel de controle do empreendimento, clique em &#8220;Gerenciar "
 "integrantes&#8221;"
 
 # type: Attribute 'alt' of: <ol><li><p><img>
@@ -6607,14 +6607,14 @@ msgid ""
 "You will see the list of people who are members of the enterprise and some "
 "buttons that will be explained in parts:"
 msgstr ""
-"Você verá a lista de pessoas que são integrantes do Organização e alguns "
+"Você verá a lista de pessoas que são integrantes do empreendimento e alguns "
 "botões que serão explicados por partes:"
 
 # type: Attribute 'alt' of: <ol><li><p><img>
 #. type: Attribute 'alt' of: <ol><li><img>
 #: doc/noosfero/enterprise/managing-enterprise-members.en.xhtml:19
 msgid "Members list of enterprise on manage members"
-msgstr "Lista de integrantes de um Organização em gerenciar integrantes"
+msgstr "Lista de integrantes de um empreendimento em gerenciar integrantes"
 
 # type: Content of: <ol><li><ol><li>
 #. type: Content of: <ol><li><ol><li>
@@ -6630,7 +6630,7 @@ msgstr ""
 #. type: Attribute 'alt' of: <ol><li><ol><li><img>
 #: doc/noosfero/enterprise/managing-enterprise-members.en.xhtml:21
 msgid "Changing role of an enterprise member"
-msgstr "Alterando o papel de um membro do Organização"
+msgstr "Alterando o papel de um membro do empreendimento"
 
 # type: Content of: <ol><li><ol><li>
 #. type: Content of: <ol><li><ol><li>
@@ -6651,7 +6651,7 @@ msgid ""
 "with all permissions."
 msgstr ""
 "<strong>Adicionar integrantes:</strong> Você verá um ecrã para adicionar "
-"novos integrantes ao Organização. Os integrantes inseridos terão o papel "
+"novos integrantes ao empreendimento. Os integrantes inseridos terão o papel "
 "de administrador do perfil por padrão, com todas as permissões."
 
 # type: Content of: <ol><li><ol><li><ol><li>
@@ -6663,7 +6663,7 @@ msgid ""
 "the search results."
 msgstr ""
 "Digite no campo de busca o nome do usuário do sistema que você deseja "
-"adicionar ao Organização. A tabela do lado esquerdo do ecrã "
+"adicionar ao empreendimento. A tabela do lado esquerdo do ecrã "
 "(&#8220;Usuários&#8221;) mostrará o resultado da busca."
 
 # type: Content of: <ol><li><ol><li><ol><li>
@@ -6693,14 +6693,14 @@ msgid ""
 "<a href=\"/doc/enterprise/activating-enterprise\">Activating your "
 "enterprise</a>"
 msgstr ""
-"<a href=\"/doc/enterprise/activating-enterprise\">Ativar seu Organização</"
+"<a href=\"/doc/enterprise/activating-enterprise\">Ativar seu empreendimento</"
 "a>"
 
 # type: Content of: <h1>
 #. type: Content of: <h1>
 #: doc/noosfero/enterprise/editing-enterprise-info.en.xhtml:1
 msgid "Editing enterprise settings"
-msgstr "Editar configurações do Organização"
+msgstr "Editar configurações do empreendimento"
 
 # type: Content of: <p>
 #. type: Content of: <p>
@@ -6709,7 +6709,7 @@ msgid ""
 "<em>If you are administrator of an enterprise, you can edit its settings.</"
 "em>"
 msgstr ""
-"<em>Se você é administrador de um Organização, você pode editar as "
+"<em>Se você é administrador de um empreendimento, você pode editar as "
 "configurações dele.</em>"
 
 # type: Content of: <ol><li>
@@ -6719,8 +6719,8 @@ msgid ""
 "In enterprise&#8217;s control panel, click on &#8220;Enterprise Info and "
 "settings&#8221;"
 msgstr ""
-"No painel de controle do Organização, clique em &#8220;Informações e "
-"Configurações do Organização&#8221;"
+"No painel de controle do empreendimento, clique em &#8220;Informações e "
+"Configurações do Empreendimento&#8221;"
 
 # type: Attribute 'alt' of: <ol><li><div><img>
 #. type: Attribute 'alt' of: <ol><li><img>
@@ -6736,7 +6736,7 @@ msgid ""
 "enterprise. This screen will be explained in parts"
 msgstr ""
 "Então você verá um formulário com as informações e configurações do "
-"Organização. Esse ecrã será explicado por partes"
+"empreendimento. Esse ecrã será explicado por partes"
 
 # type: Content of: <ol><li>
 #. type: Content of: <ol><li>
@@ -6748,8 +6748,8 @@ msgid ""
 "contact us&#8217;&#8221;."
 msgstr ""
 "<strong>Informações gerais:</strong> Preencha com os dados do seu "
-"Organização. Se quiser que o botão &#8220;Fale conosco&#8221; seja "
-"mostrado quando uma pessoa visita a página do seu Organização, selecione "
+"empreendimento. Se quiser que o botão &#8220;Fale conosco&#8221; seja "
+"mostrado quando uma pessoa visita a página do seu empreendimento, selecione "
 "&#8220;Habilitar Fale conosco &#8216;."
 
 # type: Attribute 'alt' of: <ol><li><div><img>
@@ -6757,7 +6757,7 @@ msgstr ""
 #: doc/noosfero/enterprise/editing-enterprise-info.en.xhtml:21
 msgid "General information when editing enterprise profile info"
 msgstr ""
-"Informações gerais na edição das informações do perfil de Organização"
+"Informações gerais na edição das informações do perfil de empreendimento"
 
 # type: Content of: <ol><li>
 #. type: Content of: <ol><li>
@@ -6769,15 +6769,15 @@ msgid ""
 "choose the second if approval is not needed."
 msgstr ""
 "<strong>Opções de moderação:</strong> Escolha como a moderação de artigos do "
-"Organização será feita. Escolha a primeira opção caso você queira que os "
-"administradores do Organização aprovem/rejeitem os artigos publicados e "
+"empreendimento será feita. Escolha a primeira opção caso você queira que os "
+"administradores do empreendimento aprovem/rejeitem os artigos publicados e "
 "escolha a a segunda opção se não é necessário ter moderação."
 
 # type: Attribute 'alt' of: <ol><li><div><img>
 #. type: Attribute 'alt' of: <ol><li><img>
 #: doc/noosfero/enterprise/editing-enterprise-info.en.xhtml:23
 msgid "Moderation options when editing enterprise profile info"
-msgstr "Opções de moderação na edição das informações do Organização"
+msgstr "Opções de moderação na edição das informações do empreendimento"
 
 # type: Content of: <ol><li>
 #. type: Content of: <ol><li>
@@ -6788,7 +6788,7 @@ msgid ""
 "computer. The image must have a maximum of 500Kb e be <em>.jpg</em> , <em>."
 "gif</em> or <em>.png</em> ."
 msgstr ""
-"<strong>Mudar foto: </strong>Insira ou altere a foto do Organização. "
+"<strong>Mudar foto: </strong>Insira ou altere a foto do empreendimento. "
 "Clique em &#8221;Ficheiro...&#8220; e escolha a imagem no seu computador. A "
 "imagem deve ter no máximo 500Kb e ser do tipo <em>.jpg</em>, <em>.gif</em> "
 "ou <em>.png</em>."
@@ -6797,13 +6797,13 @@ msgstr ""
 #. type: Attribute 'alt' of: <ol><li><ul><li><img>
 #: doc/noosfero/enterprise/editing-enterprise-info.en.xhtml:26
 msgid "Add picture when editing enterprise profile info"
-msgstr "Alterar imagem na edição das informações do Organização"
+msgstr "Alterar imagem na edição das informações do empreendimento"
 
 # type: Attribute 'alt' of: <ol><li><div><img>
 #. type: Attribute 'alt' of: <ol><li><ul><li><img>
 #: doc/noosfero/enterprise/editing-enterprise-info.en.xhtml:27
 msgid "Change picture when editing enterprise profile info"
-msgstr "Alterar imagem na edição das informações do Organização"
+msgstr "Alterar imagem na edição das informações do empreendimento"
 
 # type: Content of: <ol><li>
 #. type: Content of: <ol><li>
@@ -6815,9 +6815,9 @@ msgid ""
 "will be redirected to a page that show only general information."
 msgstr ""
 "<strong>Opções de privacidade:</strong> Escolha se o perfil do "
-"Organização será público ou privado. Quando um Organização é privado, "
+"empreendimento será público ou privado. Quando um empreendimento é privado, "
 "os usuários que não são amigos e tentam visualizar o perfil do "
-"Organização ou seu conteúdo serão redirecionado para a página que mostra "
+"empreendimento ou seu conteúdo serão redirecionado para a página que mostra "
 "apenas informações gerais."
 
 # type: Attribute 'alt' of: <ol><li><ul><p><img>
@@ -6826,7 +6826,7 @@ msgstr ""
 #: doc/noosfero/enterprise/editing-enterprise-info.en.xhtml:32
 #: doc/noosfero/user/editing-person-info.en.xhtml:20
 msgid "Privacy options when editing enterprise profile info"
-msgstr "Opções de privacidade na edição das informações do Organização"
+msgstr "Opções de privacidade na edição das informações do empreendimento"
 
 # type: Content of: <ol><li><ul><li>
 #. type: Content of: <ol><li>
@@ -6836,7 +6836,7 @@ msgid ""
 "categories that the enterprise will have."
 msgstr ""
 "<strong>Categorias:</strong> Se habilitado no sistema, você pode definir as "
-"categorias das quais o Organização fará parte."
+"categorias das quais o empreendimento fará parte."
 
 # type: Content of: <ol><li>
 #. type: Content of: <ol><li>
@@ -6855,20 +6855,20 @@ msgid ""
 "<em>You can customize the page of your enterprise, adding some text or image "
 "on header or footer.</em>"
 msgstr ""
-"<em>Você pode personalizar a página do seu Organização, colocando texto "
+"<em>Você pode personalizar a página do seu empreendimento, colocando texto "
 "ou imagem no cabeçalho ou rodapé</em>"
 
 # type: Attribute 'alt' of: <ol><li><div><img>
 #. type: Attribute 'alt' of: <ol><li><img>
 #: doc/noosfero/enterprise/editing-header-footer.en.xhtml:14
 msgid "Edit header and footer on enterprise control panel"
-msgstr "Editar cabeçalho e rodapé no controle de painel do Organização"
+msgstr "Editar cabeçalho e rodapé no controle de painel do empreendimento"
 
 # type: Content of: <h1>
 #. type: Content of: <h1>
 #: doc/noosfero/enterprise/adding-product.en.xhtml:1
 msgid "Adding products to an enterprise"
-msgstr "Adicionando produtos em um Organização"
+msgstr "Adicionando produtos em um empreendimento"
 
 # type: Content of: <p>
 #. type: Content of: <p>
@@ -6877,8 +6877,8 @@ msgid ""
 "<em>If you are an enterprise administrator, you can add products to the "
 "enterprise.</em>"
 msgstr ""
-"<em>Se você é administrador de um Organização, você pode adicionar "
-"produtos no Organizaçãoterá</em>"
+"<em>Se você é administrador de um empreendimento, você pode adicionar "
+"produtos no empreendimentoterá</em>"
 
 # type: Content of: <ol><li><p>
 #. type: Content of: <ol><li>
@@ -6888,8 +6888,8 @@ msgid ""
 "searching-enterprises\">search</a> and click on the enterprise you want to "
 "add a product."
 msgstr ""
-"Vá para a página do Organização. Utilize a <a href=\"/doc/navigation/"
-"searching-enterprises\">busca</a> e clique no Organização que deseja "
+"Vá para a página do empreendimento. Utilize a <a href=\"/doc/navigation/"
+"searching-enterprises\">busca</a> e clique no empreendimento que deseja "
 "adicionar um produto."
 
 # type: Content of: <ol><li>
@@ -6899,7 +6899,7 @@ msgid ""
 "In enterprise&#8217;s control panel, click on &#8220;Manage products and "
 "services&#8221;"
 msgstr ""
-"No painel de controle do Organização, clique em &#8220;Gerenciar produtos "
+"No painel de controle do empreendimento, clique em &#8220;Gerenciar produtos "
 "e serviçoes&#8221;"
 
 # type: Attribute 'alt' of: <ol><li><p><img>
@@ -6922,7 +6922,7 @@ msgstr ""
 #. type: Attribute 'alt' of: <ol><li><img>
 #: doc/noosfero/enterprise/adding-product.en.xhtml:15
 msgid "Product list of enterprise on manage products"
-msgstr "Lista de produtos de um Organização em gerenciar produtos"
+msgstr "Lista de produtos de um empreendimento em gerenciar produtos"
 
 # type: Content of: <ol><li>
 #. type: Content of: <ol><li>
@@ -7150,7 +7150,7 @@ msgid ""
 "the unwanted comments posted on it.</em>"
 msgstr ""
 "<em>Caso você seja o autor de um artigo ou tenha permissão para moderar os "
-"comentários de um perfil (comunidade/Organização), você poderá remover os "
+"comentários de um perfil (comunidade/empreendimento), você poderá remover os "
 "comentários indesejáveis postados nele.</em>"
 
 # type: Content of: <p>
@@ -7793,7 +7793,7 @@ msgid ""
 "and much more.</em>"
 msgstr ""
 "<em>Para fazer parte do sistema, você precisa se cadastrar. Após o registro, "
-"você poderá se cadastrar em comunidades, Organizações, fazer amigos e "
+"você poderá se cadastrar em comunidades, empreendimentos, fazer amigos e "
 "muito mais.</em>"
 
 # type: Content of: <ol><li>
@@ -8056,14 +8056,14 @@ msgid ""
 "<strong>Favorite enterprises:</strong> Lists your favorite enterprises. You "
 "can choose how many enterprises will be listed."
 msgstr ""
-"<strong>Organizações favoritos:</strong> Lista seus Organizações "
-"favoritos. Você pode escolher quantos Organizações serão listados."
+"<strong>Empreendimentos favoritos:</strong> Lista seus empreendimentos "
+"favoritos. Você pode escolher quantos empreendimentos serão listados."
 
 # type: Content of: <h1>
 #. type: Attribute 'alt' of: <ol><li><ul><li><img>
 #: doc/noosfero/user/editing-sideboxes.en.xhtml:37
 msgid "Favorite enterprises block"
-msgstr "Bloco de Organizações favoritos"
+msgstr "Bloco de empreendimentos favoritos"
 
 # type: Content of: <ol><li><ul><li>
 #. type: Content of: <ol><li><ul><li>
@@ -8072,15 +8072,15 @@ msgid ""
 "<strong>Enterprises:</strong> This block displays the enterprises in which "
 "the user is a member. You can choose how many enterprises will be listed."
 msgstr ""
-"<strong>Organizações:</strong> Este bloco apresenta os Organização que "
-"o usuário é membro. Você pode escolher quantos Organizações serão "
+"<strong>Empreendimentos:</strong> Este bloco apresenta os empreendimento que "
+"o usuário é membro. Você pode escolher quantos empreendimentos serão "
 "listados."
 
 # type: Content of: <h1>
 #. type: Attribute 'alt' of: <ol><li><ul><li><img>
 #: doc/noosfero/user/editing-sideboxes.en.xhtml:38
 msgid "Enterprises block"
-msgstr "Bloco de Organizações"
+msgstr "Bloco de empreendimentos"
 
 # type: Content of: <ul><li>
 #. type: Content of: <ul><li>
@@ -8357,9 +8357,9 @@ msgid ""
 "page that display only general information."
 msgstr ""
 "<strong>Opções de privacidade:</strong> Escolha se o perfil do "
-"Organização será público ou privado. Quando um Organização é privado, "
+"empreendimento será público ou privado. Quando um empreendimento é privado, "
 "os usuários que não são amigos e tentam visualizar o perfil do "
-"Organização ou seu conteúdo serão redirecionado para a página que mostra "
+"empreendimento ou seu conteúdo serão redirecionado para a página que mostra "
 "apenas informações gerais."
 
 # type: Content of: <ol><li><ul><li>
@@ -8546,7 +8546,7 @@ msgid ""
 "members to an enterprise</a>"
 msgstr ""
 "<a href=\"/doc/enterprise/managing-enterprise-members\">Gerenciar e "
-"adicionar integrantes em um Organização</a>"
+"adicionar integrantes em um empreendimento</a>"
 
 # type: Content of: <ul><li>
 #. type: Content of: <ul><li>
@@ -8556,7 +8556,7 @@ msgid ""
 "a>"
 msgstr ""
 "<a href=\"/doc/enterprise/adding-product\">Adicionando produtos em um "
-"Organização</a>"
+"empreendimento</a>"
 
 # type: Content of: <ul><li>
 #. type: Content of: <ul><li>
@@ -8572,7 +8572,7 @@ msgid ""
 "<a href=\"/doc/enterprise/disabling-enterprise\">Disabling an enterprise</a>"
 msgstr ""
 "<a href=\"/doc/enterprise/disabling-enterprise\">Desabilitar um "
-"Organização</a>"
+"empreendimento</a>"
 
 # type: Content of: <ul><li>
 #. type: Content of: <ul><li>
@@ -8680,7 +8680,7 @@ msgstr "<a href=\"/doc/cms\">Gerenciamento de conteúdo</a>"
 #. type: Content of: <ul><li>
 #: doc/noosfero/toc.en.xhtml:9
 msgid "<a href=\"/doc/enterprise\">Enterprise features</a>"
-msgstr "<a href=\"/doc/enterprise\">Funcionalidades do Organização</a>"
+msgstr "<a href=\"/doc/enterprise\">Funcionalidades do empreendimento</a>"
 
 # type: Content of: <ul><li>
 #. type: Content of: <ul><li>
