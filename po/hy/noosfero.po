@@ -38,12 +38,21 @@ msgid "The article %s was removed."
 msgstr "Այս անհատական էջը"
 
 #, fuzzy
+<<<<<<< HEAD
 msgid ""
 "The article couldn't be removed due to some problem. Please contact the admini"
 "strator."
 msgstr "Հեռացնել"
 
 msgid ""
+=======
+msgid ""
+"The article couldn't be removed due to some problem. Please contact the admini"
+"strator."
+msgstr "Հեռացնել"
+
+msgid ""
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 "Your abuse report was registered. The administrators are reviewing your report"
 "."
 msgstr ""
@@ -153,14 +162,24 @@ msgid "Access denied"
 msgstr "Մուտքն արգելված է"
 
 #, fuzzy
-msgid "Logged users"
-msgstr "Մուտք որպես %s"
-
-#, fuzzy
+<<<<<<< HEAD
 msgid "Visitors"
 msgstr "Պատմություն"
 
 #, fuzzy
+=======
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
+msgid "Logged users"
+msgstr "Մուտք որպես %s"
+
+#, fuzzy
+<<<<<<< HEAD
+=======
+msgid "Visitors"
+msgstr "Պատմություն"
+
+#, fuzzy
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "Friends / Members"
 msgstr "Ընկերներ"
 
@@ -273,6 +292,7 @@ msgstr ""
 #, fuzzy
 msgid "License could not be created"
 msgstr "Սկզբնական նյութի թարմացումը ձախողված է"
+<<<<<<< HEAD
 
 #, fuzzy
 msgid "License updated"
@@ -294,15 +314,46 @@ msgstr "Սկզբնական նյութի թարմացումը ձախողված է
 msgid "Organization profiles"
 msgstr "Կազմակերպությունը հաստատելու միջոց"
 
+msgid "All"
+msgstr ""
+
+msgid "Community"
+msgstr "Համայնք"
+=======
+
+#, fuzzy
+msgid "License updated"
+msgstr "Վերջինը թարմացվել է %s"
+
+#, fuzzy
+msgid "License could not be updated"
+msgstr "Սկզբնական նյութի թարմացումը ձախողված է"
+
+#, fuzzy
+msgid "License removed"
+msgstr "Բուն հոդված"
+
+#, fuzzy
+msgid "License could not be removed"
+msgstr "Սկզբնական նյութի թարմացումը ձախողված է"
+
+#, fuzzy
+msgid "Organization profiles"
+msgstr "Կազմակերպությունը հաստատելու միջոց"
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
+
 msgid "Enterprise"
 msgstr "Կազմակերպություն Ձեռնարկություն"
 
+<<<<<<< HEAD
+=======
 msgid "Community"
 msgstr "Համայնք"
 
 msgid "All"
 msgstr ""
 
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 #, fuzzy
 msgid "%s enabled"
 msgstr "%s ակտիվացված չէ:"
@@ -493,6 +544,7 @@ msgstr ""
 
 msgid "Are not you going to invite anyone?"
 msgstr ""
+<<<<<<< HEAD
 
 #, fuzzy
 msgid "Your friends were invited successfully."
@@ -521,6 +573,36 @@ msgstr "Էլ. հասցե"
 msgid "Email template was successfully updated."
 msgstr "Էլ. հասցե"
 
+=======
+
+#, fuzzy
+msgid "Your friends were invited successfully."
+msgstr "ընկերներ"
+
+#, fuzzy
+msgid "Some of your friends could not be invited."
+msgstr "ընկերներ"
+
+#, fuzzy
+msgid "%s could not be uploaded"
+msgstr "Սկզբնական նյութի թարմացումը ձախողված է"
+
+msgid "Images"
+msgstr ""
+
+#, fuzzy
+msgid "Files"
+msgstr "Ֆայլի անուն"
+
+#, fuzzy
+msgid "Email template was successfully created."
+msgstr "Էլ. հասցե"
+
+#, fuzzy
+msgid "Email template was successfully updated."
+msgstr "Էլ. հասցե"
+
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "Sorry, we can not record your decision."
 msgstr ""
 
@@ -979,6 +1061,7 @@ msgstr "Համայնքներ"
 #, fuzzy
 msgid "New content"
 msgstr "Ամբողջ բովանդակությունը"
+<<<<<<< HEAD
 
 #, fuzzy
 msgid "people|More recent"
@@ -1032,6 +1115,61 @@ msgid "Configure the environment"
 msgstr "Անհատական էջ|Միջավայր"
 
 #, fuzzy
+=======
+
+#, fuzzy
+msgid "people|More recent"
+msgstr "Վերջին"
+
+#, fuzzy
+msgid "people|More active"
+msgstr "Ակտիվ"
+
+#, fuzzy
+msgid "people|More popular"
+msgstr "Մարդիկ և խմբեր"
+
+#, fuzzy
+msgid "communities|More recent"
+msgstr "Համայնքներ"
+
+#, fuzzy
+msgid "communities|More active"
+msgstr "Համայնքներ"
+
+#, fuzzy
+msgid "communities|More popular"
+msgstr "Համայնքներ"
+
+msgid "Previous"
+msgstr "Նախորդ"
+
+#, fuzzy
+msgid "See all"
+msgstr "տեսնել բոլոր ..."
+
+#, fuzzy
+msgid "Manage %s"
+msgstr "Կառավարել"
+
+#, fuzzy
+msgid "My enterprises"
+msgstr "Բոլոր ձեռնարկությունները"
+
+#, fuzzy
+msgid "My communities"
+msgstr "Համայնքներ"
+
+#, fuzzy
+msgid "Administration"
+msgstr "Կառավարման վահանակ"
+
+#, fuzzy
+msgid "Configure the environment"
+msgstr "Անհատական էջ|Միջավայր"
+
+#, fuzzy
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "Manage your pending tasks"
 msgstr "Կառավարել Ձեր բովանդակությունը:"
 
@@ -1336,10 +1474,13 @@ msgid "Reply"
 msgstr ""
 
 #, fuzzy
+<<<<<<< HEAD
+=======
 msgid "%s comments"
 msgstr "Մեկնաբանություն թողնել"
 
 #, fuzzy
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "no comments yet"
 msgstr "Առայժմ ոչ մի մեկնաբանություն չկա:"
 
@@ -1348,6 +1489,13 @@ msgid "One comment"
 msgstr "Մեկ մեկնաբանություն"
 
 #, fuzzy
+<<<<<<< HEAD
+msgid "%s comments"
+msgstr "Մեկնաբանություն թողնել"
+
+#, fuzzy
+=======
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "This is a private content"
 msgstr "Անհատական էջի բովանդակություն"
 
@@ -1423,6 +1571,7 @@ msgstr "%{month} %{day}, %{year}"
 #, fuzzy
 msgid "from %{date1} to %{date2}, %{year}"
 msgstr "%{author}-ի կողմից %{date}-ին"
+<<<<<<< HEAD
 
 #, fuzzy
 msgid "from %{date1} to %{date2}"
@@ -1444,6 +1593,29 @@ msgstr "Երեքշաբթի"
 msgid "Wed"
 msgstr "Կարմիր"
 
+=======
+
+#, fuzzy
+msgid "from %{date1} to %{date2}"
+msgstr "%{author}-ի կողմից %{date}-ին"
+
+#, fuzzy
+msgid "Sun"
+msgstr "Կիրակի"
+
+#, fuzzy
+msgid "Mon"
+msgstr "Երկուշաբթի"
+
+#, fuzzy
+msgid "Tue"
+msgstr "Երեքշաբթի"
+
+#, fuzzy
+msgid "Wed"
+msgstr "Կարմիր"
+
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "Thu"
 msgstr ""
 
@@ -2118,6 +2290,7 @@ msgstr "Էլ. հասցե"
 #, fuzzy
 msgid "Contact"
 msgstr "Բովանդակության տեսակ"
+<<<<<<< HEAD
 
 msgid "Male"
 msgstr "Արական"
@@ -2137,6 +2310,27 @@ msgid_plural "%{num} pictures"
 msgstr[0] "Փոխել նկարը"
 msgstr[1] "Փոխել նկարը"
 
+=======
+
+msgid "Male"
+msgstr "Արական"
+
+msgid "Female"
+msgstr "Իգական"
+
+#, fuzzy
+msgid "One post"
+msgid_plural "%{num} posts"
+msgstr[0] "Մեկ մեկնաբանություն"
+msgstr[1] "մեկնաբանություններ"
+
+#, fuzzy
+msgid "One picture"
+msgid_plural "%{num} pictures"
+msgstr[0] "Փոխել նկարը"
+msgstr[1] "Փոխել նկարը"
+
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "non registered gender"
 msgstr "սեռը գրանցված չէ"
 
@@ -3843,6 +4037,29 @@ msgstr "Տարածաշրջան"
 msgid "Invalid city or state name."
 msgstr ""
 
+<<<<<<< HEAD
+#, fuzzy
+msgid "District"
+msgstr "Սահմանափակումներ"
+
+#, fuzzy
+msgid "Address reference"
+msgstr "Հասցե"
+
+msgid "Display name"
+msgstr "Ցուցադրել անունը"
+
+msgid "Description"
+msgstr "Նկարագրություն"
+
+msgid "Contact email"
+msgstr "էլ. հասցե"
+
+#, fuzzy
+msgid "person"
+msgstr "Անձ"
+
+=======
 msgid "Display name"
 msgstr "Ցուցադրել անունը"
 
@@ -3864,6 +4081,7 @@ msgstr "Հասցե"
 msgid "person"
 msgstr "Անձ"
 
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "Latitude"
 msgstr ""
 
@@ -4711,6 +4929,7 @@ msgstr ""
 
 msgid "X minutes/hours/days/months/years ago"
 msgstr ""
+<<<<<<< HEAD
 
 #, fuzzy
 msgid "Default language"
@@ -4740,6 +4959,37 @@ msgid "Features"
 msgstr "Ինչ-որ առանձնահատկություն"
 
 #, fuzzy
+=======
+
+#, fuzzy
+msgid "Default language"
+msgstr "Լեզուներ"
+
+#, fuzzy
+msgid "Available languages"
+msgstr "Լեզուներ"
+
+#, fuzzy
+msgid "Homepage content"
+msgstr "Կառավարել բովանդակությունը:"
+
+msgid "Administrator Panel"
+msgstr "Կառավարման վահանակ"
+
+#, fuzzy
+msgid "System settings"
+msgstr "Պարամետրեր"
+
+#, fuzzy
+msgid "Environment settings"
+msgstr "Համակարգ|Պարամետրեր"
+
+#, fuzzy
+msgid "Features"
+msgstr "Ինչ-որ առանձնահատկություն"
+
+#, fuzzy
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "Plugins"
 msgstr "Խորագիր"
 
@@ -5190,6 +5440,7 @@ msgid "Thumbnail"
 msgstr "Մանրապատկեր"
 
 msgid "Slideshow size"
+<<<<<<< HEAD
 msgstr ""
 
 #, fuzzy
@@ -5234,6 +5485,52 @@ msgstr ""
 msgid "Custom css class for this block: "
 msgstr "Այս բաժնի հայեցողական անվանումը՝ "
 
+=======
+msgstr ""
+
+#, fuzzy
+msgid "Limit of tags to display:"
+msgstr "Հոդվածների քանակի սահմանափակում"
+
+msgid "Custom title for this block: "
+msgstr "Այս բաժնի հայեցողական անվանումը՝ "
+
+#, fuzzy
+msgid "Custom subtitle for this block: "
+msgstr "Այս բաժնի հայեցողական անվանումը՝ "
+
+#, fuzzy
+msgid "Display this block:"
+msgstr "Ցուցադրել ցուցակի մեջ"
+
+#, fuzzy
+msgid "Display to users:"
+msgstr "Ցուցադրել գույնը"
+
+#, fuzzy
+msgid "Show for:"
+msgstr "Որոնել"
+
+#, fuzzy
+msgid "all languages"
+msgstr "Լեզուներ"
+
+#, fuzzy
+msgid "Edit options:"
+msgstr "Էլ. փոստի պարամետրեր"
+
+#, fuzzy
+msgid "Move options:"
+msgstr "Կառավարման հատկություններ"
+
+msgid "Mirror"
+msgstr ""
+
+#, fuzzy
+msgid "Custom css class for this block: "
+msgstr "Այս բաժնի հայեցողական անվանումը՝ "
+
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "Editing sideboxes"
 msgstr ""
 
@@ -5433,13 +5730,22 @@ msgstr "Օգտագործման կանոններն ու պայմանները"
 #, fuzzy
 msgid "Parent folder:"
 msgstr "Ներկայիս կատեգորիա"
+<<<<<<< HEAD
+
+msgid "None"
+msgstr "Չկա"
+=======
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 
 msgid "License"
 msgstr ""
 
+<<<<<<< HEAD
+=======
 msgid "None"
 msgstr "Չկա"
 
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 #, fuzzy
 msgid "Reference"
 msgstr "Հասցե"

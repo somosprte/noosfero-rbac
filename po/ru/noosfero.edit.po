@@ -186,16 +186,27 @@ msgstr ""
 msgid "Access denied"
 msgstr "Доступ запрещен"
 
-#: ../app/concerns/entitlement/levels.rb:3 ../app/models/forum.rb:41
-#, fuzzy
-msgid "Logged users"
-msgstr "В системе как %s"
-
+<<<<<<< HEAD
 #: ../app/concerns/entitlement/levels.rb:3
 #, fuzzy
 msgid "Visitors"
 msgstr "История"
 
+=======
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
+#: ../app/concerns/entitlement/levels.rb:3 ../app/models/forum.rb:41
+#, fuzzy
+msgid "Logged users"
+msgstr "В системе как %s"
+
+<<<<<<< HEAD
+=======
+#: ../app/concerns/entitlement/levels.rb:3
+#, fuzzy
+msgid "Visitors"
+msgstr "История"
+
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 #: ../app/concerns/entitlement/levels.rb:4
 #, fuzzy
 msgid "Friends / Members"
@@ -366,17 +377,29 @@ msgstr "Адрес не может быть сохранен"
 msgid "Organization profiles"
 msgstr "метот утверждения"
 
+<<<<<<< HEAD
+#: ../app/controllers/admin/organizations_controller.rb:9 ../app/views/cms/_blog.html.erb:73 ../app/views/cms/_rss_feed.html.erb:9 ../app/views/memberships/index.html.erb:10 ../app/views/tasks/index.html.erb:6 ../app/views/tasks/processed.html.erb:8
+msgid "All"
+msgstr ""
+=======
 #: ../app/controllers/admin/organizations_controller.rb:9 ../app/helpers/link_list_block_helper.rb:34 ../app/models/circle.rb:32 ../app/models/control_panel.rb:18 ../app/models/enterprise.rb:13 ../app/views/templates/index.html.erb:7
 msgid "Enterprise"
 msgstr "Компания"
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 
 #: ../app/controllers/admin/organizations_controller.rb:9 ../app/models/circle.rb:31 ../app/models/community.rb:9 ../app/views/templates/index.html.erb:6
 msgid "Community"
 msgstr "Сообщество"
 
+<<<<<<< HEAD
+#: ../app/controllers/admin/organizations_controller.rb:9 ../app/helpers/link_list_block_helper.rb:34 ../app/models/circle.rb:32 ../app/models/control_panel.rb:18 ../app/models/enterprise.rb:13 ../app/views/templates/index.html.erb:7
+msgid "Enterprise"
+msgstr "Компания"
+=======
 #: ../app/controllers/admin/organizations_controller.rb:9 ../app/views/cms/_blog.html.erb:73 ../app/views/cms/_rss_feed.html.erb:9 ../app/views/memberships/index.html.erb:10 ../app/views/tasks/index.html.erb:6 ../app/views/tasks/processed.html.erb:8
 msgid "All"
 msgstr ""
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 
 #: ../app/controllers/admin/organizations_controller.rb:37
 #, fuzzy
@@ -1671,11 +1694,14 @@ msgstr "Вы уверены что хотите удалить коммента�
 msgid "Reply"
 msgstr "Ответить"
 
+<<<<<<< HEAD
+=======
 #: ../app/helpers/content_viewer_helper.rb:9 ../app/models/article.rb:800 ../app/views/person_notifier/mailer/_profile_comments.html.erb:4
 #, fuzzy
 msgid "%s comments"
 msgstr "Опубликовать комментарий"
 
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 #: ../app/helpers/content_viewer_helper.rb:9
 #, fuzzy
 msgid "no comments yet"
@@ -1686,6 +1712,14 @@ msgstr "Нет комментариев"
 msgid "One comment"
 msgstr "Комментарий"
 
+<<<<<<< HEAD
+#: ../app/helpers/content_viewer_helper.rb:9 ../app/models/article.rb:800 ../app/views/person_notifier/mailer/_profile_comments.html.erb:4
+#, fuzzy
+msgid "%s comments"
+msgstr "Опубликовать комментарий"
+
+=======
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 #: ../app/helpers/content_viewer_helper.rb:33
 #, fuzzy
 msgid "This is a private content"
@@ -4749,6 +4783,19 @@ msgstr "Регион"
 msgid "Invalid city or state name."
 msgstr ""
 
+<<<<<<< HEAD
+#: ../app/models/organization.rb:117 ../app/models/person.rb:316 ../app/views/shared/_address_fields.html.erb:8
+#, fuzzy
+msgid "District"
+msgstr "Ограничения"
+
+#: ../app/models/organization.rb:117 ../app/models/person.rb:316
+#, fuzzy
+msgid "Address reference"
+msgstr "Адрес:"
+
+=======
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 #: ../app/models/organization.rb:117
 msgid "Display name"
 msgstr "Отображаемое имя"
@@ -4761,6 +4808,8 @@ msgstr "Описание"
 msgid "Contact email"
 msgstr "Контактный email"
 
+<<<<<<< HEAD
+=======
 #: ../app/models/organization.rb:117 ../app/models/person.rb:316 ../app/views/shared/_address_fields.html.erb:8
 #, fuzzy
 msgid "District"
@@ -4771,6 +4820,7 @@ msgstr "Ограничения"
 msgid "Address reference"
 msgstr "Адрес:"
 
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 #: ../app/models/person.rb:19 ../app/views/content_viewer/_publishing_info.html.erb:22
 #, fuzzy
 msgid "person"
@@ -6662,14 +6712,24 @@ msgstr "Правила пользования"
 msgid "Parent folder:"
 msgstr "родительская папка"
 
-#: ../app/views/cms/_general_fields.html.erb:8
-msgid "License"
-msgstr ""
-
+<<<<<<< HEAD
 #: ../app/views/cms/_general_fields.html.erb:8 ../app/views/search/_article_categories.html.erb:7 ../app/views/search/_article_description.html.erb:15 ../app/views/search/_article_tags.html.erb:7 ../app/views/search/_display_results.html.erb:35 ../app/views/search/_full_blog.html.erb:20 ../app/views/search/_full_forum.html.erb:20
 msgid "None"
 msgstr "Нет"
 
+=======
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
+#: ../app/views/cms/_general_fields.html.erb:8
+msgid "License"
+msgstr ""
+
+<<<<<<< HEAD
+=======
+#: ../app/views/cms/_general_fields.html.erb:8 ../app/views/search/_article_categories.html.erb:7 ../app/views/search/_article_description.html.erb:15 ../app/views/search/_article_tags.html.erb:7 ../app/views/search/_display_results.html.erb:35 ../app/views/search/_full_blog.html.erb:20 ../app/views/search/_full_forum.html.erb:20
+msgid "None"
+msgstr "Нет"
+
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 #: ../app/views/cms/_link_article.html.erb:3
 #, fuzzy
 msgid "Reference"

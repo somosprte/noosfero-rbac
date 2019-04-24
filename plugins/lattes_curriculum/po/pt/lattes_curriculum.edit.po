@@ -47,6 +47,10 @@ msgstr "Um plugins que importa o currículo Lattes no perfil dos usuários"
 msgid "Lattes"
 msgstr "Currículo Lattes"
 
+<<<<<<< HEAD
+#: ../lib/lattes_curriculum_plugin.rb:73 ../lib/lattes_curriculum_plugin.rb:106
+=======
 #: ../lib/lattes_curriculum_plugin.rb:74 ../lib/lattes_curriculum_plugin.rb:108
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid " Invalid lattes url"
 msgstr " URL do Lattes inválida"

@@ -114,6 +114,15 @@ msgid "This block displays the organization ratings."
 msgstr "Este bloco mostra as avaliações da organização."
 
 #: ../lib/organization_ratings_config.rb:9
+<<<<<<< HEAD
+msgid "Best Ratings"
+msgstr "Melhores Avaliações"
+
+#: ../lib/organization_ratings_config.rb:9
+msgid "More Recent"
+msgstr "Mais Recentes"
+
+=======
 msgid "More Recent"
 msgstr "Mais Recentes"
 
@@ -121,6 +130,7 @@ msgstr "Mais Recentes"
 msgid "Best Ratings"
 msgstr "Melhores Avaliações"
 
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 #: ../lib/organization_ratings_plugin.rb:9
 msgid "A plugin that allows you to rate a organization and comment about it."
 msgstr "Um plugin que permite que você avalie uma organização e comente sobre ela."
@@ -194,6 +204,15 @@ msgid "Back"
 msgstr "Voltar"
 
 #: ../views/organization_ratings_plugin_profile/_new_rating_fields.html.erb:34
+<<<<<<< HEAD
+msgid "stars"
+msgstr "estrelas"
+
+#: ../views/organization_ratings_plugin_profile/_new_rating_fields.html.erb:34
+msgid "Rated as"
+msgstr "Avaliado em"
+
+=======
 msgid "Rated as"
 msgstr "Avaliado em"
 
@@ -201,6 +220,7 @@ msgstr "Avaliado em"
 msgid "stars"
 msgstr "estrelas"
 
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 #: ../views/organization_ratings_plugin_profile/_new_rating_fields.html.erb:41
 msgid "Comment (Optional):"
 msgstr "Comentário (Opcional):"

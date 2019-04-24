@@ -166,14 +166,24 @@ msgstr "Passwort vergessen"
 msgid "Access denied"
 msgstr "Zugriff verweigert"
 
-msgid "Logged users"
-msgstr "Angemeldete Benutzer"
-
+<<<<<<< HEAD
 #, fuzzy
 msgid "Visitors"
 msgstr "Geschichte"
 
+=======
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
+msgid "Logged users"
+msgstr "Angemeldete Benutzer"
+
 #, fuzzy
+<<<<<<< HEAD
+=======
+msgid "Visitors"
+msgstr "Geschichte"
+
+#, fuzzy
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "Friends / Members"
 msgstr "Freunde"
 
@@ -298,14 +308,24 @@ msgstr "Lizenz konnte nicht entfernt werden"
 msgid "Organization profiles"
 msgstr "Organisationsprofile"
 
+<<<<<<< HEAD
+msgid "All"
+msgstr "Alle"
+=======
 msgid "Enterprise"
 msgstr "Unternehmen"
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 
 msgid "Community"
 msgstr "Community"
 
+<<<<<<< HEAD
+msgid "Enterprise"
+msgstr "Unternehmen"
+=======
 msgid "All"
 msgstr "Alle"
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 
 msgid "%s enabled"
 msgstr "%s aktiviert"
@@ -1254,9 +1274,7 @@ msgstr ""
 msgid "Reply"
 msgstr "Antworten"
 
-msgid "%s comments"
-msgstr "%s Kommentare"
-
+<<<<<<< HEAD
 #, fuzzy
 msgid "no comments yet"
 msgstr "Bisher keine Kommentare"
@@ -1265,7 +1283,23 @@ msgstr "Bisher keine Kommentare"
 msgid "One comment"
 msgstr "Ein Kommentar"
 
+=======
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
+msgid "%s comments"
+msgstr "%s Kommentare"
+
 #, fuzzy
+<<<<<<< HEAD
+=======
+msgid "no comments yet"
+msgstr "Bisher keine Kommentare"
+
+#, fuzzy
+msgid "One comment"
+msgstr "Ein Kommentar"
+
+#, fuzzy
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "This is a private content"
 msgstr "Zeige private Inhalte"
 
@@ -3668,21 +3702,36 @@ msgstr "Regionalcode"
 msgid "Invalid city or state name."
 msgstr "Ungültiger Name für eine Stadt oder eine Region."
 
-msgid "Display name"
-msgstr "Namen anzeigen"
-
-msgid "Description"
-msgstr "Beschreibung"
-
-msgid "Contact email"
-msgstr "Kontakt-E-Mail"
-
+<<<<<<< HEAD
 msgid "District"
 msgstr "Gebiet"
 
 msgid "Address reference"
 msgstr "Adressreferenz"
 
+msgid "Display name"
+msgstr "Namen anzeigen"
+
+=======
+msgid "Display name"
+msgstr "Namen anzeigen"
+
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
+msgid "Description"
+msgstr "Beschreibung"
+
+msgid "Contact email"
+msgstr "Kontakt-E-Mail"
+
+<<<<<<< HEAD
+=======
+msgid "District"
+msgstr "Gebiet"
+
+msgid "Address reference"
+msgstr "Adressreferenz"
+
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "person"
 msgstr "Person"
 
@@ -5171,12 +5220,21 @@ msgstr "Nutzungsbedingungen:"
 msgid "Parent folder:"
 msgstr "Übergeordneter Ordner:"
 
+<<<<<<< HEAD
+msgid "None"
+msgstr "keine"
+
+msgid "License"
+msgstr "Lizenz"
+
+=======
 msgid "License"
 msgstr "Lizenz"
 
 msgid "None"
 msgstr "keine"
 
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "Reference"
 msgstr "Referenz"
 

@@ -158,12 +158,21 @@ msgstr "Olvidé mi contraseña"
 msgid "Access denied"
 msgstr "Acceso denegado"
 
+<<<<<<< HEAD
+msgid "Visitors"
+msgstr "Visitantes"
+
+msgid "Logged users"
+msgstr "Usuarios registrados"
+
+=======
 msgid "Logged users"
 msgstr "Usuarios registrados"
 
 msgid "Visitors"
 msgstr "Visitantes"
 
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "Friends / Members"
 msgstr "Amigos / Miembros"
 
@@ -288,14 +297,24 @@ msgstr "Licencia no pudo ser eliminada"
 msgid "Organization profiles"
 msgstr "Perfiles de la organización"
 
+<<<<<<< HEAD
+msgid "All"
+msgstr "Todo"
+=======
 msgid "Enterprise"
 msgstr "Empresa"
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 
 msgid "Community"
 msgstr "Comunidad"
 
+<<<<<<< HEAD
+msgid "Enterprise"
+msgstr "Empresa"
+=======
 msgid "All"
 msgstr "Todo"
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 
 # habilitado o permitido? estaba o está?
 msgid "%s enabled"
@@ -1252,6 +1271,17 @@ msgstr "¿Estás seguro de que quieres eliminar este comentario y todas sus resp
 msgid "Reply"
 msgstr "Responder"
 
+<<<<<<< HEAD
+msgid "no comments yet"
+msgstr "Sin comentarios aún"
+
+msgid "One comment"
+msgstr "Un comentario"
+
+msgid "%s comments"
+msgstr "%s comentarios"
+
+=======
 msgid "%s comments"
 msgstr "%s comentarios"
 
@@ -1261,6 +1291,7 @@ msgstr "Sin comentarios aún"
 msgid "One comment"
 msgstr "Un comentario"
 
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "This is a private content"
 msgstr "Este es un contenido privado"
 
@@ -3616,6 +3647,15 @@ msgstr "Código postal"
 msgid "Invalid city or state name."
 msgstr "Nombre nombre de ciudad o provincia inválido."
 
+<<<<<<< HEAD
+msgid "District"
+msgstr "Distrito"
+
+msgid "Address reference"
+msgstr "Referencia de dirección"
+
+=======
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "Display name"
 msgstr "Mostrar nombre"
 
@@ -3625,12 +3665,15 @@ msgstr "Descripción"
 msgid "Contact email"
 msgstr "Correo electrónico de contacto"
 
+<<<<<<< HEAD
+=======
 msgid "District"
 msgstr "Distrito"
 
 msgid "Address reference"
 msgstr "Referencia de dirección"
 
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "person"
 msgstr "Persona"
 
@@ -4404,6 +4447,7 @@ msgid "Body"
 msgstr "Cuerpo"
 
 #, fuzzy
+<<<<<<< HEAD
 msgid ""
 "If you enable this feature on the \"Features\" section of the Administration Pan"
 "el, this text will be shown as a welcome message to users after signup."
@@ -4434,6 +4478,38 @@ msgid ""
 "Including %s on body, it will be replaced by the real name of the e-mail recip"
 "ient."
 msgstr ""
+=======
+msgid ""
+"If you enable this feature on the \"Features\" section of the Administration Pan"
+"el, this text will be shown as a welcome message to users after signup."
+msgstr ""
+"#-#-#-#-#  noosfero.po.tmp (1.3~rc2-8-g01ea9f7)  #-#-#-#-#\n"
+"Esta es la lista de todas las versiones de este contenido. Elige una versión p"
+"ara verla y luego revisarla.\n"
+"#-#-#-#-#  noosfero.po.tmp (1.3~rc2-8-g01ea9f7)  #-#-#-#-#\n"
+"Si habilita esta función en la sección \"Características\" del Panel de administ"
+"ración, este texto se mostrará como un mensaje de bienvenida para los usuarios"
+" después del registro."
+
+msgid ""
+"If this content is left blank, the following page will be displayed to the use"
+"r:"
+msgstr ""
+"Si este contenido se deja en blanco, la siguiente página se mostrará al usuari"
+"o:"
+
+msgid ""
+"This text will be sent to new users if the feature \"Send welcome e-mail to new"
+" users\" is enabled on environment."
+msgstr ""
+"Este texto se enviará a nuevos usuarios si la función \"Enviar correo electróni"
+"co de bienvenida a nuevos usuarios\" está habilitada en el entorno."
+
+msgid ""
+"Including %s on body, it will be replaced by the real name of the e-mail recip"
+"ient."
+msgstr ""
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 "Incluyendo %s en el cuerpo, será reemplazado por el nombre real del destinatar"
 "io del correo electrónico."
 
@@ -5135,12 +5211,21 @@ msgstr "Términos de uso:"
 msgid "Parent folder:"
 msgstr "Carpeta raíz:"
 
+<<<<<<< HEAD
+msgid "None"
+msgstr "Ninguno"
+
+msgid "License"
+msgstr "Licencia"
+
+=======
 msgid "License"
 msgstr "Licencia"
 
 msgid "None"
 msgstr "Ninguno"
 
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "Reference"
 msgstr "Referencia"
 

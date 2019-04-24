@@ -12,7 +12,7 @@ when 'virtualhosts'
       domains << Domain.new(:name => 'localhost')
     end
     puts "# #{environment.name}"
-    puts "<VirtualHost *:80>"
+    puts "<VirtualHost *:443>"
     server_directive = 'ServerName'
     domains.each do |domain|
       puts "  #{server_directive} #{domain.name}"

@@ -7,7 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
+"POT-Creation-Date: 2019-04-02 15:21+0000\n"
+=======
 "POT-Creation-Date: 2019-04-04 19:11+0000\n"
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 "PO-Revision-Date: 2018-01-31 16:40+0000\n"
 "Last-Translator: Марс Ямбар <mjambarmeta@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/noosfero/noosfer"
@@ -176,14 +180,24 @@ msgstr ""
 msgid "Access denied"
 msgstr ""
 
-#: ../app/concerns/entitlement/levels.rb:3 ../app/models/forum.rb:41
-msgid "Logged users"
-msgstr ""
-
+<<<<<<< HEAD
 #: ../app/concerns/entitlement/levels.rb:3
 msgid "Visitors"
 msgstr ""
 
+=======
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
+#: ../app/concerns/entitlement/levels.rb:3 ../app/models/forum.rb:41
+msgid "Logged users"
+msgstr ""
+
+<<<<<<< HEAD
+=======
+#: ../app/concerns/entitlement/levels.rb:3
+msgid "Visitors"
+msgstr ""
+
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 #: ../app/concerns/entitlement/levels.rb:4
 msgid "Friends / Members"
 msgstr ""
@@ -336,16 +350,26 @@ msgstr ""
 msgid "Organization profiles"
 msgstr ""
 
+<<<<<<< HEAD
+#: ../app/controllers/admin/organizations_controller.rb:9 ../app/views/cms/_blog.html.erb:73 ../app/views/cms/_rss_feed.html.erb:9 ../app/views/memberships/index.html.erb:10 ../app/views/tasks/index.html.erb:6 ../app/views/tasks/processed.html.erb:8
+msgid "All"
+=======
 #: ../app/controllers/admin/organizations_controller.rb:9 ../app/helpers/link_list_block_helper.rb:34 ../app/models/circle.rb:32 ../app/models/control_panel.rb:18 ../app/models/enterprise.rb:13 ../app/views/templates/index.html.erb:7
 msgid "Enterprise"
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgstr ""
 
 #: ../app/controllers/admin/organizations_controller.rb:9 ../app/models/circle.rb:31 ../app/models/community.rb:9 ../app/views/templates/index.html.erb:6
 msgid "Community"
 msgstr ""
 
+<<<<<<< HEAD
+#: ../app/controllers/admin/organizations_controller.rb:9 ../app/helpers/link_list_block_helper.rb:34 ../app/models/circle.rb:32 ../app/models/control_panel.rb:18 ../app/models/enterprise.rb:13 ../app/views/templates/index.html.erb:7
+msgid "Enterprise"
+=======
 #: ../app/controllers/admin/organizations_controller.rb:9 ../app/views/cms/_blog.html.erb:73 ../app/views/cms/_rss_feed.html.erb:9 ../app/views/memberships/index.html.erb:10 ../app/views/tasks/index.html.erb:6 ../app/views/tasks/processed.html.erb:8
 msgid "All"
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgstr ""
 
 #: ../app/controllers/admin/organizations_controller.rb:37
@@ -1524,10 +1548,13 @@ msgstr ""
 msgid "Reply"
 msgstr ""
 
+<<<<<<< HEAD
+=======
 #: ../app/helpers/content_viewer_helper.rb:9 ../app/models/article.rb:800 ../app/views/person_notifier/mailer/_profile_comments.html.erb:4
 msgid "%s comments"
 msgstr ""
 
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 #: ../app/helpers/content_viewer_helper.rb:9
 msgid "no comments yet"
 msgstr ""
@@ -1536,6 +1563,13 @@ msgstr ""
 msgid "One comment"
 msgstr ""
 
+<<<<<<< HEAD
+#: ../app/helpers/content_viewer_helper.rb:9 ../app/models/article.rb:800 ../app/views/person_notifier/mailer/_profile_comments.html.erb:4
+msgid "%s comments"
+msgstr ""
+
+=======
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 #: ../app/helpers/content_viewer_helper.rb:33
 msgid "This is a private content"
 msgstr ""
@@ -4334,6 +4368,17 @@ msgstr ""
 msgid "Invalid city or state name."
 msgstr ""
 
+<<<<<<< HEAD
+#: ../app/models/organization.rb:117 ../app/models/person.rb:316 ../app/views/shared/_address_fields.html.erb:8
+msgid "District"
+msgstr ""
+
+#: ../app/models/organization.rb:117 ../app/models/person.rb:316
+msgid "Address reference"
+msgstr ""
+
+=======
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 #: ../app/models/organization.rb:117
 msgid "Display name"
 msgstr ""
@@ -4346,6 +4391,8 @@ msgstr ""
 msgid "Contact email"
 msgstr ""
 
+<<<<<<< HEAD
+=======
 #: ../app/models/organization.rb:117 ../app/models/person.rb:316 ../app/views/shared/_address_fields.html.erb:8
 msgid "District"
 msgstr ""
@@ -4354,6 +4401,7 @@ msgstr ""
 msgid "Address reference"
 msgstr ""
 
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 #: ../app/models/person.rb:19 ../app/views/content_viewer/_publishing_info.html.erb:22
 msgid "person"
 msgstr ""
@@ -6116,14 +6164,24 @@ msgstr ""
 msgid "Parent folder:"
 msgstr ""
 
-#: ../app/views/cms/_general_fields.html.erb:8
-msgid "License"
-msgstr ""
-
+<<<<<<< HEAD
 #: ../app/views/cms/_general_fields.html.erb:8 ../app/views/search/_article_categories.html.erb:7 ../app/views/search/_article_description.html.erb:15 ../app/views/search/_article_tags.html.erb:7 ../app/views/search/_display_results.html.erb:35 ../app/views/search/_full_blog.html.erb:20 ../app/views/search/_full_forum.html.erb:20
 msgid "None"
 msgstr ""
 
+=======
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
+#: ../app/views/cms/_general_fields.html.erb:8
+msgid "License"
+msgstr ""
+
+<<<<<<< HEAD
+=======
+#: ../app/views/cms/_general_fields.html.erb:8 ../app/views/search/_article_categories.html.erb:7 ../app/views/search/_article_description.html.erb:15 ../app/views/search/_article_tags.html.erb:7 ../app/views/search/_display_results.html.erb:35 ../app/views/search/_full_blog.html.erb:20 ../app/views/search/_full_forum.html.erb:20
+msgid "None"
+msgstr ""
+
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 #: ../app/views/cms/_link_article.html.erb:3
 msgid "Reference"
 msgstr ""

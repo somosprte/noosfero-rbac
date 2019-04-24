@@ -148,6 +148,15 @@ msgstr ""
 msgid "Access denied"
 msgstr ""
 
+<<<<<<< HEAD
+msgid "Visitors"
+msgstr ""
+
+#, fuzzy
+msgid "Logged users"
+msgstr "(forigita uzanto)"
+
+=======
 #, fuzzy
 msgid "Logged users"
 msgstr "(forigita uzanto)"
@@ -155,6 +164,7 @@ msgstr "(forigita uzanto)"
 msgid "Visitors"
 msgstr ""
 
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "Friends / Members"
 msgstr ""
 
@@ -272,13 +282,21 @@ msgstr ""
 msgid "Organization profiles"
 msgstr ""
 
+<<<<<<< HEAD
+msgid "All"
+=======
 msgid "Enterprise"
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgstr ""
 
 msgid "Community"
 msgstr ""
 
+<<<<<<< HEAD
+msgid "Enterprise"
+=======
 msgid "All"
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgstr ""
 
 msgid "%s enabled"
@@ -1204,10 +1222,13 @@ msgid "Reply"
 msgstr ""
 
 #, fuzzy
+<<<<<<< HEAD
+=======
 msgid "%s comments"
 msgstr "Unu komento"
 
 #, fuzzy
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "no comments yet"
 msgstr "Neniu komento"
 
@@ -1215,6 +1236,13 @@ msgstr "Neniu komento"
 msgid "One comment"
 msgstr "Unu komento"
 
+<<<<<<< HEAD
+#, fuzzy
+msgid "%s comments"
+msgstr "Unu komento"
+
+=======
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "This is a private content"
 msgstr ""
 
@@ -3410,6 +3438,21 @@ msgstr ""
 msgid "Invalid city or state name."
 msgstr ""
 
+<<<<<<< HEAD
+msgid "District"
+msgstr ""
+
+msgid "Address reference"
+msgstr ""
+
+msgid "Display name"
+msgstr ""
+
+msgid "Description"
+msgstr ""
+
+msgid "Contact email"
+=======
 msgid "Display name"
 msgstr ""
 
@@ -3423,6 +3466,7 @@ msgid "District"
 msgstr ""
 
 msgid "Address reference"
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgstr ""
 
 msgid "person"
@@ -4826,10 +4870,17 @@ msgstr ""
 msgid "Parent folder:"
 msgstr ""
 
+<<<<<<< HEAD
+msgid "None"
+msgstr ""
+
+msgid "License"
+=======
 msgid "License"
 msgstr ""
 
 msgid "None"
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgstr ""
 
 msgid "Reference"

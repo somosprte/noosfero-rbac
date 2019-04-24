@@ -19,8 +19,13 @@ msgstr ""
 "X-Generator: Weblate 2.11-dev\n"
 
 #: ../lib/activity_gallery_plugin.rb:8
+<<<<<<< HEAD
+msgid "New kind of content for organizations."
+msgstr "Neue Art von Beiträgen für Organisationen."
+=======
 msgid "RBAC activity gallery"
 msgstr ""
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 
 #: ../lib/activity_gallery_plugin.rb:62
 msgid "Notification successfully sent"
@@ -31,28 +36,47 @@ msgid "Notification not sent"
 msgstr "Benachrichtigung nicht versandt"
 
 #: ../lib/activity_gallery_plugin/activity_gallery.rb:16
+<<<<<<< HEAD
+msgid "Work Assignment"
+msgstr "Zuweisung von Arbeiten"
+=======
 msgid "Activity Gallery"
 msgstr ""
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 
 #: ../lib/activity_gallery_plugin/activity_gallery.rb:20
 msgid "Defines a work to be done by the members and receives their submissions about this work."
 msgstr "Definiert ein Arbeit, die von den Mitgliedern erledigt werden muss, und empfängt diese Arbeit."
 
 #: ../lib/activity_gallery_plugin/email_contact.rb:21
+<<<<<<< HEAD
+msgid "Name"
+msgstr "Name"
+
+#: ../lib/activity_gallery_plugin/email_contact.rb:21
+msgid "e-Mail"
+msgstr "E-Mail"
+=======
 msgid "Subject"
 msgstr "Betreff"
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 
 #: ../lib/activity_gallery_plugin/email_contact.rb:21
 msgid "Message"
 msgstr "Nachricht"
 
 #: ../lib/activity_gallery_plugin/email_contact.rb:21
+<<<<<<< HEAD
+msgid "Subject"
+msgstr "Betreff"
+=======
 msgid "e-Mail"
 msgstr "E-Mail"
 
 #: ../lib/activity_gallery_plugin/email_contact.rb:21
 msgid "Name"
 msgstr "Name"
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 
 #: ../lib/activity_gallery_plugin/helper.rb:9
 msgid "Submission date"
@@ -90,6 +114,19 @@ msgstr "Wenn Sie jemanden über diese Aktion informieren wollen, füllen Sie bit
 msgid "Send notification to: "
 msgstr "Sende Benachrichtigung an: "
 
+<<<<<<< HEAD
+#: ../views/cms/activity_gallery_plugin/_activity_gallery.html.erb:3
+msgid "Default email message:"
+msgstr "Standart E-Mail-Nachricht:"
+
+#: ../views/cms/activity_gallery_plugin/_activity_gallery.html.erb:5
+msgid "The submissions can be viewed by anyone"
+msgstr "Die Einreichungen können von jedem gesehen werden"
+
+#: ../views/cms/activity_gallery_plugin/_activity_gallery.html.erb:7
+msgid "Allow users change submissions privacy?"
+msgstr "Nutzern erlauben, die Privatsphäre der Einreichungen zu verändern?"
+=======
 #: ../views/cms/activity_gallery_plugin/_activity_gallery.html.erb:31
 msgid "Título da Atividade"
 msgstr ""
@@ -169,6 +206,7 @@ msgstr ""
 #: ../views/cms/activity_gallery_plugin/_activity_gallery.html.erb:60
 msgid "Referências bibliográficas"
 msgstr ""
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 
 #: ../views/content_viewer/activity_gallery.html.erb:10
 msgid "Publish image or document"
@@ -186,6 +224,8 @@ msgstr ""
 #, fuzzy
 msgid "Submissions"
 msgstr "Einreichungsdatum"
+<<<<<<< HEAD
+=======
 
 #: ../lib/activity_gallery_plugin.rb:8
 #~ msgid "New kind of content for organizations."
@@ -206,3 +246,4 @@ msgstr "Einreichungsdatum"
 #: ../views/cms/activity_gallery_plugin/_activity_gallery.html.erb:7
 #~ msgid "Allow users change submissions privacy?"
 #~ msgstr "Nutzern erlauben, die Privatsphäre der Einreichungen zu verändern?"
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10

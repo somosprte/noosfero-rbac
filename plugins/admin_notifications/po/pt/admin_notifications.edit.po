@@ -36,6 +36,29 @@ msgstr "Notificação criada com sucesso"
 msgid "Notification couldn't be created"
 msgstr "Não foi possível criar notificação"
 
+<<<<<<< HEAD
+#: ../lib/admin_notifications_plugin/notification_manager.rb:26
+msgid "The notification was deleted."
+msgstr "A notificação foi removida."
+
+#: ../lib/admin_notifications_plugin/notification_manager.rb:28
+msgid "Could not remove the notification"
+msgstr "Não foi possível remover a notificação"
+
+#: ../lib/admin_notifications_plugin/notification_manager.rb:38
+msgid "The notification was edited."
+msgstr "A notificação foi editada."
+
+#: ../lib/admin_notifications_plugin/notification_manager.rb:40
+msgid "Could not edit the notification."
+msgstr "Não foi possível editar a notificação."
+
+#: ../lib/admin_notifications_plugin/notification_manager.rb:52
+msgid "The status of the notification was changed."
+msgstr "O status da notificação foi modificado."
+
+#: ../lib/admin_notifications_plugin/notification_manager.rb:54
+=======
 #: ../lib/admin_notifications_plugin/notification_manager.rb:25
 msgid "The notification was deleted."
 msgstr "A notificação foi removida."
@@ -57,6 +80,7 @@ msgid "The status of the notification was changed."
 msgstr "O status da notificação foi modificado."
 
 #: ../lib/admin_notifications_plugin/notification_manager.rb:52
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "Could not change the status of the notification."
 msgstr "Não foi possível alterar o status da notificação."
 
@@ -89,33 +113,56 @@ msgid "Inactive"
 msgstr "Inativa"
 
 #: ../views/shared/_form.html.erb:18
+<<<<<<< HEAD
+msgid "Green - Success"
+msgstr "Verde - Sucesso"
+=======
 msgid "Notifications Color/Type"
 msgstr "Cor/Tipo de Notificação"
 
 #: ../views/shared/_form.html.erb:18
 msgid "Blue - Information"
 msgstr "Azul - Informação"
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 
 #: ../views/shared/_form.html.erb:18
 msgid "Yellow - Warning"
 msgstr "Amarelo - Atenção"
 
 #: ../views/shared/_form.html.erb:18
+<<<<<<< HEAD
+msgid "Blue - Information"
+msgstr "Azul - Informação"
+=======
 msgid "Green - Success"
 msgstr "Verde - Sucesso"
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 
 #: ../views/shared/_form.html.erb:18
 msgid "Red - Danger"
 msgstr "Vermelho - Perigo"
 
+<<<<<<< HEAD
+#: ../views/shared/_form.html.erb:18
+msgid "Notifications Color/Type"
+msgstr "Cor/Tipo de Notificação"
+=======
 #: ../views/shared/_form.html.erb:21
 msgid "Display only in the profile homepage"
 msgstr "Apresentar apenas na página inicial do perfil"
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 
 #: ../views/shared/_form.html.erb:21
 msgid "Display only in the homepage"
 msgstr "Apresentar apenas na página inicial"
 
+<<<<<<< HEAD
+#: ../views/shared/_form.html.erb:21
+msgid "Display only in the profile homepage"
+msgstr "Apresentar apenas na página inicial do perfil"
+
+=======
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 #: ../views/shared/_form.html.erb:25
 msgid "Display to not logged users too"
 msgstr "Apresentar também para usuários não logados"

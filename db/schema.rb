@@ -529,11 +529,11 @@ ActiveRecord::Schema.define(version: 20181025162837) do
     t.index ["national_region_code"], name: "code_index"
   end
 
-  create_table "oauth_client_plugin_auths", force: :cascade do |t|
-    t.bigint "provider_id"
+  create_table "oauth_client_plugin_auths", id: :serial, force: :cascade do |t|
+    t.integer "provider_id"
     t.boolean "enabled"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
     t.string "type"
     t.string "provider_user_id"
     t.text "access_token"
@@ -547,15 +547,15 @@ ActiveRecord::Schema.define(version: 20181025162837) do
     t.index ["type"], name: "index_oauth_client_plugin_auths_on_type"
   end
 
-  create_table "oauth_client_plugin_providers", force: :cascade do |t|
+  create_table "oauth_client_plugin_providers", id: :serial, force: :cascade do |t|
     t.integer "environment_id"
     t.string "strategy"
     t.string "name"
     t.text "options"
     t.boolean "enabled"
     t.integer "image_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
     t.text "client_id"
     t.text "client_secret"
     t.index ["client_id"], name: "index_oauth_client_plugin_providers_on_client_id"

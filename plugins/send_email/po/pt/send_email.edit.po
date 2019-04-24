@@ -23,11 +23,19 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.0\n"
 
+<<<<<<< HEAD
+#: ../controllers/send_email_plugin_admin_controller.rb:7
+msgid "Configurations was saved"
+msgstr "As configurações foram salvas"
+
+#: ../controllers/send_email_plugin_admin_controller.rb:10
+=======
 #: ../controllers/admin/send_email_plugin_admin_controller.rb:7
 msgid "Configurations was saved"
 msgstr "As configurações foram salvas"
 
 #: ../controllers/admin/send_email_plugin_admin_controller.rb:10
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "Configurations could not be saved"
 msgstr "As configurações não puderam ser salvas"
 
@@ -35,7 +43,11 @@ msgstr "As configurações não puderam ser salvas"
 msgid "Message sent"
 msgstr "A mensagem foi enviada"
 
+<<<<<<< HEAD
+#: ../lib/send_email_plugin.rb:10
+=======
 #: ../lib/send_email_plugin.rb:8
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "A plugin that allows sending e-mails via HTML forms."
 msgstr "Um plugin que permite envio de e-mails via formulários HTML."
 

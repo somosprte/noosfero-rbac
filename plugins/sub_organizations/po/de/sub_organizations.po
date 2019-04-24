@@ -27,6 +27,20 @@ msgstr "Die Unterorganisationen konnte nicht aktualisiert werden"
 msgid "Related Organizations"
 msgstr "Verwandte Organisationen"
 
+<<<<<<< HEAD
+msgid "\"{#} #{display_type[:title]} enterprise\""
+msgid_plural " \"{#} #{display_type[:title]} enterprises\""
+msgstr[0] "\"{#} #{display_type[:title]} Unternehmen\""
+msgstr[1] "\"{#} #{display_type[:title]} Unternehmen\""
+
+msgid "\"{#} #{display_type[:title]} community\""
+msgid_plural " \"{#} #{display_type[:title]} communities\""
+msgstr[0] "\"{#} #{display_type[:title]} Community\""
+msgstr[1] "\"{#} #{display_type[:title]} Communities\""
+
+msgid "\"{#} #{display_type[:title]} organization\""
+msgid_plural " \"{#} #{display_type[:title]} organizations\""
+=======
 #, fuzzy
 msgid "{#} #{display_type[:title]} enterprise"
 msgid_plural "{#} #{display_type[:title]} enterprises"
@@ -42,6 +56,7 @@ msgstr[1] "\"{#} #{display_type[:title]} Communities\""
 #, fuzzy
 msgid "{#} #{display_type[:title]} organization"
 msgid_plural "{#} #{display_type[:title]} organizations"
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgstr[0] "\"{#} #{display_type[:title]} Organisation\""
 msgstr[1] "\"{#} #{display_type[:title]} Organisationen\""
 

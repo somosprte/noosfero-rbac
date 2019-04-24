@@ -27,6 +27,19 @@ msgstr "Benachrichtigung erfolgreich versandt"
 msgid "Notification not sent"
 msgstr "Benachrichtigung nicht versandt"
 
+<<<<<<< HEAD
+msgid "Name"
+msgstr "Name"
+
+msgid "e-Mail"
+msgstr "E-Mail"
+
+msgid "Message"
+msgstr "Nachricht"
+
+msgid "Subject"
+msgstr "Betreff"
+=======
 msgid "Subject"
 msgstr "Betreff"
 
@@ -41,6 +54,7 @@ msgstr "Name"
 
 msgid "Author"
 msgstr ""
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 
 msgid "Submission date"
 msgstr "Einreichungsdatum"

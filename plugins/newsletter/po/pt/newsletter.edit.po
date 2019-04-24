@@ -17,6 +17,17 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 3.3-dev\n"
 
+<<<<<<< HEAD
+#: ../controllers/newsletter_plugin_admin_controller.rb:21
+msgid "Newsletter updated."
+msgstr "Boletim informtivo atualizado."
+
+#: ../controllers/newsletter_plugin_admin_controller.rb:24
+msgid "Newsletter could not be saved."
+msgstr "O boletim informativo não pôde ser salvo."
+
+#: ../controllers/newsletter_plugin_admin_controller.rb:40 ../views/newsletter_plugin_admin/index.html.erb:31
+=======
 #: ../controllers/newsletter_plugin_admin_controller.rb:22
 msgid "Newsletter updated."
 msgstr "Boletim informtivo atualizado."
@@ -26,6 +37,7 @@ msgid "Newsletter could not be saved."
 msgstr "O boletim informativo não pôde ser salvo."
 
 #: ../controllers/newsletter_plugin_admin_controller.rb:41 ../views/newsletter_plugin_admin/index.html.erb:31
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "%s in %s"
 msgstr "%s em %s"
 
@@ -78,6 +90,15 @@ msgid "click here"
 msgstr "clique aqui"
 
 #: ../lib/newsletter_plugin/newsletter.rb:130
+<<<<<<< HEAD
+msgid "cancel your subscription here"
+msgstr "cancele sua inscrição aqui"
+
+#: ../lib/newsletter_plugin/newsletter.rb:130
+msgid "This is an automatically generated email, please do not reply. If you do not wish to receive future newsletter emails, %s."
+msgstr "Este e-mail é gerado automaticamente, por favor não responda. Se você não deseja continuar recebendo boletins informativos, %s."
+
+=======
 msgid "This is an automatically generated email, please do not reply. If you do not wish to receive future newsletter emails, %s."
 msgstr "Este e-mail é gerado automaticamente, por favor não responda. Se você não deseja continuar recebendo boletins informativos, %s."
 
@@ -85,6 +106,7 @@ msgstr "Este e-mail é gerado automaticamente, por favor não responda. Se você
 msgid "cancel your subscription here"
 msgstr "cancele sua inscrição aqui"
 
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 #: ../lib/newsletter_plugin/newsletter.rb:134
 msgid "Read more"
 msgstr "Leia mais"

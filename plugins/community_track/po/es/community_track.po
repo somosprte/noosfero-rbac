@@ -37,6 +37,17 @@ msgstr "Paso"
 msgid "Defines a step."
 msgstr "Definir un paso."
 
+<<<<<<< HEAD
+msgid "Soon"
+msgstr "Pronto"
+
+msgid "Join!"
+msgstr "Unete!"
+
+msgid "Closed"
+msgstr "Cerrado"
+
+=======
 msgid "Closed"
 msgstr "Cerrado"
 
@@ -46,6 +57,7 @@ msgstr "Unete!"
 msgid "Soon"
 msgstr "Pronto"
 
+>>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "should not be blank."
 msgstr "no debe estar vacío."
 
