@@ -24,7 +24,7 @@ msgstr ""
 "X-Generator: Weblate 3.5-dev\n"
 
 msgid "Incorrect user/password pair."
-msgstr "O par usuário/palavra-passe está incorreto."
+msgstr "O par usuário/Senha está incorreto."
 
 msgid "Conection requires post method."
 msgstr "A conexão requer método 'post'."
