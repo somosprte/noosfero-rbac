@@ -36,31 +36,18 @@ GEM
     omniauth-twitter (1.4.0)
       omniauth-oauth (~> 1.1)
       rack
-<<<<<<< HEAD
-    rack (2.0.6)
-=======
     rack (2.0.7)
->>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-<<<<<<< HEAD
-  omniauth (~> 1.9)
-  omniauth-facebook (~> 5.0)
-  omniauth-github (~> 1.3)
-  omniauth-google-oauth2 (~> 0.6.1)
-  omniauth-oauth2 (~> 1.6)
-  omniauth-twitter (~> 1.4)
-=======
   omniauth
   omniauth-facebook
   omniauth-github
   omniauth-google-oauth2
   omniauth-oauth2
   omniauth-twitter
->>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 
 BUNDLED WITH
    1.17.3
