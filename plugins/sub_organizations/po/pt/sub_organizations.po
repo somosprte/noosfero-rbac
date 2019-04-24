@@ -36,7 +36,7 @@ msgstr "Organizações Relacionadas"
 msgid "{#} #{display_type[:title]} enterprise"
 msgid_plural "{#} #{display_type[:title]} enterprises"
 msgstr[0] "\"{#} #{display_type[:title]} Organização\""
-msgstr[1] "\"{#} #{display_type[:title]} Organizaçãos\""
+msgstr[1] "\"{#} #{display_type[:title]} Organizações\""
 
 #, fuzzy
 msgid "{#} #{display_type[:title]} community"

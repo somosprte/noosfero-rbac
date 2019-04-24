@@ -470,23 +470,23 @@ pt-BR: &pt-BR
           singular: "na sua rede"
       supplier:
         singular: "Organização"
-        plural: "Organizaçãos"
+        plural: "Organizações"
         one: "um"
         it:
           singular: "ele"
           plural: "eles"
         to:
           singular: "a um Organização"
-          plural: "a Organizaçãos"
+          plural: "a Organizações"
         to_it:
           singular: "a ele"
           plural: "a eles"
         to_article:
           singular: "ao Organização"
-          plural: "aos Organizaçãos"
+          plural: "aos Organizações"
         article:
           singular: "o Organização"
-          plural: "os Organizaçãos"
+          plural: "os Organizações"
         by_article:
           singular: "pelo Organização"
         undefined_article:
@@ -498,14 +498,14 @@ pt-BR: &pt-BR
           plural: "a eles"
         to_article:
           singular: "ao Organização"
-          plural: "aos Organizaçãos"
+          plural: "aos Organizações"
         none:
           singular: "nenhum Organização"
         this:
           singular: "este Organização"
         your:
           singular: "seu Organização"
-          plural: "seus Organizaçãos"
+          plural: "seus Organizações"
         from:
           singular: "de Organização"
         from_article:
@@ -514,20 +514,20 @@ pt-BR: &pt-BR
           singular: "com que o Organização"
         of:
           singular: "de Organização"
-          plural: "de Organizaçãos"
+          plural: "de Organizações"
         of_article:
           singular: "do Organização"
-          plural: "dos Organizaçãos"
+          plural: "dos Organizações"
         of_this:
           singular: "deste Organização"
         of_another:
           singular: "de outro Organização"
         with:
           singular: "com Organização"
-          plural: "com Organizaçãos"
+          plural: "com Organizações"
         with_article:
           singular: "com o Organização"
-          plural: "com os Organizaçãos"
+          plural: "com os Organizações"
 
 pt_BR:
   <<: *pt-BR

@@ -89,7 +89,7 @@ msgstr "Interesses de compra"
 
 #: ../views/sniffer_plugin_myprofile/edit.html.erb:4
 msgid "Select here products and services categories that you have an interest on buying. Then you can go to the Opportunity Sniffer and check out enterprises near you that offer such products. Type in some characters and choose your interests from our list."
-msgstr "Selecione aqui as categorias de produtos e serviços que você tem interesse em comprar. Com isso, Organizaçãos saberão suas necessidades e poderão te fazer ofertas.Digite e escolha quais são seus interesses."
+msgstr "Selecione aqui as categorias de produtos e serviços que você tem interesse em comprar. Com isso, Organizações saberão suas necessidades e poderão te fazer ofertas.Digite e escolha quais são seus interesses."
 
 #: ../views/sniffer_plugin_myprofile/edit.html.erb:15
 msgid "Type in a keyword"

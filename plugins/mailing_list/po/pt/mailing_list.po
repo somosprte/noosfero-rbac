@@ -218,7 +218,7 @@ msgid "Manage communities"
 msgstr "Gerenciar comunidades"
 
 msgid "Manage enterprises"
-msgstr "Gerenciar Organizaçãos"
+msgstr "Gerenciar Organizações"
 
 msgid "Manage %s"
 msgstr "Gerenciar %s"

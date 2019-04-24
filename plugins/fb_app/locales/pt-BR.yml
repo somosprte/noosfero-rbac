@@ -42,7 +42,7 @@
           catalog_subtitle_label: 'Subtítulo'
           catalog_type_chooser_label: 'Tipo'
           profile_chooser_label: 'Organização'
-          profiles_chooser_label: 'Organizaçãos'
+          profiles_chooser_label: 'Organizações'
           query_label: "Critérios para os produtos/serviços da vitrine"
           query_help: "Escreva as palavras separadas por espaço, e clique no botão abaixo para salvar."
           edit_button: "Editar vitrine '%{catalog_title}'"
@@ -58,7 +58,7 @@
 
         error:
           empty_title: 'Por favor, coloque um título para a sua vitrine.'
-          empty_settings: 'Por favor, selecione os Organizaçãos solidários ou os termos de busca para sua vitrine.'
+          empty_settings: 'Por favor, selecione os Organizações solidários ou os termos de busca para sua vitrine.'
 
       page_tab:
         edit_catalog: 'Editar vitrine'
@@ -68,7 +68,7 @@
         profile:
           placeholder: "selecione um Organização"
         profiles:
-          placeholder: "selecione os Organizaçãos"
+          placeholder: "selecione os Organizações"
         query:
           placeholder: "escolha os produtos e serviços por palavras de busca"
         back_to_catalog: 'Voltar à vitrine'

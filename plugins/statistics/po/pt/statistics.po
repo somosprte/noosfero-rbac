@@ -36,7 +36,7 @@ msgid "users"
 msgstr "usuários"
 
 msgid "enterprises"
-msgstr "Organizaçãos"
+msgstr "Organizações"
 
 msgid "products"
 msgstr "produtos"
@@ -57,7 +57,7 @@ msgid "Show community counter"
 msgstr "Mostrar quantidade de comunidades"
 
 msgid "Show enterprise counter"
-msgstr "Mostrar quantidade de Organizaçãos solidários"
+msgstr "Mostrar quantidade de Organizações solidários"
 
 msgid "Show product counter"
 msgstr "Mostrar quantidade de produtos"

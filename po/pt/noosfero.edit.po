@@ -403,7 +403,7 @@ msgstr "Comunidades"
 
 #: ../app/controllers/admin/profile_quotas_controller.rb:108 ../app/controllers/public/search_controller.rb:56 ../app/controllers/public/search_controller.rb:180 ../app/controllers/public/search_controller.rb:265 ../app/helpers/assets_helper.rb:10 ../app/models/enterprises_block.rb:12
 msgid "Enterprises"
-msgstr "Organizaçãos"
+msgstr "Organizações"
 
 #: ../app/controllers/admin/profile_quotas_controller.rb:114
 msgid "Sort by name"
@@ -927,7 +927,7 @@ msgstr "Você desbloqueou %s com sucesso. "
 
 #: ../app/controllers/public/profile_controller.rb:242
 msgid "You are not allowed to unblock enterprises in this environment."
-msgstr "Você não está autorizado a desbloquear Organizaçãos neste ambiente."
+msgstr "Você não está autorizado a desbloquear Organizações neste ambiente."
 
 #: ../app/controllers/public/profile_controller.rb:255
 msgid "Message successfully sent."
@@ -1159,7 +1159,7 @@ msgstr "Gerenciar %s"
 
 #: ../app/helpers/application_helper.rb:909
 msgid "My enterprises"
-msgstr "Meus Organizaçãos"
+msgstr "Meus Organizações"
 
 #: ../app/helpers/application_helper.rb:915
 msgid "My communities"

@@ -40,7 +40,7 @@ msgstr "Organizações Relacionadas"
 msgid "{#} #{display_type[:title]} enterprise"
 msgid_plural "{#} #{display_type[:title]} enterprises"
 msgstr[0] "\"{#} #{display_type[:title]} Organização\""
-msgstr[1] "\"{#} #{display_type[:title]} Organizaçãos\""
+msgstr[1] "\"{#} #{display_type[:title]} Organizações\""
 
 #: ../lib/related_organizations_block.rb:20
 #, fuzzy
@@ -128,7 +128,7 @@ msgstr "Não existe nenhuma sub-%s ainda."
 #~ msgid "\"{#} #{display_type[:title]} enterprise\""
 #~ msgid_plural " \"{#} #{display_type[:title]} enterprises\""
 #~ msgstr[0] "\"{#} #{display_type[:title]} Organização\""
-#~ msgstr[1] "\"{#} #{display_type[:title]} Organizaçãos\""
+#~ msgstr[1] "\"{#} #{display_type[:title]} Organizações\""
 
 #: ../lib/related_organizations_block.rb:20
 #~ msgid "\"{#} #{display_type[:title]} community\""
