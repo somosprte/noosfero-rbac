@@ -80,3 +80,4 @@ docker-sync.yml
 
 *.po.time_stamp
 *.edit.po
+*.po.tmp
