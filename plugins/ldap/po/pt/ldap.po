@@ -51,7 +51,7 @@ msgid "Account"
 msgstr "Conta"
 
 msgid "Account Password"
-msgstr "Palavra-passe da conta"
+msgstr "Senha da conta"
 
 msgid "Base DN"
 msgstr "DN Base"
@@ -81,7 +81,7 @@ msgid "Behaviour Configuration"
 msgstr "Configuração de comportamento"
 
 msgid "Allow password recovery"
-msgstr "Permitir recuperação da palavra-passe"
+msgstr "Permitir recuperação da Senha"
 
 msgid "Back to plugins administration panel"
 msgstr "Voltar ao painel de administração"

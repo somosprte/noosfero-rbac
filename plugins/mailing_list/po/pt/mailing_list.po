@@ -191,7 +191,7 @@ msgid "E-mail"
 msgstr "E-mail"
 
 msgid "Password"
-msgstr "Palavra-passe"
+msgstr "Senha"
 
 msgid "Back"
 msgstr "Voltar"

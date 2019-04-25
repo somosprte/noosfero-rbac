@@ -178,7 +178,7 @@ msgstr "Entrar"
 #: ../app/views/account/_signup_form.html.erb:48
 #: ../app/views/invite/_select_address_book.html.erb:34
 msgid "Password"
-msgstr "Palavra-passe"
+msgstr "Senha"
 
 #: ../app/api/v1/session.rb:92
 msgid "Activation token"
@@ -202,11 +202,11 @@ msgstr "Código de ativação é inválido"
 
 #: ../app/api/v1/session.rb:141
 msgid "All change password requests were sent."
-msgstr "Todos os pedidos de troca de palavra-passe foram enviados."
+msgstr "Todos os pedidos de troca de Senha foram enviados."
 
 #: ../app/api/v1/session.rb:163
 msgid "Forgot password code"
-msgstr "Código do esqueceu a palavra-passe"
+msgstr "Código do esqueceu a Senha"
 
 #: ../app/concerns/authenticated_system.rb:114
 #: ../app/views/shared/access_denied.html.erb:3
@@ -324,11 +324,11 @@ msgstr "Campos de pessoa não atualizado com sucesso."
 
 #: ../app/controllers/admin/features_controller.rb:38
 msgid "Enterprise fields updated successfully."
-msgstr "Campos de empreendimento atualizados com sucesso."
+msgstr "Campos de Organização atualizados com sucesso."
 
 #: ../app/controllers/admin/features_controller.rb:40
 msgid "Enterprise fields not updated successfully."
-msgstr "Campos de empreendimento não atualizados com sucesso."
+msgstr "Campos de Organização não atualizados com sucesso."
 
 #: ../app/controllers/admin/features_controller.rb:48
 msgid "Community fields updated successfully."
@@ -409,7 +409,7 @@ msgstr "Todos"
 #: ../app/models/control_panel.rb:18 ../app/models/enterprise.rb:13
 #: ../app/views/templates/index.html.erb:7
 msgid "Enterprise"
-msgstr "Empreendimento"
+msgstr "Organização"
 
 #: ../app/controllers/admin/organizations_controller.rb:37
 msgid "%s enabled"
@@ -478,7 +478,7 @@ msgstr "Comunidades"
 #: ../app/controllers/public/search_controller.rb:265
 #: ../app/helpers/assets_helper.rb:10 ../app/models/enterprises_block.rb:12
 msgid "Enterprises"
-msgstr "Empreendimentos"
+msgstr "Organizaçãos"
 
 #: ../app/controllers/admin/profile_quotas_controller.rb:114
 msgid "Sort by name"
@@ -521,7 +521,7 @@ msgstr "Pessoa não encontrada. O modelo não pôde ser alterado."
 
 #: ../app/controllers/admin/templates_controller.rb:77
 msgid "Enterprise not found. The template could no be changed."
-msgstr "Empreendimento não encontrado. O modelo não pôde ser alterado."
+msgstr "Organização não encontrado. O modelo não pôde ser alterado."
 
 #: ../app/controllers/admin/trusted_sites_controller.rb:14
 msgid "New trusted site added."
@@ -902,7 +902,7 @@ msgstr "Login bem sucedido"
 
 #: ../app/controllers/public/account_controller.rb:106
 msgid "Incorrect username or password"
-msgstr "Nome ou palavra-passe incorreto"
+msgstr "Nome ou Senha incorreto"
 
 #: ../app/controllers/public/account_controller.rb:123
 msgid "This environment doesn't allow user registration."
@@ -914,15 +914,15 @@ msgstr "Você saiu do sistema."
 
 #: ../app/controllers/public/account_controller.rb:194
 msgid "Your password has been changed successfully!"
-msgstr "Sua palavra-passe foi alterada com sucesso!"
+msgstr "Sua Senha foi alterada com sucesso!"
 
 #: ../app/controllers/public/account_controller.rb:207
 msgid "This environment doesn't allow password recovery."
-msgstr "Este ambiente não permite a recuperação da palavra-passe."
+msgstr "Este ambiente não permite a recuperação da Senha."
 
 #: ../app/controllers/public/account_controller.rb:225
 msgid "Can not recover user password with blank value."
-msgstr "Você não pode recuperar sua palavra-passe com um valor nulo."
+msgstr "Você não pode recuperar sua Senha com um valor nulo."
 
 #: ../app/controllers/public/account_controller.rb:227
 msgid "Could not find any user with %s equal to \"%s\"."
@@ -930,7 +930,7 @@ msgstr "Não foi possível encontrar nenhum usuário com %s igual a \"%s\"."
 
 #: ../app/controllers/public/account_controller.rb:230
 msgid "Could not perform password recovery for the user."
-msgstr "Não foi possível recuperar a palavra-passe deste usuário."
+msgstr "Não foi possível recuperar a Senha deste usuário."
 
 #: ../app/controllers/public/account_controller.rb:313
 msgid "This login name is available"
@@ -1054,7 +1054,7 @@ msgstr "Você desbloqueou %s com sucesso. "
 
 #: ../app/controllers/public/profile_controller.rb:242
 msgid "You are not allowed to unblock enterprises in this environment."
-msgstr "Você não está autorizado a desbloquear empreendimentos neste ambiente."
+msgstr "Você não está autorizado a desbloquear Organizaçãos neste ambiente."
 
 #: ../app/controllers/public/profile_controller.rb:255
 msgid "You can't leave an empty message."
@@ -1168,7 +1168,7 @@ msgstr "%{time_ago}<hr /> \"%{text}\""
 
 #: ../app/helpers/action_tracker_helper.rb:91
 msgid "favorited enterprise %{title} %{time_ago}"
-msgstr "empreendimento favorito %{title} %{time_ago}"
+msgstr "Organização favorito %{title} %{time_ago}"
 
 #: ../app/helpers/application_helper.rb:109 ../app/helpers/boxes_helper.rb:329
 #: ../app/helpers/link_list_block_helper.rb:23
@@ -1348,7 +1348,7 @@ msgstr "Gerenciar %s"
 
 #: ../app/helpers/application_helper.rb:908
 msgid "My enterprises"
-msgstr "Meus empreendimentos"
+msgstr "Meus Organizaçãos"
 
 #: ../app/helpers/application_helper.rb:914
 msgid "My communities"
@@ -3593,25 +3593,25 @@ msgstr "{fn} já está sendo usado por outra categoria."
 
 #: ../app/models/change_password.rb:10
 msgid "Password Confirmation"
-msgstr "Confirmação de palavra-passe"
+msgstr "Confirmação de Senha"
 
 #: ../app/models/change_password.rb:43
 #: ../app/views/account/change_password.html.erb:1
 #: ../app/views/account/new_password.html.erb:14
 msgid "Change password"
-msgstr "Alterar palavra-passe"
+msgstr "Alterar Senha"
 
 #: ../app/models/change_password.rb:47 ../app/models/change_password.rb:60
 msgid "%{requestor} wants to change its password."
-msgstr "%{requestor} quer alterar a palavra-passe."
+msgstr "%{requestor} quer alterar a Senha."
 
 #: ../app/models/change_password.rb:66
 msgid "Your password change request was cancelled at %s."
-msgstr "Seu pedido de alteração de palavra-passe foi cancelado em %s."
+msgstr "Seu pedido de alteração de Senha foi cancelado em %s."
 
 #: ../app/models/change_password.rb:70
 msgid "Your password was changed successfully."
-msgstr "Sua palavra-passe foi alterada com sucesso."
+msgstr "Sua Senha foi alterada com sucesso."
 
 #: ../app/models/change_password.rb:80
 msgid ""
@@ -3622,11 +3622,11 @@ msgid ""
 "If you did not required any change to your password just desconsider this "
 "email."
 msgstr ""
-"Para alterar sua palavra-passe, por favor visite o seguinte endereço:\n"
+"Para alterar sua Senha, por favor visite o seguinte endereço:\n"
 "\n"
 "%s\n"
 "\n"
-"Se você não requisitou que sua palavra-passe fosse alterada apenas "
+"Se você não requisitou que sua Senha fosse alterada apenas "
 "desconsidere esse email."
 
 #: ../app/models/circle.rb:6
@@ -3698,7 +3698,7 @@ msgid ""
 "There was an error while authenticating. Did you enter correct login and "
 "password?"
 msgstr ""
-"Houve um erro ao autenticar. Você digitou usuário e palavra-passe "
+"Houve um erro ao autenticar. Você digitou usuário e Senha "
 "corretamente?"
 
 #: ../app/models/contact_list.rb:25
@@ -3760,7 +3760,7 @@ msgstr "blocos laterais"
 
 #: ../app/models/control_panel/change_password.rb:4
 msgid "Change Password"
-msgstr "Alterar palavra-passe"
+msgstr "Alterar Senha"
 
 #: ../app/models/control_panel/circles.rb:4
 msgid "Circles"
@@ -3818,7 +3818,7 @@ msgstr "Desabilitar"
 #: ../app/models/control_panel/enterprise_validation.rb:20
 #: ../app/models/enterprise.rb:16
 msgid "enterprise"
-msgstr "empreendimento"
+msgstr "Organização"
 
 #: ../app/models/control_panel/enable_enterprise.rb:4
 #: ../app/views/admin_panel/set_portal_community.html.erb:19
@@ -3838,7 +3838,7 @@ msgstr "validar"
 #: ../app/models/favorite_enterprises_block.rb:12
 #: ../app/models/favorite_enterprises_block.rb:20
 msgid "Favorite Enterprises"
-msgstr "Empreendimentos Favoritos"
+msgstr "Organizaçãos Favoritos"
 
 #: ../app/models/control_panel/following.rb:20
 msgid "followers"
@@ -3862,7 +3862,7 @@ msgstr "comunidades"
 
 #: ../app/models/control_panel/groups.rb:20
 msgid "enterprises"
-msgstr "empreendimentos"
+msgstr "Organizaçãos"
 
 #: ../app/models/control_panel/header_and_footer.rb:4
 msgid "Header and Footer"
@@ -4113,17 +4113,17 @@ msgid ""
 "{fn} is already being as identifier by another enterprise, organization or "
 "person."
 msgstr ""
-"{fn} já está sendo usado por outro empreendimento, organização ou pessoa."
+"{fn} já está sendo usado por outro Organização, organização ou pessoa."
 
 #: ../app/models/create_enterprise.rb:176 ../app/models/environment.rb:147
 #: ../app/views/enterprise_registration/index.html.erb:3
 msgid "Enterprise registration"
-msgstr "Registro de empreendimento"
+msgstr "Registro de Organização"
 
 #: ../app/models/create_enterprise.rb:188
 #: ../app/models/create_enterprise.rb:234
 msgid "%{requestor} wants to create enterprise %{subject}."
-msgstr "%{requestor} quer criar empreendimento %{subject}."
+msgstr "%{requestor} quer criar Organização %{subject}."
 
 #: ../app/models/create_enterprise.rb:196
 msgid ""
@@ -4134,7 +4134,7 @@ msgid ""
 "      You will be notified as soon as the validator organization has a "
 "position about your request."
 msgstr ""
-"Seu pedido para cadastro de empreendimento \"%{enterprise}\" em "
+"Seu pedido para cadastro de Organização \"%{enterprise}\" em "
 "%{environment} foi recebido. Ele será revisado por um organização validadora "
 "que você escolheu, de acordo com seu métodos e critérios.\n"
 "\n"
@@ -4147,9 +4147,9 @@ msgid ""
 "You can access %{environment} now and provide start providing all relevant "
 "information your new enterprise."
 msgstr ""
-"Sua requisição para registrar o empreendimento \"%{enterprise}\" foi "
+"Sua requisição para registrar o Organização \"%{enterprise}\" foi "
 "aprovada. Você pode acessar %{environment} agora e começar a fornecer "
-"informações relevantes sobre seu novo empreendimento."
+"informações relevantes sobre seu novo Organização."
 
 #: ../app/models/create_enterprise.rb:206
 msgid ""
@@ -4159,7 +4159,7 @@ msgid ""
 "\n"
 "%{explanation}"
 msgstr ""
-"Sua requisição para registrar o empreendimento %{enterprise} em "
+"Sua requisição para registrar o Organização %{enterprise} em "
 "%{environment} NÃO foi aprovada pelo validador de organização. A seguinte "
 "explicação foi dada: \n"
 "\n"
@@ -4171,13 +4171,13 @@ msgid ""
 "have to approve or reject it through the \"Pending Validations\" section in "
 "your control panel.\n"
 msgstr ""
-"O empreendimento \"%{enterprise}\" requisitou entrada em %{environment}. "
+"O Organização \"%{enterprise}\" requisitou entrada em %{environment}. "
 "Você tem que aprová-lo ou rejeitá-lo através da seção \"Validações pendentes"
 "\" no seu painel de controle.\n"
 
 #: ../app/models/create_enterprise.rb:213
 msgid "The data provided by the enterprise was the following:\n"
-msgstr "Os dados providos pelo empreendimento foram os seguintes:\n"
+msgstr "Os dados providos pelo Organização foram os seguintes:\n"
 
 #: ../app/models/create_enterprise.rb:216
 msgid "Name: %s"
@@ -4205,7 +4205,7 @@ msgstr "Atividade econômica: %s"
 
 #: ../app/models/create_enterprise.rb:223
 msgid "Information about enterprise's management:\n"
-msgstr "Alterar a informação sobre o empreendimento:\n"
+msgstr "Alterar a informação sobre o Organização:\n"
 
 #: ../app/models/create_enterprise.rb:225
 msgid "Contact phone: %s"
@@ -4233,15 +4233,15 @@ msgstr "não pode estar em branco"
 
 #: ../app/models/disabled_enterprise_message_block.rb:4
 msgid "\"Disabled enterprise\" message"
-msgstr "Mensagem \"Empreendimento desabilitado\""
+msgstr "Mensagem \"Organização desabilitado\""
 
 #: ../app/models/disabled_enterprise_message_block.rb:8
 msgid "Shows a message for disabled enterprises."
-msgstr "Mostrar mensagem para empreendimentos desabilitados."
+msgstr "Mostrar mensagem para Organizaçãos desabilitados."
 
 #: ../app/models/disabled_enterprise_message_block.rb:24
 msgid "Disabled enterprise"
-msgstr "Empreendimento desabilitado"
+msgstr "Organização desabilitado"
 
 #: ../app/models/domain.rb:17
 msgid ""
@@ -4285,7 +4285,7 @@ msgstr "Activação de Usuário"
 
 #: ../app/models/email_template.rb:27
 msgid "Change User Password"
-msgstr "Alterar Palavra-passe do Usuário"
+msgstr "Alterar Senha do Usuário"
 
 #: ../app/models/enterprise.rb:23
 msgid "Activities short description"
@@ -4319,37 +4319,37 @@ msgstr "Nome fantasia"
 
 #: ../app/models/enterprise.rb:124
 msgid "Enterprises's profile"
-msgstr "Perfil do empreendimento"
+msgstr "Perfil do Organização"
 
 #: ../app/models/enterprise_activation.rb:18
 #: ../app/views/account/accept_terms.html.erb:14
 #: ../app/views/account/activation_question.html.erb:26
 msgid "Enterprise activation"
-msgstr "Ativação de empreendimento"
+msgstr "Ativação de Organização"
 
 #: ../app/models/enterprise_activation.rb:27
 msgid "%{requestor} wants to activate enterprise %{linked_subject}."
-msgstr "%{requestor} quer ativar o empreendimento %{linked_subject}."
+msgstr "%{requestor} quer ativar o Organização %{linked_subject}."
 
 #: ../app/models/enterprise_activation.rb:29
 msgid "Pending activation of enterprise %{linked_subject}."
-msgstr "Ativação pendente para o empreendimento %{linked_subject}."
+msgstr "Ativação pendente para o Organização %{linked_subject}."
 
 #: ../app/models/enterprise_activation.rb:43
 msgid "%{requestor} wants to activate enterprise %{enterprise}."
-msgstr "%{requestor} quer ativar o empreendimento %{enterprise}."
+msgstr "%{requestor} quer ativar o Organização %{enterprise}."
 
 #: ../app/models/enterprise_activation.rb:45
 msgid "Pending activation of enterprise %{enterprise}."
-msgstr "Ativação pendente para o empreendimento %{enterprise}."
+msgstr "Ativação pendente para o Organização %{enterprise}."
 
 #: ../app/models/enterprises_block.rb:4
 msgid "{#} Enterprises"
-msgstr "{#} Empreendimentos"
+msgstr "{#} Organizaçãos"
 
 #: ../app/models/enterprises_block.rb:8
 msgid "This block displays the enterprises where this user works."
-msgstr "Este block apresenta os empreendimentos onde este usuário trabalha."
+msgstr "Este block apresenta os Organizaçãos onde este usuário trabalha."
 
 #: ../app/models/environment.rb:52
 msgid "View environment admin panel"
@@ -4444,7 +4444,7 @@ msgstr "Desabilitar busca por artigos "
 
 #: ../app/models/environment.rb:134
 msgid "Disable search for enterprises"
-msgstr "Desabilitar busca por empreendimentos"
+msgstr "Desabilitar busca por Organizaçãos"
 
 #: ../app/models/environment.rb:135
 msgid "Disable search for people"
@@ -4492,15 +4492,15 @@ msgstr "Não permitir que usuários removam perfis"
 
 #: ../app/models/environment.rb:148
 msgid "Enable activation of enterprises"
-msgstr "Habilitar ativação de empreendimentos"
+msgstr "Habilitar ativação de Organizaçãos"
 
 #: ../app/models/environment.rb:149
 msgid "Enterprises are disabled when created"
-msgstr "Empreendimentos são desabilitados quando criados"
+msgstr "Organizaçãos são desabilitados quando criados"
 
 #: ../app/models/environment.rb:150
 msgid "Enterprises are validated when created"
-msgstr "Empreendimentos são validados quando criados"
+msgstr "Organizaçãos são validados quando criados"
 
 #: ../app/models/environment.rb:152
 msgid "Media panel in WYSIWYG editor"
@@ -4582,7 +4582,7 @@ msgstr "Mostra no menu a lista de comunidades que o usuário pode gerenciar"
 
 #: ../app/models/environment.rb:172
 msgid "Display on menu the list of enterprises the user can manage"
-msgstr "Mostra no menu a lista de empreendimentos que o usuário pode gerenciar"
+msgstr "Mostra no menu a lista de Organizaçãos que o usuário pode gerenciar"
 
 #: ../app/models/environment.rb:173
 msgid "Show content only to members"
@@ -4630,7 +4630,7 @@ msgstr "Redireciona o usuário para a página de boas-vindas do ambiente."
 
 #: ../app/models/environment.rb:301
 msgid "This enterprise needs to be enabled."
-msgstr "Esse empreendimento precisa ser habilitado."
+msgstr "Esse Organização precisa ser habilitado."
 
 #: ../app/models/environment.rb:472
 msgid "Suggest a new article"
@@ -4638,7 +4638,7 @@ msgstr "Sugerir um novo artigo"
 
 #: ../app/models/environment.rb:473
 msgid "Recover forgotten password"
-msgstr "Recuperar palavra-passe esquecida"
+msgstr "Recuperar Senha esquecida"
 
 #: ../app/models/environment.rb:728
 msgid "Only one Virtual Community can be the default one"
@@ -4662,7 +4662,7 @@ msgstr "Um evento no calendário."
 
 #: ../app/models/fans_block.rb:4
 msgid "Displays the people who like the enterprise"
-msgstr "Exibe as pessoas que gostam do empreendimento"
+msgstr "Exibe as pessoas que gostam do Organização"
 
 #: ../app/models/fans_block.rb:8
 msgid "{#} fan"
@@ -4673,8 +4673,8 @@ msgstr[1] "{#} fãs"
 #: ../app/models/fans_block.rb:12
 msgid "This block presents the fans of an enterprise."
 msgstr ""
-"Este bloco apresenta as pessoas que adicionaram um empreendimento como "
-"empreendimento favorito."
+"Este bloco apresenta as pessoas que adicionaram um Organização como "
+"Organização favorito."
 
 #: ../app/models/favorite_enterprise_person.rb:11
 msgid "favorites"
@@ -4682,7 +4682,7 @@ msgstr "favoritos"
 
 #: ../app/models/favorite_enterprises_block.rb:8
 msgid "This block lists your favorite enterprises."
-msgstr "Este bloco lista os empreendimentos favoritos."
+msgstr "Este bloco lista os Organizaçãos favoritos."
 
 #: ../app/models/feed_reader_block.rb:40
 msgid "Feed reader"
@@ -5159,7 +5159,7 @@ msgstr "Gerenciar amigos"
 
 #: ../app/models/profile.rb:99
 msgid "Validate enterprise"
-msgstr "Validar empreendimento"
+msgstr "Validar Organização"
 
 #: ../app/models/profile.rb:100
 msgid "Perform task"
@@ -5486,7 +5486,7 @@ msgstr "Sua cota de upload foi excedida"
 
 #: ../app/models/user.rb:23
 msgid "Password confirmation"
-msgstr "Confirmação de palavra-passe"
+msgstr "Confirmação de Senha"
 
 #: ../app/models/user.rb:24
 msgid "Terms accepted"
@@ -5565,12 +5565,12 @@ msgid ""
 "You also need a password in order to access the network. Choose something "
 "with at least 4 characters that you will remember later."
 msgstr ""
-"Você também precisa de uma palavra-passe para a acessar a rede. Escolha algo "
+"Você também precisa de uma Senha para a acessar a rede. Escolha algo "
 "com pelo menos 4 caractéres que você consiga lembrar depois."
 
 #: ../app/views/account/_signup_form.html.erb:54
 msgid "Type your password again"
-msgstr "Insira a sua palavra-passe novamente"
+msgstr "Insira a sua Senha novamente"
 
 #: ../app/views/account/_signup_form.html.erb:58
 msgid "Passwords don't match"
@@ -5677,15 +5677,15 @@ msgstr "clique aqui"
 
 #: ../app/views/account/activate_enterprise.html.erb:2
 msgid "Enterprise activation - part 3 of 3"
-msgstr "Ativação de empreendimento - parte 3 de 3"
+msgstr "Ativação de Organização - parte 3 de 3"
 
 #: ../app/views/account/activate_enterprise.html.erb:6
 msgid ""
 "Now for you manage your enterprise you have to associate an individual "
 "account to the enterprise."
 msgstr ""
-"Agora para gerenciar seu empreendimento você tem que associar uma conta de "
-"usuário individual ao empreendimento."
+"Agora para gerenciar seu Organização você tem que associar uma conta de "
+"usuário individual ao Organização."
 
 #: ../app/views/account/activate_enterprise.html.erb:7
 msgid "Do you have a personal user account in the system?"
@@ -5702,12 +5702,12 @@ msgid ""
 "enterprise."
 msgstr ""
 "<b>Atenção</b>: este formulário é para você cadastrar a sua conta pessoal, e "
-"não do empreendimento. Assim, você terá uma conta pessoal a partir da qual "
-"pode gerenciar o seu empreendimento."
+"não do Organização. Assim, você terá uma conta pessoal a partir da qual "
+"pode gerenciar o seu Organização."
 
 #: ../app/views/account/activate_enterprise.html.erb:22
 msgid "Enter you user name and password"
-msgstr "Entre com seu nome de usuário e palavra-passe"
+msgstr "Entre com seu nome de usuário e Senha"
 
 #: ../app/views/account/activation_question.html.erb:6
 msgid "The year must be between %d and %d"
@@ -5738,33 +5738,33 @@ msgid ""
 "or phone."
 msgstr ""
 "Esta é uma pergunta para saber se você é realmente parte deste "
-"empreendimento. Preste atenção porque você tem apenas uma chance de "
-"responder corretamente e ativar seu empreendimento. Se você responder errado "
-"não será mais possível ativar seu empreendimento automaticamente e você terá "
+"Organização. Preste atenção porque você tem apenas uma chance de "
+"responder corretamente e ativar seu Organização. Se você responder errado "
+"não será mais possível ativar seu Organização automaticamente e você terá "
 "que entrar em contato com os administradores do %s por email ou telefone."
 
 #: ../app/views/account/activation_question.html.erb:33
 msgid ""
 "What year your enterprise was founded? It must have 4 digits, eg 1990. %s"
 msgstr ""
-"Qual o ano de fundação do seu empreendimento? Ele deve ter 4 dígitos, ex. "
+"Qual o ano de fundação do seu Organização? Ele deve ter 4 dígitos, ex. "
 "1990. %s"
 
 #: ../app/views/account/activation_question.html.erb:33
 msgid "What is the CNPJ of your enterprise?"
-msgstr "Qual o CNPJ do seu empreendimento?"
+msgstr "Qual o CNPJ do seu Organização?"
 
 #: ../app/views/account/already_activated.html.erb:1
 msgid "This enterprise is already active"
-msgstr "Este empreendimento já foi ativado"
+msgstr "Este Organização já foi ativado"
 
 #: ../app/views/account/blocked.html.erb:2
 msgid "This enterprise can't be activated by the system"
-msgstr "Este empreendimento não pôde ser ativado pelo sistema"
+msgstr "Este Organização não pôde ser ativado pelo sistema"
 
 #: ../app/views/account/blocked.html.erb:3
 msgid "Unfortunately this enterprise can't be activated via the system."
-msgstr "Infelizmente este empreendimento não pode ser ativado pelo sistema."
+msgstr "Infelizmente este Organização não pode ser ativado pelo sistema."
 
 #: ../app/views/account/blocked.html.erb:6
 msgid ""
@@ -5777,24 +5777,24 @@ msgstr ""
 #: ../app/views/account/blocked.html.erb:8
 msgid "We don't have enough information about your enterprise to identify you."
 msgstr ""
-"Nós não temos informação suficiente sobre o seu empreendimento para "
+"Nós não temos informação suficiente sobre o seu Organização para "
 "identificar você."
 
 #: ../app/views/account/blocked.html.erb:13
 msgid "Your enterprise has been blocked"
-msgstr "Seu empreendimento foi bloqueado"
+msgstr "Seu Organização foi bloqueado"
 
 #: ../app/views/account/change_password.html.erb:6
 msgid "Current password"
-msgstr "Palavra-passe atual"
+msgstr "Senha atual"
 
 #: ../app/views/account/change_password.html.erb:9
 msgid "New password"
-msgstr "Nova palavra-passe"
+msgstr "Nova Senha"
 
 #: ../app/views/account/change_password.html.erb:12
 msgid "Confirm your new Password"
-msgstr "Confirme sua nova palavra-passe"
+msgstr "Confirme sua nova Senha"
 
 #: ../app/views/account/change_password.html.erb:17
 #: ../app/views/circles/index.html.erb:28 ../app/views/cms/view.html.erb:75
@@ -5823,12 +5823,12 @@ msgstr "Voltar ao painel de controle"
 
 #: ../app/views/account/forgot_password.html.erb:1
 msgid "Forgot your password?"
-msgstr "Esqueceu sua palavra-passe?"
+msgstr "Esqueceu sua Senha?"
 
 #: ../app/views/account/forgot_password.html.erb:3
 msgid "Instructions to password recovery could not be sent"
 msgstr ""
-"As instruções para recuperação de palavra-passe não puderam ser enviadas"
+"As instruções para recuperação de Senha não puderam ser enviadas"
 
 #: ../app/views/account/forgot_password.html.erb:12
 msgid "Send instructions"
@@ -5840,7 +5840,7 @@ msgid ""
 "page where you will be able to create a new password."
 msgstr ""
 "Após clicar no botão acima, você receberá um e-mail com um link para uma "
-"página onde você poderá criar uma nova palavra-passe."
+"página onde você poderá criar uma nova Senha."
 
 #: ../app/views/account/index.html.erb:1
 msgid "Account options"
@@ -5848,11 +5848,11 @@ msgstr "Opções da conta"
 
 #: ../app/views/account/index.html.erb:4
 msgid "Change password."
-msgstr "Alterar palavra-passe."
+msgstr "Alterar Senha."
 
 #: ../app/views/account/index.html.erb:5
 msgid "It is a good idea to change your password from times to times."
-msgstr "É uma boa idéia alterar sua palavra-passe de tempos em tempos."
+msgstr "É uma boa idéia alterar sua Senha de tempos em tempos."
 
 #: ../app/views/account/index.html.erb:9
 msgid "Edit Personal details."
@@ -5919,7 +5919,7 @@ msgstr ""
 
 #: ../app/views/account/invalid_change_password_code.html.erb:1
 msgid "Invalid change password code"
-msgstr "Mudança inválida do código da palavra-passe"
+msgstr "Mudança inválida do código da Senha"
 
 #: ../app/views/account/invalid_change_password_code.html.erb:4
 msgid ""
@@ -5927,20 +5927,20 @@ msgid ""
 "request password change using the <a href=\"%s\">\"I forgot my password\"</"
 "a> functionality."
 msgstr ""
-"O código que você está usando para mudança de palavra-passe não é válido. "
-"Por favor tente requerir a mudança de palavra-passe usando a funcionalidade <"
-"a href=\"%s\">\"Eu esqueci minha palavra-passe\"</a>."
+"O código que você está usando para mudança de Senha não é válido. "
+"Por favor tente requerir a mudança de Senha usando a funcionalidade <"
+"a href=\"%s\">\"Eu esqueci minha Senha\"</a>."
 
 #: ../app/views/account/invalid_enterprise_code.html.erb:1
 msgid "Invalid enterprise code"
-msgstr "Código de empreendimento inválido"
+msgstr "Código de Organização inválido"
 
 #: ../app/views/account/invalid_enterprise_code.html.erb:4
 msgid ""
 "The code you are using for validate your enterprise is not valid. Please "
 "check if you are typing it correctly."
 msgstr ""
-"O código que você está usando para validar seu empreendimento não é válido. "
+"O código que você está usando para validar seu Organização não é válido. "
 "Por favor verifique se você está digitando corretamente."
 
 #: ../app/views/account/login.html.erb:17
@@ -5949,7 +5949,7 @@ msgstr "Mantenha-me logado"
 
 #: ../app/views/account/login.html.erb:31
 msgid "I forgot my password!"
-msgstr "Eu esqueci a minha palavra-passe!"
+msgstr "Eu esqueci a minha Senha!"
 
 #: ../app/views/account/logout_popup.html.erb:1
 msgid "Are you sure you want to get out?"
@@ -5962,23 +5962,23 @@ msgstr "Não, eu quero ficar."
 #: ../app/views/account/new_password.html.erb:1
 #: ../app/views/account/new_password.html.erb:11
 msgid "Enter new password"
-msgstr "Entre com a nova palavra-passe"
+msgstr "Entre com a nova Senha"
 
 #: ../app/views/account/new_password.html.erb:4
 msgid "Hello, %s! Please enter your new password in the form below."
-msgstr "Olá, %s! Por favor entre sua nova palavra-passe no formulário abaixo."
+msgstr "Olá, %s! Por favor entre sua nova Senha no formulário abaixo."
 
 #: ../app/views/account/new_password.html.erb:12
 msgid "Confirm the new password"
-msgstr "Confirme a nova palavra-passe"
+msgstr "Confirme a nova Senha"
 
 #: ../app/views/account/new_password_ok.html.erb:1
 msgid "Password changed sucessfully"
-msgstr "Palavra-passe alterada com sucesso"
+msgstr "Senha alterada com sucesso"
 
 #: ../app/views/account/new_password_ok.html.erb:4
 msgid "%s, your new password was successfully installed."
-msgstr "%s, sua nova palavra-passe foi alterada com sucesso."
+msgstr "%s, sua nova Senha foi alterada com sucesso."
 
 #: ../app/views/account/new_password_ok.html.erb:8
 msgid "You can <a href='%s'>login</a> now."
@@ -5986,7 +5986,7 @@ msgstr "Você pode <a href='%s'>logar</a> agora."
 
 #: ../app/views/account/password_recovery_sent.html.erb:1
 msgid "Password recovery"
-msgstr "Recuperar palavra-passe"
+msgstr "Recuperar Senha"
 
 #: ../app/views/account/password_recovery_sent.html.erb:4
 msgid ""
@@ -5994,7 +5994,7 @@ msgid ""
 "changing your password. You should receive it in a few minutes."
 msgstr ""
 "Um email foi enviado para seu endereço de e-mail, com as instruções para "
-"mudar a sua palavra-passe. Você deve recebê-lo em alguns minutos."
+"mudar a sua Senha. Você deve recebê-lo em alguns minutos."
 
 #: ../app/views/account/signup.html.erb:1
 msgid "Sign up for %s!"
@@ -6010,7 +6010,7 @@ msgid ""
 "control panel of your enterprise"
 msgstr ""
 "%s foi ativado com sucesso. Agora você pode ir para o seu painel de controle "
-"ou ao painel de controle do seu empreendimento"
+"ou ao painel de controle do seu Organização"
 
 #: ../app/views/account/welcome.html.erb:7
 msgid "Go to my control panel"
@@ -6018,7 +6018,7 @@ msgstr "Ir para o meu painel de controle"
 
 #: ../app/views/account/welcome.html.erb:9
 msgid "Go to my enterprise control panel"
-msgstr "Ir para o painel de controle do meu empreendimento"
+msgstr "Ir para o painel de controle do meu Organização"
 
 #: ../app/views/admin_panel/_signup_intro.html.erb:2
 msgid "This text will be shown to the user on the top of the sign up form."
@@ -6196,11 +6196,11 @@ msgstr "Cotas"
 
 #: ../app/views/admin_panel/index.html.erb:135
 msgid "Enterprise-related settings"
-msgstr "Configurações relacionadas com empreendimento"
+msgstr "Configurações relacionadas com Organização"
 
 #: ../app/views/admin_panel/index.html.erb:140
 msgid "Message for disabled enterprises"
-msgstr "Mensagem para empreendimentos desabilitados"
+msgstr "Mensagem para Organizaçãos desabilitados"
 
 #: ../app/views/admin_panel/index.html.erb:146
 msgid "Validators by region"
@@ -6451,7 +6451,7 @@ msgstr "Enviar e-mail para os administradores"
 
 #: ../app/views/blocks/profile_info_actions/_enterprise.html.erb:4
 msgid "Add enterprise as favorite"
-msgstr "Adicionar empreendimento como um de seus favoritos"
+msgstr "Adicionar Organização como um de seus favoritos"
 
 #: ../app/views/blocks/profile_info_actions/_enterprise.html.erb:4
 msgid "Add as favorite"
@@ -7823,16 +7823,16 @@ msgstr "Inclusão indisponível."
 
 #: ../app/views/enterprise_registration/confirmation.html.erb:2
 msgid "Enterprise was created"
-msgstr "Empreendimento foi criado"
+msgstr "Organização foi criado"
 
 #: ../app/views/enterprise_registration/confirmation.html.erb:4
 msgid "Your new enterprise has been created."
-msgstr "Seu novo empreendimento foi criado."
+msgstr "Seu novo Organização foi criado."
 
 #: ../app/views/enterprise_registration/confirmation.html.erb:7
 #: ../app/views/enterprise_registration/creation.html.erb:1
 msgid "Enterprise registration completed"
-msgstr "Registro do empreendimento completo"
+msgstr "Registro do Organização completo"
 
 #: ../app/views/enterprise_registration/confirmation.html.erb:9
 msgid ""
@@ -7852,7 +7852,7 @@ msgstr "Você pode continuar navegando neste ambiente."
 
 #: ../app/views/enterprise_registration/creation.html.erb:2
 msgid "Your enterprise (%s) was successfully registered."
-msgstr "Seu empreendimento (%s) foi registrado com sucesso."
+msgstr "Seu Organização (%s) foi registrado com sucesso."
 
 #: ../app/views/enterprise_registration/creation.html.erb:4
 #: ../app/views/memberships/welcome.html.erb:4
@@ -7861,14 +7861,14 @@ msgstr "O que posso fazer com um %s?"
 
 #: ../app/views/enterprise_registration/creation.html.erb:8
 msgid "You can manage your enterprise now."
-msgstr "Você pode gerenciar seu empreendimento agora."
+msgstr "Você pode gerenciar seu Organização agora."
 
 #: ../app/views/enterprise_registration/index.html.erb:8
 msgid ""
 "There are no validators to validate the registration of this new enterprise. "
 "Contact your administrator for instructions."
 msgstr ""
-"Não existem validadores para validar o registro desse novo empreendimento. "
+"Não existem validadores para validar o registro desse novo Organização. "
 "Entre em contato com seu administrador para instruções."
 
 #: ../app/views/enterprise_registration/index.html.erb:12
@@ -7893,14 +7893,14 @@ msgid ""
 "entitiy of your choice (within your state) and when the enterprise is "
 "aproved you will be able to activate its profile."
 msgstr ""
-"Para registrar um novo empreendimento, preencha o formulário e pressione o "
-"botão Registrar. O empreendimento será submetido à avaliação pela entidade "
-"validadora de sua escolha no seu estado, e quando quando o empreendimento "
+"Para registrar um novo Organização, preencha o formulário e pressione o "
+"botão Registrar. O Organização será submetido à avaliação pela entidade "
+"validadora de sua escolha no seu estado, e quando quando o Organização "
 "for aprovado você poderá ativar o seu perfil."
 
 #: ../app/views/enterprise_registration/select_validator.html.erb:1
 msgid "Enterprise registration: validator organization"
-msgstr "Registo do empreendimento: organização validadora"
+msgstr "Registo do Organização: organização validadora"
 
 #: ../app/views/enterprise_registration/select_validator.html.erb:4
 msgid ""
@@ -7979,8 +7979,8 @@ msgid ""
 "If this enterprise passes the criteria to be considered an solidarity "
 "enconomy enterprise, you can approve it by click the button below."
 msgstr ""
-"Se este empreendimento passar no critério para ser considerado um "
-"empreendimento de economia solidária, você pode aprová-lo clicando no botão "
+"Se este Organização passar no critério para ser considerado um "
+"Organização de economia solidária, você pode aprová-lo clicando no botão "
 "abaixo."
 
 #: ../app/views/enterprise_validation/details.html.erb:23
@@ -7994,7 +7994,7 @@ msgid ""
 "If this enterprise does not pass the criteria do be considered, use this "
 "form."
 msgstr ""
-"Se este empreendimento não passar no critério para ser considerado, use este "
+"Se este Organização não passar no critério para ser considerado, use este "
 "formulário."
 
 #: ../app/views/enterprise_validation/details.html.erb:28
@@ -8011,7 +8011,7 @@ msgstr "Editando a informação de validação"
 
 #: ../app/views/enterprise_validation/index.html.erb:1
 msgid "Enterprise validations"
-msgstr "Validações de empreendimento"
+msgstr "Validações de Organização"
 
 #: ../app/views/enterprise_validation/index.html.erb:4
 msgid "Edit validation info"
@@ -8023,7 +8023,7 @@ msgstr "Voltar"
 
 #: ../app/views/enterprise_validation/index.html.erb:8
 msgid "Pending enterprise validations"
-msgstr "Validações de empreendimento pendentes"
+msgstr "Validações de Organização pendentes"
 
 #: ../app/views/enterprise_validation/index.html.erb:27
 msgid "See details/approve/reject"
@@ -8032,11 +8032,11 @@ msgstr "Ver detalhes/aprovar/rejeitar"
 #: ../app/views/enterprise_validation/index.html.erb:30
 #: ../app/views/enterprise_validation/list_processed.html.erb:1
 msgid "Processed enterprise validations"
-msgstr "Validações de empreendimento processadas"
+msgstr "Validações de Organização processadas"
 
 #: ../app/views/enterprise_validation/index.html.erb:32
 msgid "See the list of processed enterprise validations"
-msgstr "Ver lista validações de empreendimentos processados"
+msgstr "Ver lista validações de Organizaçãos processados"
 
 #: ../app/views/enterprise_validation/list_processed.html.erb:23
 msgid "See details"
@@ -8104,11 +8104,11 @@ msgstr "Novo evento"
 
 #: ../app/views/favorite_enterprises/add.html.erb:1
 msgid "Adding %s as a favorite enterprise"
-msgstr "Adicionando %s como empreendimento favorito"
+msgstr "Adicionando %s como Organização favorito"
 
 #: ../app/views/favorite_enterprises/add.html.erb:4
 msgid "Are you sure you want to add %s as your favorite enterprise?"
-msgstr "Tem certeza que quer adicionar %s como seu empreendimento favorito?"
+msgstr "Tem certeza que quer adicionar %s como seu Organização favorito?"
 
 #: ../app/views/favorite_enterprises/add.html.erb:10
 #: ../app/views/profile_editor/destroy_profile.html.erb:7
@@ -8118,16 +8118,16 @@ msgstr "Sim, tenho certeza"
 
 #: ../app/views/favorite_enterprises/add.html.erb:11
 msgid "I want to add %s as a favorite enterprise"
-msgstr "Eu quero adicionar %s como empreendimento favorito"
+msgstr "Eu quero adicionar %s como Organização favorito"
 
 #: ../app/views/favorite_enterprises/index.html.erb:3
 #: ../app/views/profile/favorite_enterprises.html.erb:3
 msgid "%s's favorite enterprises"
-msgstr "Empreendimentos favoritos de %s"
+msgstr "Organizaçãos favoritos de %s"
 
 #: ../app/views/favorite_enterprises/index.html.erb:8
 msgid "You have no favorite enterprises yet."
-msgstr "Você não tem empreendimentos favoritos ainda."
+msgstr "Você não tem Organizaçãos favoritos ainda."
 
 #: ../app/views/favorite_enterprises/index.html.erb:19
 #: ../app/views/followers/_profile_list.html.erb:13
@@ -8137,12 +8137,12 @@ msgstr "remover"
 
 #: ../app/views/favorite_enterprises/remove.html.erb:3
 msgid "Removing favorite enterprise: %s"
-msgstr "Removendo empreendimento favorito: %s"
+msgstr "Removendo Organização favorito: %s"
 
 #: ../app/views/favorite_enterprises/remove.html.erb:8
 msgid "Are you sure you want to remove %s from your favorite enterprise list?"
 msgstr ""
-"Tem certeza que quer remover %s da sua lista de empreendimentos favoritos?"
+"Tem certeza que quer remover %s da sua lista de Organizaçãos favoritos?"
 
 #: ../app/views/favorite_enterprises/remove.html.erb:14
 msgid "Yes, I'm sure"
@@ -8308,7 +8308,7 @@ msgstr "Campos de comunidade"
 
 #: ../app/views/features/manage_fields.html.erb:11
 msgid "Enterprise's fields"
-msgstr "Campos de empreendimento"
+msgstr "Campos de Organização"
 
 #: ../app/views/file_presenter/_audio.html.erb:5
 msgid "Download audio"
@@ -8523,7 +8523,7 @@ msgid ""
 msgstr ""
 "Se demorar demais, você será redirecionado(a) para a página anterior para "
 "tentar novamente. Certifique-se de preencher os campos com seu usuário e "
-"palavra-passe corretos."
+"Senha corretos."
 
 #: ../app/views/invite/_dialog_wait_loading.html.erb:19
 msgid "Verify contact list"
@@ -8570,7 +8570,7 @@ msgstr "Por favor digite seu nome de usuário no formato seunome@exemplo.com"
 #: ../app/views/invite/_select_address_book.html.erb:40
 msgid "We won't store your password or contact anyone without your permission."
 msgstr ""
-"Nós não armazenamos sua palavra-passe nem contactamos ninguém sem sua "
+"Nós não armazenamos sua Senha nem contactamos ninguém sem sua "
 "permissão."
 
 #: ../app/views/invite/invite_friends.html.erb:2
@@ -8822,7 +8822,7 @@ msgstr "Criar nova comunidade"
 #: ../app/views/memberships/index.html.erb:7
 #: ../app/views/profile/enterprises.html.erb:16
 msgid "Register a new enterprise"
-msgstr "Registrar um novo empreendimento"
+msgstr "Registrar um novo Organização"
 
 #: ../app/views/memberships/index.html.erb:18
 msgid "See some suggestions of communities..."
@@ -9069,7 +9069,7 @@ msgstr "Veja o conteúdo marcado com \"%s\" em todo o site"
 
 #: ../app/views/profile/enterprises.html.erb:3
 msgid "%s's enterprises"
-msgstr "Empreendimentos de %s"
+msgstr "Organizaçãos de %s"
 
 #: ../app/views/profile/fans.html.erb:3
 msgid "%s's fans"
@@ -9338,7 +9338,7 @@ msgstr "Não, eu desisti"
 
 #: ../app/views/profile_editor/disable.html.erb:1
 msgid "Disabling '%s' enterprise"
-msgstr "Desabilitando empreendimentos '%s'"
+msgstr "Desabilitando Organizaçãos '%s'"
 
 #: ../app/views/profile_editor/disable.html.erb:4
 msgid "Are you sure you want to disable %s?"
@@ -9350,7 +9350,7 @@ msgstr "Sim, quero desabilitar."
 
 #: ../app/views/profile_editor/enable.html.erb:1
 msgid "Enabling '%s' enterprise"
-msgstr "Habilitando empreendimento '%s'"
+msgstr "Habilitando Organização '%s'"
 
 #: ../app/views/profile_editor/enable.html.erb:4
 msgid "Are you sure you want to enable %s?"
@@ -9409,7 +9409,7 @@ msgstr "Não há opções que batam com esse filtro."
 
 #: ../app/views/profile_editor/index.html.erb:30
 msgid "Activate your enterprise"
-msgstr "Ativar seu empreendimento"
+msgstr "Ativar seu Organização"
 
 #: ../app/views/profile_editor/index.html.erb:31
 msgid ""
@@ -9417,11 +9417,11 @@ msgid ""
 "add here the activation code that was sent."
 msgstr ""
 "Se você recebeu uma carta com informações sobre a ativação do seu "
-"empreendimento, coloque aqui o código de ativação recebido."
+"Organização, coloque aqui o código de ativação recebido."
 
 #: ../app/views/profile_editor/index.html.erb:33
 msgid "Enterprise activation code"
-msgstr "Código de Ativação do empreendimento"
+msgstr "Código de Ativação do Organização"
 
 #: ../app/views/profile_editor/index.html.erb:41
 msgid "Back to homepage"
@@ -10513,7 +10513,7 @@ msgstr "Houve problemas com os seguintes campos:"
 #: ../app/views/templates/create_enterprise_template.html.erb:1
 #: ../app/views/templates/create_person_template.html.erb:7
 msgid "Create enterprise template"
-msgstr "Criar um modelo de empreendimento"
+msgstr "Criar um modelo de Organização"
 
 #: ../app/views/templates/create_community_template.html.erb:10
 #: ../app/views/templates/create_person_template.html.erb:5
@@ -11024,8 +11024,8 @@ msgstr ""
 
 #~ msgid "{#} enterprise"
 #~ msgid_plural "{#} enterprises"
-#~ msgstr[0] "{#} empreendimento"
-#~ msgstr[1] "{#} empreendimentos"
+#~ msgstr[0] "{#} Organização"
+#~ msgstr[1] "{#} Organizaçãos"
 
 #~ msgid "Public profile"
 #~ msgstr "Perfil público"
@@ -11037,7 +11037,7 @@ msgstr ""
 #~ msgstr "Feed RSS"
 
 #~ msgid "Yes, I want to remove %s from my favorite enterprise list"
-#~ msgstr "Sim, quero remover %s da minha lista de empreendimentos favoritos"
+#~ msgstr "Sim, quero remover %s da minha lista de Organizaçãos favoritos"
 
 #~ msgid ""
 #~ "Filter followed, friends or group of friends to send them a private "
@@ -11125,7 +11125,7 @@ msgstr ""
 #~ msgstr "Informações e Configurações da Comunidade"
 
 #~ msgid "Enterprise Info and settings"
-#~ msgstr "Informações e Configurações do Empreendimento"
+#~ msgstr "Informações e Configurações do Organização"
 
 #~ msgid "Edit Profile"
 #~ msgstr "Editar perfil"
@@ -11185,7 +11185,7 @@ msgstr ""
 #~ msgstr "Gerenciar Integrantes"
 
 #~ msgid "Enterprise Validation"
-#~ msgstr "Validações de empreendimento"
+#~ msgstr "Validações de Organização"
 
 #~ msgid "Manage followed profiles"
 #~ msgstr "Gerenciar perfis seguidos"
@@ -11235,7 +11235,7 @@ msgstr ""
 #~ msgstr "escreveu: <br /> \"%{text}\""
 
 #~ msgid "favorited enterprise %{title}"
-#~ msgstr "favoritou o empreendimento %{title}"
+#~ msgstr "favoritou o Organização %{title}"
 
 #~ msgid "Contents menu"
 #~ msgstr "Menu de conteúdos"
