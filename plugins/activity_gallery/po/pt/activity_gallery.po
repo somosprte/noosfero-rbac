@@ -32,21 +32,6 @@ msgstr "Notificação enviada com sucesso"
 msgid "Notification not sent"
 msgstr "Notificação não enviada"
 
-msgid "Work Assignment"
-msgstr "Trabalho a ser entregue"
-
-msgid ""
-"Defines a work to be done by the members and receives their submissions about "
-"this work."
-msgstr ""
-"Define um trabalho a ser feito pelos membros e recebe as submissõs do trabalho"
-"."
-
-msgid "Name"
-msgstr "Nome"
-
-msgid "e-Mail"
-msgstr "e-Mail"
 msgid "Activity Gallery"
 msgstr ""
 
