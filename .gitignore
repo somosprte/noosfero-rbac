@@ -19,6 +19,9 @@ config/unicorn.rb
 config/local.rb
 config/initializers/local.rb
 config/routes/plugins
+config/initializers/email.rb
+config/environments/development.rb
+config/docker/dev/Dockerfile
 
 
 tags
@@ -74,3 +77,6 @@ docker-sync.yml
 
 # OSX trash
 .DS_Store
+
+*.po.time_stamp
+*.edit.po
