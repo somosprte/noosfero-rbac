@@ -478,7 +478,7 @@ msgstr "Comunidades"
 #: ../app/controllers/public/search_controller.rb:265
 #: ../app/helpers/assets_helper.rb:10 ../app/models/enterprises_block.rb:12
 msgid "Enterprises"
-msgstr "Organizaçãos"
+msgstr "Organizações"
 
 #: ../app/controllers/admin/profile_quotas_controller.rb:114
 msgid "Sort by name"
@@ -1054,7 +1054,7 @@ msgstr "Você desbloqueou %s com sucesso. "
 
 #: ../app/controllers/public/profile_controller.rb:242
 msgid "You are not allowed to unblock enterprises in this environment."
-msgstr "Você não está autorizado a desbloquear Organizaçãos neste ambiente."
+msgstr "Você não está autorizado a desbloquear Organizações neste ambiente."
 
 #: ../app/controllers/public/profile_controller.rb:255
 msgid "You can't leave an empty message."
@@ -1348,7 +1348,7 @@ msgstr "Gerenciar %s"
 
 #: ../app/helpers/application_helper.rb:908
 msgid "My enterprises"
-msgstr "Meus Organizaçãos"
+msgstr "Meus Organizações"
 
 #: ../app/helpers/application_helper.rb:914
 msgid "My communities"
@@ -3838,7 +3838,7 @@ msgstr "validar"
 #: ../app/models/favorite_enterprises_block.rb:12
 #: ../app/models/favorite_enterprises_block.rb:20
 msgid "Favorite Enterprises"
-msgstr "Organizaçãos Favoritos"
+msgstr "Organizações Favoritos"
 
 #: ../app/models/control_panel/following.rb:20
 msgid "followers"
@@ -3862,7 +3862,7 @@ msgstr "comunidades"
 
 #: ../app/models/control_panel/groups.rb:20
 msgid "enterprises"
-msgstr "Organizaçãos"
+msgstr "Organizações"
 
 #: ../app/models/control_panel/header_and_footer.rb:4
 msgid "Header and Footer"
@@ -4237,7 +4237,7 @@ msgstr "Mensagem \"Organização desabilitado\""
 
 #: ../app/models/disabled_enterprise_message_block.rb:8
 msgid "Shows a message for disabled enterprises."
-msgstr "Mostrar mensagem para Organizaçãos desabilitados."
+msgstr "Mostrar mensagem para Organizações desabilitados."
 
 #: ../app/models/disabled_enterprise_message_block.rb:24
 msgid "Disabled enterprise"
@@ -4345,11 +4345,11 @@ msgstr "Ativação pendente para o Organização %{enterprise}."
 
 #: ../app/models/enterprises_block.rb:4
 msgid "{#} Enterprises"
-msgstr "{#} Organizaçãos"
+msgstr "{#} Organizações"
 
 #: ../app/models/enterprises_block.rb:8
 msgid "This block displays the enterprises where this user works."
-msgstr "Este block apresenta os Organizaçãos onde este usuário trabalha."
+msgstr "Este block apresenta os Organizações onde este usuário trabalha."
 
 #: ../app/models/environment.rb:52
 msgid "View environment admin panel"
@@ -4444,7 +4444,7 @@ msgstr "Desabilitar busca por artigos "
 
 #: ../app/models/environment.rb:134
 msgid "Disable search for enterprises"
-msgstr "Desabilitar busca por Organizaçãos"
+msgstr "Desabilitar busca por Organizações"
 
 #: ../app/models/environment.rb:135
 msgid "Disable search for people"
@@ -4492,15 +4492,15 @@ msgstr "Não permitir que usuários removam perfis"
 
 #: ../app/models/environment.rb:148
 msgid "Enable activation of enterprises"
-msgstr "Habilitar ativação de Organizaçãos"
+msgstr "Habilitar ativação de Organizações"
 
 #: ../app/models/environment.rb:149
 msgid "Enterprises are disabled when created"
-msgstr "Organizaçãos são desabilitados quando criados"
+msgstr "Organizações são desabilitados quando criados"
 
 #: ../app/models/environment.rb:150
 msgid "Enterprises are validated when created"
-msgstr "Organizaçãos são validados quando criados"
+msgstr "Organizações são validados quando criados"
 
 #: ../app/models/environment.rb:152
 msgid "Media panel in WYSIWYG editor"
@@ -4582,7 +4582,7 @@ msgstr "Mostra no menu a lista de comunidades que o usuário pode gerenciar"
 
 #: ../app/models/environment.rb:172
 msgid "Display on menu the list of enterprises the user can manage"
-msgstr "Mostra no menu a lista de Organizaçãos que o usuário pode gerenciar"
+msgstr "Mostra no menu a lista de Organizações que o usuário pode gerenciar"
 
 #: ../app/models/environment.rb:173
 msgid "Show content only to members"
@@ -4682,7 +4682,7 @@ msgstr "favoritos"
 
 #: ../app/models/favorite_enterprises_block.rb:8
 msgid "This block lists your favorite enterprises."
-msgstr "Este bloco lista os Organizaçãos favoritos."
+msgstr "Este bloco lista os Organizações favoritos."
 
 #: ../app/models/feed_reader_block.rb:40
 msgid "Feed reader"
@@ -6200,7 +6200,7 @@ msgstr "Configurações relacionadas com Organização"
 
 #: ../app/views/admin_panel/index.html.erb:140
 msgid "Message for disabled enterprises"
-msgstr "Mensagem para Organizaçãos desabilitados"
+msgstr "Mensagem para Organizações desabilitados"
 
 #: ../app/views/admin_panel/index.html.erb:146
 msgid "Validators by region"
@@ -8036,7 +8036,7 @@ msgstr "Validações de Organização processadas"
 
 #: ../app/views/enterprise_validation/index.html.erb:32
 msgid "See the list of processed enterprise validations"
-msgstr "Ver lista validações de Organizaçãos processados"
+msgstr "Ver lista validações de Organizações processados"
 
 #: ../app/views/enterprise_validation/list_processed.html.erb:23
 msgid "See details"
@@ -8123,11 +8123,11 @@ msgstr "Eu quero adicionar %s como Organização favorito"
 #: ../app/views/favorite_enterprises/index.html.erb:3
 #: ../app/views/profile/favorite_enterprises.html.erb:3
 msgid "%s's favorite enterprises"
-msgstr "Organizaçãos favoritos de %s"
+msgstr "Organizações favoritos de %s"
 
 #: ../app/views/favorite_enterprises/index.html.erb:8
 msgid "You have no favorite enterprises yet."
-msgstr "Você não tem Organizaçãos favoritos ainda."
+msgstr "Você não tem Organizações favoritos ainda."
 
 #: ../app/views/favorite_enterprises/index.html.erb:19
 #: ../app/views/followers/_profile_list.html.erb:13
@@ -8142,7 +8142,7 @@ msgstr "Removendo Organização favorito: %s"
 #: ../app/views/favorite_enterprises/remove.html.erb:8
 msgid "Are you sure you want to remove %s from your favorite enterprise list?"
 msgstr ""
-"Tem certeza que quer remover %s da sua lista de Organizaçãos favoritos?"
+"Tem certeza que quer remover %s da sua lista de Organizações favoritos?"
 
 #: ../app/views/favorite_enterprises/remove.html.erb:14
 msgid "Yes, I'm sure"
@@ -9069,7 +9069,7 @@ msgstr "Veja o conteúdo marcado com \"%s\" em todo o site"
 
 #: ../app/views/profile/enterprises.html.erb:3
 msgid "%s's enterprises"
-msgstr "Organizaçãos de %s"
+msgstr "Organizações de %s"
 
 #: ../app/views/profile/fans.html.erb:3
 msgid "%s's fans"
@@ -9338,7 +9338,7 @@ msgstr "Não, eu desisti"
 
 #: ../app/views/profile_editor/disable.html.erb:1
 msgid "Disabling '%s' enterprise"
-msgstr "Desabilitando Organizaçãos '%s'"
+msgstr "Desabilitando Organizações '%s'"
 
 #: ../app/views/profile_editor/disable.html.erb:4
 msgid "Are you sure you want to disable %s?"
@@ -11025,7 +11025,7 @@ msgstr ""
 #~ msgid "{#} enterprise"
 #~ msgid_plural "{#} enterprises"
 #~ msgstr[0] "{#} Organização"
-#~ msgstr[1] "{#} Organizaçãos"
+#~ msgstr[1] "{#} Organizações"
 
 #~ msgid "Public profile"
 #~ msgstr "Perfil público"
@@ -11037,7 +11037,7 @@ msgstr ""
 #~ msgstr "Feed RSS"
 
 #~ msgid "Yes, I want to remove %s from my favorite enterprise list"
-#~ msgstr "Sim, quero remover %s da minha lista de Organizaçãos favoritos"
+#~ msgstr "Sim, quero remover %s da minha lista de Organizações favoritos"
 
 #~ msgid ""
 #~ "Filter followed, friends or group of friends to send them a private "

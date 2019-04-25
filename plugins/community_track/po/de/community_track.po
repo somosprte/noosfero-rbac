@@ -36,24 +36,14 @@ msgstr ""
 msgid "Defines a step."
 msgstr ""
 
-<<<<<<< HEAD
-msgid "Soon"
-msgstr "Bald"
-=======
 msgid "Closed"
 msgstr "Geschlossen"
->>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 
 msgid "Join!"
 msgstr "Beitreten!"
 
-<<<<<<< HEAD
-msgid "Closed"
-msgstr "Geschlossen"
-=======
 msgid "Soon"
 msgstr "Bald"
->>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 
 msgid "should not be blank."
 msgstr "sollte nicht leer sein."

@@ -74,34 +74,12 @@ msgstr "Ativa"
 msgid "Inactive"
 msgstr "Inativa"
 
-<<<<<<< HEAD
-msgid "Green - Success"
-msgstr "Verde - Sucesso"
-
-msgid "Yellow - Warning"
-msgstr "Amarelo - Atenção"
-=======
 msgid "Notifications Color/Type"
 msgstr "Cor/Tipo de Notificação"
->>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 
 msgid "Blue - Information"
 msgstr "Azul - Informação"
 
-<<<<<<< HEAD
-msgid "Red - Danger"
-msgstr "Vermelho - Perigo"
-
-msgid "Notifications Color/Type"
-msgstr "Cor/Tipo de Notificação"
-
-msgid "Display only in the homepage"
-msgstr "Apresentar apenas na página inicial"
-
-msgid "Display only in the profile homepage"
-msgstr "Apresentar apenas na página inicial do perfil"
-
-=======
 msgid "Yellow - Warning"
 msgstr "Amarelo - Atenção"
 
@@ -117,7 +95,6 @@ msgstr "Apresentar apenas na página inicial do perfil"
 msgid "Display only in the homepage"
 msgstr "Apresentar apenas na página inicial"
 
->>>>>>> 768900cebc3fdac72731c5412df1588cbb1eae10
 msgid "Display to not logged users too"
 msgstr "Apresentar também para usuários não logados"
 
