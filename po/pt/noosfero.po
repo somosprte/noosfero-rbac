@@ -1967,7 +1967,7 @@ msgid "Wall"
 msgstr "Mural"
 
 msgid "Send an e-mail"
-msgstr "Enviar e-mail"
+msgstr "Enviar mensagem"
 
 msgid "Join"
 msgstr "Entrar"
@@ -2894,7 +2894,7 @@ msgstr "{fn} não é um validador para a região escolhida"
 msgid ""
 "{fn} is already being as identifier by another enterprise, organization or per"
 "son."
-msgstr "{fn} já está sendo usado por outro Organização, organização ou pessoa."
+msgstr "{fn} já está sendo usado por outra organização ou pessoa."
 
 msgid "Enterprise registration"
 msgstr "Registro de Organização"
@@ -3239,7 +3239,7 @@ msgid "Skip e-mail confirmation for new users"
 msgstr "Pular e-mail de confirmação para novos usuários"
 
 msgid "Send welcome e-mail to new users"
-msgstr "Enviar e-mail de boas vindas para novos usuários"
+msgstr "Enviar mensagem de boas vindas para novos usuários"
 
 msgid "Allow users to set the page to redirect after login"
 msgstr "Permite que os usuários configurem a página para redirecionar após o login"
@@ -3691,7 +3691,7 @@ msgid "Invite members"
 msgstr "Convidar membros"
 
 msgid "Send e-Mail to members"
-msgstr "Enviar e-mail para os membros"
+msgstr "Enviar mensagem para os membros"
 
 msgid "Manage custom roles"
 msgstr "Gerenciar papéis personalizados"
@@ -4638,7 +4638,7 @@ msgid "Since %{year}/%{month}"
 msgstr "Desde %{month}/%{year}"
 
 msgid "Send an e-mail to the administrators"
-msgstr "Enviar e-mail para os administradores"
+msgstr "Enviar mensagem para os administradores"
 
 msgid "Add as favorite"
 msgstr "Favoritar"
@@ -5392,7 +5392,7 @@ msgid "Click on the address below to cancel the notification of new comments:"
 msgstr "Clique no endereço abaixo para cancelar a notificação de novos comentários:"
 
 msgid "Send an e-mail to %s"
-msgstr "Enviar e-mail para %s"
+msgstr "Enviar mensagem para %s"
 
 msgid "Send an e-mail to administrators"
 msgstr "Enviar um e-mail para os administradores"
@@ -6291,7 +6291,7 @@ msgid "Create a new community"
 msgstr "Criar nova comunidade"
 
 msgid "Register a new enterprise"
-msgstr "Registrar um novo Organização"
+msgstr "Registrar uma nova Organização"
 
 msgid "See some suggestions of communities..."
 msgstr "Veja algumas sugestões de comunidades..."
@@ -6505,7 +6505,7 @@ msgid "%d Administrators"
 msgstr "%d Administradores"
 
 msgid "Send e-mail to members"
-msgstr "Enviar e-mail para os membros"
+msgstr "Enviar mensagem para os membros"
 
 msgid "Report reasons"
 msgstr "Razões da denúncia"
@@ -7194,7 +7194,7 @@ msgid "Leave"
 msgstr "Sair"
 
 msgid "Drag the balloon to set your location."
-msgstr "Arraste o balão para definir a sua localização."
+msgstr "Deixe a opção Público selecionada para exibir sua localização no Mapa da Rede"
 
 msgid "Fill an address to find it easier in the map"
 msgstr "Preencha um endereço para encontra-lo mais facilmente no mapa"
@@ -7661,7 +7661,7 @@ msgid "Export People list"
 msgstr "Exportar lista de pessoas"
 
 msgid "Send e-mail to users"
-msgstr "Enviar e-mail para os usuários"
+msgstr "Enviar mensagem para os usuários"
 
 msgid "Select the file format"
 msgstr "Selecione o formato do ficheiro"
