@@ -1,32 +1,22 @@
 <div class="form-title">Detalhes da Atividade</div>
 
-<div class="activity-title">ALDEIA CRIATIVA - Oficina de Introdução à Aprendizagem Criativa</div>
+<div class="activity-title"><%= @activities[:data][:attributes][:title]%></div>
 
 <div class="thumbnail-item">
   <img class="group list-group-image" src="/designs/themes/rbac-prte/images/atividade.jpeg" alt="" />
   <div class="caption">
     <p class="activity-text">
-      A proposta desta atividade é apresentar a aprendizagem criativa por meio de uma construção mão na massa coletiva,
-      levando os participantes a refletir sobre sua própria comunidade e com o que eles gostariam de viver e conviver. A
-      atividade usa materiais de baixo custo misturados a componentes eletrônicos, a fim de enfatizar que a criatividade
-      pode ser explorada com recursos acessíveis.
+      <%= @activities[:data][:attributes][:description]%>
     </p>
   </div>
 </div>
 <div class="about-actitivy">
-  <div class="activity-title">1 - Sobre a Atividade</div>
-  <div class="activity-subtitle">1.1 Nossa História</div>
+  <div class="activity-title"><%= @activities[:data][:attributes][:title]%></div>
+  <div class="activity-subtitle"><%= @activities[:data][:attributes][:caption]%></div>
   <p class="activity-text">
-    Esta atividade foi criada em razão de uma demanda da Rede Brasileira de Aprendizagem Criativa (RBAC) para a
-    introdução em aprendizagem criativa a professores e gestores de escolas públicas no Brasil. Em um esforço da Rede
-    para ofertar uma oficina a 350 educadores em um evento da Fundação Lemann em 2018, elaboramos esta atividade para
-    contemplar desde a experiência do público com uma atividade mão na massa, passando pela conceitualização e reflexão
-    sobre a atividade, até a conexão do método AC com competências da Base Nacional Curricular Comum (BNCC). Em sua
-    primeira implementação no Brasil, a Aldeia Criativa contou com o apoio de 16 integrantes da RBAC, que possibilitaram
-    a experiência da oficina em escala. Além disso, foi este grupo que tornou possível a atividade criada originalmente,
-    por meio de discussões intensas na adaptação da oficina para sua primeira edição.
+    <%= @activities[:data][:attributes][:description]%>
   </p>
-  <div class="activity-subtitle">1.2 Objetivos</div>
+  <div class="activity-subtitle"><%= @activities[:data][:attributes][:motivation] %></div>
   <p class="activity-text">
     Colocar o educador no papel de explorador, designer, criando espaços comuns para uma sociedade criativa;
   </p>
