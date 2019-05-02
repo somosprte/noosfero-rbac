@@ -61,5 +61,19 @@ Noosfero::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
+
+  # Configuration Amazon Send Mail from SMTP
+      #config.action_mailer.delivery_method = :smtp
+      #config.action_mailer.default_options = {from: 'email@domain.com'}
+      #config.action_mailer.smtp_settings = {
+            #address:              'email-smtp.us-east-1.amazonaws.com',
+            #port:                 587,
+            #domain:               'yourdomain.com',
+            #user_name:            'username',
+            #password:             'password',
+            #authentication:       'plain',
+            #openssl_verify_mode: OpenSSL::SSL::VERIFY_NONE,
+            #enable_starttls_auto: true }
+
 end
 
