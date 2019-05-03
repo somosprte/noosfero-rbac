@@ -16,6 +16,10 @@ class ActivityGalleryPlugin < Noosfero::Plugin
     true
   end
 
+  # def person_after_create_callback(person)
+
+  # end
+
   def account_controller_filters
     {
       type: 'after_action', method_name: 'get_jwt',
@@ -32,6 +36,9 @@ class ActivityGalleryPlugin < Noosfero::Plugin
           if response.code == '200'
             jwt = JSON.parse(response.body,symbolize_names:true)[:jwt]
             session['activity_gallery_plugin_jwt'] = jwt
+            user.metadata['activity_gallery_plugin_jwt'] = jwt
+            user.save!
+          else
           end
         end
       }

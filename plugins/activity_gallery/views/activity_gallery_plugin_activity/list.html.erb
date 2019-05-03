@@ -3,12 +3,15 @@
 <div class="container">
   <div class="wrap">
     <div class="search">
-      <input type="text" class="searchTerm" placeholder="Qual atividade você procura?" />
-      <button type="submit" class="searchButton">
-        <i class="fa fa-search"></i>
-      </button>
+      <%= form_tag("/galeria", method: :get) do %>
+        <%= text_field_tag(:search, params[:search], class:"searchTerm") %>
+        <button type="submit" class="searchButton">
+          <i class="fa fa-search"></i>
+        </button>
+      <% end %>
     </div>
   </div>
+
   <div id="activitys" class="row list-group">
     <% @results.each do |activity| %>
       <div class="item  col-xs-6 col-lg-6">
@@ -21,15 +24,10 @@
             <p class="group inner list-group-item-text">
               <%= activity[:attributes][:caption]%>
             </p>
-            <p class="group inner list-group-item-text">
-              <%= activity[:attributes][:motivation]%>
-            </p>
           </div>
         </div>
       </div>
     <% end %>
   </div>
-
-  <%= pagination_links(@results, params_name: :page) %>
-
+      <%= pagination_links(@results, params_name: :page) %>
 </div>

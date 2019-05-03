@@ -1,12 +1,12 @@
 class ActivityGalleryPlugin::Request
     class << self
-        def request(method, url, session, body)
+        def request(method, url, body, jwt)
             base_url = "https://devapi.aprendizagemcriativa.org/"
             uri = URI.parse(base_url + url)
             request = method == :get ? Net::HTTP::Get.new(uri) : Net::HTTP::Post.new(uri)
             request.content_type = "application/json"
             request["Accept"] = "application/json"
-            request["Authorization"] = "Bearer #{session['activity_gallery_plugin_jwt']}"
+            request["Authorization"] = "Bearer #{jwt}" if jwt.present?
             request.body = JSON.dump(body) if body.present?
 
             req_options = {
@@ -20,15 +20,16 @@ class ActivityGalleryPlugin::Request
             return response
         end
 
-        def get(url, session=nil, body=nil) 
-            request(:get, url, session, body)
+        def get(url, body=nil, jwt=nil)
+            request(:get, url, body, jwt)
         end
 
-        def post(url, session=nil, body=nil) 
-            request(:post, url, session, body)
+        def post(url, body=nil, jwt=nil)
+            request(:post, url, body, jwt)
         end
 
         def create_activity(activity)
+            jwt = activity.author.metadata['activity_gallery_plugin_jwt']
             body = {
                 "activity" => {
                     "title" => activity.metadata['title'],
@@ -36,7 +37,22 @@ class ActivityGalleryPlugin::Request
                     "caption" => activity.metadata['caption'],
                     "motivation" => activity.metadata['motivation'],
                     "powerful_ideas" => activity.metadata['powerful_ideas'],
-                    "audience_ids" => [activity.metadata['audience']],
+                    "products" => activity.metadata['products'],
+                    "requirements" => activity.metadata['requirements'],
+                    "published" => activity.metadata['published'] == '1' ? true : false,
+                    "version_history" => activity.metadata['version_history'],
+                    "copyright" => activity.metadata['copyright'],
+                    "license_type" => activity.metadata['license_type'],
+                    "space_organization" => activity.metadata['space_organization'],
+                    "implementation_steps" => activity.metadata['implementation_steps'],
+                    "implementation_tips" => activity.metadata['implementation_tips'],
+                    "reflection_assessment" => activity.metadata['reflection_assessment'],
+                    "duration" => activity.metadata['duration'],
+                    "scope_ids" => [activity.metadata['scope']],
+                    "audience_ids" => activity.metadata['audience'],
+                    "space_type_ids" => [activity.metadata['space_types']],
+                    "person_ids" => activity.metadata['authors'].split(','),
+                    # "audience_ids" => [activity.metadata['audience']],
                     "general_materials" => [
                         {
                             "id" => "9c65a353-497a-42ed-9631-38f68c6862b0",
@@ -45,7 +61,7 @@ class ActivityGalleryPlugin::Request
                     ]
                 }
             }
-            ActivityGalleryPlugin::Request.post("gallery/v1/activities", body)
+            ActivityGalleryPlugin::Request.post("gallery/v1/activities", body, jwt)
         end
     end
 end
