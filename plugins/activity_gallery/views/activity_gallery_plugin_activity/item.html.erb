@@ -3,562 +3,109 @@
 <div class="activity-title"><%= @activities[:data][:attributes][:title]%></div>
 
 <div class="thumbnail-item">
-  <img class="group list-group-image" src="/designs/themes/rbac-prte/images/atividade.jpeg" alt="" />
+<%= image_tag("#{@activities[:data][:attributes][:images][:original]}", alt: "", class: "group list-group-image") %>
   <div class="caption">
     <p class="activity-text">
-      <%= @activities[:data][:attributes][:description]%>
+      <%= @activities[:data][:attributes][:caption]%>
     </p>
   </div>
 </div>
 <div class="about-actitivy">
-  <div class="activity-title"><%= @activities[:data][:attributes][:title]%></div>
-  <div class="activity-subtitle"><%= @activities[:data][:attributes][:caption]%></div>
+  <!-- <div class="activity-title"><%= @activities[:data][:attributes][:title]%></div> -->
+  <div class="activity-subtitle">Descrição</div>
   <p class="activity-text">
     <%= @activities[:data][:attributes][:description]%>
   </p>
-  <div class="activity-subtitle"><%= @activities[:data][:attributes][:motivation] %></div>
-  <div class="row">
-    <div class="col-md-6">
-      <div class="activity-subtitle">1.3 Escopo da Atividade</div>
-      <p class="activity-text">[ ] Curricular no período escolar</p>
-      <p class="activity-text">[ ] Curricular em contraturno</p>
-      <p class="activity-text">[ ] Não formal</p>
-      <p class="activity-text">[X] Formação de educadores</p>
-      <p class="activity-text">[ ] Outro. Cite:</p>
-    </div>
-    <div class="col-md-6">
-      <div class="activity-subtitle">1.4 Público Alvo</div>
-      <p class="activity-text">[ ] Ensino Infantil</p>
-      <p class="activity-text">[ ] Fundamental I (6-10 anos de idade)</p>
-      <p class="activity-text">[ ] Fundamental II (11-14 anos de idade)</p>
-      <p class="activity-text">[ ] Ensino Médio (15-18 anos de idade)</p>
-      <p class="activity-text">[ ] Pessoas com necessidades especiais</p>
-      <p class="activity-text">[ ] Estudantes de ensino técnico</p>
-      <p class="activity-text">[ ] Graduandos e professores</p>
-      <p class="activity-text">[X] Professores de escola</p>
-      <p class="activity-text">[X] Mediadores/educadores de ambientes de aprendizagem não formais</p>
-      <p class="activity-text">[X] Gestores de escolas públicas</p>
-      <p class="activity-text">[X] Coordenadores e Diretores de Educação</p>
-      <p class="activity-text">[ ] Famílias</p>
-      <p class="activity-text">[ ] Idosos</p>
-      <p class="activity-text">[ ] Profissionais de empresas e terceiro setor</p>
-      <p class="activity-text">[ ] Público em geral</p>
-    </div>
-  </div>
-  <div class="activity-subtitle">1.5 Pontes com o currículo</div>
+  <div class="activity-subtitle">Motivação</div>
   <p class="activity-text">
-    Caso a atividade desenvolva conteúdos curriculares, liste-os: Ainda que seja possível se estabelecer pontes
-    curriculares a partir da Aldeia Criativa, objetivo desta atividade não é explorar temas específicos, portanto cabe
-    aos participantes fazer as pontes com suas respectivas áreas de atuação. Algumas das pontes já realizadas por
-    participantes da oficina:
+    <%= @activities[:data][:attributes][:motivation]%>
   </p>
-  <div class="row">
-    <div class="col-md-6">
-      <p class="activity-text-bold">CONTEÚDOS EXPLORADOS:</p>
-      <p class="activity-text">História;</p>
-      <p class="activity-text">Geografia;</p>
-      <p class="activity-text">Geometria;</p>
-      <p class="activity-text">Física;</p>
-      <p class="activity-text">Matemática;</p>
-      <p class="activity-text">Ciências;</p>
-      <p class="activity-text">Educação Física;</p>
-      <p class="activity-text">Contrução civil;</p>
-      <p class="activity-text">Habitação;</p>
-    </div>
-    <div class="col-md-6">
-      <p class="activity-text-bold">COMPETÊNCIAS SOCIOEMOCIONAIS:</p>
-      <p class="activity-text">Abertura a novas experiências;</p>
-      <p class="activity-text">Extroversão;</p>
-      <p class="activity-text">Amabilidade;</p>
-    </div>
-  </div>
-  <div class="activity-subtitle">1.6 Autores</div>
+  <div class="activity-subtitle">Poderosas Ideias</div>
   <p class="activity-text">
-    Leo Burd - MIT Media Lab e Rede Brasileira de Aprendizagem Criativa
+    <%= @activities[:data][:attributes][:"powerful-ideas"]%>
   </p>
+  <div class="activity-subtitle">Produtos</div>
   <p class="activity-text">
-    Carolina Rodeghiero - MIT Media Lab e Rede Brasileira de Aprendizagem Criativa
+    <%= @activities[:data][:attributes][:products]%>
   </p>
-</div>
-
-<div class="methodology-actitivy">
-  <div class="activity-title">2 - METODOLOGIA DE IMPLEMENTAÇÃO</div>
-  <div class="row">
-    <div class="col-md-6">
-      <div class="activity-subtitle">Espaço de implementação</div>
-      <p class="activity-text">[X] Sala de Aula</p>
-      <p class="activity-text">[ ] Biblioteca</p>
-      <p class="activity-text">[X] Sala Comum</p>
-      <p class="activity-text">[ ] Laboratório de informática</p>
-      <p class="activity-text">[ ] Laboratório de ciências</p>
-      <p class="activity-text">[X] Sala de artes</p>
-      <p class="activity-text">[X] Espaço Maker</p>
-      <p class="activity-text">[ ] Espaço aberto (pátio da escola, ginásio, …)</p>
-      <p class="activity-text">[ ] Natureza (parque, praia, …)</p>
-    </div>
-    <div class="col-md-6">
-      <img class="activity-img" src="/designs/themes/rbac-prte/images/aprendizagem_criativa.png" alt="" />
-    </div>
-  </div>
-  <div class="activity-subtitle">Organização do espaço</div>
-  <div class="block-border">
-    <p class="activity-text">
-      O espaço será organizado em estações de trabalho, que abrigarão todo o processo de produção e também a construção
-      da própria aldeia.
-    </p>
-
-    <p class="activity-text">
-      Estação de trabalho: local onde os participantes terão a oportunidade de criar e montar a sua aldeia, por meio de
-      diferentes materiais e ferramentas. Pode ser configurada de acordo com o número de participantes da atividade, e
-      com o tamanho das mesas disponíveis para tal. Para agruparmos 20 pessoas em uma mesma estação, como foi o caso
-      desta oficina em modo piloto, agrupamos 3 mesas para formar uma única estação.
-    </p>
-
-    <p class="activity-text">
-      Aldeia: na própria estação de trabalho, os participantes irão construir diferentes elementos para uma mesma
-      comunidade, a chamada aldeia. A aldeia é o coração da atividade, e, como tal, será construída ao centro da estação
-      de trabalho.
-    </p>
-
-    <p class="activity-text">
-      No geral, o espaço deve ser amplo o suficiente para manter as estações de trabalho (aldeias) e a livre circulação
-      dos participantes. A seguir, especificações que podem ajudar a configurar o espaço para que a experiência seja
-      completa e o mais prazerosa possível:
-    </p>
-
-    <p class="activity-text">
-      Podemos agrupar 2 a 4 mesas, dependendo de sua dimensão. O agrupamento de mesa ideal é o que comporte até 20
-      pessoas ao seu redor, e que todas as pessoas alcancem o centro da aldeia (parte central da mesa).
-    </p>
-
-    <p class="activity-text">
-      Cantinho da cola quente - em cada mesa (aldeia), disponibilizar duas pistolas de cola quente e 4 refis, ou
-      disponibilizar o cantinho da cola quente, em uma mesa a parte, na sala.
-    </p>
-
-    <p class="activity-text">
-      Cadeiras dispostas nas laterais da sala - elas podem ser utilizadas pelos participantes em alguns momentos da
-      oficina, porém não serão necessárias no momento mão na massa.
-    </p>
-
-    <p class="activity-text">Reservar um local para os materiais que serão distribuídos pelos mediadores:</p>
-    <ul class="activity-list">
-      <li>Convite (ver Materiais de Suporte)</li>
-      <li>
-        Envelope com elemento surpresa (ver Materiais de Suporte)
-        <ul>
-          <li>
-            O elemento surpresa é um objeto que será entregue a cada participante quando chega na sala da oficina. Este
-            elemento pode ser aleatório, ou pré-definido pela equipe de mediadores. No caso desta oficina, cada
-            participante recebeu um LED, uma pilha 2v, e algum outro objeto que podia variar de um cordão colorido até
-            pedaços e papel em formato geométrico. Este elemento é super importante, pois a regra da oficina é que cada
-            participante utilize o elemento recebido quando for construir a aldeia. No caso de elementos com os quais
-            não há familiaridade, um quebra-gelo com o grupo de participantes pode estar na discussão sobre como
-            utilizar o objeto e a melhor forma de encaixá-lo no projeto da aldeia.
-          </li>
-        </ul>
-      </li>
-      <li>Placa de indicação do projeto (ver Materiais de Suporte)</li>
-      <li>Post-its</li>
-      <li>Template Radar da Aprendizagem Criativa e Mochila (ver Materiais de Suporte)</li>
-      <li>Canetas</li>
+  <div class="activity-subtitle">Pré-Requisitos</div>
+  <p class="activity-text">
+    <%= @activities[:data][:attributes][:requirements]%>
+  </p>
+  <div class="activity-subtitle">Versão</div>
+  <p class="activity-text">
+    <%= @activities[:data][:attributes][:"version-history"]%>
+  </p>
+  <div class="activity-subtitle">Copyright</div>
+  <p class="activity-text">
+    <%= @activities[:data][:attributes][:copyright]%>
+  </p>
+  <div class="activity-subtitle">Licença</div>
+  <p class="activity-text">
+    <%= @activities[:data][:attributes][:"license-type"]%>
+  </p>
+  <div class="activity-subtitle">Organização do Espaço</div>
+  <p class="activity-text">
+    <%= @activities[:data][:attributes][:"space-organization"]%>
+  </p>
+  <div class="activity-subtitle">Passos para Implementação</div>
+  <p class="activity-text">
+    <%= @activities[:data][:attributes][:"implementation-steps"]%>
+  </p>
+  <div class="activity-subtitle">Dicas e anotações sobre implementação</div>
+  <p class="activity-text">
+    <%= @activities[:data][:attributes][:"implementation-tips"]%>
+  </p>
+  <div class="activity-subtitle">Avaliação do Aluno</div>
+  <p class="activity-text">
+    <%= @activities[:data][:attributes][:"reflection-assessment"]%>
+  </p>
+  <div class="activity-subtitle">Duração</div>
+  <p class="activity-text">
+    <%= @activities[:data][:attributes][:duration]%>
+  </p>
+  <div class="activity-subtitle">Atividade Publicada?</div>
+  <p class="activity-text">
+    <% if @activities[:data][:attributes][:published] == true %>
+    Sim
+    <% else %>
+    Não
+    <% end %>
+  </p>
+  <div class="activity-subtitle">Escopos</div>
+  <p class="activity-text">
+    <ul>
+      <% @activities[:data][:attributes][:scopes].each do |scope| %>
+        <li><%= scope[:title] %></li>
+      <% end %>
     </ul>
-
-    <p class="activity-text">
-      Projeção e sistema de som - Para o momento da apresentação dos conceitos da AC, será necessária a projeção de
-      slides. No caso de um público grande ou no caso de um espaço com ruídos, será necessário sistema de som com
-      microfone.
-    </p>
-
-    <p class="activity-text">Organização da aldeia:</p>
-    <p class="activity-text">Cada aldeia terá elementos prévios já instalados</p>
-    <p class="activity-text">Algum elemento geográfico: rio, montanha, mar, floresta;</p>
-    <p class="activity-text">Algum elemento cultural: monumento, castelo, praça, placas indicativas etc.</p>
-
-    <img class="activity-img" src="/designs/themes/rbac-prte/images/organizacao_espaco.png" alt="" />
-    <p class="activity-text">
-      <span class="activity-text-bold"> Organização do espaço</span> - ilustração simplificada de como o mobiliário foi
-      organizado para a atividade.
-    </p>
-  </div>
-  <div class="activity-subtitle">Passos para a implementação</div>
-  <div class="block-border">
-    <p class="activity-text-16">
-      <span class="activity-text-bold">00h00min</span> - Recepção e entrega do convite e envelope 10’
-    </p>
-    <ul class="activity-list">
-      <li>
-        Na entrada dos participantes na sala, os facilitadores entregam o convite para a Aldeia Criativa, e direcionam
-        para as aldeias (até 20 pessoas por aldeia).
-      </li>
-      <li>
-        No convite, todos terão uma introdução a proposta, e as duas únicas regras:
-        <ul>
-          <li>
-            Proposta: Fique a vontade para construir algo relacionado a todos os elementos imagináveis em uma
-            comunidade: transporte, casas, organizações, espaços públicos, pessoas, etc.
-          </li>
-          <li>Regras</li>
-          <li>
-            1 - O participante deve utilizar todos os materiais que estão dentro do envelope para contribuir com a
-            Aldeia;
-          </li>
-          <li>
-            2 - Trabalhar individualmente ou em grupo, mas contribuir para a Aldeia Criativa.
-          </li>
-        </ul>
-      </li>
-    </ul>
-
-    <p class="activity-text-16"><span class="activity-text-bold">00h10min</span> - Mão na massa 30’</p>
-    <ul class="activity-list">
-      <li>
-        Dentro dos 25 minutos, os facilitadores acompanham os grupos, constroem junto, oferecem dicas de uso dos
-        materiais, e ficam atentos para três ações específicas:
-        <ul>
-          <li>
-            Pedir a cada grupo que descreva o nome do PROJETO e nome dos DESIGNERS na placa indicativa, e posicionem a
-            placa em frente ao projeto, quando inseridos na aldeia;
-          </li>
-          <li>
-            Pedir que os participantes ajudem os facilitadores a juntar o material, colocar o lixo nos cestos e os
-            materiais reaproveitáveis nas caixas correspondentes;
-          </li>
-          <li>
-            Aos 20 minutos de atividade, pedir que os participantes posicionem os projetos na aldeia de forma a sobrar
-            algum espaço nas bordas. Neste momento, deixar blocos de post-its e canetas ao redor de toda a aldeia.
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <p class="activity-text-16">
-      <span class="activity-text-bold">00h40min</span> - Visitação (exposição silenciosa) 10’
-    </p>
-    <ul class="activity-list">
-      <li>
-        É hora de visitar as aldeias! O líder da oficina irá pedir aos participantes que visitem outras aldeias e deixem
-        recados sobre suas impressões em relação a elas. Esta visitação é direcionada pelo líder da sala: o grupo A
-        visita o grupo B, enquanto o B visita o C, e o C visita o A, por exemplo.
-
-        <p class="activity-text">
-          Os participantes usam os post-its para deixar recados sobre os projetos - ideias, técnicas, estética,
-          material. FACILITADORES: se houver dúvida sobre o que devem fazer, vocês podem dar dicas:
-        </p>
-        <ul>
-          <li>
-            O que me chamou atenção neste projeto?
-          </li>
-          <li>
-            O que achei da tecnologia utilizada aqui?
-          </li>
-          <li>
-            Algo que admirei
-          </li>
-          <li>
-            Alguma dica para a evolução da proposta
-          </li>
-        </ul>
-      </li>
-      <li>
-        Os participantes têm o total de 10 minutos para visitar as aldeias - este tempo será indicado pelo facilitador
-        líder.
-      </li>
-    </ul>
-    <p class="activity-text">
-      (Após a visitação, os participantes pegam as cadeiras para formar pequenos grupos de discussão)
-    </p>
-
-    <p class="activity-text-16">
-      <span class="activity-text-bold">00h50min</span> - Reflexão Radar da Aprendizagem Criativa 15’
-    </p>
-    <ul class="activity-list">
-      <li>
-        O template Radar da Aprendizagem Criativa é distribuído aos participantes.
-        <p class="activity-text">
-          Os participantes têm 15 minutos para pensar um pouco individualmente e depois conversar em grupo sobre o que
-          acharam de especial em termos de:
-        </p>
-        <ul>
-          <li>
-            Espaços
-          </li>
-          <li>
-            Matérias
-          </li>
-          <li>
-            Tecnologia
-          </li>
-          <li>
-            Facilitadores
-          </li>
-          <li>
-            Ponte da atividade com o currículo
-          </li>
-        </ul>
-      </li>
-      <li>
-        <p class="activity-text">
-          Os participantes têm o total de 10 minutos para visitar as aldeias - este tempo será indicado pelo facilitador
-          líder.
-        </p>
-      </li>
-    </ul>
-    <p class="activity-text">
-      Sugestão de instrução para este momento: <br />
-      “Reflita individualmente por alguns minutos, escrevendo no radar, discuta com os colegas, e faça novas anotações
-      que achar interessante a partir da discussão”.
-    </p>
-    <p class="activity-text-16">
-      <span class="activity-text-bold">01h05min</span> - Conceitualização da Aprendizagem Criativa 10’
-    </p>
-    <p class="activity-text">
-      Neste momento, a atenção é voltada ao mediador, que fará uma explanação sobre aprendizagem criativa, e sua conexão
-      com a atividade mão na massa que acabou de ocorrer. É importante que esta apresentação seja acompanhada de slides,
-      para que a fala seja ilustrada com imagens e frameworks relevantes para a conceitualização da AC. <br />
-      Pontos a serem apresentados:
-    </p>
-    <ul class="activity-list">
-      <li>
-        Experimentação mão na massa
-
-        <ul>
-          <li>
-            A atividade criou um ambiente que intermedia o aluno e o que ele vai aprender. É um micromundo.
-          </li>
-        </ul>
-      </li>
-      <li>
-        Como fazemos?
-
-        <ul>
-          <li>
-            Quatro P’s relacionados a competências socioemocionais
-
-            <ul>
-              <li>
-                Projetos: construção da aldeia
-              </li>
-              <li>
-                Pares: trabalho em grupo, uma aldeia, comunidade, coletivo
-              </li>
-              <li>
-                Paixão: cada um fez o que mais gostaria em uma comunidade
-              </li>
-              <li>
-                Play: diversão, explorar materiais familiares de forma não familiar
-              </li>
-              <li>
-                Relacionar os Ps, os exemplos com as competências.
-              </li>
-            </ul>
-          </li>
-          <li>
-            “Mão na massa + Reflexão + Professor como facilitador”
-          </li>
-          <li>
-            Aprendizagem criativa é uma abordagem, e um método para praticar a BNCC.
-          </li>
-        </ul>
-      </li>
-      <li>
-        Divulgação da Rede: aprendizagemcriativa.org e do LCL: media.mit.edu/lcl
-      </li>
-    </ul>
-    <p class="activity-text-16">
-      <span class="activity-text-bold">01h15min</span> - Mochila (levando AC para a prática pedagógica) 5’
-    </p>
-    <ul class="activity-list">
-      <li>
-        Os participantes têm 5 minutos para refletir sobre o que gostariam de levar para casa, para sua prática
-        pedagógica, usando a segunda parte do template do Radar da Aprendizagem Criativa.
-
-        <ul>
-          <li>
-            “De tudo o que entrou no seu radar, o que você gostaria de levar para sua prática?”
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <p class="activity-text-16"><span class="activity-text-bold">01h20min</span> - Compartilhamento 10’</p>
-    <ul class="activity-list">
-      <li>Pedir que voluntários compartilhem seu radar e mochila (até acabar o tempo).</li>
-    </ul>
-    <div class="row">
-      <div class="col-md-6">
-        <img class="activity-img" src="/designs/themes/rbac-prte/images/atividade2.jpeg" alt="" />
-        <p class="activity-text"><span class="activity-text-bold"> Reflexão</span> - Radar da aprendizagem criativa.</p>
-      </div>
-      <div class="col-md-6">
-        <img class="activity-img" src="/designs/themes/rbac-prte/images/atividade3.jpeg" alt="" />
-        <p class="activity-text">
-          <span class="activity-text-bold"> Compartilhamento</span> - O que vou levar na minha mochila?
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="activity-subtitle">Materiais</div>
-  <div class="block-border">
-    <p class="activity-text">
-      Material para o mão na massa: <br />
-      <a href="https://docs.google.com/spreadsheets/d/13gMlD3tE1HP_93UoS2SIeTgMIleyKlEfEAExUrtMYow/edit?usp=sharing"
-        >Baixar Material</a
-      ><br />
-      (LISTA ESPECÍFICA PARA O FIC SP 2019)
-    </p>
-    <ul class="activity-list">
-      <li>Papel pardo para proteger as mesas</li>
-      <li>Por participante</li>
+  </p>
+  <div class="activity-subtitle">Público Alvo</div>
+  <p class="activity-text">
       <ul>
-        <li>Envelope pequenos de carta ou pardo (350)</li>
-        <li>LED (20x15)</li>
-        <li>Bateria (20x15)</li>
-      </ul>
-      <li>Papelão (todo possível!)</li>
-      <li>Material reciclável (caixa de ovo, embalagens de iogurte etc) (todo possível)</li>
-      <li>Caixas de sapato (5x15)</li>
-      <li>Papel colorido cores sortidas!! (350 folhas)</li>
-      <li>Canetas esferográficas (350)</li>
-      <li>Cestos de lixo (um por aldeia = 15)</li>
-      <li>Caixas para guardar os materiais (3 ou +)</li>
-      <li>Prato de papel (20x15)</li>
-      <li>Copo de papel (10x15)</li>
-      <li>Garrafa plástica (5x15)</li>
-      <li>Palito Espetinho de madeira (3pacotes x15)</li>
-      <li>Palito de sorvete (3pacotes x15)</li>
-      <li>Papel crepom (verde, azul e marrom)</li>
-      <li>EVA colorido?</li>
-      <li>Elementos naturais (folhas, galhos, pinho)</li>
-      <li>Fita de cetim (4m x 15)</li>
-      <li>Post-its</li>
-      <li>Caneta hidrográfica cores sortidas (2pc x15)</li>
-      <li>Espaguete (piscina) cortado em rodelas de uns 4 cm de largura (15)</li>
-      <li>Tecidos coloridos diversos</li>
-      <li>Bolinhas de Ping Pong (100)</li>
-      <li>Bexiga (10x15)</li>
-      <li>Barbante (300m)</li>
-      <li>Fita crepe (4x15)</li>
-      <li>Fita adesiva</li>
-      <li>Botões (6x15)</li>
-      <li>Refil de cola quente (4x15)</li>
-      <li>Tesoura (10x15)</li>
-      <li>Cola bastão (5x15)</li>
-      <li>Prendedor de roupa (15x15)</li>
-      <li>Clips de papel (grande e pequeno)</li>
-      <li>Pistola de cola quente (2x15)</li>
-      <li>Refill para cola quente</li>
-      <li>Limpador de cachimbo</li>
-    </ul>
-  </div>
-  <p class="activity-subtitle">Materiais de suporte</p>
-  <p class="activity-text">
-    Você utiliza material de suporte para a atividade? (ex.: cartões, formulário, fichas, apostilas, kit)
+          <% @activities[:data][:attributes][:audiences].each do |audience| %>
+            <li><%= audience[:name] %></li>
+          <% end %>
+        </ul>
   </p>
-  <p class="activity-text">[X] Sim</p>
-  <p class="activity-text">[ ] Não</p>
-  <ul class="activity-list">
-    <li>Convite para a Aldeia Criativa A5</li>
-    <li>Radar da Aprendizagem Criativa A3 (para o momento de reflexão)</li>
-    <li>Placas indicativas</li>
-    <li>Placa de apresentação de cada projeto dentro da aldeia</li>
-  </ul>
+  <div class="activity-subtitle">Tipos de Espaço</div>
   <p class="activity-text">
-    Há especificações de licença (copyright, creative commons,...) do uso do material? Se sim, descreva.
+      <ul>
+          <% @activities[:data][:attributes][:"space-types"].each do |space_type| %>
+            <li><%= space_type[:title] %></li>
+          <% end %>
+        </ul>
   </p>
-  <div class="block-border">
-    <p class="activity-text">Creative Commons, remixável com menção aos autores.</p>
-  </div>
-
-  <p class="activity-subtitle">Dicas e anotações sobre a implementação</p>
-  <div class="block-border">
-    <ul class="activity-list">
-      <li>Utilize papel pardo para envelopar as mesas, antes da oficina.</li>
-      <li>
-        Receba os participantes do lado de fora da oficina, chamando para a atividade e entregando o convite. Com uma
-        hora (1h) de duração, manter o cronograma é muito importante!
-      </li>
-      <li>O mais legal é entregar o envelope surpresa logo na chegada, junto com o convite.</li>
-      <li>
-        Enquanto mediador, esteja junto com os participantes na hora de realizar os projetos, demonstrando interesse nas
-        atividades e aprendendo junto.
-      </li>
-      <br />
-      <p class="activity-text">
-        Materiais que podem ser o "elemento surpresa"* do envelope:
-      </p>
-      <br />
-      <li>LED + bateria</li>
-      <li>Botões</li>
-      <li>Formas geométricas</li>
-      <li>Pompons</li>
-    </ul>
-    <p class="activity-text">*para mais detalhes sobre o elemento surpresa, leia a seção "Organização do Espaço".</p>
-  </div>
-  <p class="activity-subtitle">Avaliação</p>
+  <div class="activity-subtitle">Materiais</div>
   <p class="activity-text">
-    <span class="activity-text-bold">Como você avaliou a atividade?</span> Especifique instrumentos e critérios de
-    avaliação e em qual etapa da atividade se encaixa.
+    <!-- <%= @activities[:data][:attributes][:requirements]%> -->
   </p>
-  <div class="block-border">
-    <p class="activity-text">
-      Em sua versão piloto, a atividade foi avaliada por meio de uma reunião relatório, onde mediadores e monitores
-      discutiram:
-    </p>
-    <ul class="activity-list">
-      <li>Engajamento dos participantes na atividade;</li>
-      <li>Diversidade de ideias criadas;</li>
-      <li>Sugestões levantadas para a prática pedagógica pessoal;</li>
-      <li>Eficácia das ferramentas utilizadas para a reflexão (templates, sugestões);</li>
-      <li>Reflexões finais compartilhadas pelos participantes.</li>
-      <br />
-      <p class="activity-text">
-        Além disso, uma forma de avaliar o sucesso desta atividade é manter contato com os participantes e acompanhar o
-        desenvolvimento de:
-      </p>
-      <br />
-      <li>Início de novas práticas pedagógicas envolvendo aprendizagem criativa;</li>
-      <li>Replicação da oficina a outros educadores.</li>
-    </ul>
-  </div>
-  <p class="activity-subtitle">Tempo de implementação</p>
+  <div class="activity-subtitle">Autor(es)</div>
   <p class="activity-text">
-    Em quanto tempo você realizou a atividade? Quanto tempo você recomendaria para o processo inteiro de implementação
-    (desde a chegada do público até o encerramento)?
+      <ul>
+          <% @activities[:data][:attributes][:authors].each do |author| %>
+            <li><%= author[:name] %></li>
+          <% end %>
+        </ul>
   </p>
-  <div class="block-border">
-    <p class="activity-text">
-      1 hora e 30 minutos
-    </p>
-  </div>
-</div>
-<div class="inspiration-activity">
-  <div class="activity-title">3 - INSPIRAÇÃO</div>
-
-  <p class="activity-subtitle">Atividade inspirada em:</p>
-  <p class="activity-text">
-    Esta atividade é inspirada em alguma outra atividade ou iniciativa da RBAC?
-  </p>
-  <div class="block-border">
-    <p class="activity-text">
-      “Aldeia Maker” - oficina realizada no programa Makers Educa em 2015 <br />
-      Duck Tape Network - Rede Mão na Massa
-    </p>
-  </div>
-
-  <p class="activity-subtitle">Referências</p>
-  <p class="activity-text">
-    Esta atividade tem referências bibliográficas?
-  </p>
-  <p class="activity-text">[ ] Não</p>
-  <p class="activity-text">[X] Sim. Indique-as no campo abaixo</p>
-  <div class="block-border">
-    <p class="activity-text">
-      Petrich, M., Wilkinson, K., Bronwyn, B.. (2015). Parece Divertido, mas será que estão aprendendo? (Disponível em:
-      Português BR, Inglês) Traduzido do original: It looks like fun, but are they learning? <br /> <br />
-      Petrich, M., Wilkinson, K. (2013) The art of Tinkering. <br /> <br />
-      Resnick, Mitchel. (2014). Dê uma chance aos P's: Projetos, Pares, Paixão, Pensar Brincando (Disponível em:
-      Português BR, Inglês) Traduzido do original: Give P's a Chance: Project, Peers, Passion, Play. <br /> <br />
-      Rusk, N., Resnick, M., Cooke, S.. (2009). Origens e princípios básicos do Computer Clubhouse. (Disponível em:
-      Português BR, Inglês) Traduzido do original: Origins and Guiding Principles of the Computer Clubhouse. <br />
-    </p>
-  </div>
 </div>

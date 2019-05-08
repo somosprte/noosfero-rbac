@@ -48,9 +48,9 @@ class ActivityGalleryPlugin::Request
                     "implementation_tips" => activity.metadata['implementation_tips'],
                     "reflection_assessment" => activity.metadata['reflection_assessment'],
                     "duration" => activity.metadata['duration'],
-                    "scope_ids" => [activity.metadata['scope']],
+                    "scope_ids" => activity.metadata['scopes'],
                     "audience_ids" => activity.metadata['audience'],
-                    "space_type_ids" => [activity.metadata['space_types']],
+                    "space_type_ids" => activity.metadata['space_types'],
                     "person_ids" => activity.metadata['authors'].split(','),
                     # "audience_ids" => [activity.metadata['audience']],
                     "general_materials" => [
@@ -61,7 +61,8 @@ class ActivityGalleryPlugin::Request
                     ]
                 }
             }
-            ActivityGalleryPlugin::Request.post("gallery/v1/activities", body, jwt)
+            body['activity']['image'] = "data:image/png;base64," + Base64.encode64(activity.image.current_data) if activity.image.present?
+            resultado = ActivityGalleryPlugin::Request.post("gallery/v1/activities", body, jwt)
         end
     end
 end

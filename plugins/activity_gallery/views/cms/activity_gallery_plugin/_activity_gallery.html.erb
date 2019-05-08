@@ -1,38 +1,10 @@
 <% jwt = session['activity_gallery_plugin_jwt'] %>
 
 <div class="form-title">Inclusão de Atividade</div>
-<div id="change-image">
-
-    <a class="button with-text icon-plus icon-plus" href="#" onclick="add_new_image(this); return false;"><i class="fa fa-image" aria-hidden="true"></i>Definir imagem de capa</a>
-
-    <input type="file" name="article[image_builder][uploaded_data]" id="article_image_builder_uploaded_data" onchange="cropImage(this)" accept=".jpg, .gif, .png, .bmp" class="picture-input">
-
-    <div>Max size: 5.0 MB (.jpg, .gif, .png, .bmp, .tiff)</div>
-
-    <div class="formfieldline"><label class="formlabel" for="article_image_builder_label">Image Label:</label><div class="formfield type-text"><input type="text" name="article[image_builder][label]" id="article_image_builder_label"></div></div>
-
-    <a id="cancel-change-image-link" style="display: none" class="button with-text icon-cancel" href="#" onclick="hideen_change_image(); return false;"><i class="fa fa-times" aria-hidden="true"></i>Cancel</a>
-
-      <input type="hidden" name="article[image_builder][crop_x]" id="article_image_builder_crop_x" class="crop_x">
-  <input type="hidden" name="article[image_builder][crop_y]" id="article_image_builder_crop_y" class="crop_y">
-  <input type="hidden" name="article[image_builder][crop_w]" id="article_image_builder_crop_w" class="crop_w">
-  <input type="hidden" name="article[image_builder][crop_h]" id="article_image_builder_crop_h" class="crop_h">
-  <input type="hidden" name="article[name]" id="article_name" value="<%= Time.now.to_s %>">
-  <input type="hidden" name="success_back_to" id="success_back_to" value="/galeria">
-
-    <a id="crop-image-button" style="display: none" onclick="return noosfero.modal.inline('#crop-image')" class="" href="#"></a>
-    <div id="crop-image">
-      <h2>Crop your image:</h2>
-      <img id="cropbox" style="display: none; visibility: hidden; width: 0px; height: 0px;"><div class="jcrop-holder" style="width: 0px; height: 0px; position: relative; background-color: rgb(0, 0, 0);"><div style="position: absolute; z-index: 600;"><div style="width: 100%; height: 100%; z-index: 310; position: absolute; overflow: hidden;"><img style="border: none; visibility: visible; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; width: 0px; height: 0px;"><div class="jcrop-hline" style="position: absolute; opacity: 0.4;"></div><div class="jcrop-hline bottom" style="position: absolute; opacity: 0.4;"></div><div class="jcrop-vline right" style="position: absolute; opacity: 0.4;"></div><div class="jcrop-vline" style="position: absolute; opacity: 0.4;"></div><div class="jcrop-tracker" style="cursor: move; position: absolute; z-index: 360;"></div></div><div style="width: 100%; height: 100%; z-index: 320; display: block;"><div class="ord-n jcrop-dragbar" style="cursor: n-resize; position: absolute; z-index: 370;"></div><div class="ord-s jcrop-dragbar" style="cursor: s-resize; position: absolute; z-index: 371;"></div><div class="ord-e jcrop-dragbar" style="cursor: e-resize; position: absolute; z-index: 372;"></div><div class="ord-w jcrop-dragbar" style="cursor: w-resize; position: absolute; z-index: 373;"></div><div class="ord-n jcrop-handle" style="cursor: n-resize; position: absolute; z-index: 374; opacity: 0.5;"></div><div class="ord-s jcrop-handle" style="cursor: s-resize; position: absolute; z-index: 375; opacity: 0.5;"></div><div class="ord-e jcrop-handle" style="cursor: e-resize; position: absolute; z-index: 376; opacity: 0.5;"></div><div class="ord-w jcrop-handle" style="cursor: w-resize; position: absolute; z-index: 377; opacity: 0.5;"></div><div class="ord-nw jcrop-handle" style="cursor: nw-resize; position: absolute; z-index: 378; opacity: 0.5;"></div><div class="ord-ne jcrop-handle" style="cursor: ne-resize; position: absolute; z-index: 379; opacity: 0.5;"></div><div class="ord-se jcrop-handle" style="cursor: se-resize; position: absolute; z-index: 380; opacity: 0.5;"></div><div class="ord-sw jcrop-handle" style="cursor: sw-resize; position: absolute; z-index: 381; opacity: 0.5;"></div></div></div><div class="jcrop-tracker" style="width: 4px; height: 4px; position: absolute; top: -2px; left: -2px; z-index: 290; cursor: crosshair;"></div><input type="radio" class="jcrop-keymgr" style="position: fixed; left: -120px; width: 12px;"><img style="display: block; visibility: visible; width: 0px; height: 0px; border: none; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; opacity: 0.6;"></div>
-  <div class=" button-bar">
-    <a id="confirm-crop-image" class="button icon-cut with-text" title="Crop" href="#"><i class="fa fa-cut" aria-hidden="true"></i>Crop</a>
-</div>
-</div>
-
-
-  </div>
-
 <div class="form-content">
+  <%= hidden_field_tag "article[name]", Time.now.to_s %>
+  <%= hidden_field_tag "success_back_to", "/galeria" %>
+  <%= file_field_or_thumbnail(_('Imagem da Atividade:'), nil, 'article[image_builder]')%>
   <%= labelled_form_field(_('Título da Atividade'), text_area_tag('article[metadata][title]','',placeholder:'Título' )) %>
   <%= labelled_form_field(_('Subtitulo'), text_area_tag('article[metadata][caption]','',placeholder:'Sub titulo' )) %> 
   <%= labelled_form_field(_('Breve descrição'), text_area_tag('article[metadata][description]','',placeholder:'Descrição')) %>
@@ -50,9 +22,9 @@
   <%= labelled_form_field(_('Dicas e anotações sobre implementação'), text_area_tag('article[metadata][implementation_tips]','',placeholder:'Dicas e anotações sobre implementação')) %>
   <%= labelled_form_field(_('Avaliação do Aluno'), text_area_tag('article[metadata][reflection_assessment]','',placeholder:'Avaliação do Aluno')) %>
   <%= labelled_form_field(_('Duração'), text_area_tag('article[metadata][duration]','',placeholder:'Duração')) %>
-  <%= labelled_form_field(_('Escopo')+': ', select_tag('article[metadata][scopes]', options_for_select(ActivityGalleryPlugin::ActivityGallery.get_scopes_options(jwt)))) %>
+  <%= labelled_form_field(_('Escopo')+': ', select_tag('article[metadata][scopes]', options_for_select(ActivityGalleryPlugin::ActivityGallery.get_scopes_options(jwt)), {multiple: true})) %>
   <%= labelled_form_field(_('Audiência')+': ', select_tag('article[metadata][audience]', options_for_select(ActivityGalleryPlugin::ActivityGallery.get_audience_options(jwt)), {multiple: true})) %>
-  <%= labelled_form_field(_('Tipos de Espaços')+': ', select_tag('article[metadata][space_types]', options_for_select(ActivityGalleryPlugin::ActivityGallery.get_space_types_options(jwt)))) %>
+  <%= labelled_form_field(_('Tipos de Espaços')+': ', select_tag('article[metadata][space_types]', options_for_select(ActivityGalleryPlugin::ActivityGallery.get_space_types_options(jwt)), {multiple: true})) %>
   <%= labelled_form_field(_('Materiais')+': ', select_tag('article[metadata][general_materials]', options_for_select(ActivityGalleryPlugin::ActivityGallery.get_general_materials_options(jwt)))) %>
   <%#= labelled_form_field(_('Autores')+': ', select_tag('article[metadata][authors]', options_for_select(ActivityGalleryPlugin::ActivityGallery.get_authors_options(jwt)))) %>
   <%= labelled_form_field(_('Autores')+': ', token_input_field_tag('article[metadata][authors]', 'search-authors', {:controller => 'activity_gallery_plugin_activity', :action => 'search_authors'}, {:focus => false, :hint_text => _('Digite o nome do autor')})

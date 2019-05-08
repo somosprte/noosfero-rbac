@@ -13,7 +13,7 @@ class ActivityGalleryPluginActivityController < ProfileController
         if params[:search]
         get_activities("gallery/v1/activities?global=#{params[:search]}")
         else
-        get_activities('gallery/v1/activities')
+        get_activities('gallery/v1/activities/?per=50')
         end
         @results = @activities[:data].paginate(page: params[:page] || 1, per_page: 4)
     end

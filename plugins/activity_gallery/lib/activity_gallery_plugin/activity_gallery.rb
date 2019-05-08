@@ -1,4 +1,4 @@
-class ActivityGalleryPlugin::ActivityGallery < Folder
+class ActivityGalleryPlugin::ActivityGallery < Article
 
   settings_items :default_email, :type => :string, :default => ""
 
