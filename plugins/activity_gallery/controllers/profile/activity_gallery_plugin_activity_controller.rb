@@ -1,5 +1,7 @@
 class ActivityGalleryPluginActivityController < ProfileController
 
+    before_action :logged_user
+
     def search_authors
         arg = params[:q].downcase
         authors = get_authors('user/v1/people')
@@ -23,6 +25,13 @@ class ActivityGalleryPluginActivityController < ProfileController
     end
 
     private
+
+    def logged_user
+        if !logged_in?
+            session[:return_to] = {controller: params['controller'], action: params['action'], id: params['id']}
+            redirect_to :controller => 'account', :action => 'login'
+        end
+    end
 
     def get_activities(url)
         result = ActivityGalleryPlugin::Request.get(url, nil, session['activity_gallery_plugin_jwt'])
