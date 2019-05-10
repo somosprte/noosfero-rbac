@@ -14,7 +14,7 @@ class ActivityGalleryPlugin::ActivityGallery < Article
   end
 
   def self.get_audience_options(jwt)
-    url = "gallery/v1/audiences"
+    url = "gallery/v1/audiences/?per=50"
     result = ActivityGalleryPlugin::Request.get(url, nil, jwt)
     @audiences = JSON.parse(result.body,symbolize_names:true)
     result = []
@@ -26,7 +26,7 @@ class ActivityGalleryPlugin::ActivityGallery < Article
   end
 
   def self.get_scopes_options(jwt)
-    url = "gallery/v1/scopes"
+    url = "gallery/v1/scopes/?per=50"
     result = ActivityGalleryPlugin::Request.get(url, nil, jwt)
     @scopes = JSON.parse(result.body,symbolize_names:true)
     result = []
@@ -38,7 +38,7 @@ class ActivityGalleryPlugin::ActivityGallery < Article
   end
 
   def self.get_space_types_options(jwt)
-    url = "gallery/v1/space_types"
+    url = "gallery/v1/space_types/?per=50"
     result = ActivityGalleryPlugin::Request.get(url, nil, jwt)
     @space_types = JSON.parse(result.body,symbolize_names:true)
     result = []

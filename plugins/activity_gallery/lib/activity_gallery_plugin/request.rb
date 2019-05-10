@@ -46,6 +46,8 @@ class ActivityGalleryPlugin::Request
                     "space_organization" => activity.metadata['space_organization'],
                     "implementation_steps" => activity.metadata['implementation_steps'],
                     "implementation_tips" => activity.metadata['implementation_tips'],
+                    "inspiration" => activity.metadata['inspiration'],
+                    "references" => activity.metadata['references'],
                     "reflection_assessment" => activity.metadata['reflection_assessment'],
                     "duration" => activity.metadata['duration'],
                     "scope_ids" => activity.metadata['scopes'],

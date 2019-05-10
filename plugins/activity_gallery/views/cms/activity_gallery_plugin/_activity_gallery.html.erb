@@ -29,6 +29,9 @@
   <%#= labelled_form_field(_('Autores')+': ', select_tag('article[metadata][authors]', options_for_select(ActivityGalleryPlugin::ActivityGallery.get_authors_options(jwt)))) %>
   <%= labelled_form_field(_('Autores')+': ', token_input_field_tag('article[metadata][authors]', 'search-authors', {:controller => 'activity_gallery_plugin_activity', :action => 'search_authors'}, {:focus => false, :hint_text => _('Digite o nome do autor')})
   ) %>
+  <%= labelled_form_field(_('Inspiração'), text_area_tag('article[metadata][inspiration]','',placeholder:'Inspiração')) %>
+  <%= labelled_form_field(_('Referências'), text_area_tag('article[metadata][references]','',placeholder:'Referências')) %>
+
 </div>
 
 <div class=" button-gallery">

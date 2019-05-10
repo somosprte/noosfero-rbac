@@ -11,6 +11,14 @@ class ActivityGalleryPluginActivityController < ProfileController
         render plain: result.to_json
     end
 
+    # def search_activities
+    #     arg = params[:q].downcase
+    #     activities = get_activities('gallery/v1/activities/?per=50')
+    #     result = activities.select do |activity|
+    #         activity[:attributes][:title].downcase.match(/#{arg}/).present?
+    #     end.map {|activity| {title: activity[:attributes][:title]}}
+    # end
+
     def list
         if params[:search]
         get_activities("gallery/v1/activities?global=#{params[:search]}")
