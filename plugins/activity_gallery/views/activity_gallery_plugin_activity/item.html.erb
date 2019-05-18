@@ -16,6 +16,14 @@
   <p class="activity-text">
     <%= @activities[:data][:attributes][:description]%>
   </p>
+  <div class="activity-subtitle">Autor(es)</div>
+  <p class="activity-text">
+      <ul>
+          <% @activities[:data][:attributes][:authors].each do |author| %>
+            <li><%= author[:name] %></li>
+          <% end %>
+        </ul>
+  </p>
   <div class="activity-subtitle">Motivação</div>
   <p class="activity-text">
     <%= @activities[:data][:attributes][:motivation]%>
@@ -100,14 +108,7 @@
   <p class="activity-text">
     <!-- <%= @activities[:data][:attributes][:requirements]%> -->
   </p>
-  <div class="activity-subtitle">Autor(es)</div>
-  <p class="activity-text">
-      <ul>
-          <% @activities[:data][:attributes][:authors].each do |author| %>
-            <li><%= author[:name] %></li>
-          <% end %>
-        </ul>
-  </p>
+
   <div class="activity-subtitle">Inspiração</div>
   <p class="activity-text">
     <%= @activities[:data][:attributes][:inspiration]%>

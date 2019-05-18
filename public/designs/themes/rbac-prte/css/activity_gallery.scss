@@ -1,3 +1,23 @@
+.activity-gallery-plugin_activity #article-custom-fields-wrapper,
+.activity-gallery-plugin_activity .button-bar,
+.activity-gallery-plugin_activity .box-title,
+.activity-gallery-plugin_activity #category-ajax-selector,
+.activity-gallery-plugin_activity #edit-article-options,
+.activity-gallery-plugin_activity .inputosaurus-container {
+  display: none;
+}
+
+.activity-gallery-plugin_activity #change-image {
+  display: grid !important;
+}
+
+.buttom-gallery {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1em auto;
+  text-align: right;
+  flex-wrap: wrap;
+}
 /* Gallery List */
 
 .list-group {
@@ -165,6 +185,7 @@
   color: #00ab4e;
   text-align: left;
   margin-top: 20px;
+  text-align: center;
 }
 
 .activity-text {

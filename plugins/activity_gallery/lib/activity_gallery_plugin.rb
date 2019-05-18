@@ -5,11 +5,11 @@ class ActivityGalleryPlugin < Noosfero::Plugin
   end
 
   def self.plugin_description
-    _("RBAC activity gallery")
+    _("RBAC Activity Gallery")
   end
 
   def content_types
-    [ActivityGalleryPlugin::ActivityGallery] if context.respond_to?(:profile)
+    [ActivityGalleryPlugin::Activity] if context.respond_to?(:profile)
   end
 
   def stylesheet?

@@ -46,7 +46,7 @@ class ActivityGalleryPlugin::Request
                     "space_organization" => activity.metadata['space_organization'],
                     "implementation_steps" => activity.metadata['implementation_steps'],
                     "implementation_tips" => activity.metadata['implementation_tips'],
-                    "inspiration" => activity.metadata['inspiration'],
+                    "inspiration" => activity.metadata['inspiration'].split(','),
                     "references" => activity.metadata['references'],
                     "reflection_assessment" => activity.metadata['reflection_assessment'],
                     "duration" => activity.metadata['duration'],
@@ -54,6 +54,7 @@ class ActivityGalleryPlugin::Request
                     "audience_ids" => activity.metadata['audience'],
                     "space_type_ids" => activity.metadata['space_types'],
                     "person_ids" => activity.metadata['authors'].split(','),
+                    "specific_materials" => activity.metadata['specific_materials'],
                     # "audience_ids" => [activity.metadata['audience']],
                     "general_materials" => [
                         {

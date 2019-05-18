@@ -1,4 +1,4 @@
-class ActivityGalleryPlugin::ActivityGallery < Article
+class ActivityGalleryPlugin::Activity < Article
 
   settings_items :default_email, :type => :string, :default => ""
 
@@ -86,7 +86,7 @@ class ActivityGalleryPlugin::ActivityGallery < Article
   end
 
   def self.short_description
-    _('Activity Gallery')
+    _('Activity')
   end
 
   def self.description
@@ -102,7 +102,7 @@ class ActivityGalleryPlugin::ActivityGallery < Article
   end
 
   def to_html(options = {})
-    -> context { render :file => 'content_viewer/activity_gallery.html.erb' }
+    -> context { render :file => 'content_viewer/activity.html.erb' }
   end
 
   def accept_uploads?
