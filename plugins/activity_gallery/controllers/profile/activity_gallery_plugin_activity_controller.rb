@@ -2,6 +2,8 @@ class ActivityGalleryPluginActivityController < ProfileController
 
     before_action :logged_user
 
+    skip_before_action :logged_user, only: %i[list item]
+
     def search_authors
         arg = params[:q].downcase
         authors = get_authors('user/v1/people')
@@ -32,6 +34,7 @@ class ActivityGalleryPluginActivityController < ProfileController
     def item
         get_activities("gallery/v1/activities/#{params['id']}")
     end
+
 
     private
 

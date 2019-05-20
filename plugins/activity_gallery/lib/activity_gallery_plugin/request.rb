@@ -46,7 +46,7 @@ class ActivityGalleryPlugin::Request
                     "space_organization" => activity.metadata['space_organization'],
                     "implementation_steps" => activity.metadata['implementation_steps'],
                     "implementation_tips" => activity.metadata['implementation_tips'],
-                    "inspiration" => activity.metadata['inspiration'].split(','),
+                    # "inspiration" => activity.metadata['inspirations'].split(','),
                     "references" => activity.metadata['references'],
                     "reflection_assessment" => activity.metadata['reflection_assessment'],
                     "duration" => activity.metadata['duration'],
@@ -55,13 +55,7 @@ class ActivityGalleryPlugin::Request
                     "space_type_ids" => activity.metadata['space_types'],
                     "person_ids" => activity.metadata['authors'].split(','),
                     "specific_materials" => activity.metadata['specific_materials'],
-                    # "audience_ids" => [activity.metadata['audience']],
-                    "general_materials" => [
-                        {
-                            "id" => "9c65a353-497a-42ed-9631-38f68c6862b0",
-                            "quantity" => 11
-                        }
-                    ]
+                    "general_materials" => activity.metadata['general_materials']
                 }
             }
             body['activity']['image'] = "data:image/png;base64," + Base64.encode64(activity.image.current_data) if activity.image.present?

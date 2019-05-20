@@ -6,7 +6,7 @@ class ActivityGalleryPlugin::Activity < Article
 
   after_create do |activity|
     response = ActivityGalleryPlugin::Request.create_activity(activity)
-    activity.destroy if response.code=='200'
+    activity.destroy  if response.code=='200'
   end
 
   def self.icon_name(article = nil)

@@ -14,8 +14,17 @@
   <%= labelled_form_field(_('Motivação'), text_area_tag('article[metadata][motivation]','',placeholder:'Motivação')) %>
   <%= labelled_form_field(_('Poderosas Ideias'), text_area_tag('article[metadata][powerful_ideas]','',placeholder:'Poderosas Ideias')) %>
   <%= labelled_form_field(_('Produtos esperados'), text_area_tag('article[metadata][products]','',placeholder:'Produtos esperados')) %>
-  <%= labelled_form_field(_('Escopo')+': ', select_tag('article[metadata][scopes]', options_for_select(ActivityGalleryPlugin::Activity.get_scopes_options(jwt)), {multiple: true})) %>
-  <%= labelled_form_field(_('Público-alvo')+': ', select_tag('article[metadata][audience]', options_for_select(ActivityGalleryPlugin::Activity.get_audience_options(jwt)), {multiple: true})) %>
+
+  <%= labelled_form_field(_('Escopo')+': ', nil ) %>
+  <% ActivityGalleryPlugin::Activity.get_scopes_options(jwt).map do |scope| %>
+    <%= labelled_check_box(scope[0], 'article[metadata][scopes][]', scope[1], false, {add_hidden: false} )%>
+  <% end %>
+
+  <%= labelled_form_field(_('Público-alvo')+': ', nil ) %>
+  <% ActivityGalleryPlugin::Activity.get_audience_options(jwt).map do |audience| %>
+    <%= labelled_check_box(audience[0], 'article[metadata][audience][]', audience[1], false, {add_hidden: false} )%>
+  <% end %>
+
   <%= labelled_form_field(_('Pré-requisitos'), text_area_tag('article[metadata][requirements]','',placeholder:'Pré-requisitos')) %>
   <%= labelled_form_field(_('Deseja publicar a atividade?')+': ', select_tag('article[metadata][published]', options_for_select([['Sim', '1'], ['Não', '0']]))) %>
   <%= labelled_form_field(_('Histórico'), text_area_tag('article[metadata][version_history]','',placeholder:'Histórico')) %>
@@ -23,10 +32,21 @@
   <%= labelled_form_field(_('Tipo de licença'), text_area_tag('article[metadata][license_type]','',placeholder:'Tipo de licença')) %>
 
   <div class="activity-subtitle">Implementação da Atividade</div>
-  <%= labelled_form_field(_('Tipo de Espaço')+': ', select_tag('article[metadata][space_types]', options_for_select(ActivityGalleryPlugin::Activity.get_space_types_options(jwt)), {multiple: true})) %>
+  <%= labelled_form_field(_('Tipo de Espaço')+': ', nil ) %>
+  <% ActivityGalleryPlugin::Activity.get_space_types_options(jwt).map do |space| %>
+    <%= labelled_check_box(space[0], 'article[metadata][space_types][]', space[1], false, {add_hidden: false} )%>
+  <% end %>
+
   <%= labelled_form_field(_('Organização do espaço'), text_area_tag('article[metadata][space_organization]','',placeholder:'Organização do espaço')) %>
   <%= labelled_form_field(_('Passos para a implementação'), text_area_tag('article[metadata][implementation_steps]','',placeholder:'Passos para Implementação')) %>
-  <%= labelled_form_field(_('Materiais Gerais')+': ', select_tag('article[metadata][general_materials]', options_for_select(ActivityGalleryPlugin::Activity.get_general_materials_options(jwt)))) %>
+  <%= labelled_form_field(_('Materiais Gerais')+': ', nil ) %>
+  <div class="general-materials">
+    <div class="general-material-fields">
+      <%= select_tag('article[metadata][general_materials][][id]', options_for_select(ActivityGalleryPlugin::Activity.get_general_materials_options(jwt)), include_blank: 'Selecione um material') %>
+      <%= number_field_tag('article[metadata][general_materials][][quantity]', 0) %>
+      <%= button_without_text(:trash, _('Delete'), '#') %>
+    </div> 
+  </div>
   <%= labelled_form_field(_('Materiais específicos'), text_area_tag('article[metadata][specific_materials]','',placeholder:'Materiais específicos')) %>
   <%= labelled_form_field(_('Dicas sobre a implementação'), text_area_tag('article[metadata][implementation_tips]','',placeholder:'Dicas sobre a implementação')) %>
   <%= labelled_form_field(_('Reflexão e avaliação'), text_area_tag('article[metadata][reflection_assessment]','',placeholder:'Reflexão e avaliação')) %>
@@ -47,3 +67,5 @@
   <a class="button icon-cancel with-text" title="Cancel" href="#">
     <i class="fa fa-times" aria-hidden="true"></i>Cancelar</a>
 </div>
+
+<%= javascript_include_tag 'plugins/activity_gallery/cms' %>
