@@ -130,3 +130,5 @@
     <%= @activities[:data][:attributes][:references]%>
   </p>
 </div>
+
+<%= addthis_javascript(activity_url, @activities[:data][:attributes][:title], @activities[:data][:attributes][:description]).html_safe %>

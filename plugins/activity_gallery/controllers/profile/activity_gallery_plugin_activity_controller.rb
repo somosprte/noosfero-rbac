@@ -41,9 +41,6 @@ class ActivityGalleryPluginActivityController < ProfileController
         redirect_to action: 'list'
     end
 
-    def edit
-    end
-
     private
 
     def logged_user
