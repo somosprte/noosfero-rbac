@@ -108,7 +108,7 @@ module LayoutHelper
           description: "#{description}",
         }
       </script>
-      <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ce4c0e9578beadd"></script>
+      <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=#{AddThis.addthis_pubid}"></script>
       eof
     end
   end
