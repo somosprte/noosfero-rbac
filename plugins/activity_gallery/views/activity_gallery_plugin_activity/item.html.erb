@@ -1,4 +1,16 @@
+<% extend ActivityGalleryPlugin::Helper %>
+
 <div class="form-title">Detalhes da Atividade</div>
+<% if logged_in? %>
+  <div class="activity-options">
+      <%= link_to font_awesome(:ellipsis), '#!', class: 'menu-toggle', id: 'article-options' %>
+      <ul class="noosfero-dropdown-menu" id="article-options-dropdown">
+        <% activity_actions(@activities).each do |action| %>
+          <%= content_tag(:li, action) unless action.blank? %>
+        <% end %>
+      </ul>
+  </div>
+<% end %>
 
 <div class="activity-title"><%= @activities[:data][:attributes][:title]%></div>
 

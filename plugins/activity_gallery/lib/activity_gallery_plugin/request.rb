@@ -3,7 +3,7 @@ class ActivityGalleryPlugin::Request
         def request(method, url, body, jwt)
             base_url = "https://devapi.aprendizagemcriativa.org/"
             uri = URI.parse(base_url + url)
-            request = method == :get ? Net::HTTP::Get.new(uri) : Net::HTTP::Post.new(uri)
+            request = "Net::HTTP::#{method.to_s.camelize}".constantize.new(uri)
             request.content_type = "application/json"
             request["Accept"] = "application/json"
             request["Authorization"] = "Bearer #{jwt}" if jwt.present?
@@ -26,6 +26,14 @@ class ActivityGalleryPlugin::Request
 
         def post(url, body=nil, jwt=nil)
             request(:post, url, body, jwt)
+        end
+
+        def delete(url, body=nil, jwt=nil)
+            request(:delete, url, body, jwt)
+        end
+
+        def put(url, body=nil, jwt=nil)
+            request(:put, url, body, jwt)
         end
 
         def create_activity(activity)

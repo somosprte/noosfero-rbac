@@ -35,6 +35,14 @@ class ActivityGalleryPluginActivityController < ProfileController
         get_activities("gallery/v1/activities/#{params['id']}")
     end
 
+    def destroy
+        url = "/gallery/v1/activities/#{params['id']}"
+        result = ActivityGalleryPlugin::Request.delete(url, nil, session['activity_gallery_plugin_jwt'])
+        redirect_to action: 'list'
+    end
+
+    def edit
+    end
 
     private
 
