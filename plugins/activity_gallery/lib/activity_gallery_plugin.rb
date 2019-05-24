@@ -8,10 +8,6 @@ class ActivityGalleryPlugin < Noosfero::Plugin
     _("RBAC Activity Gallery")
   end
 
-  def content_types
-    [ActivityGalleryPlugin::Activity] if context.respond_to?(:profile)
-  end
-
   def stylesheet?
     true
   end
@@ -47,9 +43,12 @@ class ActivityGalleryPlugin < Noosfero::Plugin
 
   def self.load_custom_routes
     Noosfero::Application.routes.draw do
-      get "/galeria", to: 'activity_gallery_plugin_activity#list', defaults: {profile: 'portal'}
+      get "/galeria", to: 'activity_gallery_plugin_activity#index', defaults: {profile: 'portal'}
+      get "/galeria/nova-atividade", to: 'activity_gallery_plugin_activity#new', defaults: {profile: 'portal'}
+      get "/galeria/editar-atividade/:id", to: 'activity_gallery_plugin_activity#edit', defaults: {profile: 'portal'}
+      get "/galeria/remixar-atividade/:id", to: 'activity_gallery_plugin_activity#remix', defaults: {profile: 'portal'}
       get "/sobre", to: 'activity_gallery_plugin_activity#about', defaults: {profile: 'portal'}
-      get "/galeria/item", to: 'activity_gallery_plugin_activity#item', defaults: {profile: 'portal'}
+      get "/galeria/:id", to: 'activity_gallery_plugin_activity#show', defaults: {profile: 'portal'}
     end
   end
 end

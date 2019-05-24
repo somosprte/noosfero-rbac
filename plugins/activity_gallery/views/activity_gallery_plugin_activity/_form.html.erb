@@ -1,0 +1,69 @@
+<% jwt = session['activity_gallery_plugin_jwt'] %>
+
+<%= form_tag({:action => action}, {:html => { :multipart => true, :class => "activity-form" }}) do %>
+<div class="form-title">Informações da Atividade</div>
+<%= hidden_field_tag('id', params[:id]) %>
+<div class="form-content">
+  <div class="activity-subtitle">Sobre a Atividade</div>
+
+  <%= labelled_form_field(_('Título da Atividade'), text_area_tag('data[title]', @activity.title, placeholder: 'Título')) %>
+  <%= labelled_form_field(_('Subtitulo'), text_area_tag('data[caption]', @activity.caption, placeholder: 'Sub titulo')) %> 
+  <%= file_field_or_thumbnail(_('Imagem de capa da Atividade:'), nil, 'article[image_builder]')%>
+  <%= labelled_form_field(_('Autor(es)')+': ', token_input_field_tag('data[authors]', 'search-authors', {:controller => 'activity_gallery_plugin_activity', :action => 'search_authors'}, {:focus => false, :hint_text => _('Digite o nome do autor'), :pre_populate => @activity.tokenized_authors})
+  ) %>
+  <%= labelled_form_field(_('Descrição'), text_area_tag('data[description]', @activity.description, placeholder: 'Descrição')) %>
+  <%= labelled_form_field(_('Motivação'), text_area_tag('data[motivation]', @activity.motivation, placeholder: 'Motivação')) %>
+  <%= labelled_form_field(_('Poderosas Ideias'), text_area_tag('data[powerful_ideas]', @activity.powerful_ideas, placeholder: 'Poderosas Ideias')) %>
+  <%= labelled_form_field(_('Produtos esperados'), text_area_tag('data[products]', @activity.products, placeholder: 'Produtos esperados')) %>
+
+  <%= labelled_form_field(_('Escopo')+': ', nil ) %>
+  <% ActivityGalleryPlugin::Activity.get_scopes_options(jwt).map do |scope| %>
+    <%= labelled_check_box(scope[0], 'data[scopes][]', scope[1], @activity.check(:scopes, scope[1]), {add_hidden: false} )%>
+  <% end %>
+
+  <%= labelled_form_field(_('Público-alvo')+': ', nil ) %>
+  <% ActivityGalleryPlugin::Activity.get_audience_options(jwt).map do |audience| %>
+    <%= labelled_check_box(audience[0], 'data[audiences][]', audience[1], @activity.check(:audiences, audience[1]), {add_hidden: false} )%>
+  <% end %>
+
+  <%= labelled_form_field(_('Pré-requisitos'), text_area_tag('data[requirements]', @activity.requirements, placeholder: 'Pré-requisitos')) %>
+  <%= labelled_form_field(_('Deseja publicar a atividade?')+': ', select_tag('data[published]', options_for_select([['Sim', '1'], ['Não', '0']]))) %>
+  <%= labelled_form_field(_('Histórico'), text_area_tag('data[version_history]', @activity.version_history, placeholder: 'Histórico')) %>
+  <%= labelled_form_field(_('Copyright'), text_area_tag('data[copyright]', @activity.copyright, placeholder: 'Copyright')) %>
+  <%= labelled_form_field(_('Tipo de licença'), text_area_tag('data[license_type]', @activity.license_type, placeholder: 'Tipo de licença')) %>
+
+  <div class="activity-subtitle">Implementação da Atividade</div>
+  <%= labelled_form_field(_('Tipo de Espaço')+': ', nil ) %>
+  <% ActivityGalleryPlugin::Activity.get_space_types_options(jwt).map do |space| %>
+    <%= labelled_check_box(space[0], 'data[space_types][]', space[1], @activity.check(:space_types, space[1]), {add_hidden: false} )%>
+  <% end %>
+
+  <%= labelled_form_field(_('Organização do espaço'), text_area_tag('data[space_organization]', @activity.space_organization, placeholder: 'Organização do espaço')) %>
+  <%= labelled_form_field(_('Passos para a implementação'), text_area_tag('data[implementation_steps]', @activity.implementation_steps, placeholder: 'Passos para Implementação')) %>
+  <%= labelled_form_field(_('Materiais Gerais')+': ', nil ) %>
+  <div class="general-materials">
+    <div class="general-material-fields">
+      <%= select_tag('data[general_materials][][id]', options_for_select(ActivityGalleryPlugin::Activity.get_general_materials_options(jwt)), include_blank: 'Selecione um material') %>
+      <%= number_field_tag('data[general_materials][][quantity]', 0) %>
+      <%= button_without_text(:trash, _('Delete'), '#') %>
+    </div> 
+  </div>
+  <%= labelled_form_field(_('Materiais específicos'), text_area_tag('data[specific_materials]', @activity.specific_materials, placeholder: 'Materiais específicos')) %>
+  <%= labelled_form_field(_('Dicas sobre a implementação'), text_area_tag('data[implementation_tips]', @activity.implementation_tips, placeholder: 'Dicas sobre a implementação')) %>
+  <%= labelled_form_field(_('Reflexão e avaliação'), text_area_tag('data[reflection_assessment]', @activity.reflection_assessment, placeholder: 'Reflexão e avaliação')) %>
+  <%= labelled_form_field(_('Duração'), text_area_tag('data[duration]', @activity.duration, placeholder: 'Duração')) %>
+  
+  <div class="activity-subtitle">Inspiração</div>
+  <%= labelled_form_field(_('Inspiração')+': ', token_input_field_tag('data[inspirations]', 'search-inspiration', {:controller => 'activity_gallery_plugin_activity', :action => 'search_inspirations'}, {:focus => false, :hint_text => _('Digite o nome da atividade'), :pre_populate => @activity.tokenized_inspirations})
+  ) %>
+  <%= labelled_form_field(_('Referências'), text_area_tag('data[references]', @activity.references, placeholder: 'Referências')) %>
+
+</div>
+
+  <%= button_bar do %>
+    <%= submit_button(:save, _('Save'), :cancel => { :action => 'index' }) %>
+  <% end %>
+
+<% end %>
+
+<%= javascript_include_tag 'plugins/activity_gallery/cms' %>

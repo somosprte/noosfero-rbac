@@ -35,39 +35,5 @@ class ActivityGalleryPlugin::Request
         def put(url, body=nil, jwt=nil)
             request(:put, url, body, jwt)
         end
-
-        def create_activity(activity)
-            jwt = activity.author.metadata['activity_gallery_plugin_jwt']
-            body = {
-                "activity" => {
-                    "title" => activity.metadata['title'],
-                    "description" => activity.metadata['description'],
-                    "caption" => activity.metadata['caption'],
-                    "motivation" => activity.metadata['motivation'],
-                    "powerful_ideas" => activity.metadata['powerful_ideas'],
-                    "products" => activity.metadata['products'],
-                    "requirements" => activity.metadata['requirements'],
-                    "published" => activity.metadata['published'] == '1' ? true : false,
-                    "version_history" => activity.metadata['version_history'],
-                    "copyright" => activity.metadata['copyright'],
-                    "license_type" => activity.metadata['license_type'],
-                    "space_organization" => activity.metadata['space_organization'],
-                    "implementation_steps" => activity.metadata['implementation_steps'],
-                    "implementation_tips" => activity.metadata['implementation_tips'],
-                    # "inspiration" => activity.metadata['inspirations'].split(','),
-                    "references" => activity.metadata['references'],
-                    "reflection_assessment" => activity.metadata['reflection_assessment'],
-                    "duration" => activity.metadata['duration'],
-                    "scope_ids" => activity.metadata['scopes'],
-                    "audience_ids" => activity.metadata['audience'],
-                    "space_type_ids" => activity.metadata['space_types'],
-                    "person_ids" => activity.metadata['authors'].split(','),
-                    "specific_materials" => activity.metadata['specific_materials'],
-                    "general_materials" => activity.metadata['general_materials']
-                }
-            }
-            body['activity']['image'] = "data:image/png;base64," + Base64.encode64(activity.image.current_data) if activity.image.present?
-            resultado = ActivityGalleryPlugin::Request.post("gallery/v1/activities", body, jwt)
-        end
     end
 end

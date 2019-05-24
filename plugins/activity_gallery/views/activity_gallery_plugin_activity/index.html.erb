@@ -16,13 +16,13 @@
     <% @results.each do |activity| %>
       <div class="item  col-xs-6 col-lg-6">
         <div class="thumbnail">
-          <%= image_tag("#{activity[:attributes][:images][:medium]}", alt: "", class: "group list-group-image") %>
+          <%= image_tag("#{activity.images[:medium]}", alt: "", class: "group list-group-image") %>
           <div class="caption">
             <h4 class="group inner list-group-item-heading">
-              <%= link_to("/galeria/item?id=#{activity[:id]}",:controller => "activity_gallery_plugin_activity", :action=> "item") do %> <%= activity[:attributes][:title]%> <%end%>
+              <%= link_to(activity.title, "/galeria/#{activity.id}") %>
             </h4>
             <p class="group inner list-group-item-text">
-              <%= activity[:attributes][:caption]%>
+              <%= activity.caption %>
             </p>
           </div>
         </div>

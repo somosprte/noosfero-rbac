@@ -1,16 +1,55 @@
-class ActivityGalleryPlugin::Activity < Article
+class ActivityGalleryPlugin::Activity
 
-  settings_items :default_email, :type => :string, :default => ""
+  attr_accessor :id, :type, :title, :description, :caption, :motivation, :powerful_ideas, :products, :requirements, :published, :version_history, :copyright, :license_type, :space_organization, :implementation_steps, :implementation_tips, :inspirations, :references, :reflection_assessment, :remixed, :liked, :favorited, :implemented, :duration, :scopes, :audiences, :space_types, :authors, :specific_materials, :general_materials, :images
+  attr_accessor :language
 
-  attr_accessible :default_email
-
-  after_create do |activity|
-    response = ActivityGalleryPlugin::Request.create_activity(activity)
-    activity.destroy  if response.code=='200'
+  def initialize(data={})
+    @id = data[:id]
+    @type = data[:type]
+    data[:attributes].each { |key, value| send "#{key.to_s.underscore}=", value } if data[:attributes].present?
   end
 
-  def self.icon_name(article = nil)
-    'activity'
+  def tokenized_authors
+    authors.map { |author| {:id => author[:id], :name => author[:name]} } if authors.present?
+  end
+
+  def tokenized_inspirations
+    inspirations.map { |inspiration| {:id => inspiration[:id], :name => inspiration[:name]} } if inspirations.present?
+  end
+
+  def check(object_type, object_id)
+    send(object_type).any? { |object| object[:id] == object_id } if send(object_type).present?
+  end
+
+  def body
+    result = {"activity" => {
+      "title" => title,
+      "description" => description,
+      "caption" => caption,
+      "motivation" => motivation,
+      "powerful_ideas" => powerful_ideas,
+      "products" => products,
+      "requirements" => requirements,
+      "published" => published == '1' ? true : false,
+      "version_history" => version_history,
+      "copyright" => copyright,
+      "license_type" => license_type,
+      "space_organization" => space_organization,
+      "implementation_steps" => implementation_steps,
+      "implementation_tips" => implementation_tips,
+      "inspirations" => inspirations.try(:split, ',').map { |id| {id: id} } || [],
+      "references" => references,
+      "reflection_assessment" => reflection_assessment,
+      "duration" => duration,
+      "scope_ids" => scopes,
+      "audience_ids" => audiences,
+      "space_type_ids" => space_types,
+      "person_ids" => authors.try(:split, ','),
+      "specific_materials" => specific_materials,
+      "general_materials" => []
+    }}
+    # result['activity']['image'] = "data:image/png;base64," + Base64.encode64(image.current_data) if image.present?
+    result
   end
 
   def self.get_audience_options(jwt)
@@ -85,27 +124,4 @@ class ActivityGalleryPlugin::Activity < Article
     result
   end
 
-  def self.short_description
-    _('Activity')
-  end
-
-  def self.description
-    _('Defines a work to be done by the members and receives their submissions about this work.')
-  end
-
-  # def accept_comments?
-  #   true
-  # end
-
-  def allow_create?(user)
-    profile.members.include?(user)
-  end
-
-  def to_html(options = {})
-    -> context { render :file => 'content_viewer/activity.html.erb' }
-  end
-
-  def accept_uploads?
-    false
-  end
 end
