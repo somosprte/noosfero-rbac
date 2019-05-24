@@ -124,7 +124,6 @@
   <div class="activity-subtitle">Inspiração</div>
   <p class="activity-text">
       <ul>
-        <% raise @activity.inspirations.inspect %>
           <% @activity.inspirations do |inspiration| %>
             <li><%= inspiration[:title] %></li>
           <% end %>
