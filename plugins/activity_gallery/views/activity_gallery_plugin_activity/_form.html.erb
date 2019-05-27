@@ -54,9 +54,9 @@
   <%= labelled_form_field(_('Duração'), text_area_tag('data[duration]', @activity.duration, placeholder: 'Duração')) %>
   
   <div class="activity-subtitle">Inspiração</div>
-  <%= labelled_form_field(_('Inspiração')+': ', token_input_field_tag('data[inspirations]', 'search-inspiration', {:controller => 'activity_gallery_plugin_activity', :action => 'search_inspirations'}, {:focus => false, :hint_text => _('Digite o nome da atividade'), :pre_populate => @activity.tokenized_inspirations})
+  <%= labelled_form_field(_('Atividades Inspiradoras')+': ', token_input_field_tag('data[inspirations]', 'search-inspiration', {:controller => 'activity_gallery_plugin_activity', :action => 'search_inspirations'}, {:focus => false, :hint_text => _('Digite o nome da atividade'), :pre_populate => @activity.tokenized_inspirations})
   ) %>
-  <%= labelled_form_field(_('Referências'), text_area_tag('data[references]', @activity.references, placeholder: 'Referências')) %>
+  <%= labelled_form_field(_('Referências Externas'), text_area_tag('data[references]', @activity.references, placeholder: 'Referências Externas')) %>
 
 </div>
 
