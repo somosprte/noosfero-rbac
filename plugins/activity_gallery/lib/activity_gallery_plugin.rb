@@ -30,8 +30,8 @@ class ActivityGalleryPlugin < Noosfero::Plugin
         if logged_in?
           body = {
             "auth" => {
-              "username" => "nivaldo@prte.com.br",
-              "password" => "123456"
+              "username" => user.user.email,
+              "password" => user.user.crypted_password
             }
           }
           response = ActivityGalleryPlugin::Request.post('auth/v1/users/login', body)
