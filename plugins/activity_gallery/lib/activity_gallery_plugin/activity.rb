@@ -21,6 +21,10 @@ class ActivityGalleryPlugin::Activity
     send(object_type).any? { |object| object[:id] == object_id } if send(object_type).present?
   end
 
+  def is_author?(person)
+    authors.present? && authors.any? { |author| author[:email] == person.email }
+  end
+
   def body
     result = {"activity" => {
       "title" => title,

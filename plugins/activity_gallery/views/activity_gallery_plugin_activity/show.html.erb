@@ -5,7 +5,7 @@
   <div class="activity-options">
       <%= link_to font_awesome(:ellipsis), '#!', class: 'menu-toggle', id: 'article-options' %>
       <ul class="noosfero-dropdown-menu" id="article-options-dropdown">
-        <% activity_actions.each do |action| %>
+        <% activity_actions(@activity, user).each do |action| %>
           <%= content_tag(:li, action) unless action.blank? %>
         <% end %>
       </ul>

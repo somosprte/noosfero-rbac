@@ -1,7 +1,7 @@
 class ActivityGalleryPluginActivityController < ProfileController
 
     before_action :logged_user
-
+    before_action :activity_authors, only: %i[edit destroy update]
     skip_before_action :logged_user, only: %i[index show]
 
     def index
@@ -74,6 +74,15 @@ class ActivityGalleryPluginActivityController < ProfileController
         if !logged_in?
             session[:return_to] = {controller: params['controller'], action: params['action'], id: params['id']}
             redirect_to :controller => 'account', :action => 'login'
+        end
+    end
+
+    def activity_authors
+        activity = ActivityGalleryPlugin::Activity.new(get("gallery/v1/activities/#{params['id']}"))
+        if !logged_in? || !activity.is_author?(user)
+            session[:return_to] = {controller: params['controller'], action: params['action'], id: params['id']}
+            session[:notice] = _('Você não tem autorização para executar essa ação')
+            redirect_to '/galeria'
         end
     end
 
