@@ -29,6 +29,8 @@ class ActivityGalleryPluginActivityController < ProfileController
 
     def remix
         @activity = ActivityGalleryPlugin::Activity.new(get("gallery/v1/activities/#{params['id']}"))
+        @activity.title += ' Remixada'
+        # @activity.inspirations = [params['id']]
         @page = @activity
     end
 
