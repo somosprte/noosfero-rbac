@@ -12,9 +12,15 @@ class ActivityGalleryPlugin < Noosfero::Plugin
     true
   end
 
-  # def person_after_create_callback(person)
-
-  # end
+  def person_after_create_callback(person)
+    body = {"auth" => {
+      "email" => person.user.email,
+      "password" => person.user.crypted_password,
+      "name" => person.name,
+      "birthday" => person.birth_date
+    }}
+    ActivityGalleryPlugin::Request.post("/auth/v1/users/register", body)
+  end
 
   def account_controller_filters
     {
