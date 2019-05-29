@@ -38,7 +38,6 @@ class ActivityGalleryPlugin < Noosfero::Plugin
           if response.code == '200'
             jwt = JSON.parse(response.body,symbolize_names:true)[:jwt]
             session['activity_gallery_plugin_jwt'] = jwt
-            user.metadata['activity_gallery_plugin_jwt'] = jwt
             user.save!
           else
           end
