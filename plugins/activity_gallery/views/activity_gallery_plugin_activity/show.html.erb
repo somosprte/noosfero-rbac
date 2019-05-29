@@ -32,7 +32,7 @@
   <p class="activity-text">
       <ul>
           <% @activity.authors.each do |author| %>
-            <li><%= author[:name] %></li>
+            <li><%= link_to(author[:name], environment.users.where(email: author[:email]).first.person.url) %></li>
           <% end %>
         </ul>
   </p>
