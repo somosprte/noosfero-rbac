@@ -38,8 +38,11 @@ class ActivityGalleryPlugin < Noosfero::Plugin
           if response.code == '200'
             jwt = JSON.parse(response.body,symbolize_names:true)[:jwt]
             session['activity_gallery_plugin_jwt'] = jwt
-            user.save!
-          else
+          elsif response.code == '400'
+            ActivityGalleryPlugin.new.person_after_create_callback(user)
+            response = ActivityGalleryPlugin::Request.post('auth/v1/users/login', body)
+            jwt = JSON.parse(response.body,symbolize_names:true)[:jwt]
+            session['activity_gallery_plugin_jwt'] = jwt
           end
         end
       }
