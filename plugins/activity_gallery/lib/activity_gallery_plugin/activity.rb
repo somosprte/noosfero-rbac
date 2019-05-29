@@ -1,12 +1,13 @@
 class ActivityGalleryPlugin::Activity
 
-  attr_accessor :id, :type, :title, :description, :caption, :motivation, :powerful_ideas, :products, :requirements, :published, :version_history, :copyright, :license_type, :space_organization, :implementation_steps, :implementation_tips, :inspirations, :references, :reflection_assessment, :remixed, :liked, :favorited, :implemented, :duration, :scopes, :audiences, :space_types, :authors, :specific_materials, :general_materials, :images
+  attr_accessor :id, :type, :title, :description, :caption, :motivation, :powerful_ideas, :products, :requirements, :published, :version_history, :copyright, :license_type, :space_organization, :implementation_steps, :implementation_tips, :inspirations, :references, :reflection_assessment, :remixed, :liked, :favorited, :implemented, :duration, :scopes, :audiences, :space_types, :authors, :specific_materials, :general_materials, :image, :images, :image_builder
   attr_accessor :language
 
   def initialize(data={})
     @id = data[:id]
     @type = data[:type]
     data[:attributes].each { |key, value| send "#{key.to_s.underscore}=", value } if data[:attributes].present?
+    @image ||=  "data:image/png;base64," + Base64.encode64(image_builder["uploaded_data"].read) if image_builder.present?
   end
 
   def tokenized_authors
@@ -52,7 +53,7 @@ class ActivityGalleryPlugin::Activity
       "specific_materials" => specific_materials,
       "general_materials" => []
     }}
-    # result['activity']['image'] = "data:image/png;base64," + Base64.encode64(image.current_data) if image.present?
+    result['activity']['image'] = image if image.present?
     result
   end
 
