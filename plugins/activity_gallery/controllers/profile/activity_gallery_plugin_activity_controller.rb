@@ -14,6 +14,13 @@ class ActivityGalleryPluginActivityController < ProfileController
         @results = @activities.paginate(page: params[:page] || 1, per_page: 4)
     end
 
+    def saved_activities
+        @activities = get('gallery/v1/activities/?per=50')
+        .map { |activity| ActivityGalleryPlugin::Activity.new(activity) }
+        .select { |activity| activity.favorited }
+        @results = @activities.paginate(page: params[:page] || 1, per_page: 4)
+    end
+
     def show
         @activity = ActivityGalleryPlugin::Activity.new(get("gallery/v1/activities/#{params['id']}"))
         @page = @activity

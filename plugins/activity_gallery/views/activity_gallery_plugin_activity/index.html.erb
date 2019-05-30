@@ -20,34 +20,8 @@
           <% end %>
         </div>
       </div>
-      <div id="activitys" class="row list-group">
-        <% @results.each do |activity| %>
-        <div class="item  col-xs-6 col-lg-6">
-          <div class="thumbnail">
-            <%= image_tag("#{activity.images[:medium]}", alt: "", class: "group list-group-image") %>
-            <div class="caption">
-              <h4 class="group inner list-group-item-heading">
-                <%= link_to(activity.title, "/galeria/#{activity.id}") %>
-              </h4>
-              <p class="group inner list-group-item-text">
-                <%= activity.caption %>
-              </p>
-            </div>
-          </div>
-        </div>
-        <% end %>
-      </div>
-      <%= pagination_links(@results, params_name: :page) %>
+      <%= render partial: 'activities' %>
     </div>
-    <div class="col-md-3 activity-options">
-      <div id="user-api-menu">
-        <ul class="uk-nav uk-nav-side">
-          <li>OPÇÕES DA GALERIA</li>
-          <li><a href="/galeria/nova-atividade">Incluir Nova Atividade</a></li>
-          <li><a href="#">Minhas Atividades</a></li>
-          <li><a href="#">Atividades Salvas</a></li>
-        </ul>
-      </div>
-    </div>
+    <%= render partial: 'nav' %>
   </div>
 </div>

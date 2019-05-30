@@ -1,0 +1,18 @@
+<div id="activitys" class="row list-group">
+  <% @results.each do |activity| %>
+  <div class="item col-md-4">
+    <div class="thumbnail">
+      <%= image_tag("#{activity.images[:medium]}", alt: "", class: "group list-group-image") %>
+      <div class="caption">
+        <h4 class="group inner list-group-item-heading">
+          <%= link_to(activity.title, "/galeria/#{activity.id}") %>
+        </h4>
+        <p class="group inner list-group-item-text">
+          <%= activity.caption %>
+        </p>
+      </div>
+    </div>
+  </div>
+  <% end %>
+</div>
+<%= pagination_links(@results, params_name: :page) %>

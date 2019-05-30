@@ -52,6 +52,7 @@ class ActivityGalleryPlugin < Noosfero::Plugin
   def self.load_custom_routes
     Noosfero::Application.routes.draw do
       get "/galeria", to: 'activity_gallery_plugin_activity#index', defaults: {profile: 'portal'}
+      get "/galeria/atividades-salvas", to: 'activity_gallery_plugin_activity#saved_activities', defaults: {profile: 'portal'}
       get "/galeria/nova-atividade", to: 'activity_gallery_plugin_activity#new', defaults: {profile: 'portal'}
       get "/galeria/editar-atividade/:id", to: 'activity_gallery_plugin_activity#edit', defaults: {profile: 'portal'}
       get "/galeria/remixar-atividade/:id", to: 'activity_gallery_plugin_activity#remix', defaults: {profile: 'portal'}
