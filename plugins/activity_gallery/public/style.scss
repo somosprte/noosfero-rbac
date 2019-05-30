@@ -1,8 +1,6 @@
-.icon-newactivity {
-  background-image: url(../../designs/icons/tango/Tango/16x16/categories/applications-office.png);
-}
-.icon-activity {
-  background-image: url(../../designs/icons/tango/Tango/16x16/categories/applications-office.png);
+#show-activity {
+  width: 70%;
+  margin: 0 auto;
 }
 
 #article .upload-files {
@@ -331,4 +329,50 @@
 
 #activity-filter-menu .uk-nav > li:last-child {
   border: none;
+}
+
+// Experience Buttons
+.activity-exp-actions {
+  margin-bottom: 20px;
+}
+// LIKE
+.liked, .unliked {
+  font-size: 20px;
+  margin: 0 auto;
+}
+
+.unliked > a > i {
+  color: #25AC3D;
+}
+
+.liked > a > i {
+  color: red;
+}
+
+.liked > a, .unliked > a {
+  color: #000;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+// SAVED
+.save {
+  font-size: 20px;
+  margin: 0 auto;
+}
+.save > a > i {
+  color: #25AC3D;
+}
+.save > a {
+  color: #000;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+#show-activity .noosfero-dropdown-menu {
+  position: initial !important;
 }

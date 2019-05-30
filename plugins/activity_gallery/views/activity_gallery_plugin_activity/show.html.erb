@@ -15,6 +15,17 @@
 
 <div class="activity-title"><%= @activity.title %></div>
 
+<div class="row activity-exp-actions">
+  <% like_class = @activity.liked ? 'liked' : 'unliked' %>
+  <div class="<%= like_class %>">
+      <% like_text = @activity.liked ? _('Atividade Curtida') : _('Curtir Atividade') %>
+    <%= link_to(font_awesome(:heart, like_text), {controller: 'activity_gallery_plugin_activity', action: 'like', id: params[:id]}) %>
+  </div>
+  <div class="save">
+    <%= link_to(font_awesome(:save, _('Salvar Atividade')), {controller: 'activity_gallery_plugin_activity', action: 'destroy', id: params[:id]}) %>
+  </div>
+</div>
+
 <div class="thumbnail-item">
 <%= image_tag("#{@activity.images[:original]}", alt: "", class: "group list-group-image") %>
   <div class="caption">
@@ -152,7 +163,6 @@
             <li><%= link_to(inspiration[:title], (inspiration[:activity_two_id])) %></li>
           <% end %>
         </ul>
-
   </p>
 
   <div class="activity-subtitle">Referências Externas</div>
