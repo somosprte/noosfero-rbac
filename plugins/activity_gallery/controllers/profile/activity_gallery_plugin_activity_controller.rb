@@ -53,8 +53,14 @@ class ActivityGalleryPluginActivityController < ProfileController
         redirect_to '/galeria'
     end
 
-    def like
+    def toggle_like
         url = "/gallery/v1/activities/#{params['id']}/like"
+        ActivityGalleryPlugin::Request.get(url, nil, session['activity_gallery_plugin_jwt'])
+        redirect_to "/galeria/#{params['id']}"
+    end
+
+    def toggle_save
+        url = "/gallery/v1/activities/#{params['id']}/favorite"
         ActivityGalleryPlugin::Request.get(url, nil, session['activity_gallery_plugin_jwt'])
         redirect_to "/galeria/#{params['id']}"
     end

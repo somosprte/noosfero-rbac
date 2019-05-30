@@ -336,20 +336,22 @@
   margin-bottom: 20px;
 }
 // LIKE
-.liked, .unliked {
+.liked,
+.unliked {
   font-size: 20px;
   margin: 0 auto;
 }
 
 .unliked > a > i {
-  color: #25AC3D;
+  color: #25ac3d;
 }
 
 .liked > a > i {
   color: red;
 }
 
-.liked > a, .unliked > a {
+.liked > a,
+.unliked > a {
   color: #000;
 
   &:hover {
@@ -358,14 +360,21 @@
 }
 
 // SAVED
-.save {
+.saved,
+.unsaved {
   font-size: 20px;
   margin: 0 auto;
 }
-.save > a > i {
-  color: #25AC3D;
+.saved > a > i {
+  color:#3B5998;
 }
-.save > a {
+
+.unsaved > a > i {
+  color: #25ac3d;
+}
+
+.saved > a,
+.unsaved > a {
   color: #000;
 
   &:hover {
