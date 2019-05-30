@@ -1,5 +1,6 @@
 class ActivityGalleryPluginActivityController < ProfileController
 
+    no_design_blocks
     before_action :logged_user
     before_action :activity_authors, only: %i[edit destroy update]
     skip_before_action :logged_user, only: %i[index show]

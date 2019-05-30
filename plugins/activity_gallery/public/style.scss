@@ -166,6 +166,7 @@
 .search {
   width: 100%;
   position: relative;
+  margin-top: -20px;
 }
 
 .searchTerm {
@@ -261,6 +262,73 @@
   margin-top: 10px;
 }
 
-.formlabel{
-  text-align: left
+.formlabel {
+  text-align: left;
+}
+
+// Sidebar Menu
+#user-api-menu {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  #user-api-menu {
+    margin-bottom: 25px;
+  }
+}
+
+#user-api-menu .uk-nav {
+  border-bottom: 1px solid #fff;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#activity-filter-menu .uk-nav {
+  border-bottom: 1px solid #fff;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#user-api-menu .uk-nav > li > a {
+  display: flex;
+  color: #000;
+}
+
+#activity-filter-menu .uk-nav > li > a {
+  display: flex;
+  color: #000;
+}
+
+#user-api-menu .uk-nav > li {
+  border: none;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
+
+#activity-filter-menu .uk-nav > li {
+  border: none;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
+
+#user-api-menu .uk-nav > li:first-child {
+  border-top: 1px solid #fff;
+  background-color: #25ac3d;
+  color: #fff;
+}
+
+#activity-filter-menu .uk-nav > li:first-child {
+  border-top: 1px solid #fff;
+  background-color: #25ac3d;
+  color: #fff;
+}
+
+#user-api-menu .uk-nav > li:last-child {
+  border: none;
+}
+
+#activity-filter-menu .uk-nav > li:last-child {
+  border: none;
 }
