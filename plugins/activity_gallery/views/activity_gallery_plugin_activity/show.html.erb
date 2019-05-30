@@ -1,5 +1,6 @@
 <% extend ActivityGalleryPlugin::Helper %>
 
+<div id="show-activity">
 <div class="form-title">Detalhes da Atividade</div>
 <% if logged_in? %>
   <div class="activity-options">
@@ -148,15 +149,18 @@
   <p class="activity-text">
       <ul>
           <% @activity.inspirations.each do |inspiration| %>
-            <li><%= inspiration[:activity_two_id] %></li>
+            <li><%= link_to(inspiration[:title], (inspiration[:activity_two_id])) %></li>
           <% end %>
         </ul>
+
   </p>
 
   <div class="activity-subtitle">Referências Externas</div>
   <p class="activity-text">
     <%= @activity.references %>
   </p>
+
+</div>
 
 </div>
 
