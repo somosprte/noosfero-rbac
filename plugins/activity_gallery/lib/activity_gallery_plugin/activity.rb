@@ -42,7 +42,7 @@ class ActivityGalleryPlugin::Activity
       "space_organization" => space_organization,
       "implementation_steps" => implementation_steps,
       "implementation_tips" => implementation_tips,
-      "inspirations" => inspirations.try(:split, ',').map { |id| {id: id} } || [],
+      "inspirations_ids" => inspirations.try(:split, ','),
       "references" => references,
       "reflection_assessment" => reflection_assessment,
       "duration" => duration,
@@ -51,7 +51,12 @@ class ActivityGalleryPlugin::Activity
       "space_type_ids" => space_types,
       "person_ids" => authors.try(:split, ','),
       "specific_materials" => specific_materials,
-      "general_materials" => []
+      "general_materials" => [
+        {
+        "id": "9c65a353-497a-42ed-9631-38f68c6862b0",
+        "quantity": 11
+      }
+      ]
     }}
     result['activity']['image'] = image if image.present?
     result
@@ -100,18 +105,6 @@ class ActivityGalleryPlugin::Activity
     result = []
     @general_materials[:data].each do |general_materials|
       field = [general_materials[:attributes][:name], general_materials[:id]]
-      result.push(field)
-    end
-    result
-  end
-
-  def self.get_specific_materials_options(jwt)
-    url = "gallery/v1/specific_materials"
-    result = ActivityGalleryPlugin::Request.get(url, nil, jwt)
-    @specific_materials = JSON.parse(result.body,symbolize_names:true)
-    result = []
-    @specific_materials[:data].each do |general_materials|
-      field = [specific_materials[:attributes][:name], specific_materials[:id]]
       result.push(field)
     end
     result

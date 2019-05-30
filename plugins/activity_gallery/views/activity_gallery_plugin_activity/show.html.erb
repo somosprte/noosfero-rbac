@@ -24,10 +24,6 @@
 </div>
 <div class="about-actitivy">
   <!-- <div class="activity-title"><%= @activity.title %></div> -->
-  <div class="activity-subtitle">Descrição</div>
-  <p class="activity-text">
-    <%= @activity.description %>
-  </p>
   <div class="activity-subtitle">Autor(es)</div>
   <p class="activity-text">
       <ul>
@@ -36,62 +32,27 @@
           <% end %>
         </ul>
   </p>
+
+  <div class="activity-subtitle">Descrição</div>
+  <p class="activity-text">
+    <%= @activity.description %>
+  </p>
+
   <div class="activity-subtitle">Motivação</div>
   <p class="activity-text">
     <%= @activity.motivation %>
   </p>
+
   <div class="activity-subtitle">Poderosas Ideias</div>
   <p class="activity-text">
     <%= @activity.powerful_ideas %>
   </p>
+
   <div class="activity-subtitle">Produtos</div>
   <p class="activity-text">
     <%= @activity.products %>
   </p>
-  <div class="activity-subtitle">Pré-Requisitos</div>
-  <p class="activity-text">
-    <%= @activity.requirements %>
-  </p>
-  <div class="activity-subtitle">Versão</div>
-  <p class="activity-text">
-    <%= @activity.version_history %>
-  </p>
-  <div class="activity-subtitle">Copyright</div>
-  <p class="activity-text">
-    <%= @activity.copyright %>
-  </p>
-  <div class="activity-subtitle">Licença</div>
-  <p class="activity-text">
-    <%= @activity.license_type %>
-  </p>
-  <div class="activity-subtitle">Organização do Espaço</div>
-  <p class="activity-text">
-    <%= @activity.space_organization %>
-  </p>
-  <div class="activity-subtitle">Passos para Implementação</div>
-  <p class="activity-text">
-    <%= @activity.implementation_steps %>
-  </p>
-  <div class="activity-subtitle">Dicas e anotações sobre implementação</div>
-  <p class="activity-text">
-    <%= @activity.implementation_tips %>
-  </p>
-  <div class="activity-subtitle">Avaliação do Aluno</div>
-  <p class="activity-text">
-    <%= @activity.reflection_assessment %>
-  </p>
-  <div class="activity-subtitle">Duração</div>
-  <p class="activity-text">
-    <%= @activity.duration %>
-  </p>
-  <div class="activity-subtitle">Atividade Publicada?</div>
-  <p class="activity-text">
-    <% if @activity.published == true %>
-    Sim
-    <% else %>
-    Não
-    <% end %>
-  </p>
+
   <div class="activity-subtitle">Escopos</div>
   <p class="activity-text">
     <ul>
@@ -100,6 +61,7 @@
       <% end %>
     </ul>
   </p>
+
   <div class="activity-subtitle">Público Alvo</div>
   <p class="activity-text">
       <ul>
@@ -108,6 +70,36 @@
           <% end %>
         </ul>
   </p>
+
+  <div class="activity-subtitle">Pré-Requisitos</div>
+  <p class="activity-text">
+    <%= @activity.requirements %>
+  </p>
+
+  <div class="activity-subtitle">Atividade Publicada?</div>
+  <p class="activity-text">
+    <% if @activity.published == true %>
+    Sim
+    <% else %>
+    Não
+    <% end %>
+  </p>
+
+  <div class="activity-subtitle">Histórico</div>
+  <p class="activity-text">
+    <%= @activity.version_history %>
+  </p>
+
+  <div class="activity-subtitle">Copyright</div>
+  <p class="activity-text">
+    <%= @activity.copyright %>
+  </p>
+
+  <div class="activity-subtitle">Tipo de Licença</div>
+  <p class="activity-text">
+    <%= @activity.license_type %>
+  </p>
+
   <div class="activity-subtitle">Tipos de Espaço</div>
   <p class="activity-text">
       <ul>
@@ -116,25 +108,56 @@
           <% end %>
         </ul>
   </p>
-  <div class="activity-subtitle">Materiais</div>
+
+  <div class="activity-subtitle">Organização do Espaço</div>
+  <p class="activity-text">
+    <%= @activity.space_organization %>
+  </p>
+
+  <div class="activity-subtitle">Passos para Implementação</div>
+  <p class="activity-text">
+    <%= @activity.implementation_steps %>
+  </p>
+
+  <div class="activity-subtitle">Materiais Gerais</div>
   <p class="activity-text">
     <!-- <%= @activity.requirements %> -->
+  </p>
+
+  <div class="activity-subtitle">Materiais Específicos</div>
+  <p class="activity-text">
+    <%= @activity.specific_materials %>
+  </p>
+
+  <div class="activity-subtitle">Dicas sobre a implementação</div>
+  <p class="activity-text">
+    <%= @activity.implementation_tips %>
+  </p>
+
+  <div class="activity-subtitle">Reflexão e Avaliação</div>
+  <p class="activity-text">
+    <%= @activity.reflection_assessment %>
+  </p>
+
+  <div class="activity-subtitle">Duração</div>
+  <p class="activity-text">
+    <%= @activity.duration %>
   </p>
 
   <div class="activity-subtitle">Atividade Inspiradoras</div>
   <p class="activity-text">
       <ul>
-          <% @activity.inspirations do |inspiration| %>
-            <li><%= inspiration[:title] %></li>
+          <% @activity.inspirations.each do |inspiration| %>
+            <li><%= inspiration[:activity_two_id] %></li>
           <% end %>
         </ul>
   </p>
+
   <div class="activity-subtitle">Referências Externas</div>
   <p class="activity-text">
     <%= @activity.references %>
   </p>
+
 </div>
-
-
 
 <%= addthis_javascript(activity_url, @activity.title, @activity.description).html_safe %>
