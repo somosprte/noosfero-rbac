@@ -7,7 +7,7 @@ class ActivityGalleryPlugin::Activity
     @id = data[:id]
     @type = data[:type]
     data[:attributes].each { |key, value| send "#{key.to_s.underscore}=", value } if data[:attributes].present?
-    @image ||=  "data:image/png;base64," + Base64.encode64(image_builder["uploaded_data"].read) if image_builder.present?
+    @image ||=  "data:image/png;base64," + Base64.encode64(image_builder["uploaded_data"].read) if image_builder.present? && image_builder["uploaded_data"].present?
   end
 
   def tokenized_authors
