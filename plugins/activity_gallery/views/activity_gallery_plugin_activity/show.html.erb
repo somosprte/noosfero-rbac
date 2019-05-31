@@ -15,6 +15,7 @@
 
 <div class="activity-title"><%= @activity.title %></div>
 
+<% if logged_in? %>
 <div class="row activity-exp-actions">
   <% like_class = @activity.liked ? 'liked' : 'unliked' %>
   <div class="<%= like_class %>">
@@ -26,8 +27,11 @@
     <% save_text = @activity.favorited ? _('Atividade Salva') : _('Salvar Atividade') %>
     <%= link_to(font_awesome(:save, save_text), {controller: 'activity_gallery_plugin_activity', action: 'toggle_save', id: params[:id]}) %>
   </div>
-
+  <div class="remix">
+    <%= link_to(font_awesome(:copy, _('Remixar Atividade')), "/galeria/remixar-atividade/#{params[:id]}")%>
+  </div>
 </div>
+<% end %>
 
 <div class="thumbnail-item">
 <%= image_tag("#{@activity.images[:original]}", alt: "", class: "group list-group-image") %>

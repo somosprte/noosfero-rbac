@@ -361,6 +361,7 @@
 
 // SAVED
 .saved,
+.remix,
 .unsaved {
   font-size: 20px;
   margin: 0 auto;
@@ -373,7 +374,12 @@
   color: #25ac3d;
 }
 
+.remix > a > i {
+  color: #25ac3d;
+}
+
 .saved > a,
+.remix > a,
 .unsaved > a {
   color: #000;
 
