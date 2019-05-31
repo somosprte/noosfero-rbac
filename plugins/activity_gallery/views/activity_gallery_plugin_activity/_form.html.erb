@@ -8,7 +8,7 @@
 
   <%= labelled_form_field(_('Título da Atividade'), text_area_tag('data[title]', @activity.title, placeholder: 'Título')) %>
   <%= labelled_form_field(_('Subtitulo'), text_area_tag('data[caption]', @activity.caption, placeholder: 'Sub titulo')) %> 
-  <%= file_field_or_thumbnail(_('Imagem de capa da Atividade:'), nil, 'data[image_builder]') %>
+  <%= file_field_or_thumbnail(_('Imagem de capa da Atividade:'), @activity.original_image, 'data[image_builder]') %>
   <%#= labelled_form_field(_('Imagem de capa da Atividade')+': ', file_field_tag('data[image_builder]') ) %>
   <%= labelled_form_field(_('Autor(es)')+': ', token_input_field_tag('data[authors]', 'search-authors', {:controller => 'activity_gallery_plugin_activity', :action => 'search_authors'}, {:focus => false, :hint_text => _('Digite o nome do autor'), :pre_populate => @activity.tokenized_authors})
   ) %>

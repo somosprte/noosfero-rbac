@@ -26,6 +26,13 @@ class ActivityGalleryPlugin::Activity
     authors.present? && authors.any? { |author| author[:email] == person.email }
   end
 
+  def original_image
+    if images.present? && images[:original].present?
+      uploaded_data = Rack::Test::UploadedFile.new(open(images[:original]).path, 'image/jpeg')
+      Image.create!(uploaded_data: uploaded_data)
+    end
+  end
+
   def body
     result = {"activity" => {
       "title" => title,
