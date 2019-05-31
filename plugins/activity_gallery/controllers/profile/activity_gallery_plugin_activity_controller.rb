@@ -11,7 +11,7 @@ class ActivityGalleryPluginActivityController < ProfileController
         else
             get('gallery/v1/activities/?per=50')
         end.map { |activity| ActivityGalleryPlugin::Activity.new(activity) }
-        @results = @activities.paginate(page: params[:page] || 1, per_page: 4)
+        @results = @activities.paginate(page: params[:page] || 1, per_page: 6)
     end
 
     def saved_activities
