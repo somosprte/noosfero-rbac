@@ -51,12 +51,7 @@ class ActivityGalleryPlugin::Activity
       "space_type_ids" => space_types,
       "person_ids" => authors.try(:split, ','),
       "specific_materials" => specific_materials,
-      "general_materials" => [
-        {
-        "id": "9c65a353-497a-42ed-9631-38f68c6862b0",
-        "quantity": 11
-      }
-      ]
+      "general_materials" => general_materials.map(&:to_h)
     }}
     result['activity']['image'] = image if image.present?
     result
