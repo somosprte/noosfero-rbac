@@ -22,10 +22,10 @@
     <% like_text = @activity.liked ? _('Atividade Curtida') : _('Curtir Atividade') %>
     <%= link_to(font_awesome(:heart, like_text), {controller: 'activity_gallery_plugin_activity', action: 'toggle_like', id: params[:id]}) %>
   </div> -->
-  <% save_class = @activity.favorited ? 'saved' : 'unsaved' %>
-  <div class="<%= save_class %>">
-    <% save_text = @activity.favorited ? _('Atividade Salva') : _('Salvar Atividade') %>
-    <%= link_to(font_awesome(:save, save_text), {controller: 'activity_gallery_plugin_activity', action: 'toggle_save', id: params[:id]}) %>
+  <% like_class = @activity.favorited ? 'liked' : 'unliked' %>
+  <div class="<%= like_class %>">
+    <% like_text = @activity.favorited ? _('Curtida') : _('Curtir') %>
+    <%= link_to(font_awesome(:heart, like_text), {controller: 'activity_gallery_plugin_activity', action: 'toggle_save', id: params[:id]}) %>
   </div>
   <div class="remix">
     <%= link_to(font_awesome(:copy, _('Remixar Atividade')), "/galeria/remixar-atividade/#{params[:id]}")%>
