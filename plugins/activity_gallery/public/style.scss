@@ -1,6 +1,10 @@
-#show-activity {
-  width: 70%;
-  margin: 0 auto;
+.sidebar-title {
+  background: #25ac3d;
+  padding: 20px;
+  margin-bottom: 10px;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
 }
 
 #article .upload-files {
@@ -367,7 +371,7 @@
   margin: 0 auto;
 }
 .saved > a > i {
-  color:#3B5998;
+  color: #3b5998;
 }
 
 .unsaved > a > i {
@@ -390,4 +394,51 @@
 
 #show-activity .noosfero-dropdown-menu {
   position: initial !important;
+}
+
+.implement-card {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+  background-color: #fff;
+  border-radius: 4px 4px 5px 5px;
+  box-shadow: 0 3px 1px rgba(0, 0, 0, 0.06);
+  margin: 0 auto;
+  max-width: 600px;
+  min-width: 250px;
+  position: relative;
+  transition: box-shadow 300ms linear;
+  z-index: 1;
+  margin-bottom: 15px;
+}
+
+.implement-meta {
+  justify-content: flex-start;
+  margin-top: 0.25em;
+  margin-bottom: 1em;
+  flex-wrap: wrap;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  padding: 10px;
+}
+.implement-meta li {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: baseline;
+  justify-content: center;
+  margin-right: 1.5em;
+  padding: 0.15em 0;
+  height: auto;
+  margin-top: auto;
+  opacity: 1;
+  visibility: visible;
+  margin: 0 auto;
+}
+
+.implement-description {
+  padding: 10px;
+  text-align: justify;
 }

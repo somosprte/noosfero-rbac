@@ -2,7 +2,7 @@ module ActivityGalleryPlugin::Helper
 
     def activity_actions(activity, user)
         actions = [
-            # link_to(font_awesome(:clone, _('Remixar')), "/galeria/remixar-atividade/#{params[:id]}")
+            link_to(font_awesome(:clone, _('Remixar')), "/galeria/remixar-atividade/#{params[:id]}")
         ]
         if activity.is_author?(user)
             actions += [
