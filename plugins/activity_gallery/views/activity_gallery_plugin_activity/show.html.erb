@@ -45,7 +45,12 @@
       <p class="activity-text"></p>
       <ul>
         <% @activity.authors.each do |author| %>
-        <li><%#= link_to(author[:name], environment.users.where(email: author[:email]).first.person.url) %></li>
+          <% user_author = environment.users.where(email: author[:email]).first %>
+          <% if user_author.present? %>
+            <li><%= link_to(author[:name], user_author.person.url) %></li>
+          <% else %>
+            <li><%= author[:name] %></li>
+          <% end %>
         <% end %>
       </ul>
       <div class="activity-subtitle">Descrição</div>
