@@ -44,14 +44,12 @@
       <div class="activity-subtitle">Autor(es)</div>
       <p class="activity-text"></p>
       <ul>
-        <% @activity.authors.each do |author| %>
-          <% user_author = environment.users.where(email: author[:email]).first %>
-          <% if user_author.present? %>
-            <li><%= link_to(author[:name], user_author.person.url) %></li>
-          <% else %>
-            <li><%= author[:name] %></li>
-          <% end %>
-        <% end %>
+        <% @activity.authors.each do |author| %> <% user_author = environment.users.where(email: author[:email]).first
+        %> <% if user_author.present? %>
+        <li><%= link_to(author[:name], user_author.person.url) %></li>
+        <% else %>
+        <li><%= author[:name] %></li>
+        <% end %> <% end %>
       </ul>
       <div class="activity-subtitle">Descrição</div>
       <p class="activity-text">
@@ -133,9 +131,23 @@
       </p>
 
       <div class="activity-subtitle">Materiais Gerais</div>
-      <p class="activity-text">
-        <!-- <%= @activity.requirements %> -->
-      </p>
+      <p class="activity-text"></p>
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Quantidade</th>
+          </tr>
+        </thead>
+        <tbody>
+            <% @activity.general_materials.each do |general_material| %>
+            <tr>
+              <td><%= general_material[:name] %></td>
+              <td><%= general_material[:quantity] || 0 %></td>
+            </tr>
+            <% end %>
+        </tbody>
+      </table>
 
       <div class="activity-subtitle">Materiais Específicos</div>
       <p class="activity-text">
