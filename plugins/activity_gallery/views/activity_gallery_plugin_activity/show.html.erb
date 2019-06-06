@@ -26,7 +26,7 @@
         <%= link_to(font_awesome(:copy, _('Remixar')), "/galeria/remixar-atividade/#{params[:id]}")%>
       </div>
       <div class="remix">
-        <%= link_to(font_awesome(:task, _('Implementei')), "#")%>
+        <%= modal_link_to(font_awesome(:task, _('Implementei')), "/galeria/implementar-atividade/#{params[:id]}")%>
       </div>
     </div>
     <% end %>

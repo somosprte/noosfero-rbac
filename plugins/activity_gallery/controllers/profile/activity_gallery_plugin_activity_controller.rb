@@ -51,6 +51,15 @@ class ActivityGalleryPluginActivityController < ProfileController
         @page = @activity
     end
 
+    def implement
+    end
+
+    def send_implementation
+        result = ActivityGalleryPlugin::Request.post("/gallery/v1/activities/#{params['id']}/implement", params[:implementation], session['activity_gallery_plugin_jwt'])
+        resultado = JSON.parse(result.body,symbolize_names:true)
+        redirect_to "/galeria/#{params[:id]}"
+    end
+
     def create
         activity = ActivityGalleryPlugin::Activity.new({attributes: params[:data]})
         activity.ensure_author(session['activity_gallery_plugin_user_id'])

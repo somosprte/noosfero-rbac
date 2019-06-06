@@ -62,6 +62,7 @@ class ActivityGalleryPlugin < Noosfero::Plugin
       get "/galeria/nova-atividade", to: 'activity_gallery_plugin_activity#new', defaults: {profile: 'portal'}
       get "/galeria/editar-atividade/:id", to: 'activity_gallery_plugin_activity#edit', defaults: {profile: 'portal'}
       get "/galeria/remixar-atividade/:id", to: 'activity_gallery_plugin_activity#remix', defaults: {profile: 'portal'}
+      get "/galeria/implementar-atividade/:id", to: 'activity_gallery_plugin_activity#implement', defaults: {profile: 'portal'}
       get "/sobre", to: 'activity_gallery_plugin_activity#about', defaults: {profile: 'portal'}
       get "/galeria/:id", to: 'activity_gallery_plugin_activity#show', defaults: {profile: 'portal'}
     end
