@@ -10,6 +10,13 @@ class ActivityGalleryPlugin::Activity
     @image ||=  "data:image/png;base64," + Base64.encode64(image_builder["uploaded_data"].read) if image_builder.present? && image_builder["uploaded_data"].present?
   end
 
+  def ensure_author(id)
+    if authors.blank? || !authors.split(',').any? { |i| i == id }
+      self.authors ||= ''
+      self.authors = (authors.split(',') << id).join(',')
+    end
+  end
+
   def tokenized_authors
     authors.map { |author| {:id => author[:id], :name => author[:name]} } if authors.present?
   end

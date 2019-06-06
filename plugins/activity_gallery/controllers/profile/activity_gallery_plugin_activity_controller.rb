@@ -35,6 +35,7 @@ class ActivityGalleryPluginActivityController < ProfileController
 
     def new
         @activity = ActivityGalleryPlugin::Activity.new
+        @activity.authors = [{ id: session['activity_gallery_plugin_user_id'], name: user.name, email: user.email }]
     end
 
     def edit
@@ -45,18 +46,21 @@ class ActivityGalleryPluginActivityController < ProfileController
     def remix
         @activity = ActivityGalleryPlugin::Activity.new(get("gallery/v1/activities/#{params['id']}"))
         @activity.title += ' Remixada'
+        @activity.authors = [{ id: session['activity_gallery_plugin_user_id'], name: user.name, email: user.email }]
         # @activity.inspirations = [params['id']]
         @page = @activity
     end
 
     def create
         activity = ActivityGalleryPlugin::Activity.new({attributes: params[:data]})
+        activity.ensure_author(session['activity_gallery_plugin_user_id'])
         result = create_activity(activity)
         redirect_to "/galeria/#{result[:id]}"
     end
 
     def update
         activity = ActivityGalleryPlugin::Activity.new({attributes: params[:data]})
+        activity.ensure_author(session['activity_gallery_plugin_user_id'])
         result = update_activity(params[:id], activity)
         redirect_to "/galeria/#{result[:id]}"
     end
