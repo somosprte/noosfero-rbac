@@ -1,6 +1,6 @@
 <% jwt = session['activity_gallery_plugin_jwt'] %>
 
-<%= form_tag({action: action}, {multipart: true, class: "activity-form" }) do %>
+<%= form_tag({action: action}, {multipart: true, id: "activity-form" }) do %>
 <div class="form-title">Informações da Atividade</div>
 <%= hidden_field_tag('id', params[:id]) %>
 <div class="form-content">
