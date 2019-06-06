@@ -145,7 +145,7 @@
             <% @activity.general_materials.each do |general_material| %>
             <tr>
               <td><%= general_material[:name] %></td>
-              <td><%= general_material[:quantity] || 0 %></td>
+              <td><%= general_material[:activity_general_materials][0][:quantity] || 0 %></td>
             </tr>
             <% end %>
         </tbody>
