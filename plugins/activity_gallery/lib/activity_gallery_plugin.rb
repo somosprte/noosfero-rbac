@@ -30,20 +30,25 @@ class ActivityGalleryPlugin < Noosfero::Plugin
         if logged_in?
           body = {
             "auth" => {
-              "username" => user.user.email,
+              "username" => user.email,
               "password" => user.user.crypted_password
             }
           }
           response = ActivityGalleryPlugin::Request.post('auth/v1/users/login', body)
           if response.code == '200'
-            jwt = JSON.parse(response.body,symbolize_names:true)[:jwt]
-            session['activity_gallery_plugin_jwt'] = jwt
+            data = JSON.parse(response.body,symbolize_names:true)
           elsif response.code == '400'
             ActivityGalleryPlugin.new.person_after_create_callback(user)
             response = ActivityGalleryPlugin::Request.post('auth/v1/users/login', body)
-            jwt = JSON.parse(response.body,symbolize_names:true)[:jwt]
-            session['activity_gallery_plugin_jwt'] = jwt
+            data = JSON.parse(response.body,symbolize_names:true)
           end
+          session['activity_gallery_plugin_jwt'] = data[:jwt]
+          # session['activity_gallery_plugin_user_id'] = data[:id]
+
+          response = ActivityGalleryPlugin::Request.get('/user/v1/people/', nil, session['activity_gallery_plugin_jwt'])
+          data = JSON.parse(response.body,symbolize_names:true)[:data]
+          id = data.select { |u| u[:attributes][:email] == user.email }.first[:id]
+          session['activity_gallery_plugin_user_id'] = id
         end
       }
     }
