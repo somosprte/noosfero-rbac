@@ -1,0 +1,8 @@
+<%= form_tag({action: 'comment'}, {id: "comment-form" }) do %>
+    <%= hidden_field_tag('id', params[:id]) %>
+    <div class="activity-subtitle">Comentários</div>
+    <%= text_area_tag('comment[text]', nil, rows: 3, placeholder: 'Escreva seu comentário') %>
+    <%= button_bar do %>
+        <%= submit_button(:edit, _('Comentar')) %>
+    <% end %>
+<% end %>
