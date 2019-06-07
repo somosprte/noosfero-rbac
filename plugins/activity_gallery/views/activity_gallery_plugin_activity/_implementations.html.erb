@@ -1,126 +1,40 @@
+<div class="col-md-3 show-implemented">
+  <div class="sidebar-title">
+    Quem implementou essa atividade?
+  </div>
+  <div class="implement-card">
+    <ul class="implement-meta">
+      <li>
+        <i class="fa fa-user" aria-hidden="true"></i>
+        <% @activity.authors.each do |author| %>
+          <% user_author = environment.users.where(email: author[:email]).first %>
+          <% if user_author.present? %>
+            <li><%= link_to(user_author.person.name, user_author.person.url) %></li>
+          <% else %>
+            <li><%= author[:name] %></li>
+          <% end %>
+        <% end %>
+      </li>
+      <li><i class="fa fa-calendar" aria-hidden="true"></i>
+        <% @activity.implementations.each do |implements| %>
+      <p><%= implements[:description] %></p>
+      <% end %>
+      </li>
+    </ul>
 
-  <div class="col-md-3 show-implemented">
-        <div class="sidebar-title">
-          Quem implementou essa atividade?
-        </div>
-        <div class="implement-card">
-          <ul class="implement-meta">
-            <li>
-              <i class="fa fa-user" aria-hidden="true"></i>
-              <a href="https://www.imdb.com/name/nm0001008/?ref_=tt_ov_dr" target="_blank">Nome do Usuário</a>
-            </li>
-            <li><i class="fa fa-calendar" aria-hidden="true"></i>20 Abril 2019</li>
-          </ul>
-    
-          <div class="implement-description">
-            <p>Local da Implementação: Espaço Maker</p>
-            <p>Quantidade de Participantes: 20</p>
-            <p>Descrição da Implementação:</p>
-            <p>
-              Mussum Ipsum, cacilds vidis litro abertis. Sapien in monti palavris qui num significa nadis i pareci latim.
-              Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Admodum accumsan
-              disputationi eu sit. Vide electram sadipscing et per. Mé faiz elementum girarzis, nisi eros vermeio.
-            </p>
-          </div>
-        </div>
-        <div class="implement-card">
-          <ul class="implement-meta">
-            <li>
-              <i class="fa fa-user" aria-hidden="true"></i>
-              <a href="https://www.imdb.com/name/nm0001008/?ref_=tt_ov_dr" target="_blank">Nome do Usuário</a>
-            </li>
-            <li><i class="fa fa-calendar" aria-hidden="true"></i>20 Abril 2019</li>
-          </ul>
-    
-          <div class="implement-description">
-            <p>Local da Implementação: Espaço Maker</p>
-            <p>Quantidade de Participantes: 20</p>
-            <p>Descrição da Implementação:</p>
-            <p>
-              Mussum Ipsum, cacilds vidis litro abertis. Sapien in monti palavris qui num significa nadis i pareci latim.
-              Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Admodum accumsan
-              disputationi eu sit. Vide electram sadipscing et per. Mé faiz elementum girarzis, nisi eros vermeio.
-            </p>
-          </div>
-        </div>
-        <div class="implement-card">
-          <ul class="implement-meta">
-            <li>
-              <i class="fa fa-user" aria-hidden="true"></i>
-              <a href="https://www.imdb.com/name/nm0001008/?ref_=tt_ov_dr" target="_blank">Nome do Usuário</a>
-            </li>
-            <li><i class="fa fa-calendar" aria-hidden="true"></i>20 Abril 2019</li>
-          </ul>
-    
-          <div class="implement-description">
-            <p>Local da Implementação: Espaço Maker</p>
-            <p>Quantidade de Participantes: 20</p>
-            <p>Descrição da Implementação:</p>
-            <p>
-              Mussum Ipsum, cacilds vidis litro abertis. Sapien in monti palavris qui num significa nadis i pareci latim.
-              Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Admodum accumsan
-              disputationi eu sit. Vide electram sadipscing et per. Mé faiz elementum girarzis, nisi eros vermeio.
-            </p>
-          </div>
-        </div>
-        <div class="implement-card">
-          <ul class="implement-meta">
-            <li>
-              <i class="fa fa-user" aria-hidden="true"></i>
-              <a href="https://www.imdb.com/name/nm0001008/?ref_=tt_ov_dr" target="_blank">Nome do Usuário</a>
-            </li>
-            <li><i class="fa fa-calendar" aria-hidden="true"></i>20 Abril 2019</li>
-          </ul>
-    
-          <div class="implement-description">
-            <p>Local da Implementação: Espaço Maker</p>
-            <p>Quantidade de Participantes: 20</p>
-            <p>Descrição da Implementação:</p>
-            <p>
-              Mussum Ipsum, cacilds vidis litro abertis. Sapien in monti palavris qui num significa nadis i pareci latim.
-              Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Admodum accumsan
-              disputationi eu sit. Vide electram sadipscing et per. Mé faiz elementum girarzis, nisi eros vermeio.
-            </p>
-          </div>
-        </div>
-        <div class="implement-card">
-          <ul class="implement-meta">
-            <li>
-              <i class="fa fa-user" aria-hidden="true"></i>
-              <a href="https://www.imdb.com/name/nm0001008/?ref_=tt_ov_dr" target="_blank">Nome do Usuário</a>
-            </li>
-            <li><i class="fa fa-calendar" aria-hidden="true"></i>20 Abril 2019</li>
-          </ul>
-    
-          <div class="implement-description">
-            <p>Local da Implementação: Espaço Maker</p>
-            <p>Quantidade de Participantes: 20</p>
-            <p>Descrição da Implementação:</p>
-            <p>
-              Mussum Ipsum, cacilds vidis litro abertis. Sapien in monti palavris qui num significa nadis i pareci latim.
-              Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Admodum accumsan
-              disputationi eu sit. Vide electram sadipscing et per. Mé faiz elementum girarzis, nisi eros vermeio.
-            </p>
-          </div>
-        </div>
-        <div class="implement-card">
-          <ul class="implement-meta">
-            <li>
-              <i class="fa fa-user" aria-hidden="true"></i>
-              <a href="https://www.imdb.com/name/nm0001008/?ref_=tt_ov_dr" target="_blank">Nome do Usuário</a>
-            </li>
-            <li><i class="fa fa-calendar" aria-hidden="true"></i>20 Abril 2019</li>
-          </ul>
-    
-          <div class="implement-description">
-            <p>Local da Implementação: Espaço Maker</p>
-            <p>Quantidade de Participantes: 20</p>
-            <p>Descrição da Implementação:</p>
-            <p>
-              Mussum Ipsum, cacilds vidis litro abertis. Sapien in monti palavris qui num significa nadis i pareci latim.
-              Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Admodum accumsan
-              disputationi eu sit. Vide electram sadipscing et per. Mé faiz elementum girarzis, nisi eros vermeio.
-            </p>
-          </div>
-        </div>
-      </div>
+    <div class="implement-description">
+      <p>Local da Implementação:</p>
+      <% @activity.implementations.each do |implements| %>
+      <p><%= implements[:place_implementation] %></p>
+      <% end %>
+      <p>Quantidade de Participantes:</p>
+      <% @activity.implementations.each do |implements| %>
+      <p><%= implements[:number_participants] %></p>
+      <% end %>
+      <p>Descrição da Implementação:</p>
+      <% @activity.implementations.each do |implements| %>
+      <p><%= implements[:description] %></p>
+      <% end %>
+    </div>
+  </div>
+</div>
