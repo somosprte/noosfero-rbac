@@ -3,7 +3,7 @@
     <%= hidden_field_tag('id', params[:id]) %>
     <div class="form-content">
         <%= labelled_form_field(_('Data'), date_field('implementation[date_implementation]', nil, {:change_month => true, :change_year => true, :year_range => '-100:-0', :default_date => Date.today.strftime('%F'), :max_date => '+0d' }, {:id => 'implementation_date'})) %>
-        <%= labelled_form_field(_('Local'), text_field_tag('implementation[place_implementation]', nil, placeholder: 'Local de Implementação')) %>
+        <%= labelled_form_field(_('Título'), text_field_tag('implementation[place_implementation]', nil, placeholder: 'Título da Implementação')) %>
         <%= labelled_form_field(_('Participantes'), number_field_tag('implementation[number_participants]', 0)) %>
         <%= labelled_form_field(_('Descrição'), text_area_tag('implementation[description]', nil, placeholder: 'Descrição da Implementação')) %>
     </div>
