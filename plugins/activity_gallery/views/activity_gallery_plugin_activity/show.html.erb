@@ -3,15 +3,6 @@
 <div class="row show-activities">
   <div class="col-md-9" id="show-activity">
     <div class="form-title">Detalhes da Atividade</div>
-    <% if logged_in? %>
-    <div class="activity-options">
-      <%= link_to font_awesome(:ellipsis), '#!', class: 'menu-toggle', id: 'article-options' %>
-      <ul class="noosfero-dropdown-menu" id="article-options-dropdown">
-        <% activity_actions(@activity, user).each do |action| %> <%= content_tag(:li, action) unless action.blank? %> <%
-        end %>
-      </ul>
-    </div>
-    <% end %>
 
     <div class="activity-title"><%= @activity.title %></div>
 
@@ -25,9 +16,17 @@
       <div class="remix">
         <%= link_to(font_awesome(:copy, _('Remixar')), "/galeria/remixar-atividade/#{params[:id]}")%>
       </div>
-      <div class="remix">
+      <div class="implement">
         <%= modal_link_to(font_awesome(:task, _('Implementei')), "/galeria/implementar-atividade/#{params[:id]}")%>
       </div>
+      <% if @activity.is_author?(user) %>
+        <div class="edit">
+          <%= link_to(font_awesome(:edit, _('Editar')), "/galeria/remixar-atividade/#{params[:id]}")%>
+        </div>
+        <div class="destroy">
+          <%= link_to(font_awesome(:trash, _('Remove')), {controller: 'activity_gallery_plugin_activity', action: 'destroy', id: params[:id]}, {data: {confirm: _('Você tem certeza que deseja excluir essa atividade?')}})%>
+        </div>
+      <% end %>
     </div>
     <% end %>
 
