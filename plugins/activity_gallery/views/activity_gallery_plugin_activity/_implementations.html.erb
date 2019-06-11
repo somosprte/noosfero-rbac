@@ -10,7 +10,11 @@
       <% end %>
     </li>
     <li><strong>Título da Implementação:</strong> <%= implements[:place_implementation] %></li>
-    <li><strong>Data da Implementação:</strong> <%= implements[:date_implementation] %></li>
+    <li><strong>Data da Implementação:</strong>
+      <% require 'date' %>
+      <% date = DateTime.parse(implements[:date_implementation]) %>
+      <%= formatted_date = date.strftime('%d/%m/%Y') %>
+    </li>
     <li><strong>Quantidade de Participantes:</strong> <%= implements[:number_participants] %></li>
     <li><strong>Descrição da Implementação:</strong> <%= implements[:description] %></li>
   </ul>
