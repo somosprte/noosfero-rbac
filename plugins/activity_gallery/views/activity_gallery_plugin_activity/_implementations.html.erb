@@ -7,7 +7,12 @@
     <ul class="implement-meta">
       <li>
         <i class="fa fa-user" aria-hidden="true"></i>
+        <% iauthor = environment.users.where(email: implements[:person][:email]).first %>
+        <% if iauthor.present? %>
+            <%= link_to(iauthor.person.name, iauthor.person.url) %>
+        <% else %>
         <p><%= implements[:person][:name] %></p>
+        <% end %>
       </li>
       <li><i class="fa fa-calendar" aria-hidden="true"></i>
         <p><%= implements[:date_implementation] %></p>
