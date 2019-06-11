@@ -9,5 +9,10 @@
     </div>
     <div class="comment-text">
         <%= comment[:text] %>
+        <p></p>
+        <p><strong>Comentário criado em:</strong>
+        <% require 'date' %>
+        <% date = DateTime.parse(comment[:created_at]) %>
+        <%= formatted_date = date.strftime('%d/%m/%Y %H:%M:%S') %> </p>
     </div>
 </div>
