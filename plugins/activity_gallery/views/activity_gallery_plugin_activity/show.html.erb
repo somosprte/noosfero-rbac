@@ -14,7 +14,7 @@
       <div class="<%= like_class %>">
         <% like_text = @activity.favorited ? _('Curtida') : _('Curtir') %> <%= link_to(font_awesome(:heart, like_text),
         {controller: 'activity_gallery_plugin_activity', action: 'toggle_save', id: params[:id]}) %>
-        ( <%= @activity.total_likes %> )
+        (<%= @activity.total_likes %>)
       </div>
       <div class="remix">
         <%= link_to(font_awesome(:copy, _('Remixar')), "/galeria/remixar-atividade/#{params[:id]}")%>
@@ -190,7 +190,7 @@
       </div>
     
       <input name="tabs" type="radio" id="tab-2" class="input"/>
-      <label for="tab-2" class="label">Comentários ( <%= @activity.total_comments %> ) </label>
+      <label for="tab-2" class="label">Comentários (<%= @activity.total_comments %>) </label>
       <div class="panel">
         <%= render partial: 'comment_form' %>
         <div class="comments">
@@ -199,7 +199,7 @@
       </div>
     
       <input name="tabs" type="radio" id="tab-3" class="input"/>
-      <label for="tab-3" class="label">Implementações ( <%= @activity.total_implementations %> ) </label>
+      <label for="tab-3" class="label">Implementações (<%= @activity.total_implementations %>) </label>
       <div class="panel">
         <%= render partial: 'implementations' %>
       </div>
