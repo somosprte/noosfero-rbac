@@ -7,35 +7,20 @@
     <ul class="implement-meta">
       <li>
         <i class="fa fa-user" aria-hidden="true"></i>
-        <% @activity.authors.each do |author| %>
-          <% user_author = environment.users.where(email: author[:email]).first %>
-          <% if user_author.present? %>
-            <li><%= link_to(user_author.person.name, user_author.person.url) %></li>
-          <% else %>
-            <li><%= author[:name] %></li>
-          <% end %>
-        <% end %>
+        <p><%= implements[:person][:name] %></p>
       </li>
       <li><i class="fa fa-calendar" aria-hidden="true"></i>
-        <% @activity.implementations.each do |implements| %>
-      <p><%= implements[:date_implementation] %></p>
-      <% end %>
+        <p><%= implements[:date_implementation] %></p>
       </li>
     </ul>
 
     <div class="implement-description">
       <p>Título da Implementação:</p>
-      <% @activity.implementations.each do |implements| %>
       <p><%= implements[:place_implementation] %></p>
-      <% end %>
       <p>Quantidade de Participantes:</p>
-      <% @activity.implementations.each do |implements| %>
       <p><%= implements[:number_participants] %></p>
-      <% end %>
       <p>Descrição da Implementação:</p>
-      <% @activity.implementations.each do |implements| %>
       <p><%= implements[:description] %></p>
-      <% end %>
     </div>
   </div>
   <% end %>
