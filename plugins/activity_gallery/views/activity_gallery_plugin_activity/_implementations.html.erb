@@ -2,6 +2,7 @@
   <div class="sidebar-title">
     Quem implementou essa atividade?
   </div>
+  <% @activity.implementations.each do |implements| %>
   <div class="implement-card">
     <ul class="implement-meta">
       <li>
@@ -37,4 +38,5 @@
       <% end %>
     </div>
   </div>
+  <% end %>
 </div>
