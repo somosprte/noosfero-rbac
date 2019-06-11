@@ -140,15 +140,15 @@
           <table>
             <thead>
               <tr>
-                <th>Nome</th>
                 <th>Quantidade</th>
+                <th>Nome</th>
               </tr>
             </thead>
             <tbody>
                 <% @activity.general_materials.each do |general_material| %>
                 <tr>
-                  <td><%= general_material[:name] %></td>
                   <td><%= general_material[:activity_general_materials][0][:quantity] || 0 %></td>
+                  <td><%= general_material[:name] %></td>
                 </tr>
                 <% end %>
             </tbody>
