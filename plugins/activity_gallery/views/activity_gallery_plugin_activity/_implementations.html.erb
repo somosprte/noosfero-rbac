@@ -1,32 +1,18 @@
-<div class="col-md-3 show-implemented">
-  <div class="sidebar-title">
-    Quem implementou essa atividade?
-  </div>
-  <% @activity.implementations.each do |implements| %>
-  <div class="implement-card">
-    <ul class="implement-meta">
-      <li>
-        <i class="fa fa-user" aria-hidden="true"></i>
-        <% iauthor = environment.users.where(email: implements[:person][:email]).first %>
-        <% if iauthor.present? %>
-            <%= link_to(iauthor.person.name, iauthor.person.url) %>
-        <% else %>
-        <p><%= implements[:person][:name] %></p>
-        <% end %>
-      </li>
-      <li><i class="fa fa-calendar" aria-hidden="true"></i>
-        <p><%= implements[:date_implementation] %></p>
-      </li>
-    </ul>
-
-    <div class="implement-description">
-      <p>Título da Implementação:</p>
-      <p><%= implements[:place_implementation] %></p>
-      <p>Quantidade de Participantes:</p>
-      <p><%= implements[:number_participants] %></p>
-      <p>Descrição da Implementação:</p>
-      <p><%= implements[:description] %></p>
-    </div>
-  </div>
-  <% end %>
+<% @activity.implementations.each do |implements| %>
+<div class="implementations">
+  <ul>
+    <li>
+      <strong>Autor(es):</strong>
+      <% iauthor = environment.users.where(email: implements[:person][:email]).first %> <% if iauthor.present? %> <%=
+      link_to(iauthor.person.name, iauthor.person.url) %> 
+      <% else %>
+        <%= implements[:person][:name] %>
+      <% end %>
+    </li>
+    <li><strong>Título da Implementação:</strong> <%= implements[:place_implementation] %></li>
+    <li><strong>Data da Implementação:</strong> <%= implements[:date_implementation] %></li>
+    <li><strong>Quantidade de Participantes:</strong> <%= implements[:number_participants] %></li>
+    <li><strong>Descrição da Implementação:</strong> <%= implements[:description] %></li>
+  </ul>
 </div>
+<% end %>
