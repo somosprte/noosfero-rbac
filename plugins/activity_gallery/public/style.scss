@@ -499,4 +499,12 @@ input[type='radio'] {
   margin: 0 auto;
   padding: 0px !important;
   width: auto;
+  float: left;
+}
+
+label{
+  display: block !important;
+  text-align: left;
+  line-height: 15px;
+  padding-left: 20px;
 }
