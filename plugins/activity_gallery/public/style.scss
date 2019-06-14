@@ -265,7 +265,10 @@
 }
 
 .formlabel {
-  text-align: left;
+  background-color: #25ac3d;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
 }
 
 // Sidebar Menu
@@ -489,4 +492,11 @@
 }
 .input:checked + .label + .panel {
   display: block;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  margin: 0 auto;
+  padding: 0px !important;
+  width: auto;
 }
