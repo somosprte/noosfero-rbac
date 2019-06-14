@@ -22,7 +22,7 @@ class ActivityGalleryPlugin::Activity
   end
 
   def tokenized_inspirations
-    inspirations.map { |inspiration| {:id => inspiration[:id], :name => inspiration[:name]} } if inspirations.present?
+    inspirations.map { |inspiration| {:id => inspiration[:activity_two_id], :name => inspiration[:title]} } if inspirations.present?
   end
 
   def check(object_type, object_id)
