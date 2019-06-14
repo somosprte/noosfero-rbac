@@ -6,11 +6,8 @@ class ActivityGalleryPluginActivityController < ProfileController
     skip_before_action :logged_user, only: %i[index show]
 
     def index
-        @activities = if params[:search]
-            get("gallery/v1/activities?global=#{params[:search]}")
-        else
-            get('gallery/v1/activities/?per=50')
-        end.map { |activity| ActivityGalleryPlugin::Activity.new(activity) }
+        @activities = get("gallery/v1/activities/#{build_search_params}").
+            map { |activity| ActivityGalleryPlugin::Activity.new(activity) }
         @results = @activities.paginate(page: params[:page] || 1, per_page: 6)
     end
 
@@ -115,6 +112,20 @@ class ActivityGalleryPluginActivityController < ProfileController
     end
 
     private
+
+    def build_search_params
+        @search_params = {}
+        @search_params["per"] = '50'
+        @search_params["global"] = params["search"] if params["search"].present?
+        @search_params["scope_ids"] = params["scopes"].join(',') if params["scopes"].present?
+        @search_params["author_ids"] = params["authors"] if params["authors"].present?
+        @search_params["audience_ids"] = params["audiences"].join(',') if params["audiences"].present?
+        @search_params["space_type_ids"] = params["space_types"].join(',') if params["space_types"].present?
+
+        '?' + @search_params.map do |key, value|
+            "#{key}=#{value}"
+        end.join('&')
+    end
 
     def logged_user
         if !logged_in?

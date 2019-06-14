@@ -1,27 +1,22 @@
 <div class="form-title">Galeria de Atividades</div>
-
-<div class="container">
-  <div class="row">
-    <div class="col-md-3 activity-filter-options">
-      <div id="activity-filter-menu">
-        <ul class="uk-nav uk-nav-side">
-          <li>BUSCA AVANÇADA</li>
-        </ul>
+<%= form_tag("/galeria", method: :get) do %>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 activity-filter-options">
+          <%= render partial: 'advanced_filter' %>
       </div>
-    </div>
-    <div class="col-md-6">
-      <div class="wrap">
-        <div class="search">
-          <%= form_tag("/galeria", method: :get) do %> <%= text_field_tag(:search, params[:search], class:"searchTerm")
-          %>
-          <button type="submit" class="searchButton">
-            <i class="fa fa-search"></i>
-          </button>
-          <% end %>
+      <div class="col-md-6">
+        <div class="wrap">
+          <div class="search">
+            <%= text_field_tag(:search, params[:search], class:"searchTerm") %>
+            <button type="submit" class="searchButton">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
         </div>
+        <%= render partial: 'activities' %>
       </div>
-      <%= render partial: 'activities' %>
+      <%= render partial: 'nav' %>
     </div>
-    <%= render partial: 'nav' %>
   </div>
-</div>
+<% end %>

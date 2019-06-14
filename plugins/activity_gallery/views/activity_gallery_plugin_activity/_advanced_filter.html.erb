@@ -1,0 +1,24 @@
+<% jwt = session['activity_gallery_plugin_jwt'] %>
+
+<div id="user-api-menu">
+  <ul class="uk-nav uk-nav-side">
+    <li>BUSCA AVANÇADA</li>
+  </ul>
+</div>
+
+<%= labelled_form_field(_('Escopo')+': ', nil ) %>
+<% ActivityGalleryPlugin::Activity.get_scopes_options(jwt).map do |scope| %>
+  <%= labelled_check_box(scope[0], 'scopes[]', scope[1], nil, {add_hidden: false} )%>
+<% end %>
+
+<%= labelled_form_field(_('Autor(es)')+': ', token_input_field_tag('authors', 'search-authors', {:controller => 'activity_gallery_plugin_activity', :action => 'search_authors'}, {:focus => false, :hint_text => _('Digite o nome do autor')})) %>
+
+<%= labelled_form_field(_('Público-alvo')+': ', nil ) %>
+<% ActivityGalleryPlugin::Activity.get_audience_options(jwt).map do |audience| %>
+  <%= labelled_check_box(audience[0], 'audiences[]', audience[1], nil, {add_hidden: false} )%>
+<% end %>
+
+<%= labelled_form_field(_('Tipo de Espaço')+': ', nil ) %>
+<% ActivityGalleryPlugin::Activity.get_space_types_options(jwt).map do |space| %>
+  <%= labelled_check_box(space[0], 'space_types[]', space[1], nil, {add_hidden: false} )%>
+<% end %>
