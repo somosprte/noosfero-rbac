@@ -58,6 +58,13 @@ class ActivityGalleryPluginActivityController < ProfileController
         redirect_to "/galeria/#{result[:id]}"
     end
 
+    def create_remix
+        activity = ActivityGalleryPlugin::Activity.new({attributes: params[:data]})
+        activity.ensure_author(session['activity_gallery_plugin_user_id'])
+        result = remix_activity(params[:id], activity)
+        redirect_to "/galeria/#{result[:id]}"
+    end
+
     def update
         activity = ActivityGalleryPlugin::Activity.new({attributes: params[:data]})
         activity.ensure_author(session['activity_gallery_plugin_user_id'])
@@ -155,6 +162,11 @@ class ActivityGalleryPluginActivityController < ProfileController
 
     def update_activity(id, activity)
         result = ActivityGalleryPlugin::Request.put("gallery/v1/activities/#{id}", activity.body, session['activity_gallery_plugin_jwt'])
+        JSON.parse(result.body,symbolize_names:true)[:data]
+    end
+
+    def remix_activity(id, activity)
+        result = ActivityGalleryPlugin::Request.post("gallery/v1/activities/#{id}/remix", activity.body, session['activity_gallery_plugin_jwt'])
         JSON.parse(result.body,symbolize_names:true)[:data]
     end
 end
