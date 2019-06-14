@@ -24,7 +24,7 @@
       </div>
       <% if @activity.is_author?(user) %>
       <div class="edit">
-        <%= link_to(font_awesome(:edit, _('Editar')), "/galeria/remixar-atividade/#{params[:id]}")%>
+        <%= link_to(font_awesome(:edit, _('Editar')), "/galeria/editar-atividade/#{params[:id]}")%>
       </div>
       <div class="destroy">
         <%= link_to(font_awesome(:trash, _('Remove')), {controller: 'activity_gallery_plugin_activity', action: 'destroy', id: params[:id]}, {data: {confirm: _('Você tem certeza que deseja excluir essa atividade?')}})%>
