@@ -20,7 +20,7 @@
         <%= link_to(font_awesome(:copy, _('Remixar')), "/galeria/remixar-atividade/#{params[:id]}")%>
       </div>
       <div class="implement">
-        <%= modal_link_to(font_awesome(:task, _('Implementei')), "/galeria/implementar-atividade/#{params[:id]}")%>
+        <%= modal_link_to(font_awesome(:task, _('Implementei!')), "/galeria/implementar-atividade/#{params[:id]}")%>
       </div>
       <% if @activity.is_author?(user) %>
       <div class="edit">
