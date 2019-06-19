@@ -2,7 +2,10 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-md-9">
+      <div class="col-md-3 activity-filter-options">
+          <%= render partial: 'advanced_filter' %>
+      </div>
+    <div class="col-md-6">
       <%= render partial: 'activities' %>
     </div>
     <%= render partial: 'nav' %>
