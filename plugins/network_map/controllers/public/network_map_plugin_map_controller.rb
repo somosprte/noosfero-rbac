@@ -1,4 +1,6 @@
 class NetworkMapPluginMapController < PublicController
+    
+    no_design_blocks
 
     def index
         @query = params[:query]
