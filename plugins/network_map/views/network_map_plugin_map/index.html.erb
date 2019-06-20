@@ -1,17 +1,27 @@
 
 <%= content_tag('script', '', :src => "https://maps.google.com/maps/api/js?sensor=true&key=#{GoogleMaps.js_api_key}", :type => 'text/javascript') %>
 <%= javascript_include_tag('google_maps') %>
-
+<div class="container">
+<div class="row">
+<div class="col-md3">
 <%= form_tag( { :controller => 'network_map_plugin_map' }, :class => 'map_form' ) do %>
-    <%= labelled_form_field(_('Qual mapa deseja visualizar?'), select_tag('type', options_for_select(@types, @type))) %>
+    <%= hidden_field_tag('kind', params[:kind]) %>
+    <%#= labelled_form_field(_('Qual mapa deseja visualizar?'), select_tag('type', options_for_select(@types, @type))) %>
+    <%= labelled_form_field(_('Quem você deseja encontrar?'), text_field_tag(:query, @query)) %>
+    <ul>
+      <% @types.each do |type| %>
+        <li><%= link_to(_(type[0]), {action: 'index', type: type[1], query: params[:query]})%></li>
+      <% end %>
+      <% @enterprise_kinds.each do |kind| %>
+        <li><%= link_to(kind.name, {action: 'index', type: 'enterprises', kind: kind.name, query: params[:query]})%></li>
+      <% end %>
+    </ul>
     <%#= submit_button( :login, _('Select') ) %>
-    <button type="submit" class="mapselect" id="environment-search-button">
-            <i class="fa fa-check"></i>
-          </button>
-    <%= labelled_form_field(_('Quem você deseja encontrar?'), text_field_tag(:query, @query)) %>     
 <% end %>
-
-
+</div>
+<div class="col-md-9">
 <%= render partial: 'search/google_maps'%> 
-
+</div>
+</div>
+</div>
 
