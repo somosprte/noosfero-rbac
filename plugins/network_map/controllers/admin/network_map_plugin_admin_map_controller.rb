@@ -1,3 +1,0 @@
-class NetworkMapPluginAdminMapController < PluginAdminController
-end
-
