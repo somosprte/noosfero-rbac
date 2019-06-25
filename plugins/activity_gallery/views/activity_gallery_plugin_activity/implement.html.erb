@@ -3,6 +3,8 @@
     <%= hidden_field_tag('id', params[:id]) %>
     <div class="form-content">
         <%= labelled_form_field(_('Título'), text_field_tag('implementation[place_implementation]', nil, placeholder: 'Título da Implementação')) %>
+        <%= labelled_form_field(_('Autor(es)')+' ', token_input_field_tag('implementation[person_ids]', 'search-authors', {:controller => 'activity_gallery_plugin_activity', :action => 'search_authors'}, {:focus => false, :hint_text => _('Digite o nome do autor')})
+        ) %>
         <%= labelled_form_field(_('Data da Implementação'), date_field('implementation[date_implementation]', nil, {:change_month => true, :change_year => true, :year_range => '-100:-0', :default_date => Date.today.strftime('%F'), :max_date => '+0d' }, {:id => 'implementation_date'})) %>
         <%= labelled_form_field(_('Quantidade de Participantes: Quantas pessoas participaram desta implementação da atividade?'), number_field_tag('implementation[number_participants]', 0)) %>
         <%= labelled_form_field(_('Descrição'), text_area_tag('implementation[description]', nil, placeholder: 'Em que contexto essa atividade foi implementada? O que foi diferente da atividade original? Você tem dicas e reflexões valiosas para compartilhar sobre esta experiência?')) %>
