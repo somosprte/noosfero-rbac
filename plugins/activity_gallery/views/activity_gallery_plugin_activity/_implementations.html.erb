@@ -20,5 +20,16 @@
     <li><strong>Quantidade de Participantes:</strong> <%= implementation[:number_participants] %></li>
     <li><strong>Descrição da Implementação:</strong> <%= implementation[:description] %></li>
   </ul>
+
+  <% if implementation[:authors].map { |author| author[:id] }.include?(session['activity_gallery_plugin_user_id']) %>
+    <div class="row activity-exp-actions">
+      <div class="edit">
+        <%= modal_link_to(font_awesome(:edit, _('Edit')), {controller: 'activity_gallery_plugin_implementation', action: 'edit', implementation: implementation, activity_id: params[:id]}) %>
+      </div>
+      <div class="destroy">
+        <%= link_to(font_awesome(:trash, _('Remove')), {controller: 'activity_gallery_plugin_implementation', action: 'destroy', id: implementation[:id], activity_id: params[:id]}, {data: {confirm: _('Você tem certeza que deseja excluir essa implementação?')}}) %>
+      </div>
+    </div>
+  <% end %>
 </div>
 <% end %>

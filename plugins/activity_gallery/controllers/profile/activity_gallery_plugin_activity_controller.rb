@@ -72,13 +72,6 @@ class ActivityGalleryPluginActivityController < ProfileController
         redirect_to "/galeria/#{result[:id]}"
     end
 
-    def send_implementation
-        params[:implementation][:person_ids] ||= ''
-        params[:implementation][:person_ids] = params[:implementation][:person_ids].split(',')
-        ActivityGalleryPlugin::Request.post("/gallery/v1/activities/#{params['id']}/implement", params[:implementation].to_h, session['activity_gallery_plugin_jwt'])
-        redirect_to "/galeria/#{params[:id]}"
-    end
-
     def destroy
         url = "/gallery/v1/activities/#{params['id']}"
         result = ActivityGalleryPlugin::Request.delete(url, nil, session['activity_gallery_plugin_jwt'])

@@ -1,0 +1,24 @@
+<%= form_tag({controller: 'activity_gallery_plugin_implementation', action: action}, {id: "implemetantion-form" }) do %>
+    <%= hidden_field_tag('activity_id', params[:activity_id]) %>
+    <% if defined?(implementation) %>
+        <%= hidden_field_tag('id', implementation[:id]) %>
+        <% tokenized_authors = implementation[:authors].map do |author|
+            {:id => author[:id], :name => author[:name]}
+        end %>
+    <% else %>
+        <% implementation = {} %>
+        <% tokenized_authors = [] %>
+    <% end %>
+    <div class="form-content">
+        <%= labelled_form_field(_('Título'), text_field_tag('implementation[place_implementation]', implementation[:place_implementation], placeholder: 'Título da Implementação')) %>
+        <% tokenized_authors = [{:id => session['activity_gallery_plugin_user_id'], :name => user.name}] if tokenized_authors.blank? %>
+        <%= labelled_form_field(_('Autor(es)')+' ', token_input_field_tag('implementation[person_ids]', 'search-authors', {:controller => 'activity_gallery_plugin_activity', :action => 'search_authors'}, {:focus => false, :hint_text => _('Digite o nome do autor'), :pre_populate => tokenized_authors })
+        ) %>
+        <%= labelled_form_field(_('Data da Implementação'), date_field('implementation[date_implementation]', implementation[:date_implementation].present? ? Date.parse(implementation[:date_implementation]) : nil, {:change_month => true, :change_year => true, :year_range => '-100:-0', :default_date => Date.today.strftime('%d/%m/%Y'), :max_date => '+0d', :date_format => 'dd/mm/yy' }, {:id => 'implementation_date'})) %>
+        <%= labelled_form_field(_('Quantidade de Participantes: Quantas pessoas participaram desta implementação da atividade?'), number_field_tag('implementation[number_participants]', (implementation[:number_participants] || 0 ).to_i)) %>
+        <%= labelled_form_field(_('Descrição'), text_area_tag('implementation[description]', implementation[:description], placeholder: 'Em que contexto essa atividade foi implementada? O que foi diferente da atividade original? Você tem dicas e reflexões valiosas para compartilhar sobre esta experiência?')) %>
+    </div>
+    <%= button_bar do %>
+        <%= submit_button(:save, _('Save'), :cancel => { :action => 'index' }) %>
+    <% end %>
+<% end %>
