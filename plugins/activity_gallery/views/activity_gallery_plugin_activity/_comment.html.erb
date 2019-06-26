@@ -14,4 +14,14 @@
         <% date = DateTime.parse(comment[:created_at]) %>
         <%= date.strftime('%d/%m/%Y %H:%M:%S') %> </p>
     </div>
+    <% if session['activity_gallery_plugin_user_id'] == comment[:person][:id] %>
+        <div class="row activity-exp-actions">
+            <div class="edit">
+                <%= modal_link_to(font_awesome(:edit, _('Edit')), {controller: 'activity_gallery_plugin_comment', action: 'edit', comment: comment, activity_id: params[:id]})%>
+            </div>
+            <div class="destroy">
+                <%= link_to(font_awesome(:trash, _('Remove')), {controller: 'activity_gallery_plugin_comment', action: 'destroy', id: comment[:id], activity_id: params[:id]}, {data: {confirm: _('Você tem certeza que deseja excluir esse comentário?')}})%>
+            </div>
+        </div>
+    <% end %>
 </div>

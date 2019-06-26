@@ -1,0 +1,13 @@
+<%= form_tag({controller: 'activity_gallery_plugin_comment', action: action}, {id: "comment-form" }) do %>
+    <%= hidden_field_tag('activity_id', params[:activity_id]) %>
+    <% if defined?(comment) %>
+        <%= hidden_field_tag('id', comment[:id]) %>
+        <% text = comment[:text] %>
+    <% else %>
+        <% text = nil %>
+    <% end %>
+    <%= text_area_tag('comment[text]', text, rows: 3, placeholder: 'Escreva seu comentário') %>
+    <%= button_bar do %>
+        <%= submit_button(:edit, _('Salvar')) %>
+    <% end %>
+<% end %>

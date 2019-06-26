@@ -192,7 +192,8 @@
       <input name="tabs" type="radio" id="tab-2" class="input"/>
       <label for="tab-2" class="label">Comentários (<%= @activity.total_comments %>) </label>
       <div class="panel">
-        <%= render partial: 'comment_form' %>
+        <div class="activity-subtitle">Comentários</div>
+        <%= render partial: 'shared/comment_form', locals: {action: 'create'} %>
         <div class="comments">
           <%= render partial: 'comment', collection: @activity.comments %>
         </div>
