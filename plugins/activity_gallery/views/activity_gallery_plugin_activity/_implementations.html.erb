@@ -1,21 +1,24 @@
-<% @activity.implementations.each do |implements| %>
+<% @activity.implementations.each do |implementation| %>
 <div class="implementations">
   <ul>
     <li>
-      <strong>Autor(es):</strong>
-      <% iauthor = environment.users.where(email: implements[:person][:email]).first %> <% if iauthor.present? %> <%=
-      link_to(iauthor.person.name, iauthor.person.url) %> 
-      <% else %>
-        <%= implements[:person][:name] %>
-      <% end %>
+      <% authors = implementation[:authors].map do |author| %>
+          <% iauthor = environment.users.where(email: author[:email]).first %>
+          <% if iauthor.present? %>
+            <% link_to(iauthor.person.name, iauthor.person.url) %>
+          <% else %>
+            <% author[:name] %>
+          <% end %>
+      <% end.join(', ').html_safe %>
+      <strong>Autor(es):</strong> <%= authors %>
     </li>
-    <li><strong>Título da Implementação:</strong> <%= implements[:place_implementation] %></li>
+    <li><strong>Título da Implementação:</strong> <%= implementation[:place_implementation] %></li>
     <li><strong>Data da Implementação:</strong>
-      <% date = DateTime.parse(implements[:date_implementation]) %>
+      <% date = DateTime.parse(implementation[:date_implementation]) %>
       <%= date.strftime('%d/%m/%Y') %>
     </li>
-    <li><strong>Quantidade de Participantes:</strong> <%= implements[:number_participants] %></li>
-    <li><strong>Descrição da Implementação:</strong> <%= implements[:description] %></li>
+    <li><strong>Quantidade de Participantes:</strong> <%= implementation[:number_participants] %></li>
+    <li><strong>Descrição da Implementação:</strong> <%= implementation[:description] %></li>
   </ul>
 </div>
 <% end %>
