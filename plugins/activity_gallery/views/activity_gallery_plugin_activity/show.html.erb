@@ -14,7 +14,7 @@
       <div class="<%= like_class %>">
         <% like_text = @activity.favorited ? _('Curtida') : _('Curtir') %> <%= link_to(font_awesome(:heart, like_text),
         {controller: 'activity_gallery_plugin_activity', action: 'toggle_save', id: params[:id]}) %>
-        (<%= @activity.total_likes %>)
+        (<%= @activity.total_favorites %>)
       </div>
       <div class="remix">
         <%= link_to(font_awesome(:copy, _('Remixar')), "/galeria/remixar-atividade/#{params[:id]}")%>
