@@ -4,7 +4,8 @@
   <div class="col-md-9" id="show-activity">
     <div class="form-title">Detalhes da Atividade</div>
 
-    <div class="activity-title"><%= @activity.title %></div>
+    <div class="activity-title remix"><%= @activity.title %>
+      <%= link_to(font_awesome(:download, _('Baixar')), "#")%></div>
     <div class="activity-text"><%= @activity.caption %></div>
   </br>
 
