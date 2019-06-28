@@ -6,17 +6,18 @@
 <div class="col-md3">
 <%= form_tag( { :controller => 'network_map_plugin_map' }, :class => 'map_form' ) do %>
     <%= hidden_field_tag('kind', params[:kind]) %>
-    <%#= labelled_form_field(_('Qual mapa deseja visualizar?'), select_tag('type', options_for_select(@types, @type))) %>
     <%= labelled_form_field(_('Quem você deseja encontrar?'), text_field_tag(:query, @query)) %>
-    <ul>
-      <% @types.each do |type| %>
-        <li><%= link_to(_(type[0]), {action: 'index', type: type[1], query: params[:query]})%></li>
-      <% end %>
-      <% @enterprise_kinds.each do |kind| %>
-        <li><%= link_to(kind.name, {action: 'index', type: 'enterprises', kind: kind.name, query: params[:query]})%></li>
-      <% end %>
-    </ul>
-    <%#= submit_button( :login, _('Select') ) %>
+    <% total = filter_profiles(params[:query], ['people']).count %>
+    <%= labelled_check_box(_('Membro Individual') + " (#{total})", 'types[]', :people, @types.include?('people'), {add_hidden: false}) %>
+    <% @community_kinds.each do |kind| %>
+      <% total = filter_profiles(params[:query], ["communities_#{kind.name}"]).count %>
+      <%= labelled_check_box(kind.name + " (#{total})", 'types[]', "communities_#{kind.name}", @types.include?("communities_#{kind.name}"), {add_hidden: false}) %>
+    <% end %>
+    <% @enterprise_kinds.each do |kind| %>
+      <% total = filter_profiles(params[:query], ["enterprises_#{kind.name}"]).count %>
+      <%= labelled_check_box(kind.name + " (#{total})", 'types[]', "enterprises_#{kind.name}", @types.include?("enterprises_#{kind.name}"), {add_hidden: false}) %>
+    <% end %>
+    <%= submit_button( :login, _('Select') ) %>
 <% end %>
 </div>
 <div class="col-md-9">
