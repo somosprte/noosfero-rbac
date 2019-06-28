@@ -12,16 +12,21 @@ class ActivityGalleryPluginActivityController < ProfileController
     end
 
     def saved_activities
-        @activities = get('gallery/v1/activities/?per=50')
+        @activities = get('user/v1/people/favorites/activities/?per=50')
         .map { |activity| ActivityGalleryPlugin::Activity.new(activity) }
-        .select { |activity| activity.favorited }
         @results = @activities.paginate(page: params[:page] || 1, per_page: 4)
     end
 
     def my_activities
         @activities = get('gallery/v1/activities/?per=50')
         .map { |activity| ActivityGalleryPlugin::Activity.new(activity) }
-        .select { |activity| activity.is_author?(user) }
+        .select { |activity| activity.is_author?(user) } #FIXME fetch from api
+        @results = @activities.paginate(page: params[:page] || 1, per_page: 4)
+    end
+
+    def implemented_activities
+        @activities = get('user/v1/people/implementations/activities/?per=50')
+        .map { |activity| ActivityGalleryPlugin::Activity.new(activity) }
         @results = @activities.paginate(page: params[:page] || 1, per_page: 4)
     end
 
@@ -46,9 +51,6 @@ class ActivityGalleryPluginActivityController < ProfileController
         @activity.title += ' (Remixada)'
         @activity.authors = [{ id: session['activity_gallery_plugin_user_id'], name: user.name, email: user.email }]
         @page = @activity
-    end
-
-    def implement
     end
 
     def create
