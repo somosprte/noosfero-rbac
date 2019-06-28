@@ -4,7 +4,7 @@
 <div class="container">
 <div class="row">
 <div class="col-md3">
-<%= form_tag( { :controller => 'network_map_plugin_map' }, :class => 'map_form' ) do %>
+<%= form_tag( { :controller => 'network_map_plugin_map' }, :id => 'map_form' ) do %>
     <%= hidden_field_tag('kind', params[:kind]) %>
     <%= labelled_form_field(_('Quem você deseja encontrar?'), text_field_tag(:query, @query)) %>
     <% total = filter_profiles(params[:query], ['people']).count %>
@@ -17,7 +17,6 @@
       <% total = filter_profiles(params[:query], ["enterprises_#{kind.name}"]).count %>
       <%= labelled_check_box(kind.name + " (#{total})", 'types[]', "enterprises_#{kind.name}", @types.include?("enterprises_#{kind.name}"), {add_hidden: false}) %>
     <% end %>
-    <%= submit_button( :login, _('Select') ) %>
 <% end %>
 </div>
 <div class="col-md-9">
@@ -25,4 +24,6 @@
 </div>
 </div>
 </div>
+
+<%= javascript_include_tag 'plugins/network_map/filters' %>
 
