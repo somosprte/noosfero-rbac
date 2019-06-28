@@ -21,7 +21,7 @@
         <%= link_to(font_awesome(:copy, _('Remixar')), "/galeria/remixar-atividade/#{params[:id]}")%>
       </div>
       <div class="implement">
-        <%= modal_link_to(font_awesome(:task, _('Implementei!')), {controller: 'activity_gallery_plugin_implementation', action: 'new', id: params[:id]}) %>
+        <%= modal_link_to(font_awesome(:task, _('Implementei!')), {controller: 'activity_gallery_plugin_implementation', action: 'new', activity_id: params[:id]}) %>
       </div>
       <% if @activity.is_author?(user) %>
       <div class="edit">

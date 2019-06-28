@@ -6,8 +6,8 @@ class ActivityGalleryPluginImplementationController < ProfileController
     def create
         params[:implementation][:person_ids] ||= ''
         params[:implementation][:person_ids] = params[:implementation][:person_ids].split(',')
-        ActivityGalleryPlugin::Request.post("/gallery/v1/activities/#{params['id']}/implement", params[:implementation].to_h, session['activity_gallery_plugin_jwt'])
-        redirect_to "/galeria/#{params[:id]}"
+        result = ActivityGalleryPlugin::Request.post("/gallery/v1/activities/#{params[:activity_id]}/implement", params[:implementation].to_h, session['activity_gallery_plugin_jwt'])
+        redirect_to "/galeria/#{params[:activity_id]}"
     end
 
     def edit
