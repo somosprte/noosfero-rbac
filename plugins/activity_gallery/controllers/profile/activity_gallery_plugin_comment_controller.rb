@@ -7,6 +7,7 @@ class ActivityGalleryPluginCommentController < ProfileController
 
     def edit
         @comment = params[:comment]
+        @activity_id = params[:activity_id]
     end
 
     def update

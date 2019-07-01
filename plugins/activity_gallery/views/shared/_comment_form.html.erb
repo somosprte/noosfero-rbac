@@ -1,5 +1,5 @@
 <%= form_tag({controller: 'activity_gallery_plugin_comment', action: action}, {id: "comment-form" }) do %>
-    <%= hidden_field_tag('activity_id', params[:activity_id]) %>
+    <%= hidden_field_tag('activity_id', @activity_id) %>
     <% if defined?(comment) %>
         <%= hidden_field_tag('id', comment[:id]) %>
         <% text = comment[:text] %>

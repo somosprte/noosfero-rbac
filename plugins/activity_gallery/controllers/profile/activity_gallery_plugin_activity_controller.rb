@@ -32,6 +32,7 @@ class ActivityGalleryPluginActivityController < ProfileController
 
     def show
         @activity = ActivityGalleryPlugin::Activity.new(get("gallery/v1/activities/#{params['id']}"))
+        @activity_id = params['id']
         @page = @activity
     end
 
