@@ -11,8 +11,8 @@
   <%= file_field_or_thumbnail(_('Foto ou imagem ilustrativa para a atividade:'), @activity.original_image, 'data[image_builder]') %>
   <%= labelled_form_field(_('Quem criou esta atividade?')+' ', token_input_field_tag('data[authors]', 'search-authors', {:controller => 'activity_gallery_plugin_activity', :action => 'search_authors'}, {:focus => false, :hint_text => _('Digite o nome do autor'), :pre_populate => @activity.tokenized_authors})
   ) %>
-  <%= labelled_form_field(_('Descrição'), text_area_tag('data[description]', @activity.description, placeholder: 'Conte brevemente sobre o que se trata a atividade, qual o público, objetivo e em qual contexto é realizada')) %>
-  <%= labelled_form_field(_('Motivação'), text_area_tag('data[motivation]', @activity.motivation, placeholder: 'Conte um pouco sobre o contexto em que esta atividade foi elaborada.')) %>
+  <%= labelled_form_field(_('Descrição'), text_area_tag('data[description]', @activity.description, maxlength: 300, placeholder: 'Conte brevemente sobre o que se trata a atividade, qual o público, objetivo e em qual contexto é realizada')) %>
+  <%= labelled_form_field(_('Motivação'), text_area_tag('data[motivation]', @activity.motivation, maxlength: 500, placeholder: 'Conte um pouco sobre o contexto em que esta atividade foi elaborada.')) %>
   <%= labelled_form_field(_('Poderosas Ideias'), text_area_tag('data[powerful_ideas]', @activity.powerful_ideas, placeholder: 'Quais são os objetivos pedagógicos da atividade, em termos de atitudes, conteúdo e habilidades?')) %>
   <%= labelled_form_field(_('Produtos esperados'), text_area_tag('data[products]', @activity.products, placeholder: 'Descreva aqui o que será construído pelos participantes. Para a AC, é importante que jovens e crianças construam algo que seja compartilhável e significativo. Um castelo de areia, um poema, um programa de computador, uma peça de teatro etc. Que produtos serão criados pelos participantes desta atividade?')) %>
 
