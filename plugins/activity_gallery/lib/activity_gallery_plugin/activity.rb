@@ -108,7 +108,7 @@ class ActivityGalleryPlugin::Activity
   end
 
   def self.get_general_materials_options(jwt)
-    url = "gallery/v1/general_materials"
+    url = "gallery/v1/general_materials/?per=50"
     result = ActivityGalleryPlugin::Request.get(url, nil, jwt)
     @general_materials = JSON.parse(result.body,symbolize_names:true)
     result = []
