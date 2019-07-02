@@ -6,7 +6,19 @@
 
     <div class="activity-title remix"><%= @activity.title %>
       <%= link_to(font_awesome(:download, _('Baixar')), "#")%></div>
-    <div class="activity-text"><%= @activity.caption %></div>
+    <div class="activity-text" style="text-align: center"><%= @activity.caption %></div>
+    <div class="activity-text" style="text-align: center">
+        <strong>Atividade criada em:</strong>
+          <% date = DateTime.parse(@activity.created_at) %>
+          <%= date.strftime('%d/%m/%Y %H:%M:%S') %>
+    </div>
+    <% if @activity.updated_at.present? %>
+    <div class="activity-text" style="text-align: center">
+        <strong>Atividade atualizada em:</strong>
+          <% date = DateTime.parse(@activity.updated_at) %>
+          <%= date.strftime('%d/%m/%Y %H:%M:%S') %>
+    </div>
+    <% end %>
   </br>
 
     <% if logged_in? %>
