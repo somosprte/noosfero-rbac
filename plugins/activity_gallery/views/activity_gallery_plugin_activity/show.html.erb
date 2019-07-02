@@ -211,6 +211,13 @@
       <input name="tabs" type="radio" id="tab-4" class="input"/>
       <label for="tab-4" class="label">Remixagens (<%= @activity.total_remixes %>) </label>
       <div class="panel">
+          <div class="activity-subtitle">Atividade que utilizaram esta atividade como base</div>
+          <p class="activity-text"></p>
+          <ul>
+            <% @activity.remixes.each do |remix| %>
+            <li><%= link_to(remix[:activity][:title], (remix[:activity][:id])) %></li>
+            <% end %>
+          </ul>
       </div>
     </div>
   </div>
