@@ -35,7 +35,6 @@ else
   bundle exec rake db:create
   bundle exec rake db:schema:load
   /noosfero/script/sample-data
-  /noosfero/script/delayed_job star
 fi
 
 pidfile='/noosfero/tmp/pids/server.pid'
