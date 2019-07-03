@@ -17,6 +17,5 @@ ADD . /noosfero/
 RUN ./script/quick-start -i
 
 ENTRYPOINT ["/noosfero/config/docker/dev/entrypoint.sh"]
-RUN ./script/delayed_job start
 CMD ["bundle", "install"]
 CMD ["bundle", "exec", "rails", "s", "-b", "0.0.0.0"]

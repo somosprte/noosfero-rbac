@@ -2,6 +2,7 @@
 
 .rbenv-*
 .vagrant
+.env_rds
 
 # docs
 doc/api
@@ -22,7 +23,6 @@ config/routes/plugins
 config/initializers/email.rb
 config/environments/development.rb
 config/docker/dev/Dockerfile
-
 
 tags
 vendor/rails
