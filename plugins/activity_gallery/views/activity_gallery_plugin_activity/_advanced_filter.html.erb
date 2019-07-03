@@ -1,4 +1,3 @@
-<% if logged_in? %>
 <% jwt = session['activity_gallery_plugin_jwt'] %>
 
 <div id="user-api-menu">
@@ -22,5 +21,4 @@
 <%= labelled_form_field(_('Tipo de Espaço')+': ', nil ) %>
 <% ActivityGalleryPlugin::Activity.get_space_types_options(jwt).map do |space| %>
   <%= labelled_check_box(space[0], 'space_types[]', space[1], nil, {add_hidden: false} )%>
-<% end %>
 <% end %>
