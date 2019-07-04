@@ -66,13 +66,4 @@
 
 <% end %>
 
-<%= javascript_include_tag 'plugins/activity_gallery/cms' %>
-<%= javascript_include_tag 'plugins/activity_gallery/froala_editor.pkgd.min' %>
-<%= stylesheet_link_tag 'plugins/activity_gallery/froala_editor.pkgd.min' %>
-<%= stylesheet_link_tag 'plugins/activity_gallery/froala_style.min' %>
-<script>
-  var editor = new FroalaEditor('.text-editor', {
-    imageInsertButtons: ['imageBack', '|', 'imageByURL'],
-    imageUpload: false
-  });
-</script>
+<%= render partial: 'shared/text_editor' %>

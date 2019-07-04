@@ -1,0 +1,12 @@
+<%= javascript_include_tag 'plugins/activity_gallery/cms' %>
+<%= javascript_include_tag 'plugins/activity_gallery/froala_editor.pkgd.min' %>
+<%= javascript_include_tag 'plugins/activity_gallery/pt_br' %>
+<%= stylesheet_link_tag 'plugins/activity_gallery/froala_editor.pkgd.min' %>
+<%= stylesheet_link_tag 'plugins/activity_gallery/froala_style.min' %>
+<script>
+  var editor = new FroalaEditor('.text-editor', {
+    imageInsertButtons: ['imageBack', '|', 'imageByURL'],
+    imageUpload: false,
+    language: 'pt_br'
+  });
+</script>
