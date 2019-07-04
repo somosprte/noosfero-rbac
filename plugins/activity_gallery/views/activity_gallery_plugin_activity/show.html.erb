@@ -142,12 +142,12 @@
     
           <div class="activity-subtitle">Organização do Espaço</div>
           <p class="activity-text">
-            <%= @activity.space_organization %>
+            <%= @activity.space_organization.html_safe %>
           </p>
     
           <div class="activity-subtitle">Passos para Implementação</div>
           <p class="activity-text">
-            <%= @activity.implementation_steps %>
+            <%= @activity.implementation_steps.html_safe %>
           </p>
     
           <div class="activity-subtitle">Materiais Gerais</div>
@@ -176,12 +176,12 @@
     
           <div class="activity-subtitle">Dicas sobre a implementação</div>
           <p class="activity-text">
-            <%= @activity.implementation_tips %>
+            <%= @activity.implementation_tips.html_safe %>
           </p>
     
           <div class="activity-subtitle">Reflexão e Avaliação</div>
           <p class="activity-text">
-            <%= @activity.reflection_assessment %>
+            <%= @activity.reflection_assessment.html_safe %>
           </p>
     
           <div class="activity-subtitle">Duração</div>
@@ -199,7 +199,7 @@
     
           <div class="activity-subtitle">Referências Externas</div>
           <p class="activity-text">
-            <%= @activity.references %>
+            <%= @activity.references.html_safe %>
           </p>
         </div>
       </div>
