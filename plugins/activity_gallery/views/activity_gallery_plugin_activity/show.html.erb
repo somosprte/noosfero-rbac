@@ -150,6 +150,7 @@
             <%= @activity.implementation_steps.html_safe %>
           </p>
     
+          <% if @activity.general_materials.present? %>
           <div class="activity-subtitle">Materiais Gerais</div>
           <p class="activity-text"></p>
           <table>
@@ -168,6 +169,7 @@
                 <% end %>
             </tbody>
           </table>
+          <% end %>
     
           <div class="activity-subtitle">Materiais Específicos</div>
           <p class="activity-text">
@@ -188,7 +190,8 @@
           <p class="activity-text">
             <%= @activity.duration %>
           </p>
-    
+          
+          <% if @activity.inspirations.present? %>
           <div class="activity-subtitle">Atividade Inspiradoras</div>
           <p class="activity-text"></p>
           <ul>
@@ -196,7 +199,8 @@
             <li><%= link_to(inspiration[:title], (inspiration[:activity_two_id])) %></li>
             <% end %>
           </ul>
-    
+          <% end %>
+
           <div class="activity-subtitle">Referências Externas</div>
           <p class="activity-text">
             <%= @activity.references.html_safe %>
