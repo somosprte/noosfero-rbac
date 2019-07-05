@@ -5,7 +5,10 @@
     <div class="form-title">Detalhes da Atividade</div>
 
     <div class="activity-title remix"><%= @activity.title %>
-      <%= link_to(font_awesome(:download, _('Baixar')), "#")%></div>
+      <% if logged_in? %>
+      <%= link_to(font_awesome(:download, _('Baixar')), "#")%>
+      <% end %>
+    </div>
     <div class="activity-text" style="text-align: center"><%= @activity.caption %></div>
     <div class="activity-text" style="text-align: center">
         <strong>Atividade criada em:</strong>
