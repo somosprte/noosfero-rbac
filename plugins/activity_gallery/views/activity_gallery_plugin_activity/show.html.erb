@@ -6,7 +6,7 @@
 
     <div class="activity-title remix"><%= @activity.title %>
       <% if logged_in? %>
-      <%= link_to(font_awesome(:download, _('Baixar')), "#")%>
+      <%= link_to(font_awesome(:download, _('Baixar')), {controller: 'activity_gallery_plugin_activity', action: 'download_pdf', id: params[:id]}, target: '_blank') %>
       <% end %>
     </div>
     <div class="activity-text" style="text-align: center"><%= @activity.caption %></div>

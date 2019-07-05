@@ -81,6 +81,12 @@ class ActivityGalleryPluginActivityController < ProfileController
         redirect_to '/galeria'
     end
 
+    def download_pdf
+        url = "/gallery/v1/activities/#{params['id']}/pdf"
+        ActivityGalleryPlugin::Request.get(url, nil, session['activity_gallery_plugin_jwt'])
+        redirect_to "https://devapi.aprendizagemcriativa.org/#{params['id']}.pdf"
+    end
+
     def toggle_like
         url = "/gallery/v1/activities/#{params['id']}/like"
         ActivityGalleryPlugin::Request.get(url, nil, session['activity_gallery_plugin_jwt'])
