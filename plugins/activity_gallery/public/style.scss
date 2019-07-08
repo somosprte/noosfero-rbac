@@ -485,6 +485,16 @@
   width: 100%;
 }
 
+.formfieldline {
+  .panel{
+    display: block !important;
+  }
+}
+
+.note-group-select-from-files{
+  display: none;
+}
+
 @media (min-width: 600px) {
   .panel {
     order: 99;
