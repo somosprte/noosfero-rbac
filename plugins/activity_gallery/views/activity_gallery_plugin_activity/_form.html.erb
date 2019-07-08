@@ -50,13 +50,13 @@
   </div>
   <%= labelled_form_field(_('Materiais específicos'), text_area_tag('data[specific_materials]', @activity.specific_materials, placeholder: 'Você utiliza materiais criados especificamente para esta atividade? (ex.: templates, kits, fichas, apostilas etc) Liste-os, incluindo o link de acesso, e indicando a licença apropriada.')) %>
   <%= labelled_form_field(_('Dicas sobre a implementação'), text_area_tag('data[implementation_tips]', @activity.implementation_tips, class: 'text-editor', placeholder: 'Que dica(s) valiosa(s) você tem para outros educadores que queiram implementar a atividade?')) %>
-  <%= labelled_form_field(_('Reflexão e avaliação'), text_area_tag('data[reflection_assessment]', @activity.reflection_assessment, class: 'text-editor', placeholder: 'Como você avalia a atividade? Especifique instrumentos e critérios de avaliação e métodos de reflexão e em qual etapa da atividade se encaixa.')) %>
+  <%= labelled_form_field(_('Reflexão e avaliação'), text_area_tag('data[reflection_assessment]', @activity.reflection_assessment, class: 'text-editor-summernote', placeholder: 'Como você avalia a atividade? Especifique instrumentos e critérios de avaliação e métodos de reflexão e em qual etapa da atividade se encaixa.')) %>
   <%= labelled_form_field(_('Duração'), text_area_tag('data[duration]', @activity.duration, placeholder: 'Em quanto tempo você realizou a atividade? Quanto tempo você recomendaria para o processo inteiro de implementação (desde a chegada do público até o encerramento)?')) %>
   
   <div class="activity-subtitle">Inspiração</div>
   <%= labelled_form_field(_('Atividades Inspiradoras: Indicação de atividades que foram inspiradoras para a criação desta atividade')+' ', token_input_field_tag('data[inspirations]', 'search-inspirations', {:controller => 'activity_gallery_plugin_activity', :action => 'search_inspirations'}, {:focus => false, :hint_text => _('Digite o nome da atividade'), :pre_populate => @activity.tokenized_inspirations})
   ) %>
-  <%= labelled_form_field(_('Referências Externas'), text_area_tag('data[references]', @activity.references, class: 'text-editor', placeholder: 'Indicação de referências bibliográficas associadas')) %>
+  <%= labelled_form_field(_('Referências Externas'), text_area_tag('data[references]', @activity.references, class: 'text-editor-summernote', placeholder: 'Indicação de referências bibliográficas associadas')) %>
 
 </div>
 
@@ -67,3 +67,4 @@
 <% end %>
 
 <%= render partial: 'shared/text_editor' %>
+<%= render partial: 'shared/text_editor_summernote' %>
