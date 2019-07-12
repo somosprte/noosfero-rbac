@@ -28,7 +28,7 @@
           <p>
             <div class="recent-content-title">
             <ul>
-              <% Person.find_by(name: "adminuser").articles.where(type: 'TextArticle', parent_id: Person.find_by(name: "adminuser").articles.where(slug: "blog-do-admin").first).each do |item| %>
+              <% Person.find_by(name: "portal").articles.where(type: 'TextArticle', parent_id: Person.find_by(name: "portal").articles.where(slug: "blog").first).each do |item| %>
                 <li class="blog-footer-list-item"> 
                 <% unless item.image.nil? %>
                   <img class="thumb-item" src="<%= item.image.thumbnails.find_by(thumbnail: "thumb").public_filename %>"/>
