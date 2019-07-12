@@ -3,8 +3,13 @@ class ActivityGalleryPluginActivityController < ProfileController
     no_design_blocks
     before_action :logged_user
     before_action :activity_authors, only: %i[edit destroy update]
-    skip_before_action :logged_user, only: %i[index show]
+    skip_before_action :logged_user, only: %i[index show about library]
 
+    def about
+    end
+
+    def library
+    end
     def index
         @activities = get("gallery/v1/activities/#{build_search_params}").
             map { |activity| ActivityGalleryPlugin::Activity.new(activity) }
