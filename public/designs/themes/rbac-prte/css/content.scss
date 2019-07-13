@@ -140,4 +140,8 @@ a.google_oauth2 {
 
 #content #address-and-location .location-bar a.button.with-text {
   height: auto !important;
-} 
+}
+
+#search-subheader select#templates-submenu{
+  display: none;
+}
