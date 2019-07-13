@@ -41,8 +41,6 @@ textarea {
   padding: 0px 0px !important;
 }
 
-
-
 // search Form
 .search-environment {
   position: relative;
@@ -164,8 +162,12 @@ a.button.icon-ok:hover,
   background-color: #449d44 !important;
 }
 
-.members-buttons-cell{
+.members-buttons-cell {
   display: flex;
 }
 
-
+#parent-id-form-field,
+#license-id-form-field,
+#translation-of-id-form-field {
+  display: none;
+}
