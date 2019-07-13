@@ -23,7 +23,7 @@ class NetworkMapPluginMapController < PublicController
         end.join(' OR ')
         @scope = @scope.where(type_conditions) if types.present?
         @searches = {}
-        type = 'network_map_plugin'
+        type = 'all'
         @searches[type] = find_by_contents(type, environment, @scope, query, {page: 1, per_page: @scope.count})
         @searches[type][:results] = @searches[type][:results].select { |profile| profile.fields_privacy[:location] == "public" }
         return @searches[type][:results]
