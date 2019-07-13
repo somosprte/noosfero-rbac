@@ -142,6 +142,12 @@ a.google_oauth2 {
   height: auto !important;
 }
 
-#search-subheader select#templates-submenu{
+#search-subheader select#templates-submenu {
   display: none;
+}
+
+#search-header {
+  #assets-menu {
+    display: none;
+  }
 }
