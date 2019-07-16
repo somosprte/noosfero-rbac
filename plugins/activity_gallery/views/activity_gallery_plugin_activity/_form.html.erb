@@ -37,8 +37,8 @@
       labelled_check_box(space[0], 'data[space_types][]', space[1], @activity.check(:space_types, space[1]), {add_hidden: false} )
     end.join.html_safe
   ) %>
-  <%= labelled_form_field(_('Organização do espaço'), text_area_tag('data[space_organization]', @activity.space_organization, class: 'text-editor', placeholder: 'Descreva como o espaço deve ser configurado em termos de mobiliário, instalações, materiais e participantes. Especifique a quantidade de cada item e sua disposição, e inclua imagens que possam ilustrar esta configuração. Lembre-se de que a organização do espaço é um fator muito importante para o desenvolvimento de alguns pontos da Aprendizagem Criativa, como o trabalho em parceria, a livre exploração de materiais e métodos etc.')) %>
-  <%= labelled_form_field(_('Passos para a implementação'), text_area_tag('data[implementation_steps]', @activity.implementation_steps, class: 'text-editor', placeholder: 'Aqui você pode descrever brevemente os passos para a facilitação da atividade, e referir outras atividades, se for o caso. Se quiser, substitua as ilustrações por fotos relativas ao passo-a-passo.')) %>
+  <%= labelled_form_field(_('Organização do espaço'), text_area_tag('data[space_organization]', @activity.space_organization, class: 'text-editor-summernote', placeholder: 'Descreva como o espaço deve ser configurado em termos de mobiliário, instalações, materiais e participantes. Especifique a quantidade de cada item e sua disposição, e inclua imagens que possam ilustrar esta configuração. Lembre-se de que a organização do espaço é um fator muito importante para o desenvolvimento de alguns pontos da Aprendizagem Criativa, como o trabalho em parceria, a livre exploração de materiais e métodos etc.')) %>
+  <%= labelled_form_field(_('Passos para a implementação'), text_area_tag('data[implementation_steps]', @activity.implementation_steps, class: 'text-editor-summernote', placeholder: 'Aqui você pode descrever brevemente os passos para a facilitação da atividade, e referir outras atividades, se for o caso. Se quiser, substitua as ilustrações por fotos relativas ao passo-a-passo.')) %>
   <%= labelled_form_field(_('Materiais Gerais: Que tipos de ferramentas e consumíveis você utiliza para a realização da atividade?')+' ', nil ) %>
   <div class="general-materials">
     <div class="general-material-fields">
@@ -48,7 +48,7 @@
     </div> 
   </div>
   <%= labelled_form_field(_('Materiais específicos'), text_area_tag('data[specific_materials]', @activity.specific_materials, placeholder: 'Você utiliza materiais criados especificamente para esta atividade? (ex.: templates, kits, fichas, apostilas etc) Liste-os, incluindo o link de acesso, e indicando a licença apropriada.')) %>
-  <%= labelled_form_field(_('Dicas sobre a implementação'), text_area_tag('data[implementation_tips]', @activity.implementation_tips, class: 'text-editor', placeholder: 'Que dica(s) valiosa(s) você tem para outros educadores que queiram implementar a atividade?')) %>
+  <%= labelled_form_field(_('Dicas sobre a implementação'), text_area_tag('data[implementation_tips]', @activity.implementation_tips, class: 'text-editor-summernote', placeholder: 'Que dica(s) valiosa(s) você tem para outros educadores que queiram implementar a atividade?')) %>
   <%= labelled_form_field(_('Reflexão e avaliação'), text_area_tag('data[reflection_assessment]', @activity.reflection_assessment, class: 'text-editor-summernote', placeholder: 'Como você avalia a atividade? Especifique instrumentos e critérios de avaliação e métodos de reflexão e em qual etapa da atividade se encaixa.')) %>
   <%= labelled_form_field(_('Duração'), text_area_tag('data[duration]', @activity.duration, placeholder: 'Em quanto tempo você realizou a atividade? Quanto tempo você recomendaria para o processo inteiro de implementação (desde a chegada do público até o encerramento)?')) %>
   
@@ -64,5 +64,4 @@
 
 <% end %>
 
-<%= render partial: 'shared/text_editor' %>
 <%= render partial: 'shared/text_editor_summernote' %>
