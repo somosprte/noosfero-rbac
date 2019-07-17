@@ -1,4 +1,4 @@
-class ActivityGalleryPluginCommentController < ProfileController
+class ActivityGalleryPluginCommentController < PublicController
 
     def create
         ActivityGalleryPlugin::Request.post("/gallery/v1/activities/#{params[:activity_id]}/comment", params[:comment].to_h, session['activity_gallery_plugin_jwt'])

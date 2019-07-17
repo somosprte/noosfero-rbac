@@ -1,4 +1,4 @@
-class ActivityGalleryPluginImplementationController < ProfileController
+class ActivityGalleryPluginImplementationController < PublicController
 
     def new
     end

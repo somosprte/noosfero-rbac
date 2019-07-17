@@ -62,16 +62,16 @@ class ActivityGalleryPlugin < Noosfero::Plugin
 
   def self.load_custom_routes
     Noosfero::Application.routes.draw do
-      get "/galeria", to: 'activity_gallery_plugin_activity#index', defaults: {profile: 'portal'}
-      get "/galeria/atividades-curtidas", to: 'activity_gallery_plugin_activity#saved_activities', defaults: {profile: 'portal'}
-      get "/galeria/atividades-implementadas", to: 'activity_gallery_plugin_activity#implemented_activities', defaults: {profile: 'portal'}
-      get "/galeria/minhas-atividades", to: 'activity_gallery_plugin_activity#my_activities', defaults: {profile: 'portal'}
-      get "/galeria/nova-atividade", to: 'activity_gallery_plugin_activity#new', defaults: {profile: 'portal'}
-      get "/galeria/editar-atividade/:id", to: 'activity_gallery_plugin_activity#edit', defaults: {profile: 'portal'}
-      get "/galeria/remixar-atividade/:id", to: 'activity_gallery_plugin_activity#remix', defaults: {profile: 'portal'}
-      get "/sobre", to: 'activity_gallery_plugin_activity#about', defaults: {profile: 'portal'}
-      get "/biblioteca", to: 'activity_gallery_plugin_activity#library', defaults: {profile: 'portal'}
-      get "/galeria/:id", to: 'activity_gallery_plugin_activity#show', defaults: {profile: 'portal'}
+      get "/galeria", to: 'activity_gallery_plugin_activity#index'
+      get "/galeria/atividades-curtidas", to: 'activity_gallery_plugin_activity#saved_activities'
+      get "/galeria/atividades-implementadas", to: 'activity_gallery_plugin_activity#implemented_activities'
+      get "/galeria/minhas-atividades", to: 'activity_gallery_plugin_activity#my_activities'
+      get "/galeria/nova-atividade", to: 'activity_gallery_plugin_activity#new'
+      get "/galeria/editar-atividade/:id", to: 'activity_gallery_plugin_activity#edit'
+      get "/galeria/remixar-atividade/:id", to: 'activity_gallery_plugin_activity#remix'
+      get "/sobre", to: 'activity_gallery_plugin_activity#about'
+      get "/biblioteca", to: 'activity_gallery_plugin_activity#library'
+      get "/galeria/:id", to: 'activity_gallery_plugin_activity#show'
     end
   end
 end

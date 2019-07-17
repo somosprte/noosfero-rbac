@@ -1,4 +1,4 @@
-class ActivityGalleryPluginActivityController < ProfileController
+class ActivityGalleryPluginActivityController < PublicController
 
     no_design_blocks
     before_action :logged_user
