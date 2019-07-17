@@ -8,6 +8,12 @@ class ActivityGalleryPlugin < Noosfero::Plugin
     _("RBAC Activity Gallery")
   end
 
+  def self.extra_blocks
+    {
+      ActivityGalleryPlugin::ActivityGalleryBlock => {:type => 'person', :position => ['1','2','3'] }
+    }
+  end
+
   def stylesheet?
     true
   end

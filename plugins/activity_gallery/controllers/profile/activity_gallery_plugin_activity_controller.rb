@@ -10,6 +10,7 @@ class ActivityGalleryPluginActivityController < ProfileController
 
     def library
     end
+
     def index
         @activities = get("gallery/v1/activities/#{build_search_params}").
             map { |activity| ActivityGalleryPlugin::Activity.new(activity) }
