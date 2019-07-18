@@ -74,6 +74,8 @@ class ActivityGalleryPlugin < Noosfero::Plugin
       get "/galeria/editar-atividade/:id", to: 'activity_gallery_plugin_activity#edit'
       get "/galeria/remixar-atividade/:id", to: 'activity_gallery_plugin_activity#remix'
       get "/profile/:profile/atividades", to: 'activity_gallery_plugin_profile_activity#index'
+      get "/profile/:profile/atividades-curtidas", to: 'activity_gallery_plugin_profile_activity#saved_activities'
+      get "/profile/:profile/atividades-implementadas", to: 'activity_gallery_plugin_profile_activity#implemented_activities'
       get "/sobre", to: 'activity_gallery_plugin_activity#about'
       get "/biblioteca", to: 'activity_gallery_plugin_activity#library'
       get "/galeria/:id", to: 'activity_gallery_plugin_activity#show'
