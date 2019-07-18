@@ -1,0 +1,28 @@
+<% 
+  if profile.blank?
+    todas_url = "/galeria"
+    curtidas_url = "/galeria/atividades-curtidas"
+    implementadas_url = "/galeria/atividades-implementadas"
+  else
+    todas_url = "/profile/#{profile.identifier}/atividades"
+    curtidas_url = "/profile/#{profile.identifier}/atividades-curtidas"
+    implementadas_url ="/profile/#{profile.identifier}/atividades-implementadas"
+  end
+%>
+
+<div class="col-md-3 activity-options">
+  <div id="user-api-menu">
+    <ul class="uk-nav uk-nav-side">
+      <li>OPÇÕES DA GALERIA</li>
+      <li><a href="<%= todas_url %>">Todas as Atividades</a></li>
+      <% if logged_in? %>
+        <% if profile.blank? %>
+          <li><a href="/galeria/nova-atividade">Incluir Nova Atividade</a></li>
+          <li><a href="/galeria/minhas-atividades">Minhas Atividades</a></li>
+        <% end %>
+        <li><a href="<%= curtidas_url %>">Atividades Curtidas</a></li>
+        <li><a href="<%= implementadas_url %>">Atividades Implementadas</a></li>
+      <% end %>
+    </ul>
+  </div>
+</div>

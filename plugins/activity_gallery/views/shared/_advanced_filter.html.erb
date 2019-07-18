@@ -11,7 +11,9 @@
   <%= labelled_check_box(scope[0], 'scopes[]', scope[1], nil, {add_hidden: false} )%>
 <% end %>
 
-<%= labelled_form_field(_('Autor(es)')+': ', token_input_field_tag('authors', 'search-authors', {:controller => 'activity_gallery_plugin_activity', :action => 'search_authors'}, {:focus => false, :hint_text => _('Digite o nome do autor')})) %>
+<% if profile.blank? %>
+  <%= labelled_form_field(_('Autor(es)')+': ', token_input_field_tag('authors', 'search-authors', {:controller => 'activity_gallery_plugin_activity', :action => 'search_authors'}, {:focus => false, :hint_text => _('Digite o nome do autor')})) %>
+<% end %>
 
 <%= labelled_form_field(_('Público-alvo')+': ', nil ) %>
 <% ActivityGalleryPlugin::Activity.get_audience_options(jwt).map do |audience| %>

@@ -25,7 +25,11 @@ class ActivityGalleryPlugin < Noosfero::Plugin
       "name" => person.name,
       "birthday" => person.birth_date
     }}
-    ActivityGalleryPlugin::Request.post("/auth/v1/users/register", body)
+    result = ActivityGalleryPlugin::Request.post("/auth/v1/users/register", body)
+    data = JSON.parse(result.body,symbolize_names:true)[:data]
+    metadata = Noosfero::Plugin::Metadata.new(person, self.class)
+    metadata.person_id = data[:id]
+    metadata.save!
   end
 
   def account_controller_filters
@@ -69,6 +73,7 @@ class ActivityGalleryPlugin < Noosfero::Plugin
       get "/galeria/nova-atividade", to: 'activity_gallery_plugin_activity#new'
       get "/galeria/editar-atividade/:id", to: 'activity_gallery_plugin_activity#edit'
       get "/galeria/remixar-atividade/:id", to: 'activity_gallery_plugin_activity#remix'
+      get "/profile/:profile/atividades", to: 'activity_gallery_plugin_profile_activity#index'
       get "/sobre", to: 'activity_gallery_plugin_activity#about'
       get "/biblioteca", to: 'activity_gallery_plugin_activity#library'
       get "/galeria/:id", to: 'activity_gallery_plugin_activity#show'

@@ -30,7 +30,8 @@ class ActivityGalleryPlugin::Activity
   end
 
   def is_author?(person)
-    authors.present? && authors.any? { |author| author[:email] == person.email }
+    metadata = Noosfero::Plugin::Metadata.new(person, ActivityGalleryPlugin)
+    authors.present? && authors.any? { |author| author[:id] == metadata.person_id }
   end
 
   def original_image

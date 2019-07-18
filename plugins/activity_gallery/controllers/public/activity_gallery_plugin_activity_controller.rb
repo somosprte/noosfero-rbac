@@ -1,5 +1,6 @@
 class ActivityGalleryPluginActivityController < PublicController
 
+    include ActivityGalleryPlugin::Helper
     no_design_blocks
     before_action :logged_user
     before_action :activity_authors, only: %i[edit destroy update]

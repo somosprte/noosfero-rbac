@@ -1,0 +1,3 @@
+<div class="form-title">Atividades de <%= profile.name %></div>
+<%= link_to('Voltar para o Perfil', "/profile/#{profile.identifier}") %>
+<%= render partial: 'shared/activities_form', locals: {action: "/profile/#{profile.identifier}/atividades"} %>

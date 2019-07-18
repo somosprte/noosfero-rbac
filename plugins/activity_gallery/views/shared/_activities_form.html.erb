@@ -1,0 +1,21 @@
+<%= form_tag(action, method: :get) do %>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 activity-filter-options">
+          <%= render partial: 'shared/advanced_filter' %>
+      </div>
+      <div class="col-md-6">
+        <div class="wrap">
+          <div class="search">
+            <%= text_field_tag(:search, params[:search], class:"searchTerm") %>
+            <button type="submit" class="searchButton">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+        </div>
+        <%= render partial: 'shared/activities' %>
+      </div>
+      <%= render partial: 'shared/nav' %>
+    </div>
+  </div>
+<% end %>
