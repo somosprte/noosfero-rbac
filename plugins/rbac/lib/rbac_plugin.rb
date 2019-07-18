@@ -52,4 +52,15 @@ class RbacPlugin < Noosfero::Plugin
       log.close
     end
   end
+
+  def content_remove_new(content)
+    content.blog? || (content.parent.present? && content.parent.blog?)
+  end
+
+  def article_extra_toolbar_buttons(content)
+    parent = content.blog? ? content : (content.parent.present? && content.parent.blog?) ? content.parent : nil
+    if parent.present?
+      { :title => _('New post'), :icon => :file, :url => {controller: 'cms', action: 'new', parent: parent, type: 'TextArticle', profile: profile.identifier} }
+    end
+  end
 end
