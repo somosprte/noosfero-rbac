@@ -26,10 +26,12 @@ class ActivityGalleryPlugin < Noosfero::Plugin
       "birthday" => person.birth_date
     }}
     result = ActivityGalleryPlugin::Request.post("/auth/v1/users/register", body)
-    data = JSON.parse(result.body,symbolize_names:true)[:data]
-    metadata = Noosfero::Plugin::Metadata.new(person, self.class)
-    metadata.person_id = data[:id]
-    metadata.save!
+    if result.code == '201'
+      data = JSON.parse(result.body,symbolize_names:true)[:data]
+      metadata = Noosfero::Plugin::Metadata.new(person, self.class)
+      metadata.person_id = data[:id]
+      metadata.save!
+    end
   end
 
   def account_controller_filters
