@@ -1,6 +1,9 @@
 <% filter_label = profile.send(@order + '_label') %>
 <% filter_label += show_date(profile.created_at, false, true, false, true) if @order == 'more_recent' %>
-<li class="search-profile-item nova-classe">
-  <%= profile_image_link profile, theme_option(:profile_list_imgs_size) || :portrait, 'div', filter_label %>
-  <p><%= profile.description%></p>
-</li>
+  <div class="col-md-4 pr-md-1 profile-list-vcard-block">
+    <%= profile_image_link profile, theme_option(:profile_list_imgs_size) || :portrait, 'div', filter_label %>
+    <div class="profile-description-list">
+      <p>Descrição</p>
+      <%= profile.description %>
+    </div>
+  </div>
