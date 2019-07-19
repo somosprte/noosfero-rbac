@@ -121,7 +121,7 @@ class ActivityGalleryPlugin::Activity
   end
 
   def self.get_authors_options(jwt)
-    url = "user/v1/people"
+    url = "user/v1/people/?per=200"
     result = ActivityGalleryPlugin::Request.get(url, nil, jwt)
     @authors = JSON.parse(result.body,symbolize_names:true)
     result = []

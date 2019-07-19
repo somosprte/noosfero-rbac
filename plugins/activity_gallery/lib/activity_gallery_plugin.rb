@@ -57,7 +57,7 @@ class ActivityGalleryPlugin < Noosfero::Plugin
           session['activity_gallery_plugin_jwt'] = data[:jwt]
           # session['activity_gallery_plugin_user_id'] = data[:id]
 
-          response = ActivityGalleryPlugin::Request.get('/user/v1/people/', nil, session['activity_gallery_plugin_jwt'])
+          response = ActivityGalleryPlugin::Request.get('/user/v1/people/?per=200', nil, session['activity_gallery_plugin_jwt'])
           data = JSON.parse(response.body,symbolize_names:true)[:data]
           id = data.select { |u| u[:attributes][:email] == user.email }.first[:id]
           session['activity_gallery_plugin_user_id'] = id
