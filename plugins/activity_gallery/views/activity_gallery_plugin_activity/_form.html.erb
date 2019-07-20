@@ -3,6 +3,7 @@
 <%= form_tag({action: action}, {multipart: true, id: "activity-form" }) do %>
 <div class="form-title">Informações da Atividade</div>
 <%= hidden_field_tag('id', params[:id]) %>
+<%= hidden_field_tag('data[activity_type]', params[:activity_type]) %>
 <div class="form-content">
   <div class="activity-subtitle">Sobre a Atividade</div>
 
@@ -11,54 +12,56 @@
   <%= file_field_or_thumbnail(_('Foto ou imagem ilustrativa para a atividade:'), @activity.original_image, 'data[image_builder]') %>
   <%= labelled_form_field(_('Quem criou esta atividade?')+' ', token_input_field_tag('data[authors]', 'search-authors', {:controller => 'activity_gallery_plugin_activity', :action => 'search_authors'}, {:focus => false, :hint_text => _('Digite o nome do autor'), :pre_populate => @activity.tokenized_authors})
   ) %>
-  <%= labelled_form_field(_('Descrição'), text_area_tag('data[description]', @activity.description, maxlength: 300, placeholder: 'Conte brevemente sobre o que se trata a atividade, qual o público, objetivo e em qual contexto é realizada')) %>
-  <%= labelled_form_field(_('Motivação'), text_area_tag('data[motivation]', @activity.motivation, maxlength: 500, placeholder: 'Conte um pouco sobre o contexto em que esta atividade foi elaborada.')) %>
-  <%= labelled_form_field(_('Poderosas Ideias'), text_area_tag('data[powerful_ideas]', @activity.powerful_ideas, placeholder: 'Quais são os objetivos pedagógicos da atividade, em termos de atitudes, conteúdo e habilidades?')) %>
-  <%= labelled_form_field(_('Produtos esperados'), text_area_tag('data[products]', @activity.products, placeholder: 'Descreva aqui o que será construído pelos participantes. Para a AC, é importante que jovens e crianças construam algo que seja compartilhável e significativo. Um castelo de areia, um poema, um programa de computador, uma peça de teatro etc. Que produtos serão criados pelos participantes desta atividade?')) %>
-  <%= labelled_form_field(_('Escopo: Em que escopo a atividade é realizada?')+' ',
-    ActivityGalleryPlugin::Activity.get_scopes_options(jwt).map do |scope|
-      labelled_check_box(scope[0], 'data[scopes][]', scope[1], @activity.check(:scopes, scope[1]), {add_hidden: false} )
-    end.join.html_safe
-  ) %>
-  <%= labelled_form_field(_('Público-alvo: Indique todos os públicos que podem participar desta atividade')+' ',
-    ActivityGalleryPlugin::Activity.get_audience_options(jwt).map do |audience|
-      labelled_check_box(audience[0], 'data[audiences][]', audience[1], @activity.check(:audiences, audience[1]), {add_hidden: false} )
-    end.join.html_safe
-  ) %>
-  <%= labelled_form_field(_('Pré-requisitos'), text_area_tag('data[requirements]', @activity.requirements, placeholder: 'A atividade exige pré-requisito dos participantes? Descreva.')) %>
-  <%= labelled_form_field(_('Deseja publicar a atividade?')+' ', select_tag('data[published]', options_for_select([['Sim', '1'], ['Não', '0']]))) %>
-  <%= labelled_form_field(_('Histórico'), text_area_tag('data[version_history]', @activity.version_history, placeholder: 'Histórico das versões')) %>
-  <%= labelled_form_field(_('Copyright'), text_area_tag('data[copyright]', @activity.copyright, placeholder: 'Quem deve ser listado no Copyright?')) %>
-  <%= labelled_form_field(_('Tipo de licença'), text_area_tag('data[license_type]', @activity.license_type, placeholder: 'Qual o tipo de licença a ser utilizado para esta atividade?')) %>
-  <%= link_to(font_awesome(:view, _('Clique aqui para mais detalhes sobre os tipos de licença')), "/tipos-de-licenca")%>
+  <% if params[:activity_type] == 'internal' %>
+    <%= labelled_form_field(_('Descrição'), text_area_tag('data[description]', @activity.description, maxlength: 300, placeholder: 'Conte brevemente sobre o que se trata a atividade, qual o público, objetivo e em qual contexto é realizada')) %>
+    <%= labelled_form_field(_('Motivação'), text_area_tag('data[motivation]', @activity.motivation, maxlength: 500, placeholder: 'Conte um pouco sobre o contexto em que esta atividade foi elaborada.')) %>
+    <%= labelled_form_field(_('Poderosas Ideias'), text_area_tag('data[powerful_ideas]', @activity.powerful_ideas, placeholder: 'Quais são os objetivos pedagógicos da atividade, em termos de atitudes, conteúdo e habilidades?')) %>
+    <%= labelled_form_field(_('Produtos esperados'), text_area_tag('data[products]', @activity.products, placeholder: 'Descreva aqui o que será construído pelos participantes. Para a AC, é importante que jovens e crianças construam algo que seja compartilhável e significativo. Um castelo de areia, um poema, um programa de computador, uma peça de teatro etc. Que produtos serão criados pelos participantes desta atividade?')) %>
+    <%= labelled_form_field(_('Escopo: Em que escopo a atividade é realizada?')+' ',
+      ActivityGalleryPlugin::Activity.get_scopes_options(jwt).map do |scope|
+        labelled_check_box(scope[0], 'data[scopes][]', scope[1], @activity.check(:scopes, scope[1]), {add_hidden: false} )
+      end.join.html_safe
+    ) %>
+    <%= labelled_form_field(_('Público-alvo: Indique todos os públicos que podem participar desta atividade')+' ',
+      ActivityGalleryPlugin::Activity.get_audience_options(jwt).map do |audience|
+        labelled_check_box(audience[0], 'data[audiences][]', audience[1], @activity.check(:audiences, audience[1]), {add_hidden: false} )
+      end.join.html_safe
+    ) %>
+    <%= labelled_form_field(_('Pré-requisitos'), text_area_tag('data[requirements]', @activity.requirements, placeholder: 'A atividade exige pré-requisito dos participantes? Descreva.')) %>
+    <%= labelled_form_field(_('Deseja publicar a atividade?')+' ', select_tag('data[published]', options_for_select([['Sim', '1'], ['Não', '0']]))) %>
+    <%= labelled_form_field(_('Histórico'), text_area_tag('data[version_history]', @activity.version_history, placeholder: 'Histórico das versões')) %>
+    <%= labelled_form_field(_('Copyright'), text_area_tag('data[copyright]', @activity.copyright, placeholder: 'Quem deve ser listado no Copyright?')) %>
+    <%= labelled_form_field(_('Tipo de licença'), text_area_tag('data[license_type]', @activity.license_type, placeholder: 'Qual o tipo de licença a ser utilizado para esta atividade?')) %>
+    <%= link_to(font_awesome(:view, _('Clique aqui para mais detalhes sobre os tipos de licença')), "/tipos-de-licenca")%>
 
 
-  <div class="activity-subtitle">Preparação da Atividade</div>
-  <%= labelled_form_field(_('Tipo de Espaço: Indique o tipo de espaço onde a atividade foi ou pode ser implementada.')+' ',
-    ActivityGalleryPlugin::Activity.get_space_types_options(jwt).map do |space|
-      labelled_check_box(space[0], 'data[space_types][]', space[1], @activity.check(:space_types, space[1]), {add_hidden: false} )
-    end.join.html_safe
-  ) %>
-  <%= labelled_form_field(_('Organização do espaço'), text_area_tag('data[space_organization]', @activity.space_organization, class: 'text-editor-summernote', placeholder: 'Descreva como o espaço deve ser configurado em termos de mobiliário, instalações, materiais e participantes. Especifique a quantidade de cada item e sua disposição, e inclua imagens que possam ilustrar esta configuração. Lembre-se de que a organização do espaço é um fator muito importante para o desenvolvimento de alguns pontos da Aprendizagem Criativa, como o trabalho em parceria, a livre exploração de materiais e métodos etc.')) %>
-  <%= labelled_form_field(_('Passos para a implementação'), text_area_tag('data[implementation_steps]', @activity.implementation_steps, class: 'text-editor-summernote', placeholder: 'Aqui você pode descrever brevemente os passos para a facilitação da atividade, e referir outras atividades, se for o caso. Se quiser, substitua as ilustrações por fotos relativas ao passo-a-passo.')) %>
-  <%= labelled_form_field(_('Materiais Gerais: Que tipos de ferramentas e consumíveis você utiliza para a realização da atividade?')+' ', nil ) %>
-  <div class="general-materials">
-    <div class="general-material-fields">
-      <%= select_tag('data[general_materials][][id]', options_for_select(ActivityGalleryPlugin::Activity.get_general_materials_options(jwt)), include_blank: 'Selecione um material') %>
-      <%= number_field_tag('data[general_materials][][quantity]', 0) %>
-      <%= button_without_text(:trash, _('Delete'), '#') %>
-    </div> 
+    <div class="activity-subtitle">Preparação da Atividade</div>
+    <%= labelled_form_field(_('Tipo de Espaço: Indique o tipo de espaço onde a atividade foi ou pode ser implementada.')+' ',
+      ActivityGalleryPlugin::Activity.get_space_types_options(jwt).map do |space|
+        labelled_check_box(space[0], 'data[space_types][]', space[1], @activity.check(:space_types, space[1]), {add_hidden: false} )
+      end.join.html_safe
+    ) %>
+    <%= labelled_form_field(_('Organização do espaço'), text_area_tag('data[space_organization]', @activity.space_organization, class: 'text-editor-summernote', placeholder: 'Descreva como o espaço deve ser configurado em termos de mobiliário, instalações, materiais e participantes. Especifique a quantidade de cada item e sua disposição, e inclua imagens que possam ilustrar esta configuração. Lembre-se de que a organização do espaço é um fator muito importante para o desenvolvimento de alguns pontos da Aprendizagem Criativa, como o trabalho em parceria, a livre exploração de materiais e métodos etc.')) %>
+    <%= labelled_form_field(_('Passos para a implementação'), text_area_tag('data[implementation_steps]', @activity.implementation_steps, class: 'text-editor-summernote', placeholder: 'Aqui você pode descrever brevemente os passos para a facilitação da atividade, e referir outras atividades, se for o caso. Se quiser, substitua as ilustrações por fotos relativas ao passo-a-passo.')) %>
+    <%= labelled_form_field(_('Materiais Gerais: Que tipos de ferramentas e consumíveis você utiliza para a realização da atividade?')+' ', nil ) %>
+    <div class="general-materials">
+      <div class="general-material-fields">
+        <%= select_tag('data[general_materials][][id]', options_for_select(ActivityGalleryPlugin::Activity.get_general_materials_options(jwt)), include_blank: 'Selecione um material') %>
+        <%= number_field_tag('data[general_materials][][quantity]', 0) %>
+        <%= button_without_text(:trash, _('Delete'), '#') %>
+      </div> 
+    </div>
+    <%= labelled_form_field(_('Materiais específicos'), text_area_tag('data[specific_materials]', @activity.specific_materials, placeholder: 'Você utiliza materiais criados especificamente para esta atividade? (ex.: templates, kits, fichas, apostilas etc) Liste-os, incluindo o link de acesso, e indicando a licença apropriada.')) %>
+    <%= labelled_form_field(_('Dicas sobre a implementação'), text_area_tag('data[implementation_tips]', @activity.implementation_tips, class: 'text-editor-summernote', placeholder: 'Que dica(s) valiosa(s) você tem para outros educadores que queiram implementar a atividade?')) %>
+    <%= labelled_form_field(_('Reflexão e avaliação'), text_area_tag('data[reflection_assessment]', @activity.reflection_assessment, class: 'text-editor-summernote', placeholder: 'Como você avalia a atividade? Especifique instrumentos e critérios de avaliação e métodos de reflexão e em qual etapa da atividade se encaixa.')) %>
+    <%= labelled_form_field(_('Duração'), text_area_tag('data[duration]', @activity.duration, placeholder: 'Em quanto tempo você realizou a atividade? Quanto tempo você recomendaria para o processo inteiro de implementação (desde a chegada do público até o encerramento)?')) %>
+    
+    <div class="activity-subtitle">Inspiração</div>
+    <%= labelled_form_field(_('Atividades Inspiradoras: Indicação de atividades que foram inspiradoras para a criação desta atividade')+' ', token_input_field_tag('data[inspirations]', 'search-inspirations', {:controller => 'activity_gallery_plugin_activity', :action => 'search_inspirations'}, {:focus => false, :hint_text => _('Digite o nome da atividade'), :pre_populate => @activity.tokenized_inspirations})
+    ) %>
+    <%= labelled_form_field(_('Referências Externas'), text_area_tag('data[references]', @activity.references, class: 'text-editor-summernote', placeholder: 'Indicação de referências bibliográficas associadas')) %>
   </div>
-  <%= labelled_form_field(_('Materiais específicos'), text_area_tag('data[specific_materials]', @activity.specific_materials, placeholder: 'Você utiliza materiais criados especificamente para esta atividade? (ex.: templates, kits, fichas, apostilas etc) Liste-os, incluindo o link de acesso, e indicando a licença apropriada.')) %>
-  <%= labelled_form_field(_('Dicas sobre a implementação'), text_area_tag('data[implementation_tips]', @activity.implementation_tips, class: 'text-editor-summernote', placeholder: 'Que dica(s) valiosa(s) você tem para outros educadores que queiram implementar a atividade?')) %>
-  <%= labelled_form_field(_('Reflexão e avaliação'), text_area_tag('data[reflection_assessment]', @activity.reflection_assessment, class: 'text-editor-summernote', placeholder: 'Como você avalia a atividade? Especifique instrumentos e critérios de avaliação e métodos de reflexão e em qual etapa da atividade se encaixa.')) %>
-  <%= labelled_form_field(_('Duração'), text_area_tag('data[duration]', @activity.duration, placeholder: 'Em quanto tempo você realizou a atividade? Quanto tempo você recomendaria para o processo inteiro de implementação (desde a chegada do público até o encerramento)?')) %>
-  
-  <div class="activity-subtitle">Inspiração</div>
-  <%= labelled_form_field(_('Atividades Inspiradoras: Indicação de atividades que foram inspiradoras para a criação desta atividade')+' ', token_input_field_tag('data[inspirations]', 'search-inspirations', {:controller => 'activity_gallery_plugin_activity', :action => 'search_inspirations'}, {:focus => false, :hint_text => _('Digite o nome da atividade'), :pre_populate => @activity.tokenized_inspirations})
-  ) %>
-  <%= labelled_form_field(_('Referências Externas'), text_area_tag('data[references]', @activity.references, class: 'text-editor-summernote', placeholder: 'Indicação de referências bibliográficas associadas')) %>
-</div>
+<% end %>
 
   <%= button_bar do %>
     <%= submit_button(:save, _('Save'), :cancel => { :action => 'index' }) %>

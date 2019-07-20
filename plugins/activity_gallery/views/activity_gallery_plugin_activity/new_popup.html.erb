@@ -3,8 +3,7 @@
   <br />
   <div class="row">
     <div class="col-md-6 select-activity-type">
-      <%= link_to _('Atividade Interna'), {controller: 'activity_gallery_plugin_activity', action: 'destroy', id:
-      params[:id]}, class: 'button with-text icon-save' %>
+      <%= link_to _('Atividade Interna'), {controller: 'activity_gallery_plugin_activity', action: 'new', activity_type: 'internal'}, class: 'button with-text icon-save' %>
       <p>
         <br />
         <strong>Atividade Interna:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pretium nisl
@@ -15,8 +14,7 @@
       </p>
     </div>
     <div class="col-md-6 select-activity-type">
-      <%= link_to _('Atividade Externa'), {controller: 'activity_gallery_plugin_activity', action: 'destroy', id:
-      params[:id]}, class: 'button with-text icon-save' %>
+      <%= link_to _('Atividade Externa'), {controller: 'activity_gallery_plugin_activity', action: 'new', activity_type: 'external'}, class: 'button with-text icon-save' %>
       <p>
         <br />
         <strong>Atividade Externa:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pretium nisl

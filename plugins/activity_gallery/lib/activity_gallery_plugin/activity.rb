@@ -44,6 +44,7 @@ class ActivityGalleryPlugin::Activity
   def body
     result = {"activity" => {
       "title" => title,
+      "activity_type" => activity_type,
       "description" => description,
       "caption" => caption,
       "motivation" => motivation,
@@ -66,7 +67,7 @@ class ActivityGalleryPlugin::Activity
       "space_type_ids" => space_types,
       "person_ids" => authors.try(:split, ','),
       "specific_materials" => specific_materials,
-      "general_materials" => general_materials.map(&:to_h)
+      "general_materials" => general_materials.try(:map, &:to_h)
     }}
     result['activity']['image'] = image if image.present?
     result
