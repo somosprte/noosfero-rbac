@@ -1,0 +1,30 @@
+<div class="<%= kindify_class(profile, 'vcard') %>">
+
+<% if block.title.present? %>
+  <p><%= block.title %></p>
+<% end %>
+
+<div class="profile-big-image <%= theme_option(:profile_list_bg_imgs) ? 'bg-pic' : 'img-pic' %>">
+  <%= render :partial => 'blocks/profile_big_image' %>
+</div>
+
+<% if block.show_name %>
+  <p><%= h block.owner.short_name %></p>
+<% end %>
+
+<% if !user.nil? and user.has_permission?('edit_profile', profile) %>
+  <div class='admin-link'>
+    <%= link_to font_awesome(:control_panel, _('Control panel')), block.owner.admin_url %>
+  </div>
+<% end %>
+
+<div>
+    <% if profile.person? %>
+    <span><%= _('Membro desde: %{month}/%{year}') % { :year => block.owner.created_at.year, :month => block.owner.created_at.month } %></span>
+  <% end %>
+</div>
+
+<div class="profile-info-options">
+  <%= render_profile_actions block.owner.class %>
+</div>
+</div><!-- end class="vcard" -->

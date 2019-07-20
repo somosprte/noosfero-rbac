@@ -63,4 +63,5 @@ class RbacPlugin < Noosfero::Plugin
       { :title => _('New post'), :icon => :file, :url => {controller: 'cms', action: 'new', parent: parent, type: 'TextArticle', profile: profile.identifier} }
     end
   end
+
 end

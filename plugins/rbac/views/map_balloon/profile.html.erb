@@ -1,0 +1,13 @@
+<div id="balloon">
+  <table class='profile-info'>
+    <tr>
+      <td><div class='profile-info-picture'><%= profile_image(@profile, :thumb) %></div></td>
+      <td>
+        <strong><%= link_to(@profile.name, url_for(@profile.url)) %></strong><br/>
+        <% unless @profile.data[:description].nil? %>
+          <strong><%= @profile.data[:description] %></strong><br/>
+        <% end %>
+      </td>
+    </tr>
+  </table>
+</div>
