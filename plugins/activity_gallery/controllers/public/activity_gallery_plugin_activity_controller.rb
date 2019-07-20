@@ -31,9 +31,8 @@ class ActivityGalleryPluginActivityController < PublicController
     end
 
     def my_activities
-        @activities = get('gallery/v1/activities/?per=50')
+        @activities = get('/user/v1/people/current_user/activities/?per=50')
         .map { |activity| ActivityGalleryPlugin::Activity.new(activity) }
-        .select { |activity| activity.is_author?(user) } #FIXME fetch from api
         @results = @activities.paginate(page: params[:page] || 1, per_page: 4)
     end
 
