@@ -31,7 +31,7 @@
   <%= labelled_form_field(_('Copyright'), text_area_tag('data[copyright]', @activity.copyright, placeholder: 'Quem deve ser listado no Copyright?')) %>
   <%= labelled_form_field(_('Tipo de licença'), text_area_tag('data[license_type]', @activity.license_type, placeholder: 'Qual o tipo de licença a ser utilizado para esta atividade?')) %>
 
-  <div class="activity-subtitle">Implementação da Atividade</div>
+  <div class="activity-subtitle">Preparação da Atividade</div>
   <%= labelled_form_field(_('Tipo de Espaço: Indique o tipo de espaço onde a atividade foi ou pode ser implementada.')+' ',
     ActivityGalleryPlugin::Activity.get_space_types_options(jwt).map do |space|
       labelled_check_box(space[0], 'data[space_types][]', space[1], @activity.check(:space_types, space[1]), {add_hidden: false} )

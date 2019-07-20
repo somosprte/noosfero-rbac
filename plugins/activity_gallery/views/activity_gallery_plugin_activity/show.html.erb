@@ -11,7 +11,7 @@
     </div>
     <div class="activity-text" style="text-align: center"><%= @activity.caption %></div>
     <div class="activity-text" style="text-align: center">
-        <strong>Atividade criada em:</strong>
+        <strong>Atividade inserida em:</strong>
           <% date = DateTime.parse(@activity.created_at) %>
           <%= date.strftime('%d/%m/%Y %H:%M:%S') %>
     </div>
