@@ -25,7 +25,7 @@ module ActivityGalleryPlugin::Helper
         @search_params["author_ids"] = params["authors"] if params["authors"].present?
         @search_params["audience_ids"] = params["audiences"].join(',') if params["audiences"].present?
         @search_params["space_type_ids"] = params["space_types"].join(',') if params["space_types"].present?
-
+        @search_params["order"] = params["order"] if params["order"].present?
         '?' + @search_params.map do |key, value|
             "#{key}=#{value}"
         end.join('&')

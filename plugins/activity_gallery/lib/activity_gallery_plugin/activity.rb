@@ -133,4 +133,15 @@ class ActivityGalleryPlugin::Activity
     result
   end
 
+  def self.get_order_options
+    [
+      ['Título (A -> Z)','title%20ASC'],
+      ['Título (Z -> A)','title%20DESC'],
+      ['Data de atualização','updated_at%20DESC'],
+      ['Mais Favoritadas','total_favorites%20DESC'],
+      ['Mais implementadas','total_implementations%20DESC'],
+      ['Mais remixadas','total_remixes%20DESC'],
+    ]
+  end
+
 end
