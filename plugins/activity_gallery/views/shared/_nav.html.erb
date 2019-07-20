@@ -17,6 +17,7 @@
       <li><a href="<%= todas_url %>">Todas as Atividades</a></li>
       <% if logged_in? %>
         <% if profile.blank? %>
+          <li><%= modal_link_to _('Incluir Nova Atividade'), { controller: 'activity_gallery_plugin_activity', action: 'new_popup' }  %> </li>
           <li><a href="/galeria/nova-atividade">Incluir Nova Atividade</a></li>
           <li><a href="/galeria/minhas-atividades">Minhas Atividades</a></li>
         <% end %>

@@ -486,12 +486,12 @@
 }
 
 .formfieldline {
-  .panel{
+  .panel {
     display: block !important;
   }
 }
 
-.note-group-select-from-files{
+.note-group-select-from-files {
   display: none;
 }
 
@@ -526,9 +526,16 @@ input[type='number'] {
   max-width: 100%;
 }
 
-label{
+label {
   display: block !important;
   text-align: left;
   line-height: 15px;
   padding-left: 20px;
+}
+
+.select-activity-type {
+  text-align: center;
+}
+.select-activity-type p{
+  text-align: justify;
 }

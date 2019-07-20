@@ -12,6 +12,9 @@ class ActivityGalleryPluginActivityController < PublicController
     def library
     end
 
+    def new_popup
+    end
+
     def index
         @activities = get("gallery/v1/activities/#{build_search_params}").
             map { |activity| ActivityGalleryPlugin::Activity.new(activity) }

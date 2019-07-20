@@ -1,0 +1,30 @@
+<div class="select-activity-type">
+  <h5><%= 'Que tipo de atividade você deseja criar?' %></h5>
+  <br />
+  <div class="row">
+    <div class="col-md-6 select-activity-type">
+      <%= link_to _('Atividade Interna'), {controller: 'activity_gallery_plugin_activity', action: 'destroy', id:
+      params[:id]}, class: 'button with-text icon-save' %>
+      <p>
+        <br />
+        <strong>Atividade Interna:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pretium nisl
+        id massa convallis, fermentum condimentum nisi porttitor. Maecenas dictum nisi et turpis rutrum fringilla.
+        Quisque rutrum consequat tellus non consequat. Praesent nisi dui, scelerisque ut augue vitae, varius fermentum
+        felis. Nullam molestie cursus vestibulum. Maecenas nec lorem quis sem blandit gravida. Vestibulum sit amet neque
+        eu justo convallis lacinia.
+      </p>
+    </div>
+    <div class="col-md-6 select-activity-type">
+      <%= link_to _('Atividade Externa'), {controller: 'activity_gallery_plugin_activity', action: 'destroy', id:
+      params[:id]}, class: 'button with-text icon-save' %>
+      <p>
+        <br />
+        <strong>Atividade Externa:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pretium nisl
+        id massa convallis, fermentum condimentum nisi porttitor. Maecenas dictum nisi et turpis rutrum fringilla.
+        Quisque rutrum consequat tellus non consequat. Praesent nisi dui, scelerisque ut augue vitae, varius fermentum
+        felis. Nullam molestie cursus vestibulum. Maecenas nec lorem quis sem blandit gravida. Vestibulum sit amet neque
+        eu justo convallis lacinia.
+      </p>
+    </div>
+  </div>
+</div>
