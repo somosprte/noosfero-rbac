@@ -30,7 +30,7 @@
   <%= labelled_form_field(_('Histórico'), text_area_tag('data[version_history]', @activity.version_history, placeholder: 'Histórico das versões')) %>
   <%= labelled_form_field(_('Copyright'), text_area_tag('data[copyright]', @activity.copyright, placeholder: 'Quem deve ser listado no Copyright?')) %>
   <%= labelled_form_field(_('Tipo de licença'), text_area_tag('data[license_type]', @activity.license_type, placeholder: 'Qual o tipo de licença a ser utilizado para esta atividade?')) %>
-  <%= link_to(font_awesome(:view, _('Clique aqui para mais detalhes sobre os tipos de licença')), "/galeria/tipos-de-licenca")%>
+  <%= link_to(font_awesome(:view, _('Clique aqui para mais detalhes sobre os tipos de licença')), "/tipos-de-licenca")%>
 
 
   <div class="activity-subtitle">Preparação da Atividade</div>
