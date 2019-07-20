@@ -131,20 +131,6 @@ class ActivityGalleryPluginActivityController < PublicController
 
     private
 
-    def build_search_params
-        @search_params = {}
-        @search_params["per"] = '50'
-        @search_params["global"] = params["search"] if params["search"].present?
-        @search_params["scope_ids"] = params["scopes"].join(',') if params["scopes"].present?
-        @search_params["author_ids"] = params["authors"] if params["authors"].present?
-        @search_params["audience_ids"] = params["audiences"].join(',') if params["audiences"].present?
-        @search_params["space_type_ids"] = params["space_types"].join(',') if params["space_types"].present?
-
-        '?' + @search_params.map do |key, value|
-            "#{key}=#{value}"
-        end.join('&')
-    end
-
     def logged_user
         if !logged_in?
             session[:return_to] = {controller: params['controller'], action: params['action'], id: params['id']}
