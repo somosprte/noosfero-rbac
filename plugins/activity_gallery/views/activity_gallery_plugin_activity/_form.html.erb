@@ -3,6 +3,7 @@
 <%= form_tag({action: action}, {multipart: true, id: "activity-form" }) do %>
 <div class="form-title">Informações da Atividade</div>
 <%= hidden_field_tag('id', params[:id]) %>
+<% params[:activity_type] ||= 'internal' %>
 <%= hidden_field_tag('data[activity_type]', params[:activity_type]) %>
 <div class="form-content">
   <div class="activity-subtitle">Sobre a Atividade</div>
