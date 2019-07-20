@@ -12,6 +12,7 @@
   <%= file_field_or_thumbnail(_('Foto ou imagem ilustrativa para a atividade:'), @activity.original_image, 'data[image_builder]') %>
   <%= labelled_form_field(_('Quem criou esta atividade?')+' ', token_input_field_tag('data[authors]', 'search-authors', {:controller => 'activity_gallery_plugin_activity', :action => 'search_authors'}, {:focus => false, :hint_text => _('Digite o nome do autor'), :pre_populate => @activity.tokenized_authors})
   ) %>
+  <%= labelled_form_field(_('Autores Externos'), text_field_tag('data[external_authors]', @activity.external_authors.try(:join, ','), id: 'external-authors')) %>
   <% if params[:activity_type] == 'internal' %>
     <%= labelled_form_field(_('Descrição'), text_area_tag('data[description]', @activity.description, maxlength: 300, placeholder: 'Conte brevemente sobre o que se trata a atividade, qual o público, objetivo e em qual contexto é realizada')) %>
     <%= labelled_form_field(_('Motivação'), text_area_tag('data[motivation]', @activity.motivation, maxlength: 500, placeholder: 'Conte um pouco sobre o contexto em que esta atividade foi elaborada.')) %>

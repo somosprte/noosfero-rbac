@@ -66,6 +66,7 @@ class ActivityGalleryPlugin::Activity
       "audience_ids" => audiences,
       "space_type_ids" => space_types,
       "person_ids" => authors.try(:split, ','),
+      "external_authors" => external_authors.try(:split, ','),
       "specific_materials" => specific_materials,
       "general_materials" => general_materials.try(:map, &:to_h)
     }}
