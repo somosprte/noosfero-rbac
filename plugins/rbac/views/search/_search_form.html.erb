@@ -6,8 +6,9 @@
 </div>
 
 <div id="search-subheader">
-  <%= templates_submenu(@asset) %> <%= kinds_submenu(@asset) %> <%= filters(@asset) if asset_class(@asset) == Enterprise
-  %>
+  <%= templates_submenu(@asset) %> 
+  Escolha o tipo de perfil que deseja visualizar: <%= kinds_submenu(@asset) %>
+  <%#= filters(@asset) if asset_class(@asset) == Enterprise %>
 </div>
 <div class="search-field">
   <div class="search-form">
