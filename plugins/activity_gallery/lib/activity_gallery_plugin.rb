@@ -80,6 +80,7 @@ class ActivityGalleryPlugin < Noosfero::Plugin
       get "/profile/:profile/atividades-implementadas", to: 'activity_gallery_plugin_profile_activity#implemented_activities'
       get "/sobre", to: 'activity_gallery_plugin_activity#about'
       get "/biblioteca", to: 'activity_gallery_plugin_activity#library'
+      get "/tipos-de-licenca", to: 'activity_gallery_plugin_activity#licence_types'
       get "/galeria/:id", to: 'activity_gallery_plugin_activity#show'
     end
   end
