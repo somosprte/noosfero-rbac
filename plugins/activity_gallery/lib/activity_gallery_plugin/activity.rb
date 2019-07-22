@@ -55,6 +55,7 @@ class ActivityGalleryPlugin::Activity
       "version_history" => version_history,
       "copyright" => copyright,
       "license_type" => license_type,
+      "external_link" => external_link,
       "space_organization" => space_organization,
       "implementation_steps" => implementation_steps,
       "implementation_tips" => implementation_tips,

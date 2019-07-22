@@ -62,8 +62,9 @@
     <%= labelled_form_field(_('Atividades Inspiradoras: Indicação de atividades que foram inspiradoras para a criação desta atividade')+' ', token_input_field_tag('data[inspirations]', 'search-inspirations', {:controller => 'activity_gallery_plugin_activity', :action => 'search_inspirations'}, {:focus => false, :hint_text => _('Digite o nome da atividade'), :pre_populate => @activity.tokenized_inspirations})
     ) %>
     <%= labelled_form_field(_('Referências Externas'), text_area_tag('data[references]', @activity.references, class: 'text-editor-summernote', placeholder: 'Indicação de referências bibliográficas associadas')) %>
+  <% end %>
+    <%= labelled_form_field(_('Link para atividade externa'), text_area_tag('data[external_link]', @activity.external_link, placeholder: 'Link para a atividade externa')) if params[:activity_type] == 'external' %>
   </div>
-<% end %>
 
   <%= button_bar do %>
     <%= submit_button(:save, _('Save'), :cancel => { :action => 'index' }) %>
