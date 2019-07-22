@@ -61,6 +61,10 @@ class RbacPlugin < Noosfero::Plugin
     true
   end
 
+  def content_remove_upload(content)
+    true
+  end
+
   def article_extra_toolbar_buttons(content)
     parent = content.blog? ? content : (content.parent.present? && content.parent.blog?) ? content.parent : nil
     can_create = content.allow_create?(context.send(:user)) || (content.parent && content.parent.allow_create?(context.send(:user)))
