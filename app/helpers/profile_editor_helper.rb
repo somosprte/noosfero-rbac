@@ -81,12 +81,12 @@ module ProfileEditorHelper
   ]
 
   SCHOOLING = [
-    N_('Post-Doctoral'),
-    N_('Ph.D.'),
-    N_('Masters'),
-    N_('Graduate'),
+    N_('Elementary School'),
     N_('High School'),
-    N_('Elementary School')
+    N_('Graduate'),
+    N_('Masters'),
+    N_('Ph.D.'),
+    N_('Post-Doctoral')
   ]
 
   SCHOOLING_STATUS = [
