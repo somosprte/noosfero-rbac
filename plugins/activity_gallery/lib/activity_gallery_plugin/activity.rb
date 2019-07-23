@@ -66,6 +66,7 @@ class ActivityGalleryPlugin::Activity
       "scope_ids" => scopes,
       "audience_ids" => audiences,
       "space_type_ids" => space_types,
+      "license_id" => license[:id],
       "person_ids" => authors.try(:split, ','),
       "external_authors" => external_authors.try(:split, ','),
       "specific_materials" => specific_materials,
@@ -82,6 +83,18 @@ class ActivityGalleryPlugin::Activity
     result = []
     @audiences[:data].each do |audience|
       field = [audience[:attributes][:name], audience[:id]]
+      result.push(field)
+    end
+    result
+  end
+
+  def self.get_license_options(jwt)
+    url = "gallery/v1/licenses/?per=50"
+    result = ActivityGalleryPlugin::Request.get(url, nil, jwt)
+    @license = JSON.parse(result.body,symbolize_names:true)
+    result = []
+    @license[:data].each do |license|
+      field = [license[:attributes][:acronym], license[:id]]
       result.push(field)
     end
     result

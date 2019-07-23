@@ -12,7 +12,7 @@ class ActivityGalleryPluginActivityController < PublicController
     def library
     end
 
-    def licence_types
+    def license_types
     end
 
     def new_popup
