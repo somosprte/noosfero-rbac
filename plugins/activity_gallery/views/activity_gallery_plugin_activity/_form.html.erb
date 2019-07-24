@@ -30,7 +30,6 @@
       end.join.html_safe
     ) %>
     <%= labelled_form_field(_('Pré-requisitos'), text_area_tag('data[requirements]', @activity.requirements, placeholder: 'A atividade exige pré-requisito dos participantes? Descreva.')) %>
-    <%= labelled_form_field(_('Deseja publicar a atividade?')+' ', select_tag('data[published]', options_for_select([['Sim', '1'], ['Não', '0']]))) %>
     <%= labelled_form_field(_('Histórico'), text_area_tag('data[version_history]', @activity.version_history, placeholder: 'Histórico das versões')) %>
     <%= labelled_form_field(_('Copyright'), text_area_tag('data[copyright]', @activity.copyright, placeholder: 'Quem deve ser listado no Copyright?')) %>
     <%#= labelled_form_field(_('Tipo de licença'), text_area_tag('data[license_type]', @activity.license_type, placeholder: 'Qual o tipo de licença a ser utilizado para esta atividade?')) %>
@@ -66,8 +65,9 @@
     <%= labelled_form_field(_('Atividades Inspiradoras: Indicação de atividades que foram inspiradoras para a criação desta atividade')+' ', token_input_field_tag('data[inspirations]', 'search-inspirations', {:controller => 'activity_gallery_plugin_activity', :action => 'search_inspirations'}, {:focus => false, :hint_text => _('Digite o nome da atividade'), :pre_populate => @activity.tokenized_inspirations})
     ) %>
     <%= labelled_form_field(_('Referências Externas'), text_area_tag('data[references]', @activity.references, class: 'text-editor-summernote', placeholder: 'Indicação de referências bibliográficas associadas')) %>
-  <% end %>
+    <% end %>
     <%= labelled_form_field(_('Link para atividade externa'), text_area_tag('data[external_link]', @activity.external_link, placeholder: 'Link para a atividade externa')) if params[:activity_type] == 'external' %>
+    <%= labelled_form_field(_('Deseja publicar a atividade?')+' ', select_tag('data[published]', options_for_select([['Sim', '1'], ['Não', '0']]))) %>
   </div>
 
   <%= button_bar do %>
