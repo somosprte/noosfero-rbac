@@ -59,18 +59,18 @@ class ActivityGalleryPlugin::Activity
       "space_organization" => space_organization,
       "implementation_steps" => implementation_steps,
       "implementation_tips" => implementation_tips,
-      "inspirations_ids" => inspirations.try(:split, ','),
+      "inspirations_ids" => inspirations.try(:split, ',') || [],
       "references" => references,
       "reflection_assessment" => reflection_assessment,
       "duration" => duration,
-      "scope_ids" => scopes,
-      "audience_ids" => audiences,
-      "space_type_ids" => space_types,
+      "scope_ids" => scopes || [],
+      "audience_ids" => audiences|| [],
+      "space_type_ids" => space_types|| [],
       "license_id" => license[:id],
       "person_ids" => authors.try(:split, ','),
       "external_authors" => external_authors.try(:split, ','),
-      "specific_materials" => specific_materials,
-      "general_materials" => general_materials.try(:map, &:to_h)
+      "specific_materials" => specific_materials || [],
+      "general_materials" => general_materials.try(:map, &:to_h) || []
     }}
     result['activity']['image'] = image if image.present?
     result
