@@ -52,6 +52,7 @@ class ActivityGalleryPlugin::Activity
       "products" => products,
       "requirements" => requirements,
       "published" => published == '1' ? true : false,
+      "is_abac_author" => is_abac_author,
       "version_history" => version_history,
       "copyright" => copyright,
       "license_type" => license_type,

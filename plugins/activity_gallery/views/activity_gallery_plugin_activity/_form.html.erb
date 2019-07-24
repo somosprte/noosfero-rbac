@@ -5,6 +5,7 @@
 <% if params[:activity_type] == 'external' %>
   <%= hidden_field_tag('data[license][:id]', nil) %>
 <% end %>
+<%= hidden_field_tag('data[is_abac_author]', current_user.email == "abac@beta.aprendizagemcriativa.org.br" ) %>
 <%= hidden_field_tag('id', params[:id]) %>
 <% params[:activity_type] ||= 'internal' %>
 <%= hidden_field_tag('data[activity_type]', params[:activity_type]) %>
