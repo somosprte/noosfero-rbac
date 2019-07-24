@@ -2,6 +2,9 @@
   <% @results.each do |activity| %>
   <div class="item col-md-6">
     <div class="thumbnail">
+      <% if activity.is_abac_author == true %>
+        <div class="abac-tag">ABAC</div>
+      <% end %>
       <%= image_tag("#{activity.images[:medium]}", alt: "", class: "group list-group-image") %>
       <div class="caption">
         <h4 class="group inner list-group-item-heading">
