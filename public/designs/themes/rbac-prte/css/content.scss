@@ -181,3 +181,16 @@ a.google_oauth2 {
 #suggest-article-link {
   display: none;
 }
+
+.action-home-index {
+
+  .odd {
+    display: none;
+  }
+  .even {
+    width: 100%;
+  }
+  .home-news-title{
+    display: none;
+  }
+}

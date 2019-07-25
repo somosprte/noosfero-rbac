@@ -1,5 +1,5 @@
 <% if @has_news %>
-  <h1><%= _('News') %></h1>
+  <h1 class="home-news-title"><%= _('News') %></h1>
   <% cache @news_cache_key, skip_digest: true do %>
     <div id='highlighted-news'>
       <% @highlighted_news.each_with_index do |highlighted, index| %>
