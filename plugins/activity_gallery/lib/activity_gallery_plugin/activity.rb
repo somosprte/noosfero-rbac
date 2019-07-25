@@ -71,7 +71,7 @@ class ActivityGalleryPlugin::Activity
       "scope_ids" => scopes || [],
       "audience_ids" => audiences|| [],
       "space_type_ids" => space_types|| [],
-      "license_id" => license[:id],
+      "license_id" => license.to_h[":id"],
       "person_ids" => authors.try(:split, ','),
       "external_authors" => external_authors.try(:split, ','),
       "specific_materials" => specific_materials || [],
