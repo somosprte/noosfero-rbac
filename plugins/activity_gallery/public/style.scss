@@ -604,3 +604,7 @@ label {
   -webkit-box-shadow: 5px 5px 0 0 #006600 inset;
   box-shadow: 5px 5px 0 0 #006600 inset;
 }
+
+.formfield.type-select select {
+  width: 100% !important;
+}

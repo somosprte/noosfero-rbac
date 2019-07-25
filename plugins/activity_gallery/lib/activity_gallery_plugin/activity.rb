@@ -153,6 +153,14 @@ class ActivityGalleryPlugin::Activity
     result
   end
 
+  def self.get_activity_type_options
+    [
+      ['Todos os tipos',''],
+      ['Atividade Interna','internal'],
+      ['Atividade Externa','external']
+    ]
+  end
+
   def self.get_order_options
     [
       ['Título (A -> Z)','title%20ASC'],

@@ -8,6 +8,8 @@
 
 <%= labelled_form_field(_('Ordenar por:')+' ', select_tag('order', options_for_select(ActivityGalleryPlugin::Activity.get_order_options, params[:order]))) %>
 
+<%= labelled_form_field(_('Tipo de Atividade:')+' ', select_tag('activity_type', options_for_select(ActivityGalleryPlugin::Activity.get_activity_type_options, params[:activity_type]))) %>
+
 <%= labelled_form_field(_('Escopo')+': ', nil ) %>
 <% ActivityGalleryPlugin::Activity.get_scopes_options(jwt).map do |scope| %>
   <%= labelled_check_box(scope[0], 'scopes[]', scope[1], nil, {add_hidden: false} )%>
