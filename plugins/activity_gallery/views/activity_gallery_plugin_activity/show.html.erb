@@ -147,7 +147,7 @@
       
             <div class="activity-subtitle">Tipo de Licença</div>
             <p class="activity-text">
-              <%= @activity.license_type %>
+              <%= "#{@activity.license[:title]} (#{@activity.license[:acronym]})" %>
             </p>
       
             <div class="activity-subtitle">Tipos de Espaço</div>
