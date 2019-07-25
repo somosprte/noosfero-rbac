@@ -163,6 +163,7 @@ class ActivityGalleryPlugin::Activity
 
   def self.get_order_options
     [
+      ['Ordenação Padrão',''],
       ['Título (A -> Z)','title%20ASC'],
       ['Título (Z -> A)','title%20DESC'],
       ['Data de atualização','updated_at%20DESC'],
