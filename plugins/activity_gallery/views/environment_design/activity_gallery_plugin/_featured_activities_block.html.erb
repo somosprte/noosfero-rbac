@@ -1,0 +1,7 @@
+<% tokenized_activities = [] %>
+<% tokenized_activities = prepare_to_token_input(@block.activities) if @block.activity_gallery_plugin_selected.present? %>
+<%=
+labelled_form_field(_('Escolha as atividades que serão exibidas'),
+token_input_field_tag('block[activity_gallery_plugin_selected]', 'search-activities', {:controller => 'activity_gallery_plugin_admin', :action => 'search_activities'}, {:token_limit => 4, :focus => false, :hint_text => 'Digite o título da atividade', :pre_populate => tokenized_activities})
+)
+%>  

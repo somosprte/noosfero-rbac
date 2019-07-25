@@ -1,6 +1,13 @@
+<% if defined?(activities) %>
+  <% @results = activities %>
+  <% col_size = 3 %>
+<% else %>
+  <% col_size = 6 %>
+<% end %>
+
 <div id="activitys" class="row list-group">
   <% @results.each do |activity| %>
-  <div class="item col-md-6">
+  <div class="item col-md-<%= col_size %>">
     <div class="thumbnail">
       <% if activity.is_abac_author == true %>
         <div class="abac-tag">ABAC</div>
@@ -32,4 +39,4 @@
   </div>
   <% end %>
 </div>
-<%= pagination_links(@results, params_name: :page) %>
+<%= pagination_links(@results, params_name: :page) unless defined?(activities) %>

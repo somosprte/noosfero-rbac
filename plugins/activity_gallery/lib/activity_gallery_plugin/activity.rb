@@ -10,6 +10,10 @@ class ActivityGalleryPlugin::Activity
     @image ||=  "data:image/png;base64," + Base64.encode64(image_builder["uploaded_data"].read) if image_builder.present? && image_builder["uploaded_data"].present?
   end
 
+  def name
+    title
+  end
+
   def ensure_author(id)
     if authors.blank? || !authors.split(',').any? { |i| i == id }
       self.authors ||= ''

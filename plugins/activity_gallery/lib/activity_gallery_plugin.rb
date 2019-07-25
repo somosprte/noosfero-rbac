@@ -10,7 +10,8 @@ class ActivityGalleryPlugin < Noosfero::Plugin
 
   def self.extra_blocks
     {
-      ActivityGalleryPlugin::ActivityGalleryBlock => {:type => 'person', :position => ['1','2','3'] }
+      ActivityGalleryPlugin::ActivityGalleryBlock => {:type => 'person', :position => ['1','2','3'] },
+      ActivityGalleryPlugin::FeaturedActivitiesBlock => {:type => 'environment', :position => ['1','2','3'] }
     }
   end
 
