@@ -9,6 +9,7 @@ module ProfileHelper
   PERSON_CATEGORIES[:basic_information] = {
           :nickname => {:name => 'nickname', :editable => true, :field => 'text' },
           :sex => {:name => 'sex', :editable => false},
+          :kinds => {:name => 'kinds', :editable => false},
           :birth_date => {:name => 'birth_date', :editable => false},
           :location => {:name => 'location', :editable => false },
           :privacy_setting => {:name => 'privacy_setting', :editable => false },
@@ -50,7 +51,7 @@ module ProfileHelper
   ORGANIZATION_CATEGORIES[:basic_information] = [ :display_name,
                                                   :created_at,
                                                   :foundation_year,
-                                                  :type, :language,
+                                                  :type, :kinds, :language,
                                                   :members_count,
                                                   :location,
                                                   :address_reference,
@@ -100,6 +101,7 @@ module ProfileHelper
       :followed_profiles => _('Following'),
       :basic_information => _('Basic information'),
       :contact => _('Contact'),
+      :kinds => _('Kinds'),
       :admins => 'Administrador(es)'
     }
   end
@@ -216,6 +218,10 @@ module ProfileHelper
 
   def treat_events(events)
     link_to events.published.count, :controller => 'events', :action => 'events'
+  end
+
+  def treat_kinds(kinds)
+    kinds.to_a.map(&:name).join(' | ')
   end
 
   def treat_article_tags(tags)
