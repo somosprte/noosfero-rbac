@@ -392,7 +392,13 @@ class Article < ApplicationRecord
   end
 
   def person_followers_email_list
-    person_followers_emails.map{|p|p.email}
+    current = self
+    emails = []
+    while current.present?
+      emails += current.person_followers_emails.map{|p|p.email}
+      current = current.parent
+    end
+    emails.uniq
   end
 
   def info_from_last_update
