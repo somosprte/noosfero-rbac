@@ -26,3 +26,8 @@
 <% ActivityGalleryPlugin::Activity.get_space_types_options(jwt).map do |space| %>
   <%= labelled_check_box(space[0], 'space_types[]', space[1], nil, {add_hidden: false} )%>
 <% end %>
+
+<%= labelled_form_field(_('Tipo de Licença')+': ', nil ) %>
+<% ActivityGalleryPlugin::Activity.get_license_options(jwt).map do |licenses| %>
+  <%= labelled_check_box(licenses[0], 'license[]', licenses[1], nil, {add_hidden: false} )%>
+<% end %>
