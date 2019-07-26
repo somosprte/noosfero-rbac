@@ -1,0 +1,5 @@
+<div id="social_block_plugin">
+  <% @block.social_networks.each do |network| %>
+    <%= labelled_form_field(network.to_s.capitalize, text_field(:block, "#{network}_link")) %>
+  <% end %>
+</div>

@@ -1,0 +1,12 @@
+<h1><%= _('Edit Social Network')%></h1>
+
+<%= form_for(:block, {url: {action: :update}}) do |f| %>
+    <% @block.social_networks.each do |network| %>
+        <%= labelled_form_field network.to_s.capitalize, f.text_field("#{network}_link") %>
+    <% end %>
+
+  <%= button_bar do %>
+    <%= submit_button(:save, c_('Save')) %>
+  <% end %>
+
+<% end %>
