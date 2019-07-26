@@ -15,7 +15,7 @@ class ArticleMailer < ApplicationMailer
       mail(
         bcc: emails,
         from: "#{profile.environment.name} <#{profile.environment.noreply_email}>",
-        subject: _("[%s] %s create a new content on %s") % [profile.environment.name, content.author_name, @parent_title]
+        subject: _("[%s] %s created a new content on %s") % [profile.environment.name, content.author_name, @parent_title]
       )
     end
   end
