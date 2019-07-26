@@ -8,6 +8,7 @@ class Article < ApplicationRecord
 
   include SanitizeHelper
   include SanitizeTags
+  include Notifiable
   include Entitlement::SliderHelper
   include Entitlement::ArticleJudge
 
@@ -27,6 +28,8 @@ class Article < ApplicationRecord
   acts_as_list scope: :profile
 
   include Noosfero::Plugin::HotSpot
+
+  will_notify :new_content_for_followers
 
   SEARCHABLE_FIELDS = {
     :name => {:label => _('Name'), :weight => 10},
@@ -142,6 +145,8 @@ class Article < ApplicationRecord
 
   end
 
+  after_create :send_notifications
+
   after_destroy :destroy_activity
   def destroy_activity
     self.activity.destroy if self.activity
@@ -190,6 +195,13 @@ class Article < ApplicationRecord
     about
     activities
   ]
+
+  def send_notifications
+    emails = person_followers_email_list - [author_email]
+    if !emails.empty?
+      notify(:new_content_for_followers, self, emails)
+    end
+  end
 
   def valid_slug
     errors.add(:title, _('is not available as article name.')) unless Article.is_slug_available?(slug)
@@ -738,6 +750,11 @@ class Article < ApplicationRecord
   def author_url(version_number = nil)
     person = author_by_version(version_number)
     person ? person.url : nil
+  end
+
+  def author_email(version_number = nil)
+    person = author_by_version(version_number)
+    person ? person.email : nil
   end
 
   def author_id(version_number = nil)

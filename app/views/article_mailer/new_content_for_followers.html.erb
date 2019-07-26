@@ -1,0 +1,12 @@
+<%= _('Hi!') %>
+
+<%= word_wrap(_('%{sender} (%{sender_link}) created the new content "%{content_title}" on %{profile_name}.') % { :sender => @sender, :sender_link => url_for(@sender_link), :content_title => @content_title, :profile_name => @recipient }) %>
+
+<%= _('Click on the address below to view this content:') %>
+<%= url_for @content_url %>
+
+<%= _("Greetings,") %>
+
+--
+<%= _('%s team.') % @environment.name %>
+<%= url_for @url %>
