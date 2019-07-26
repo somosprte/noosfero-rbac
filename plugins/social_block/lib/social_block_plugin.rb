@@ -9,7 +9,7 @@ class SocialBlockPlugin < Noosfero::Plugin
 
   def self.extra_blocks
     {
-      SocialBlock => {:type => [Person, Organization], :position => ['1','2','3']}
+      SocialBlock => {:type => [Person, Enterprise], :position => ['1','2','3']}
     }
   end
 
