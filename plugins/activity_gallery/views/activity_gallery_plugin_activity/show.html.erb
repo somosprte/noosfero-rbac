@@ -22,10 +22,12 @@
           <%= date.strftime('%d/%m/%Y %H:%M:%S') %>
     </div>
     <% end %>
+    <% if @activity.inserted_by.present? %>
     <div class="activity-text" style="text-align: center">
       <strong>Atividade inserida por:</strong>
       <%= @activity.inserted_by[:name] %>
     </div>
+    <% end %>
   </br>
 
     <% if logged_in? %>
