@@ -54,7 +54,7 @@ class RbacPlugin < Noosfero::Plugin
   end
 
   def content_remove_new(content)
-    (content.blog? || (content.parent.present? && content.parent.blog?))
+    true
   end
 
   def content_remove_clone(content)
@@ -66,10 +66,10 @@ class RbacPlugin < Noosfero::Plugin
   end
 
   def article_extra_toolbar_buttons(content)
-    parent = content.blog? ? content : (content.parent.present? && content.parent.blog?) ? content.parent : nil
+    parent = content.folder? ? content : (content.parent.present? && content.parent.folder?) ? content.parent : nil
     can_create = content.allow_create?(context.send(:user)) || (content.parent && content.parent.allow_create?(context.send(:user)))
     if parent.present? && can_create
-      { :title => _('New post'), :icon => :file, :url => {controller: 'cms', action: 'new', parent: parent, type: 'TextArticle', profile: profile.identifier} }
+      { :title => _('New content'), :icon => :file, :url => {controller: 'cms', action: 'new', parent: parent, type: 'TextArticle', profile: profile.identifier} }
     end
   end
 
