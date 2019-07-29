@@ -6,6 +6,6 @@ class SocialBlockPluginMyprofileController < MyProfileController
     def update
         @block = profile.blocks.select { |b| b.type == 'SocialBlockPlugin::SocialBlock' }.first
         @block.update(params[:block])
-        redirect_to action: :edit
+        redirect_to profile.url
     end
 end
