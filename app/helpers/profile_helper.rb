@@ -11,6 +11,7 @@ module ProfileHelper
           :sex => {:name => 'sex', :editable => false},
           :kinds => {:name => 'kinds', :editable => false},
           :birth_date => {:name => 'birth_date', :editable => false},
+          :nationality => {:name => 'nationality', :editable => false},
           :location => {:name => 'location', :editable => false },
           :privacy_setting => {:name => 'privacy_setting', :editable => false },
           :created_at => {:name => 'created_at', :editable => false }}
@@ -32,7 +33,7 @@ module ProfileHelper
           :state => {:name => 'state', :editable => false },
           :district => {:name => 'district', :editable => false },
           :country => {:name => 'country', :editable => false },
-          :nationality => {:name => 'nationality', :editable => true, :field => 'text' }}
+          }
 
   PERSON_CATEGORIES[:work] = {
           :organization => {:name => 'organization', :editable => true, :field => 'text' },
