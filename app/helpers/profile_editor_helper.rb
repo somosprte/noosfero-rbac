@@ -280,6 +280,7 @@ module ProfileEditorHelper
     N_('Elementary School'),
     N_('High School'),
     N_('Graduate'),
+    N_('Post-Graduate'),
     N_('Masters'),
     N_('Ph.D.'),
     N_('Post-Doctoral')
