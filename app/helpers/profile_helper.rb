@@ -52,7 +52,7 @@ module ProfileHelper
   ORGANIZATION_CATEGORIES[:basic_information] = [ :display_name,
                                                   :created_at,
                                                   :foundation_year,
-                                                  :type, :kinds, :language,
+                                                  :kinds, :language,
                                                   :members_count,
                                                   :location,
                                                   :address_reference,
