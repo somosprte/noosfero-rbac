@@ -39,7 +39,6 @@
     <div class="select-license-type">
     <%= labelled_form_field(_('Tipo de licença')+' ', select_tag('data[license][:id]', options_for_select(ActivityGalleryPlugin::Activity.get_license_options(jwt))) ) %>
     <%= modal_link_to _('Informações sobre as licenças Creative Commons | Modal'), { controller: 'activity_gallery_plugin_activity', action: 'license_types' } %>
-    <%= link_to(font_awesome(:view, _('Clique aqui para mais detalhes sobre os tipos de licença')), "/tipos-de-licenca") %>
     </div>
 
 
