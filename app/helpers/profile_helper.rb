@@ -13,7 +13,7 @@ module ProfileHelper
           :birth_date => {:name => 'birth_date', :editable => false},
           :nationality => {:name => 'nationality', :editable => false},
           :location => {:name => 'location', :editable => false },
-          :privacy_setting => {:name => 'privacy_setting', :editable => false },
+          #:privacy_setting => {:name => 'privacy_setting', :editable => false },
           :created_at => {:name => 'created_at', :editable => false }}
 
   PERSON_CATEGORIES[:contact] = {
