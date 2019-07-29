@@ -16,7 +16,7 @@
 <%= optional_field(@person, 'cell_phone', f.text_field(:cell_phone, :rel => _('Cell phone'), :placeholder => _('With area code, only numbers'))) %>
 <%= optional_field(@person, 'comercial_phone', f.text_field(:comercial_phone, :rel => _('Comercial phone'), :placeholder => _('With area code, only numbers'))) %>
 <%= optional_field(@person, 'jabber_id', f.text_field(:jabber_id, :rel => _('Jabber'))) %>
-<%= optional_field(@person, 'personal_website', f.text_field(:personal_website, :rel => _('Personal website'))) %>
+<%= optional_field(@person, 'personal_website', f.text_field(:personal_website, :rel => _('Personal website'), :placeholder => _('https://www.google.com.br'))) %>
 <%= optional_field(@person, 'sex', f.radio_group(:profile_data, :sex, [ ['male',_('Male')], ['female',_('Female')], ['other',_('Outro')] ])) %>
 <%= optional_field(@person, 'birth_date', labelled_form_field(_('Birth date'), date_field('profile_data[birth_date]', @profile_data. birth_date, {:change_month => true, :change_year => true, :year_range => '-100:-5', :default_date => '01-01-2000'}, {:id => 'profile_data_birth_date'}))) %>
 <%= optional_field(@person, 'nationality', labelled_form_field(_('Nationality'), select_nationality('profile_data', 'nationality', {:class => 'select-nationality'}) )) %>
