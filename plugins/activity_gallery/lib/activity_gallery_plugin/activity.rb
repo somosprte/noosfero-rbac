@@ -99,7 +99,7 @@ class ActivityGalleryPlugin::Activity
     @license = JSON.parse(result.body,symbolize_names:true)
     result = []
     @license[:data].each do |license|
-      field = [license[:attributes][:acronym], license[:id]]
+      field = [license[:attributes][:title], license[:id]]
       result.push(field)
     end
     result
