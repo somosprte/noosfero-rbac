@@ -2,7 +2,7 @@
 
 <%= form_for(:block, {url: {action: :update}}) do |f| %>
     <% @block.social_networks.each do |network| %>
-        <%= labelled_form_field network.to_s.capitalize, f.text_field("#{network}_link") %>
+        <%= labelled_form_field network.to_s.capitalize, f.text_field("#{network}_link", placeholder: 'https://www.suaredesocial.com.br') %>
     <% end %>
 
   <%= button_bar do %>
