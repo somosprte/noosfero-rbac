@@ -69,7 +69,7 @@ class RbacPlugin < Noosfero::Plugin
     parent = content.folder? ? content : (content.parent.present? && content.parent.folder?) ? content.parent : nil
     can_create = content.allow_create?(context.send(:user)) || (content.parent && content.parent.allow_create?(context.send(:user)))
     if parent.present? && can_create
-      { :title => _('New content'), :icon => :file, :url => {controller: 'cms', action: 'new', parent: parent, type: 'TextArticle', profile: profile.identifier} }
+      { :title => _('New content'), :icon => :file, :url => {controller: 'cms', action: 'new', parent_id: parent.id, type: 'TextArticle', profile: profile.identifier} }
     end
   end
 
