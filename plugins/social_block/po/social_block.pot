@@ -18,6 +18,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: ../lib/foo_plugin.rb:9
-msgid "A sample plugin to test autoload craziness."
-msgstr ""
+#: ../lib/social_block_plugin.rb:7
+msgid "Includes a social newtork icons and links."
+msgstr "Incluir ícones e links de redes sociais."
+
+#: ../lib/social_block_plugin/social_block.rb:6
+msgid "Social Network Block"
+msgstr "Bloco de Redes Sociais"
+
+#: ../views/social_block_plugin_myprofile/edit.html.erb:1
+msgid "Edit Social Network"
+msgstr "Incluir / Editar Redes Sociais"

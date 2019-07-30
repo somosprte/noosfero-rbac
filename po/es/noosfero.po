@@ -351,6 +351,14 @@ msgstr "Menor uso de disco"
 msgid "Failed to create role"
 msgstr "No se ha podido crear el rol"
 
+#, fuzzy
+msgid "Role removed successfully"
+msgstr "eliminar"
+
+#, fuzzy
+msgid "Failed to remove role"
+msgstr "¡No se ha podido eliminar el rol!"
+
 msgid "Failed to edit role"
 msgstr "No se pudo editar el rol"
 
@@ -1288,6 +1296,14 @@ msgstr "Lista"
 msgid "Checkbox"
 msgstr "Checkbox"
 
+#, fuzzy
+msgid "Multiple Checkbox"
+msgstr "Checkbox"
+
+#, fuzzy
+msgid "Multiple List"
+msgstr "Lista"
+
 msgid "Yes"
 msgstr "Si"
 
@@ -1436,6 +1452,9 @@ msgstr "Hecho"
 
 msgid "Today"
 msgstr "Hoy"
+
+msgid "dd-mm-yy"
+msgstr ""
 
 msgid "Sunday"
 msgstr "Domingo"
@@ -1673,6 +1692,629 @@ msgstr "Agenda"
 msgid "Image gallery"
 msgstr "Galería de imágenes"
 
+msgid "Afghan"
+msgstr ""
+
+msgid "Albanian"
+msgstr ""
+
+msgid "Algerian"
+msgstr ""
+
+msgid "American"
+msgstr ""
+
+msgid "Andorran"
+msgstr ""
+
+msgid "Angolan"
+msgstr ""
+
+msgid "Antiguans"
+msgstr ""
+
+msgid "Argentinean"
+msgstr ""
+
+msgid "Armenian"
+msgstr ""
+
+msgid "Australian"
+msgstr ""
+
+msgid "Austrian"
+msgstr ""
+
+msgid "Azerbaijani"
+msgstr ""
+
+msgid "Bahamian"
+msgstr ""
+
+msgid "Bahraini"
+msgstr ""
+
+msgid "Bangladeshi"
+msgstr ""
+
+msgid "Barbadian"
+msgstr ""
+
+msgid "Barbudans"
+msgstr ""
+
+msgid "Batswana"
+msgstr ""
+
+msgid "Belarusian"
+msgstr ""
+
+#, fuzzy
+msgid "Belgian"
+msgstr "Región"
+
+msgid "Belizean"
+msgstr ""
+
+msgid "Beninese"
+msgstr ""
+
+msgid "Bhutanese"
+msgstr ""
+
+msgid "Bolivian"
+msgstr ""
+
+msgid "Bosnian"
+msgstr ""
+
+msgid "Brazilian"
+msgstr ""
+
+msgid "British"
+msgstr ""
+
+msgid "Bruneian"
+msgstr ""
+
+msgid "Bulgarian"
+msgstr ""
+
+msgid "Burkinabe"
+msgstr ""
+
+msgid "Burmese"
+msgstr ""
+
+msgid "Burundian"
+msgstr ""
+
+msgid "Cambodian"
+msgstr ""
+
+msgid "Cameroonian"
+msgstr ""
+
+msgid "Canadian"
+msgstr ""
+
+msgid "Cape Verdean"
+msgstr ""
+
+msgid "Central African"
+msgstr ""
+
+msgid "Chadian"
+msgstr ""
+
+msgid "Chilean"
+msgstr ""
+
+msgid "Chinese"
+msgstr ""
+
+msgid "Colombian"
+msgstr ""
+
+msgid "Comoran"
+msgstr ""
+
+msgid "Congolese"
+msgstr ""
+
+msgid "Costa Rican"
+msgstr ""
+
+msgid "Croatian"
+msgstr ""
+
+msgid "Cuban"
+msgstr ""
+
+msgid "Cypriot"
+msgstr ""
+
+msgid "Czech"
+msgstr ""
+
+msgid "Danish"
+msgstr ""
+
+msgid "Djibouti"
+msgstr ""
+
+msgid "Dominican"
+msgstr ""
+
+msgid "Dutch"
+msgstr ""
+
+msgid "East Timorese"
+msgstr ""
+
+msgid "Ecuadorean"
+msgstr ""
+
+msgid "Egyptian"
+msgstr ""
+
+msgid "Emirian"
+msgstr ""
+
+msgid "Equatorial Guinean"
+msgstr ""
+
+msgid "Eritrean"
+msgstr ""
+
+msgid "Estonian"
+msgstr ""
+
+msgid "Ethiopian"
+msgstr ""
+
+msgid "Fijian"
+msgstr ""
+
+msgid "Filipino"
+msgstr ""
+
+#, fuzzy
+msgid "Finnish"
+msgstr "Finalizado"
+
+#, fuzzy
+msgid "French"
+msgstr "Vie"
+
+msgid "Gabonese"
+msgstr ""
+
+msgid "Gambian"
+msgstr ""
+
+msgid "Georgian"
+msgstr ""
+
+#, fuzzy
+msgid "German"
+msgstr "Terreno"
+
+msgid "Ghanaian"
+msgstr ""
+
+msgid "Greek"
+msgstr ""
+
+msgid "Grenadian"
+msgstr ""
+
+msgid "Guatemalan"
+msgstr ""
+
+msgid "Guinea-Bissauan"
+msgstr ""
+
+msgid "Guinean"
+msgstr ""
+
+msgid "Guyanese"
+msgstr ""
+
+msgid "Haitian"
+msgstr ""
+
+msgid "Herzegovinian"
+msgstr ""
+
+msgid "Honduran"
+msgstr ""
+
+msgid "Hungarian"
+msgstr ""
+
+msgid "I-Kiribati"
+msgstr ""
+
+msgid "Icelander"
+msgstr ""
+
+msgid "Indian"
+msgstr ""
+
+msgid "Indonesian"
+msgstr ""
+
+msgid "Iranian"
+msgstr ""
+
+msgid "Iraqi"
+msgstr ""
+
+msgid "Irish"
+msgstr ""
+
+msgid "Israeli"
+msgstr ""
+
+#, fuzzy
+msgid "Italian"
+msgstr "cursiva"
+
+msgid "Ivorian"
+msgstr ""
+
+msgid "Jamaican"
+msgstr ""
+
+msgid "Japanese"
+msgstr ""
+
+msgid "Jordanian"
+msgstr ""
+
+msgid "Kazakhstani"
+msgstr ""
+
+msgid "Kenyan"
+msgstr ""
+
+msgid "Kittian and Nevisian"
+msgstr ""
+
+msgid "Kuwaiti"
+msgstr ""
+
+msgid "Kyrgyz"
+msgstr ""
+
+#, fuzzy
+msgid "Laotian"
+msgstr "Iniciar sesión"
+
+msgid "Latvian"
+msgstr ""
+
+msgid "Lebanese"
+msgstr ""
+
+msgid "Liberian"
+msgstr ""
+
+#, fuzzy
+msgid "Libyan"
+msgstr "por"
+
+msgid "Liechtensteiner"
+msgstr ""
+
+msgid "Lithuanian"
+msgstr ""
+
+msgid "Macedonian"
+msgstr ""
+
+msgid "Malagasy"
+msgstr ""
+
+msgid "Malawian"
+msgstr ""
+
+msgid "Malaysian"
+msgstr ""
+
+msgid "Maldivian"
+msgstr ""
+
+msgid "Malian"
+msgstr ""
+
+#, fuzzy
+msgid "Maltese"
+msgstr "Maestría"
+
+#, fuzzy
+msgid "Marshallese"
+msgstr "Mar"
+
+msgid "Mauritanian"
+msgstr ""
+
+msgid "Mauritian"
+msgstr ""
+
+#, fuzzy
+msgid "Mexican"
+msgstr "Yo"
+
+msgid "Micronesian"
+msgstr ""
+
+#, fuzzy
+msgid "Moldovan"
+msgstr "Lun"
+
+#, fuzzy
+msgid "Monacan"
+msgstr "Lun"
+
+#, fuzzy
+msgid "Mongolian"
+msgstr "Lun"
+
+#, fuzzy
+msgid "Moroccan"
+msgstr "Lun"
+
+#, fuzzy
+msgid "Mosotho"
+msgstr "Lun"
+
+#, fuzzy
+msgid "Motswana"
+msgstr "Lun"
+
+#, fuzzy
+msgid "Mozambican"
+msgstr "Lun"
+
+msgid "Namibian"
+msgstr ""
+
+msgid "Nauruan"
+msgstr ""
+
+msgid "Nepalese"
+msgstr ""
+
+#, fuzzy
+msgid "New Zealander"
+msgstr "Nuevo"
+
+msgid "Ni-Vanuatu"
+msgstr ""
+
+msgid "Nicaraguan"
+msgstr ""
+
+msgid "Nigerian"
+msgstr ""
+
+msgid "Nigerien"
+msgstr ""
+
+#, fuzzy
+msgid "North Korean"
+msgstr "No"
+
+#, fuzzy
+msgid "Northern Irish"
+msgstr "No"
+
+#, fuzzy
+msgid "Norwegian"
+msgstr "No"
+
+msgid "Omani"
+msgstr ""
+
+#, fuzzy
+msgid "Other"
+msgstr "Otras"
+
+msgid "Pakistani"
+msgstr ""
+
+msgid "Palauan"
+msgstr ""
+
+msgid "Panamanian"
+msgstr ""
+
+#, fuzzy
+msgid "Papua New Guinean"
+msgstr "Nuevo"
+
+msgid "Paraguayan"
+msgstr ""
+
+msgid "Peruvian"
+msgstr ""
+
+#, fuzzy
+msgid "Polish"
+msgstr "Publicar"
+
+msgid "Portuguese"
+msgstr ""
+
+msgid "Qatari"
+msgstr ""
+
+msgid "Romanian"
+msgstr ""
+
+#, fuzzy
+msgid "Russian"
+msgstr "Asignar"
+
+msgid "Rwandan"
+msgstr ""
+
+#, fuzzy
+msgid "Saint Lucian"
+msgstr "Sáb"
+
+#, fuzzy
+msgid "Salvadoran"
+msgstr "Sáb"
+
+#, fuzzy
+msgid "Samoan"
+msgstr "Sáb"
+
+#, fuzzy
+msgid "San Marinese"
+msgstr "Mar"
+
+#, fuzzy
+msgid "Sao Tomean"
+msgstr "Sáb"
+
+#, fuzzy
+msgid "Saudi"
+msgstr "Sáb"
+
+msgid "Scottish"
+msgstr ""
+
+msgid "Senegalese"
+msgstr ""
+
+msgid "Serbian"
+msgstr ""
+
+msgid "Seychellois"
+msgstr ""
+
+msgid "Sierra Leonean"
+msgstr ""
+
+msgid "Singaporean"
+msgstr ""
+
+msgid "Slovakian"
+msgstr ""
+
+msgid "Slovenian"
+msgstr ""
+
+msgid "Solomon Islander"
+msgstr ""
+
+msgid "Somali"
+msgstr ""
+
+msgid "South African"
+msgstr ""
+
+msgid "South Korean"
+msgstr ""
+
+msgid "Spanish"
+msgstr ""
+
+msgid "Sri Lankan"
+msgstr ""
+
+#, fuzzy
+msgid "Sudanese"
+msgstr "Dom"
+
+#, fuzzy
+msgid "Surinamer"
+msgstr "nombre"
+
+msgid "Swazi"
+msgstr ""
+
+msgid "Swedish"
+msgstr ""
+
+msgid "Swiss"
+msgstr ""
+
+msgid "Syrian"
+msgstr ""
+
+msgid "Taiwanese"
+msgstr ""
+
+#, fuzzy
+msgid "Tajik"
+msgstr "Tarea"
+
+msgid "Tanzanian"
+msgstr ""
+
+#, fuzzy
+msgid "Thai"
+msgstr "Jue"
+
+msgid "Togolese"
+msgstr ""
+
+msgid "Tongan"
+msgstr ""
+
+msgid "Trinidadian or Tobagonian"
+msgstr ""
+
+#, fuzzy
+msgid "Tunisian"
+msgstr "Mar"
+
+#, fuzzy
+msgid "Turkish"
+msgstr "Mar"
+
+#, fuzzy
+msgid "Tuvaluan"
+msgstr "Mar"
+
+#, fuzzy
+msgid "Ugandan"
+msgstr "Agenda"
+
+msgid "Ukrainian"
+msgstr ""
+
+msgid "Uruguayan"
+msgstr ""
+
+msgid "Uzbekistani"
+msgstr ""
+
+msgid "Venezuelan"
+msgstr ""
+
+#, fuzzy
+msgid "Vietnamese"
+msgstr "nombre"
+
+#, fuzzy
+msgid "Welsh"
+msgstr "Mié"
+
+msgid "Yemenite"
+msgstr ""
+
+msgid "Zambian"
+msgstr ""
+
+msgid "Zimbabwean"
+msgstr ""
+
 msgid "Agrometeorology"
 msgstr "Agrometeorología"
 
@@ -1902,23 +2544,27 @@ msgstr "Zootecnia"
 msgid "Others"
 msgstr "Otras"
 
-msgid "Post-Doctoral"
-msgstr "Post-Doctoral"
-
-msgid "Ph.D."
-msgstr "Doctorado"
-
-msgid "Masters"
-msgstr "Maestría"
-
-msgid "Graduate"
-msgstr "Graduado"
+msgid "Elementary School"
+msgstr "Escuela Primaria"
 
 msgid "High School"
 msgstr "Escuela Secundaria"
 
-msgid "Elementary School"
-msgstr "Escuela Primaria"
+msgid "Graduate"
+msgstr "Graduado"
+
+#, fuzzy
+msgid "Post-Graduate"
+msgstr "Graduado"
+
+msgid "Masters"
+msgstr "Maestría"
+
+msgid "Ph.D."
+msgstr "Doctorado"
+
+msgid "Post-Doctoral"
+msgstr "Post-Doctoral"
 
 msgid "Concluded"
 msgstr "Completo/a"
@@ -1982,11 +2628,17 @@ msgstr "Información básica"
 msgid "Contact"
 msgstr "Contacto"
 
+msgid "Kinds"
+msgstr "Tipos"
+
 msgid "Male"
 msgstr "Masculino"
 
 msgid "Female"
 msgstr "Femenino"
+
+msgid "Outro"
+msgstr ""
 
 # sigue la duda sobre como traducir "post"
 msgid "One post"
@@ -2072,6 +2724,12 @@ msgstr "Mas relevante"
 msgid "More comments"
 msgstr "Más comentarios"
 
+msgid "A-Z"
+msgstr ""
+
+msgid "Z-A"
+msgstr ""
+
 msgid "Map"
 msgstr "Mapa"
 
@@ -2098,6 +2756,10 @@ msgstr "Mostrar"
 
 msgid "Choose a template"
 msgstr "Escoge una plantilla"
+
+#, fuzzy
+msgid "Todos"
+msgstr "Hoy"
 
 # Usamos etiquetas o entendemos qeu tag es de uso común?
 msgid "No tags yet."
@@ -2143,6 +2805,10 @@ msgstr "Usuarios registrados recientemente"
 
 msgid "Filter"
 msgstr "Filtro"
+
+#, fuzzy
+msgid "[%s] %s created a new content on %s"
+msgstr "[%s] %s comentó sobre un contenido de %s"
 
 msgid "[%s] you got a new comment!"
 msgstr "¡[%s] tienes un nuevo comentario!"
@@ -2853,7 +3519,7 @@ msgstr "Privado"
 
 #, fuzzy
 msgid "Regions"
-msgstr "Región Regiones"
+msgstr "Región"
 
 msgid "Roles"
 msgstr "Roles"
@@ -4528,9 +5194,6 @@ msgstr "Plantillas de perfil"
 msgid "Fields"
 msgstr "Campos"
 
-msgid "Kinds"
-msgstr "Tipos"
-
 msgid "Quotas"
 msgstr "Cuotas"
 
@@ -4664,6 +5327,25 @@ msgstr "Añadir parámetro"
 
 msgid "Run"
 msgstr "Ejecutar"
+
+msgid "Hi!"
+msgstr "¡Hola!"
+
+#, fuzzy
+msgid ""
+"%{sender} (%{sender_link}) created the new content \"%{content_title}\" on %{par"
+"ent_title} of %{profile_name}."
+msgstr "contenido"
+
+#, fuzzy
+msgid "Click on the address below to view this content:"
+msgstr "Haz clic en la dirección de abajo para ver este comentario:"
+
+msgid "Greetings,"
+msgstr "Felicitaciones,"
+
+msgid "%s team."
+msgstr "equipo de %s."
 
 msgid "Article not selected yet."
 msgstr "Artículo no seleccionado aun."
@@ -5501,15 +6183,6 @@ msgstr "Comentario:"
 
 msgid "Access the address below to view this comment:"
 msgstr "Accede a la dirección de abajo para ver este comentario:"
-
-msgid "Greetings,"
-msgstr "Felicitaciones,"
-
-msgid "%s team."
-msgstr "equipo de %s."
-
-msgid "Hi!"
-msgstr "¡Hola!"
 
 msgid "%{sender} (%{sender_link}) commented on the content \"%{article_title}\"."
 msgstr ""
@@ -6780,6 +7453,9 @@ msgstr "Con código de área, solo números"
 msgid "Personal website"
 msgstr "Sitio web personal"
 
+msgid "https://www.google.com.br"
+msgstr ""
+
 msgid "Birth date"
 msgstr "Fecha de nacimiento"
 
@@ -7248,6 +7924,10 @@ msgid ""
 msgstr ""
 "Primero busca organizaciones por su nombre, luego usa los botones en el result"
 "adode la misma  para añadirlos como validadores para esta región. "
+
+#, fuzzy
+msgid "Are you sure you want to remove this role?"
+msgstr "¿Estás seguro de que deseas eliminar este bloque?"
 
 msgid "%{sender} (%{sender_link}) has left the following scrap for you:"
 msgstr "%{sender} (%{sender_link}) te ha dejado el siguiente recorte:"

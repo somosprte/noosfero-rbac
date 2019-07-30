@@ -364,6 +364,14 @@ msgstr ""
 msgid "Failed to create role"
 msgstr "Դերի ստեղծումը ձախողված է"
 
+#, fuzzy
+msgid "Role removed successfully"
+msgstr "Հեռացնել"
+
+#, fuzzy
+msgid "Failed to remove role"
+msgstr "Դերի ստեղծումը ձախողված է"
+
 msgid "Failed to edit role"
 msgstr "Դերի փոփոխումը ձախողված է"
 
@@ -1378,6 +1386,12 @@ msgstr ""
 msgid "Checkbox"
 msgstr ""
 
+msgid "Multiple Checkbox"
+msgstr ""
+
+msgid "Multiple List"
+msgstr ""
+
 msgid "Yes"
 msgstr "Այո"
 
@@ -1540,6 +1554,9 @@ msgid "Done"
 msgstr ""
 
 msgid "Today"
+msgstr ""
+
+msgid "dd-mm-yy"
 msgstr ""
 
 msgid "Sunday"
@@ -1804,6 +1821,619 @@ msgstr ""
 msgid "Image gallery"
 msgstr "Նկարադարան"
 
+msgid "Afghan"
+msgstr ""
+
+msgid "Albanian"
+msgstr ""
+
+msgid "Algerian"
+msgstr ""
+
+msgid "American"
+msgstr ""
+
+msgid "Andorran"
+msgstr ""
+
+msgid "Angolan"
+msgstr ""
+
+msgid "Antiguans"
+msgstr ""
+
+msgid "Argentinean"
+msgstr ""
+
+msgid "Armenian"
+msgstr ""
+
+msgid "Australian"
+msgstr ""
+
+msgid "Austrian"
+msgstr ""
+
+msgid "Azerbaijani"
+msgstr ""
+
+msgid "Bahamian"
+msgstr ""
+
+msgid "Bahraini"
+msgstr ""
+
+msgid "Bangladeshi"
+msgstr ""
+
+msgid "Barbadian"
+msgstr ""
+
+msgid "Barbudans"
+msgstr ""
+
+msgid "Batswana"
+msgstr ""
+
+msgid "Belarusian"
+msgstr ""
+
+#, fuzzy
+msgid "Belgian"
+msgstr "Տարածաշրջան"
+
+msgid "Belizean"
+msgstr ""
+
+msgid "Beninese"
+msgstr ""
+
+msgid "Bhutanese"
+msgstr ""
+
+msgid "Bolivian"
+msgstr ""
+
+msgid "Bosnian"
+msgstr ""
+
+msgid "Brazilian"
+msgstr ""
+
+msgid "British"
+msgstr ""
+
+msgid "Bruneian"
+msgstr ""
+
+msgid "Bulgarian"
+msgstr ""
+
+msgid "Burkinabe"
+msgstr ""
+
+msgid "Burmese"
+msgstr ""
+
+msgid "Burundian"
+msgstr ""
+
+msgid "Cambodian"
+msgstr ""
+
+msgid "Cameroonian"
+msgstr ""
+
+msgid "Canadian"
+msgstr ""
+
+msgid "Cape Verdean"
+msgstr ""
+
+msgid "Central African"
+msgstr ""
+
+msgid "Chadian"
+msgstr ""
+
+msgid "Chilean"
+msgstr ""
+
+msgid "Chinese"
+msgstr ""
+
+msgid "Colombian"
+msgstr ""
+
+msgid "Comoran"
+msgstr ""
+
+msgid "Congolese"
+msgstr ""
+
+msgid "Costa Rican"
+msgstr ""
+
+msgid "Croatian"
+msgstr ""
+
+msgid "Cuban"
+msgstr ""
+
+msgid "Cypriot"
+msgstr ""
+
+msgid "Czech"
+msgstr ""
+
+msgid "Danish"
+msgstr ""
+
+msgid "Djibouti"
+msgstr ""
+
+msgid "Dominican"
+msgstr ""
+
+msgid "Dutch"
+msgstr ""
+
+msgid "East Timorese"
+msgstr ""
+
+msgid "Ecuadorean"
+msgstr ""
+
+msgid "Egyptian"
+msgstr ""
+
+msgid "Emirian"
+msgstr ""
+
+msgid "Equatorial Guinean"
+msgstr ""
+
+msgid "Eritrean"
+msgstr ""
+
+msgid "Estonian"
+msgstr ""
+
+msgid "Ethiopian"
+msgstr ""
+
+msgid "Fijian"
+msgstr ""
+
+msgid "Filipino"
+msgstr ""
+
+msgid "Finnish"
+msgstr ""
+
+#, fuzzy
+msgid "French"
+msgstr "Ուրբաթ"
+
+msgid "Gabonese"
+msgstr ""
+
+msgid "Gambian"
+msgstr ""
+
+msgid "Georgian"
+msgstr ""
+
+msgid "German"
+msgstr ""
+
+msgid "Ghanaian"
+msgstr ""
+
+msgid "Greek"
+msgstr ""
+
+msgid "Grenadian"
+msgstr ""
+
+msgid "Guatemalan"
+msgstr ""
+
+msgid "Guinea-Bissauan"
+msgstr ""
+
+msgid "Guinean"
+msgstr ""
+
+msgid "Guyanese"
+msgstr ""
+
+msgid "Haitian"
+msgstr ""
+
+msgid "Herzegovinian"
+msgstr ""
+
+msgid "Honduran"
+msgstr ""
+
+msgid "Hungarian"
+msgstr ""
+
+msgid "I-Kiribati"
+msgstr ""
+
+msgid "Icelander"
+msgstr ""
+
+msgid "Indian"
+msgstr ""
+
+msgid "Indonesian"
+msgstr ""
+
+msgid "Iranian"
+msgstr ""
+
+msgid "Iraqi"
+msgstr ""
+
+msgid "Irish"
+msgstr ""
+
+msgid "Israeli"
+msgstr ""
+
+msgid "Italian"
+msgstr ""
+
+msgid "Ivorian"
+msgstr ""
+
+msgid "Jamaican"
+msgstr ""
+
+msgid "Japanese"
+msgstr ""
+
+msgid "Jordanian"
+msgstr ""
+
+msgid "Kazakhstani"
+msgstr ""
+
+msgid "Kenyan"
+msgstr ""
+
+msgid "Kittian and Nevisian"
+msgstr ""
+
+msgid "Kuwaiti"
+msgstr ""
+
+msgid "Kyrgyz"
+msgstr ""
+
+#, fuzzy
+msgid "Laotian"
+msgstr "Մուտք"
+
+msgid "Latvian"
+msgstr ""
+
+msgid "Lebanese"
+msgstr ""
+
+msgid "Liberian"
+msgstr ""
+
+msgid "Libyan"
+msgstr ""
+
+msgid "Liechtensteiner"
+msgstr ""
+
+msgid "Lithuanian"
+msgstr ""
+
+msgid "Macedonian"
+msgstr ""
+
+msgid "Malagasy"
+msgstr ""
+
+msgid "Malawian"
+msgstr ""
+
+msgid "Malaysian"
+msgstr ""
+
+msgid "Maldivian"
+msgstr ""
+
+msgid "Malian"
+msgstr ""
+
+#, fuzzy
+msgid "Maltese"
+msgstr "Արական"
+
+#, fuzzy
+msgid "Marshallese"
+msgstr "Մարտ"
+
+msgid "Mauritanian"
+msgstr ""
+
+msgid "Mauritian"
+msgstr ""
+
+#, fuzzy
+msgid "Mexican"
+msgstr "Արական"
+
+msgid "Micronesian"
+msgstr ""
+
+#, fuzzy
+msgid "Moldovan"
+msgstr "Երկուշաբթի"
+
+#, fuzzy
+msgid "Monacan"
+msgstr "Երկուշաբթի"
+
+#, fuzzy
+msgid "Mongolian"
+msgstr "Երկուշաբթի"
+
+#, fuzzy
+msgid "Moroccan"
+msgstr "Երկուշաբթի"
+
+#, fuzzy
+msgid "Mosotho"
+msgstr "Երկուշաբթի"
+
+#, fuzzy
+msgid "Motswana"
+msgstr "Երկուշաբթի"
+
+#, fuzzy
+msgid "Mozambican"
+msgstr "Երկուշաբթի"
+
+msgid "Namibian"
+msgstr ""
+
+msgid "Nauruan"
+msgstr ""
+
+msgid "Nepalese"
+msgstr ""
+
+#, fuzzy
+msgid "New Zealander"
+msgstr "Նորություններ"
+
+msgid "Ni-Vanuatu"
+msgstr ""
+
+msgid "Nicaraguan"
+msgstr ""
+
+msgid "Nigerian"
+msgstr ""
+
+msgid "Nigerien"
+msgstr ""
+
+msgid "North Korean"
+msgstr ""
+
+msgid "Northern Irish"
+msgstr ""
+
+msgid "Norwegian"
+msgstr ""
+
+msgid "Omani"
+msgstr ""
+
+#, fuzzy
+msgid "Other"
+msgstr "Այլ"
+
+msgid "Pakistani"
+msgstr ""
+
+msgid "Palauan"
+msgstr ""
+
+msgid "Panamanian"
+msgstr ""
+
+#, fuzzy
+msgid "Papua New Guinean"
+msgstr "Նորություններ"
+
+msgid "Paraguayan"
+msgstr ""
+
+msgid "Peruvian"
+msgstr ""
+
+#, fuzzy
+msgid "Polish"
+msgstr "Հրապարակային"
+
+msgid "Portuguese"
+msgstr ""
+
+msgid "Qatari"
+msgstr ""
+
+msgid "Romanian"
+msgstr ""
+
+msgid "Russian"
+msgstr ""
+
+msgid "Rwandan"
+msgstr ""
+
+#, fuzzy
+msgid "Saint Lucian"
+msgstr "Նահանգ"
+
+#, fuzzy
+msgid "Salvadoran"
+msgstr "Նահանգ"
+
+#, fuzzy
+msgid "Samoan"
+msgstr "Նահանգ"
+
+#, fuzzy
+msgid "San Marinese"
+msgstr "Մարտ"
+
+#, fuzzy
+msgid "Sao Tomean"
+msgstr "Նահանգ"
+
+#, fuzzy
+msgid "Saudi"
+msgstr "Նահանգ"
+
+msgid "Scottish"
+msgstr ""
+
+msgid "Senegalese"
+msgstr ""
+
+msgid "Serbian"
+msgstr ""
+
+msgid "Seychellois"
+msgstr ""
+
+msgid "Sierra Leonean"
+msgstr ""
+
+msgid "Singaporean"
+msgstr ""
+
+msgid "Slovakian"
+msgstr ""
+
+msgid "Slovenian"
+msgstr ""
+
+msgid "Solomon Islander"
+msgstr ""
+
+msgid "Somali"
+msgstr ""
+
+msgid "South African"
+msgstr ""
+
+msgid "South Korean"
+msgstr ""
+
+msgid "Spanish"
+msgstr ""
+
+msgid "Sri Lankan"
+msgstr ""
+
+#, fuzzy
+msgid "Sudanese"
+msgstr "Կիրակի"
+
+#, fuzzy
+msgid "Surinamer"
+msgstr "Անվանում"
+
+msgid "Swazi"
+msgstr ""
+
+msgid "Swedish"
+msgstr ""
+
+msgid "Swiss"
+msgstr ""
+
+msgid "Syrian"
+msgstr ""
+
+msgid "Taiwanese"
+msgstr ""
+
+#, fuzzy
+msgid "Tajik"
+msgstr "Պիտակներ"
+
+msgid "Tanzanian"
+msgstr ""
+
+msgid "Thai"
+msgstr ""
+
+msgid "Togolese"
+msgstr ""
+
+msgid "Tongan"
+msgstr ""
+
+msgid "Trinidadian or Tobagonian"
+msgstr ""
+
+#, fuzzy
+msgid "Tunisian"
+msgstr "Երեքշաբթի"
+
+#, fuzzy
+msgid "Turkish"
+msgstr "Երեքշաբթի"
+
+#, fuzzy
+msgid "Tuvaluan"
+msgstr "Երեքշաբթի"
+
+msgid "Ugandan"
+msgstr ""
+
+msgid "Ukrainian"
+msgstr ""
+
+msgid "Uruguayan"
+msgstr ""
+
+msgid "Uzbekistani"
+msgstr ""
+
+msgid "Venezuelan"
+msgstr ""
+
+#, fuzzy
+msgid "Vietnamese"
+msgstr "Անվանում"
+
+#, fuzzy
+msgid "Welsh"
+msgstr "Կարմիր"
+
+msgid "Yemenite"
+msgstr ""
+
+msgid "Zambian"
+msgstr ""
+
+msgid "Zimbabwean"
+msgstr ""
+
 msgid "Agrometeorology"
 msgstr ""
 
@@ -2033,22 +2663,25 @@ msgstr ""
 msgid "Others"
 msgstr "Այլ"
 
-msgid "Post-Doctoral"
-msgstr ""
-
-msgid "Ph.D."
-msgstr ""
-
-msgid "Masters"
-msgstr ""
-
-msgid "Graduate"
+msgid "Elementary School"
 msgstr ""
 
 msgid "High School"
 msgstr ""
 
-msgid "Elementary School"
+msgid "Graduate"
+msgstr ""
+
+msgid "Post-Graduate"
+msgstr ""
+
+msgid "Masters"
+msgstr ""
+
+msgid "Ph.D."
+msgstr ""
+
+msgid "Post-Doctoral"
 msgstr ""
 
 msgid "Concluded"
@@ -2119,11 +2752,18 @@ msgstr "Էլ. հասցե"
 msgid "Contact"
 msgstr "Բովանդակության տեսակ"
 
+#, fuzzy
+msgid "Kinds"
+msgstr "Հղումներ"
+
 msgid "Male"
 msgstr "Արական"
 
 msgid "Female"
 msgstr "Իգական"
+
+msgid "Outro"
+msgstr ""
 
 #, fuzzy
 msgid "One post"
@@ -2221,6 +2861,12 @@ msgstr "Ավելի նոր մարդիկ"
 msgid "More comments"
 msgstr "Կառավարել մեկնաբանությունները"
 
+msgid "A-Z"
+msgstr ""
+
+msgid "Z-A"
+msgstr ""
+
 #, fuzzy
 msgid "Map"
 msgstr "Մայիս"
@@ -2254,6 +2900,9 @@ msgstr "Ցուցադրել անունը"
 #, fuzzy
 msgid "Choose a template"
 msgstr "Նկարադարան"
+
+msgid "Todos"
+msgstr ""
 
 msgid "No tags yet."
 msgstr "Առայժմ պիտակներ չկան։"
@@ -2309,6 +2958,10 @@ msgstr "մասնակից"
 #, fuzzy
 msgid "Filter"
 msgstr "Թղթապանակ"
+
+#, fuzzy
+msgid "[%s] %s created a new content on %s"
+msgstr "Ամենից հաճախ մեկնաբանվող հոդվածները"
 
 msgid "[%s] you got a new comment!"
 msgstr ""
@@ -2879,7 +3532,7 @@ msgstr "Պատկեր"
 
 #, fuzzy
 msgid "picture"
-msgstr "Փոխել նկարը Փոխել նկարը"
+msgstr "Փոխել նկարը"
 
 #, fuzzy
 msgid "Disable"
@@ -3331,7 +3984,7 @@ msgstr "%s-ը ցանկանում է %s-ի անդամ դառնալ:"
 
 #, fuzzy
 msgid "{#} Enterprises"
-msgstr "Մեկ ձեռնարկություն %{num} ձեռնարկություններ"
+msgstr "Մեկ ձեռնարկություն"
 
 msgid "This block displays the enterprises where this user works."
 msgstr ""
@@ -4789,10 +5442,6 @@ msgstr "Անհատական էջ|Կայք"
 msgid "Fields"
 msgstr ""
 
-#, fuzzy
-msgid "Kinds"
-msgstr "Հղումներ"
-
 msgid "Quotas"
 msgstr ""
 
@@ -4929,6 +5578,27 @@ msgstr "%s-ի անդամները"
 #, fuzzy
 msgid "Run"
 msgstr "Կիրակի"
+
+msgid "Hi!"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"%{sender} (%{sender_link}) created the new content \"%{content_title}\" on %{par"
+"ent_title} of %{profile_name}."
+msgstr "Բովանդակության տեսակ"
+
+#, fuzzy
+msgid "Click on the address below to view this content:"
+msgstr "Բովանդակության տեսակ"
+
+#, fuzzy
+msgid "Greetings,"
+msgstr "Կանաչ"
+
+#, fuzzy
+msgid "%s team."
+msgstr "%s: կայքի կառուցվածք"
 
 msgid "Article not selected yet."
 msgstr "Հոդվածը դեռ ընտրված չէ։"
@@ -5820,17 +6490,6 @@ msgid "Comment:"
 msgstr "մեկնաբանություն"
 
 msgid "Access the address below to view this comment:"
-msgstr ""
-
-#, fuzzy
-msgid "Greetings,"
-msgstr "Կանաչ"
-
-#, fuzzy
-msgid "%s team."
-msgstr "%s: կայքի կառուցվածք"
-
-msgid "Hi!"
 msgstr ""
 
 msgid "%{sender} (%{sender_link}) commented on the content \"%{article_title}\"."
@@ -7175,6 +7834,9 @@ msgstr ""
 msgid "Personal website"
 msgstr "Միջոցառման կայք"
 
+msgid "https://www.google.com.br"
+msgstr ""
+
 msgid "Birth date"
 msgstr "Ծննդյան օր"
 
@@ -7662,6 +8324,10 @@ msgstr ""
 "Կազմակերպությունների որոնումը սկզբում կատարիր ըստ անվան, այնուհետև օգտագործիր "
 "որոնման արդյունքների կոճակները՝ դրանց տարածաշրջանային վավերացնող կազմակերպությ"
 "ուններ դարձնելու համար։ "
+
+#, fuzzy
+msgid "Are you sure you want to remove this role?"
+msgstr "Ցանկանո՞ւմ եք արդյոք հեռացնել այս մեկնաբանությունը:"
 
 msgid "%{sender} (%{sender_link}) has left the following scrap for you:"
 msgstr ""

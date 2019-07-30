@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-25 19:40+0000\n"
-"PO-Revision-Date: 2019-04-25 19:40+0000\n"
+"POT-Creation-Date: 2019-07-29 21:07+0000\n"
+"PO-Revision-Date: 2019-07-29 21:07+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -18,176 +18,268 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
+#: ../controllers/public/activity_gallery_plugin_activity_controller.rb:145
+msgid "Você não tem autorização para executar essa ação"
+msgstr ""
+
 #: ../lib/activity_gallery_plugin.rb:8
-msgid "RBAC activity gallery"
+msgid "RBAC Activity Gallery"
 msgstr ""
 
-#: ../lib/activity_gallery_plugin.rb:62
-msgid "Notification successfully sent"
+#: ../lib/activity_gallery_plugin/activity_gallery_block.rb:10
+msgid "Esse plugin exibe as atividades do usuário no RBAC"
 msgstr ""
 
-#: ../lib/activity_gallery_plugin.rb:64
-msgid "Notification not sent"
-msgstr ""
-
-#: ../lib/activity_gallery_plugin/activity_gallery.rb:16
-msgid "Activity Gallery"
-msgstr ""
-
-#: ../lib/activity_gallery_plugin/activity_gallery.rb:20
-msgid ""
-"Defines a work to be done by the members and receives their submissions about "
-"this work."
-msgstr ""
-
-#: ../lib/activity_gallery_plugin/email_contact.rb:21
-msgid "Subject"
-msgstr ""
-
-#: ../lib/activity_gallery_plugin/email_contact.rb:21
-msgid "Message"
-msgstr ""
-
-#: ../lib/activity_gallery_plugin/email_contact.rb:21
-msgid "e-Mail"
-msgstr ""
-
-#: ../lib/activity_gallery_plugin/email_contact.rb:21
-msgid "Name"
+#: ../lib/activity_gallery_plugin/helper.rb:5
+#: ../views/activity_gallery_plugin_activity/show.html.erb:45
+msgid "Remixar"
 msgstr ""
 
 #: ../lib/activity_gallery_plugin/helper.rb:9
-msgid "Submission date"
-msgstr ""
-
-#: ../lib/activity_gallery_plugin/helper.rb:10
-msgid "Versions"
-msgstr ""
-
-#: ../lib/activity_gallery_plugin/helper.rb:24
-msgid "View all versions"
-msgstr ""
-
-#: ../lib/activity_gallery_plugin/helper.rb:70
-msgid "Delete"
-msgstr ""
-
-#: ../lib/activity_gallery_plugin/helper.rb:88
+#: ../views/activity_gallery_plugin_activity/_comment.html.erb:20
+#: ../views/activity_gallery_plugin_activity/_implementations.html.erb:27
 msgid "Edit"
 msgstr ""
 
-#: ../views/activity_gallery_plugin_myprofile/edit_visibility.html.erb:16
-msgid "Save"
+#: ../lib/activity_gallery_plugin/helper.rb:10
+#: ../views/activity_gallery_plugin_activity/_comment.html.erb:23
+#: ../views/activity_gallery_plugin_activity/_implementations.html.erb:30
+#: ../views/activity_gallery_plugin_activity/show.html.erb:56
+msgid "Remove"
 msgstr ""
 
-#: ../views/activity_gallery_plugin_myprofile/edit_visibility.html.erb:17
-msgid "Cancel"
+#: ../lib/activity_gallery_plugin/helper.rb:10
+#: ../views/activity_gallery_plugin_activity/show.html.erb:56
+msgid "Você tem certeza que deseja excluir essa atividade?"
 msgstr ""
 
-#: ../views/cms/_notify_text_field.html.erb:1
+#: ../views/activity_gallery_plugin_activity/_comment.html.erb:23
+msgid "Você tem certeza que deseja excluir esse comentário?"
+msgstr ""
+
+#: ../views/activity_gallery_plugin_activity/_form.html.erb:15
+#: ../views/shared/_implementation_form.html.erb:13
+msgid "Título"
+msgstr ""
+
+#: ../views/activity_gallery_plugin_activity/_form.html.erb:16
+msgid "Subtítulo"
+msgstr ""
+
+#: ../views/activity_gallery_plugin_activity/_form.html.erb:17
+msgid "Foto ou imagem ilustrativa para a atividade:"
+msgstr ""
+
+#: ../views/activity_gallery_plugin_activity/_form.html.erb:18
+msgid "Quem criou esta atividade?"
+msgstr ""
+
+#: ../views/activity_gallery_plugin_activity/_form.html.erb:18
+#: ../views/shared/_advanced_filter.html.erb:19
+#: ../views/shared/_implementation_form.html.erb:15
+msgid "Digite o nome do autor"
+msgstr ""
+
+#: ../views/activity_gallery_plugin_activity/_form.html.erb:20
+msgid "Autores Externos"
+msgstr ""
+
+#: ../views/activity_gallery_plugin_activity/_form.html.erb:22
+#: ../views/shared/_implementation_form.html.erb:19
+msgid "Descrição"
+msgstr ""
+
+#: ../views/activity_gallery_plugin_activity/_form.html.erb:23
+msgid "Motivação"
+msgstr ""
+
+#: ../views/activity_gallery_plugin_activity/_form.html.erb:24
+msgid "Poderosas Ideias"
+msgstr ""
+
+#: ../views/activity_gallery_plugin_activity/_form.html.erb:25
+msgid "Produtos esperados"
+msgstr ""
+
+#: ../views/activity_gallery_plugin_activity/_form.html.erb:26
+msgid "Escopo: Em que escopo a atividade é realizada?"
+msgstr ""
+
+#: ../views/activity_gallery_plugin_activity/_form.html.erb:31
+msgid "Público-alvo: Indique todos os públicos que podem participar desta atividade"
+msgstr ""
+
+#: ../views/activity_gallery_plugin_activity/_form.html.erb:36
+msgid "Pré-requisitos"
+msgstr ""
+
+#: ../views/activity_gallery_plugin_activity/_form.html.erb:37
+msgid "Histórico"
+msgstr ""
+
+#: ../views/activity_gallery_plugin_activity/_form.html.erb:38
+msgid "Copyright"
+msgstr ""
+
+#: ../views/activity_gallery_plugin_activity/_form.html.erb:40
+msgid "Tipo de licença"
+msgstr ""
+
+#: ../views/activity_gallery_plugin_activity/_form.html.erb:41
+msgid "Informações sobre as licenças Creative Commons | Modal"
+msgstr ""
+
+#: ../views/activity_gallery_plugin_activity/_form.html.erb:46
 msgid ""
-"If you want to notify someone about this action, fill the field below with the"
-" emails of the destinies, separated by comma."
+"Tipo de Espaço: Indique o tipo de espaço onde a atividade foi ou pode ser impl"
+"ementada."
 msgstr ""
 
-#: ../views/cms/_notify_text_field.html.erb:3
-msgid "Send notification to: "
-msgstr ""
-
-#: ../views/cms/activity_gallery_plugin/_activity_gallery.html.erb:31
-msgid "Título da Atividade"
-msgstr ""
-
-#: ../views/cms/activity_gallery_plugin/_activity_gallery.html.erb:32
-msgid "Breve descrição"
-msgstr ""
-
-#: ../views/cms/activity_gallery_plugin/_activity_gallery.html.erb:41
-msgid "Histórico/contexto"
-msgstr ""
-
-#: ../views/cms/activity_gallery_plugin/_activity_gallery.html.erb:42
-msgid "Objetivos"
-msgstr ""
-
-#: ../views/cms/activity_gallery_plugin/_activity_gallery.html.erb:43
-msgid "Escopo"
-msgstr ""
-
-#: ../views/cms/activity_gallery_plugin/_activity_gallery.html.erb:44
-msgid "Público-alvo"
-msgstr ""
-
-#: ../views/cms/activity_gallery_plugin/_activity_gallery.html.erb:45
-msgid "Pontes com o currículo"
-msgstr ""
-
-#: ../views/cms/activity_gallery_plugin/_activity_gallery.html.erb:46
-msgid "Autores"
-msgstr ""
-
-#: ../views/cms/activity_gallery_plugin/_activity_gallery.html.erb:47
-msgid "Co-autor(es)"
-msgstr ""
-
-#: ../views/cms/activity_gallery_plugin/_activity_gallery.html.erb:48
-msgid "Organização (autora?)"
-msgstr ""
-
-#: ../views/cms/activity_gallery_plugin/_activity_gallery.html.erb:50
+#: ../views/activity_gallery_plugin_activity/_form.html.erb:51
 msgid "Organização do espaço"
 msgstr ""
 
-#: ../views/cms/activity_gallery_plugin/_activity_gallery.html.erb:51
+#: ../views/activity_gallery_plugin_activity/_form.html.erb:52
 msgid "Passos para a implementação"
 msgstr ""
 
-#: ../views/cms/activity_gallery_plugin/_activity_gallery.html.erb:52
-msgid "Materiais"
-msgstr ""
-
-#: ../views/cms/activity_gallery_plugin/_activity_gallery.html.erb:53
-msgid "Materiais de suporte"
-msgstr ""
-
-#: ../views/cms/activity_gallery_plugin/_activity_gallery.html.erb:54
-msgid "Licença"
-msgstr ""
-
-#: ../views/cms/activity_gallery_plugin/_activity_gallery.html.erb:55
-msgid "Dicas e anotações sobre implementação"
-msgstr ""
-
-#: ../views/cms/activity_gallery_plugin/_activity_gallery.html.erb:56
-msgid "Avaliação"
-msgstr ""
-
-#: ../views/cms/activity_gallery_plugin/_activity_gallery.html.erb:57
-msgid "Tempo de implementação"
-msgstr ""
-
-#: ../views/cms/activity_gallery_plugin/_activity_gallery.html.erb:59
-msgid "Atividade inspirada em:"
-msgstr ""
-
-#: ../views/cms/activity_gallery_plugin/_activity_gallery.html.erb:60
-msgid "Referências bibliográficas"
-msgstr ""
-
-#: ../views/content_viewer/activity_gallery.html.erb:10
-msgid "Publish image or document"
-msgstr ""
-
-#: ../views/content_viewer/activity_gallery.html.erb:12
+#: ../views/activity_gallery_plugin_activity/_form.html.erb:53
 msgid ""
-"Select the file you want to send (text documents, images, video, audio). Final"
-"ly, click in the \"Upload\" button to submit the files."
+"Materiais Gerais: Que tipos de ferramentas e consumíveis você utiliza para a r"
+"ealização da atividade?"
 msgstr ""
 
-#: ../views/content_viewer/activity_gallery.html.erb:24
-msgid "Uploading files to %s"
+#: ../views/activity_gallery_plugin_activity/_form.html.erb:58
+msgid "Delete"
 msgstr ""
 
-#: ../views/content_viewer/activity_gallery.html.erb:29
-msgid "Submissions"
+#: ../views/activity_gallery_plugin_activity/_form.html.erb:61
+msgid "Materiais específicos"
+msgstr ""
+
+#: ../views/activity_gallery_plugin_activity/_form.html.erb:62
+msgid "Dicas sobre a implementação"
+msgstr ""
+
+#: ../views/activity_gallery_plugin_activity/_form.html.erb:63
+msgid "Reflexão e avaliação"
+msgstr ""
+
+#: ../views/activity_gallery_plugin_activity/_form.html.erb:64
+msgid "Duração"
+msgstr ""
+
+#: ../views/activity_gallery_plugin_activity/_form.html.erb:67
+msgid ""
+"Atividades Inspiradoras: Indicação de atividades que foram inspiradoras para a"
+" criação desta atividade"
+msgstr ""
+
+#: ../views/activity_gallery_plugin_activity/_form.html.erb:67
+msgid "Digite o nome da atividade"
+msgstr ""
+
+#: ../views/activity_gallery_plugin_activity/_form.html.erb:69
+msgid "Referências Externas"
+msgstr ""
+
+#: ../views/activity_gallery_plugin_activity/_form.html.erb:71
+msgid "Link para atividade externa"
+msgstr ""
+
+#: ../views/activity_gallery_plugin_activity/_form.html.erb:72
+msgid "Deseja publicar a atividade?"
+msgstr ""
+
+#: ../views/activity_gallery_plugin_activity/_form.html.erb:76
+#: ../views/shared/_implementation_form.html.erb:22
+msgid "Save"
+msgstr ""
+
+#: ../views/activity_gallery_plugin_activity/_implementations.html.erb:30
+msgid "Você tem certeza que deseja excluir essa implementação?"
+msgstr ""
+
+#: ../views/activity_gallery_plugin_activity/license_types.html.erb:160
+msgid "Versão para Impressão"
+msgstr ""
+
+#: ../views/activity_gallery_plugin_activity/new_popup.html.erb:6
+msgid "Atividade Interna"
+msgstr ""
+
+#: ../views/activity_gallery_plugin_activity/new_popup.html.erb:17
+msgid "Atividade Externa"
+msgstr ""
+
+#: ../views/activity_gallery_plugin_activity/show.html.erb:9
+msgid "Baixar"
+msgstr ""
+
+#: ../views/activity_gallery_plugin_activity/show.html.erb:37
+msgid "Curtida"
+msgstr ""
+
+#: ../views/activity_gallery_plugin_activity/show.html.erb:37
+msgid "Curtir"
+msgstr ""
+
+#: ../views/activity_gallery_plugin_activity/show.html.erb:49
+msgid "Implementei!"
+msgstr ""
+
+#: ../views/activity_gallery_plugin_activity/show.html.erb:53
+msgid "Editar"
+msgstr ""
+
+#:
+#: ../views/environment_design/activity_gallery_plugin/_featured_activities_block.html.erb:4
+msgid "Escolha as atividades que serão exibidas"
+msgstr ""
+
+#: ../views/shared/_advanced_filter.html.erb:9
+msgid "Ordenar por:"
+msgstr ""
+
+#: ../views/shared/_advanced_filter.html.erb:11
+msgid "Tipo de Atividade:"
+msgstr ""
+
+#: ../views/shared/_advanced_filter.html.erb:13
+msgid "Escopo"
+msgstr ""
+
+#: ../views/shared/_advanced_filter.html.erb:19
+#: ../views/shared/_implementation_form.html.erb:15
+msgid "Autor(es)"
+msgstr ""
+
+#: ../views/shared/_advanced_filter.html.erb:22
+msgid "Público-alvo"
+msgstr ""
+
+#: ../views/shared/_advanced_filter.html.erb:27
+msgid "Tipo de Espaço"
+msgstr ""
+
+#: ../views/shared/_advanced_filter.html.erb:32
+msgid "Tipo de Licença"
+msgstr ""
+
+#: ../views/shared/_comment_form.html.erb:11
+msgid "Salvar"
+msgstr ""
+
+#: ../views/shared/_implementation_form.html.erb:17
+msgid "Data da Implementação"
+msgstr ""
+
+#: ../views/shared/_implementation_form.html.erb:18
+msgid ""
+"Quantidade de Participantes: Quantas pessoas participaram desta implementação "
+"da atividade?"
+msgstr ""
+
+#: ../views/shared/_nav.html.erb:20
+msgid "Incluir Nova Atividade"
 msgstr ""

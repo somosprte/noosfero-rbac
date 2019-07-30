@@ -23,96 +23,84 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 3.4-dev\n"
 
-msgid "RBAC activity gallery"
+msgid "Você não tem autorização para executar essa ação"
 msgstr ""
 
-msgid "Notification successfully sent"
-msgstr "Notificação enviada com sucesso"
-
-msgid "Notification not sent"
-msgstr "Notificação não enviada"
-
-msgid "Activity Gallery"
+msgid "RBAC Activity Gallery"
 msgstr ""
 
-msgid ""
-"Defines a work to be done by the members and receives their submissions about "
-"this work."
+msgid "Esse plugin exibe as atividades do usuário no RBAC"
 msgstr ""
-"Define um trabalho a ser feito pelos membros e recebe as submissõs do trabalho"
-"."
 
-msgid "Subject"
-msgstr "Assunto"
-
-msgid "Message"
-msgstr "Mensagem"
-
-msgid "e-Mail"
-msgstr "e-Mail"
-
-msgid "Name"
-msgstr "Nome"
-
-msgid "Submission date"
-msgstr "Data de submissão"
-
-msgid "Versions"
-msgstr "Versões"
-
-msgid "View all versions"
-msgstr "Ver todas as versões"
-
-msgid "Delete"
-msgstr "Remover"
+msgid "Remixar"
+msgstr ""
 
 msgid "Edit"
 msgstr "Editar"
 
-msgid "Save"
-msgstr "Salvar"
+msgid "Remove"
+msgstr ""
 
-msgid "Cancel"
-msgstr "Cancelar"
+msgid "Você tem certeza que deseja excluir essa atividade?"
+msgstr ""
+
+msgid "Você tem certeza que deseja excluir esse comentário?"
+msgstr ""
+
+msgid "Título"
+msgstr ""
+
+msgid "Subtítulo"
+msgstr ""
+
+msgid "Foto ou imagem ilustrativa para a atividade:"
+msgstr ""
+
+msgid "Quem criou esta atividade?"
+msgstr ""
+
+msgid "Digite o nome do autor"
+msgstr ""
+
+msgid "Autores Externos"
+msgstr ""
+
+msgid "Descrição"
+msgstr ""
+
+msgid "Motivação"
+msgstr ""
+
+msgid "Poderosas Ideias"
+msgstr ""
+
+msgid "Produtos esperados"
+msgstr ""
+
+msgid "Escopo: Em que escopo a atividade é realizada?"
+msgstr ""
+
+msgid "Público-alvo: Indique todos os públicos que podem participar desta atividade"
+msgstr ""
+
+msgid "Pré-requisitos"
+msgstr ""
+
+msgid "Histórico"
+msgstr ""
+
+msgid "Copyright"
+msgstr ""
+
+msgid "Tipo de licença"
+msgstr ""
+
+msgid "Informações sobre as licenças Creative Commons | Modal"
+msgstr ""
 
 msgid ""
-"If you want to notify someone about this action, fill the field below with the"
-" emails of the destinies, separated by comma."
-msgstr ""
-"Se você quiser notificar alguém sobre esta ação, preenha o campo abaixo com os"
-" e-mails dos destinatários, separados por vírgula."
-
-msgid "Send notification to: "
-msgstr "Enviar notificação para: "
-
-msgid "Título da Atividade"
-msgstr ""
-
-msgid "Breve descrição"
-msgstr ""
-
-msgid "Histórico/contexto"
-msgstr ""
-
-msgid "Objetivos"
-msgstr ""
-
-msgid "Escopo"
-msgstr ""
-
-msgid "Público-alvo"
-msgstr ""
-
-msgid "Pontes com o currículo"
-msgstr ""
-
-msgid "Autores"
-msgstr ""
-
-msgid "Co-autor(es)"
-msgstr ""
-
-msgid "Organização (autora?)"
+"Tipo de Espaço: Indique o tipo de espaço onde a atividade foi ou pode ser impl"
+"ementada."
 msgstr ""
 
 msgid "Organização do espaço"
@@ -121,42 +109,108 @@ msgstr ""
 msgid "Passos para a implementação"
 msgstr ""
 
-msgid "Materiais"
+msgid ""
+"Materiais Gerais: Que tipos de ferramentas e consumíveis você utiliza para a r"
+"ealização da atividade?"
 msgstr ""
 
-msgid "Materiais de suporte"
+msgid "Delete"
+msgstr "Remover"
+
+msgid "Materiais específicos"
 msgstr ""
 
-msgid "Licença"
+msgid "Dicas sobre a implementação"
 msgstr ""
 
-msgid "Dicas e anotações sobre implementação"
+msgid "Reflexão e avaliação"
 msgstr ""
 
-msgid "Avaliação"
+msgid "Duração"
 msgstr ""
-
-msgid "Tempo de implementação"
-msgstr ""
-
-msgid "Atividade inspirada em:"
-msgstr ""
-
-msgid "Referências bibliográficas"
-msgstr ""
-
-msgid "Publish image or document"
-msgstr "Publicar imagem ou documento"
 
 msgid ""
-"Select the file you want to send (text documents, images, video, audio). Final"
-"ly, click in the \"Upload\" button to submit the files."
+"Atividades Inspiradoras: Indicação de atividades que foram inspiradoras para a"
+" criação desta atividade"
 msgstr ""
-"Selecione o ficheiro que você quer enviar (documentos de texto, imagens, vídeo"
-"s, audios). Por fim, clique no botão \"Enviar\" para submeter os ficheiros."
 
-msgid "Uploading files to %s"
-msgstr "Enviando ficheiros para %s"
+msgid "Digite o nome da atividade"
+msgstr ""
 
-msgid "Submissions"
-msgstr "Submissões"
+msgid "Referências Externas"
+msgstr ""
+
+msgid "Link para atividade externa"
+msgstr ""
+
+msgid "Deseja publicar a atividade?"
+msgstr ""
+
+msgid "Save"
+msgstr "Salvar"
+
+msgid "Você tem certeza que deseja excluir essa implementação?"
+msgstr ""
+
+msgid "Versão para Impressão"
+msgstr ""
+
+msgid "Atividade Interna"
+msgstr ""
+
+msgid "Atividade Externa"
+msgstr ""
+
+msgid "Baixar"
+msgstr ""
+
+msgid "Curtida"
+msgstr ""
+
+msgid "Curtir"
+msgstr ""
+
+msgid "Implementei!"
+msgstr ""
+
+#, fuzzy
+msgid "Editar"
+msgstr "Editar"
+
+msgid "Escolha as atividades que serão exibidas"
+msgstr ""
+
+msgid "Ordenar por:"
+msgstr ""
+
+msgid "Tipo de Atividade:"
+msgstr ""
+
+msgid "Escopo"
+msgstr ""
+
+msgid "Autor(es)"
+msgstr ""
+
+msgid "Público-alvo"
+msgstr ""
+
+msgid "Tipo de Espaço"
+msgstr ""
+
+msgid "Tipo de Licença"
+msgstr ""
+
+msgid "Salvar"
+msgstr ""
+
+msgid "Data da Implementação"
+msgstr ""
+
+msgid ""
+"Quantidade de Participantes: Quantas pessoas participaram desta implementação "
+"da atividade?"
+msgstr ""
+
+msgid "Incluir Nova Atividade"
+msgstr ""

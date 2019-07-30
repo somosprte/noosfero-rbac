@@ -17,20 +17,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "\n"
 
-msgid "People"
-msgstr ""
-
-msgid "Enterprises"
-msgstr ""
-
-msgid "Communities"
-msgstr ""
-
 msgid "Show Persons and Communities location in map"
 msgstr ""
 
-msgid "Qual mapa deseja visualizar?"
+msgid "Quem você deseja encontrar?"
 msgstr ""
 
-msgid "Quem você deseja encontrar?"
+msgid "Membro Individual"
 msgstr ""
