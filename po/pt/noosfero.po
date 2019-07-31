@@ -1797,52 +1797,52 @@ msgid "Cuban"
 msgstr "Cubano(a)"
 
 msgid "Cypriot"
-msgstr ""
+msgstr "Cipriota"
 
 msgid "Czech"
-msgstr ""
+msgstr "Tcheco(a)"
 
 msgid "Danish"
-msgstr ""
+msgstr "Dinamarquês(a)"
 
 msgid "Djibouti"
-msgstr ""
+msgstr "Djibuti"
 
 msgid "Dominican"
-msgstr ""
+msgstr "Dominicano(a)"
 
 msgid "Dutch"
-msgstr ""
+msgstr "Holandês(a)"
 
 msgid "East Timorese"
-msgstr ""
+msgstr "Timorense"
 
 msgid "Ecuadorean"
-msgstr ""
+msgstr "Equatoriano(a)"
 
 msgid "Egyptian"
-msgstr ""
+msgstr "Egípcio(a)"
 
 msgid "Emirian"
-msgstr ""
+msgstr "Emiradense"
 
 msgid "Equatorial Guinean"
-msgstr ""
+msgstr "Guinéu-equatoriano(a)"
 
 msgid "Eritrean"
-msgstr ""
+msgstr "Eritreia"
 
 msgid "Estonian"
-msgstr ""
+msgstr "Estoniano(a)"
 
 msgid "Ethiopian"
-msgstr ""
+msgstr "Etíope"
 
 msgid "Fijian"
-msgstr ""
+msgstr "Fijiano(a)"
 
 msgid "Filipino"
-msgstr ""
+msgstr "Filipino(a)"
 
 #, fuzzy
 msgid "Finnish"
@@ -1853,81 +1853,81 @@ msgid "French"
 msgstr "Francês(a)"
 
 msgid "Gabonese"
-msgstr ""
+msgstr "Gabonês"
 
 msgid "Gambian"
-msgstr ""
+msgstr "Gambiano(a)"
 
 msgid "Georgian"
-msgstr ""
+msgstr "Georgiano(a)"
 
 #, fuzzy
 msgid "German"
-msgstr "Alemão(a)"
+msgstr "Alemão(ã)"
 
 msgid "Ghanaian"
-msgstr ""
+msgstr "Ganense"
 
 msgid "Greek"
-msgstr ""
+msgstr "Grego(a)"
 
 msgid "Grenadian"
-msgstr ""
+msgstr "Granadino(a)"
 
 msgid "Guatemalan"
-msgstr ""
+msgstr "Guatemalteco(a)"
 
 msgid "Guinea-Bissauan"
-msgstr ""
+msgstr "Guinéu-bissanense"
 
 msgid "Guinean"
-msgstr ""
+msgstr "Guineense"
 
 msgid "Guyanese"
-msgstr ""
+msgstr "Guianês"
 
 msgid "Haitian"
-msgstr ""
+msgstr "Haitiano(a)"
 
 msgid "Herzegovinian"
-msgstr ""
+msgstr "Herzegovinian"
 
 msgid "Honduran"
-msgstr ""
+msgstr "Hondurenho(a)"
 
 msgid "Hungarian"
-msgstr ""
+msgstr "Húngaro(a)"
 
 msgid "I-Kiribati"
-msgstr ""
+msgstr "kiribatianO(a)"
 
 msgid "Icelander"
-msgstr ""
+msgstr "Islandês(a)"
 
 msgid "Indian"
-msgstr ""
+msgstr "Indiano(a)"
 
 msgid "Indonesian"
-msgstr ""
+msgstr "Indonésio(a)"
 
 msgid "Iranian"
-msgstr ""
+msgstr "Iraniano(a)"
 
 msgid "Iraqi"
-msgstr ""
+msgstr "Iraquiano(a)"
 
 msgid "Irish"
-msgstr ""
+msgstr "Irlandês(a)"
 
 msgid "Israeli"
-msgstr ""
+msgstr "Israelense"
 
 #, fuzzy
 msgid "Italian"
 msgstr "Italiano(a)"
 
 msgid "Ivorian"
-msgstr ""
+msgstr "Costa-marfinense"
 
 msgid "Jamaican"
 msgstr "Jamaiacano(a)"
@@ -1936,350 +1936,347 @@ msgid "Japanese"
 msgstr "Japonês(a)"
 
 msgid "Jordanian"
-msgstr ""
+msgstr "Jordaniano(a)"
 
 msgid "Kazakhstani"
-msgstr ""
+msgstr "Cazaquistanes(a)"
 
 msgid "Kenyan"
-msgstr ""
+msgstr "Queniano(a)"
 
 msgid "Kittian and Nevisian"
-msgstr ""
+msgstr "Kittian e Nevisian"
 
 msgid "Kuwaiti"
-msgstr ""
+msgstr "Kuwaitiano(a)"
 
 msgid "Kyrgyz"
-msgstr ""
+msgstr "Quirguiz"
 
 #, fuzzy
 msgid "Laotian"
-msgstr "Entrar"
+msgstr "Laosiano(a)"
 
 msgid "Latvian"
-msgstr ""
+msgstr "Letão"
 
 msgid "Lebanese"
-msgstr ""
+msgstr "Libanês"
 
 msgid "Liberian"
-msgstr ""
+msgstr "Liberiano"
 
 #, fuzzy
 msgid "Libyan"
-msgstr "por"
+msgstr "Líbio(a)"
 
 msgid "Liechtensteiner"
-msgstr ""
+msgstr "Liechtensteinense"
 
 msgid "Lithuanian"
-msgstr ""
+msgstr "Lituano(a)"
 
 msgid "Macedonian"
-msgstr ""
+msgstr "Macedônio(a)"
 
 msgid "Malagasy"
-msgstr ""
+msgstr "Malgaxe"
 
 msgid "Malawian"
-msgstr ""
+msgstr "Malauiano(a)"
 
 msgid "Malaysian"
-msgstr ""
+msgstr "Malaio(a)"
 
 msgid "Maldivian"
-msgstr ""
+msgstr "Maldivense"
 
 msgid "Malian"
-msgstr ""
+msgstr "Maliano(a)"
 
 #, fuzzy
 msgid "Maltese"
-msgstr "Mestrado"
+msgstr "Maltês"
 
 #, fuzzy
 msgid "Marshallese"
-msgstr "Mar"
+msgstr "Marshalês"
 
 msgid "Mauritanian"
-msgstr ""
+msgstr "Mauritano(a)"
 
 msgid "Mauritian"
-msgstr ""
+msgstr "Maurício(a)"
 
 #, fuzzy
 msgid "Mexican"
-msgstr "Eu"
+msgstr "Méxicano(a)"
 
 msgid "Micronesian"
-msgstr ""
+msgstr "Micronésio"
 
 #, fuzzy
 msgid "Moldovan"
-msgstr "Seg"
+msgstr "Moldavo(a)"
 
 #, fuzzy
 msgid "Monacan"
-msgstr "Seg"
+msgstr "Monagasco(a)"
 
 #, fuzzy
 msgid "Mongolian"
-msgstr "Seg"
+msgstr "Mongo(a)"
 
 #, fuzzy
 msgid "Moroccan"
-msgstr "Seg"
+msgstr "Marroquino(a)"
 
 #, fuzzy
 msgid "Mosotho"
-msgstr "Seg"
+msgstr "Mosotense"
 
 #, fuzzy
 msgid "Motswana"
-msgstr "Seg"
+msgstr "Motswan(o)a"
 
 #, fuzzy
 msgid "Mozambican"
-msgstr "Seg"
+msgstr "Moçambicano(a)"
 
 msgid "Namibian"
-msgstr ""
+msgstr "Namibiano(a)"
 
 msgid "Nauruan"
-msgstr ""
+msgstr "Nauruano(a)"
 
 msgid "Nepalese"
-msgstr ""
+msgstr "nepalês"
 
 #, fuzzy
 msgid "New Zealander"
-msgstr "Novo"
+msgstr "Neozelandês"
 
 msgid "Ni-Vanuatu"
-msgstr ""
+msgstr "Vanuatuano(a)"
 
 msgid "Nicaraguan"
-msgstr ""
+msgstr "Nicaraguense"
 
 msgid "Nigerian"
-msgstr ""
-
-msgid "Nigerien"
-msgstr ""
+msgstr "Nigeriano"
 
 #, fuzzy
 msgid "North Korean"
-msgstr "Não"
+msgstr "Norte-coreano(a)"
 
 #, fuzzy
 msgid "Northern Irish"
-msgstr "Não"
+msgstr "Norte-irlandês"
 
 #, fuzzy
 msgid "Norwegian"
-msgstr "Não"
+msgstr "Norueguês(a)"
 
 msgid "Omani"
-msgstr ""
+msgstr "Omanense"
 
 #, fuzzy
 msgid "Other"
 msgstr "Outra"
 
 msgid "Pakistani"
-msgstr ""
+msgstr "Paquistanês(a)"
 
 msgid "Palauan"
-msgstr ""
+msgstr "Palauano(a)"
 
 msgid "Panamanian"
-msgstr ""
+msgstr "Panamenho(a)"
 
 #, fuzzy
 msgid "Papua New Guinean"
-msgstr "Novo"
+msgstr "Papuásio(a)"
 
 msgid "Paraguayan"
-msgstr ""
+msgstr "Paraguaio(a)"
 
 msgid "Peruvian"
-msgstr ""
+msgstr "Peruano(a)"
 
 #, fuzzy
 msgid "Polish"
-msgstr "Publicar"
+msgstr "Polonês(a)"
 
 msgid "Portuguese"
-msgstr ""
+msgstr "Português(a)"
 
 msgid "Qatari"
-msgstr ""
+msgstr "Catarense"
 
 msgid "Romanian"
-msgstr ""
+msgstr "Romeno(a)"
 
 #, fuzzy
 msgid "Russian"
-msgstr "Atribuir"
+msgstr "Russo(a)"
 
 msgid "Rwandan"
-msgstr ""
+msgstr "Ruandês"
 
 #, fuzzy
 msgid "Saint Lucian"
-msgstr "Sab"
+msgstr "Santa-lucienses"
 
 #, fuzzy
 msgid "Salvadoran"
-msgstr "Sab"
+msgstr "Salvadorenho(a)"
 
 #, fuzzy
 msgid "Samoan"
-msgstr "Sab"
+msgstr "Samoano(a)"
 
 #, fuzzy
 msgid "San Marinese"
-msgstr "Mar"
+msgstr "São-marinhense"
 
 #, fuzzy
 msgid "Sao Tomean"
-msgstr "Sab"
+msgstr "São-tomense"
 
 #, fuzzy
 msgid "Saudi"
-msgstr "Sab"
+msgstr "Saudita"
 
 msgid "Scottish"
-msgstr ""
+msgstr "Escocês(a)"
 
 msgid "Senegalese"
-msgstr ""
+msgstr "Senegalês(a)"
 
 msgid "Serbian"
-msgstr ""
+msgstr "Sérvio(a)"
 
 msgid "Seychellois"
-msgstr ""
+msgstr "Seichelense"
 
 msgid "Sierra Leonean"
-msgstr ""
+msgstr "Serra-leonês(a)"
 
 msgid "Singaporean"
-msgstr ""
+msgstr "Cingapuriano(a)"
 
 msgid "Slovakian"
-msgstr ""
+msgstr "Eslovaco(a)"
 
 msgid "Slovenian"
-msgstr ""
+msgstr "Esloveno(a)"
 
 msgid "Solomon Islander"
-msgstr ""
+msgstr "Salomónico"
 
 msgid "Somali"
-msgstr ""
+msgstr "Somali"
 
 msgid "South African"
-msgstr ""
+msgstr "Sulafricano(a)"
 
 msgid "South Korean"
-msgstr ""
+msgstr "Sul-coreano"
 
 msgid "Spanish"
-msgstr ""
+msgstr "Espanhol(a)"
 
 msgid "Sri Lankan"
-msgstr ""
+msgstr "Srilankês"
 
 #, fuzzy
 msgid "Sudanese"
-msgstr "Dom"
+msgstr "Sudanês(a)"
 
 #, fuzzy
 msgid "Surinamer"
-msgstr "nome"
+msgstr "Surinamês(a)"
 
 msgid "Swazi"
-msgstr ""
+msgstr "Suázi"
 
 msgid "Swedish"
-msgstr ""
+msgstr "Sueco(a)"
 
 msgid "Swiss"
-msgstr ""
+msgstr "Suíço(a)"
 
 msgid "Syrian"
-msgstr ""
+msgstr "Sírio(a)"
 
 msgid "Taiwanese"
-msgstr ""
+msgstr "Taiwanês(a)"
 
 #, fuzzy
 msgid "Tajik"
-msgstr "Tarefa"
+msgstr "Tadjiquistanês(a)"
 
 msgid "Tanzanian"
-msgstr ""
+msgstr "Tanzaniano(a)"
 
 #, fuzzy
 msgid "Thai"
-msgstr "Qui"
+msgstr "Tailandês(a)"
 
 msgid "Togolese"
-msgstr ""
+msgstr "Togolês(a)"
 
 msgid "Tongan"
-msgstr ""
+msgstr "Tonganês(a)"
 
 #, fuzzy
 msgid "Trinidadian or Tobagonian"
-msgstr "id"
+msgstr "Trinitário-tobagense"
 
 #, fuzzy
 msgid "Tunisian"
-msgstr "Ter"
+msgstr "Tunisiano(a)"
 
 #, fuzzy
 msgid "Turkish"
-msgstr "Ter"
+msgstr "Turco(a)"
 
 #, fuzzy
 msgid "Tuvaluan"
-msgstr "Ter"
+msgstr "Tuvaluano(a)"
 
 #, fuzzy
 msgid "Ugandan"
-msgstr "Agenda"
+msgstr "Ugandense"
 
 msgid "Ukrainian"
-msgstr ""
+msgstr "Ucraniano(a)"
 
 msgid "Uruguayan"
-msgstr ""
+msgstr "Uruguaio(a)"
 
 msgid "Uzbekistani"
-msgstr ""
+msgstr "Uzbequistanês"
 
 msgid "Venezuelan"
-msgstr ""
+msgstr "Venezuelano(a)"
 
 #, fuzzy
 msgid "Vietnamese"
-msgstr "nome"
+msgstr "Vietnamita"
 
 #, fuzzy
 msgid "Welsh"
-msgstr "Qua"
+msgstr "Galês(a)"
 
 msgid "Yemenite"
-msgstr ""
+msgstr "Iemenita"
 
 msgid "Zambian"
-msgstr ""
+msgstr "Zambiano(a)"
 
 msgid "Zimbabwean"
-msgstr ""
+msgstr "Zimbabuano(a)"
 
 msgid "Agrometeorology"
 msgstr "Agrometeorologia"
@@ -2601,7 +2598,7 @@ msgid "Female"
 msgstr "Feminino"
 
 msgid "Outro"
-msgstr ""
+msgstr "Outro"
 
 msgid "One post"
 msgid_plural "%{num} posts"
@@ -2697,10 +2694,10 @@ msgid "More comments"
 msgstr "Mais comentários"
 
 msgid "A-Z"
-msgstr ""
+msgstr "A-Z"
 
 msgid "Z-A"
-msgstr ""
+msgstr "Z-A"
 
 msgid "Map"
 msgstr "Mapa"
