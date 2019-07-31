@@ -3,7 +3,7 @@ class ActivityGalleryPlugin::Activity
   attr_accessor :id, :type, :title, :description, :caption, :motivation, :powerful_ideas, :products, :requirements, :published, :version_history, :copyright, :license_type, :space_organization, :implementation_steps, :implementation_tips, :inspirations, :references, :reflection_assessment, :remixed, :liked, :favorited, :implemented, :duration, :scopes, :audiences, :space_types, :authors, :specific_materials, :general_materials, :image, :images, :image_builder, :comments, :likes, :implementations, :total_implementations, :total_likes, :total_comments, :total_favorites, :total_remixes, :remixes, :created_at, :updated_at, :is_abac_author, :inserted_by, :external_authors, :external_link, :activity_type, :license
   attr_accessor :language
 
-  def initialize(data={})
+  def initialize(data={attributes: {license: {}}})
     @id = data[:id]
     @type = data[:type]
     data[:attributes].each { |key, value| send "#{key.to_s.underscore}=", value } if data[:attributes].present?

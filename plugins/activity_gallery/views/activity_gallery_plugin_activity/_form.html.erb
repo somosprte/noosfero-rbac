@@ -37,7 +37,7 @@
     <%= labelled_form_field(_('Histórico'), text_area_tag('data[version_history]', @activity.version_history, placeholder: 'Histórico das versões')) %>
     <%= labelled_form_field(_('Copyright'), text_area_tag('data[copyright]', @activity.copyright, placeholder: 'Quem deve ser listado no Copyright?')) %>
     <div class="select-license-type">
-    <%= labelled_form_field(_('Tipo de licença')+' ', select_tag('data[license][:id]', options_for_select(ActivityGalleryPlugin::Activity.get_license_options(jwt))) ) %>
+    <%= labelled_form_field(_('Tipo de licença')+' ', select_tag('data[license][:id]', options_for_select(ActivityGalleryPlugin::Activity.get_license_options(jwt), @activity.license[:id])) ) %>
     <%= modal_link_to _('Informações sobre as licenças Creative Commons | Modal'), { controller: 'activity_gallery_plugin_activity', action: 'license_types' } %>
     </div>
 
