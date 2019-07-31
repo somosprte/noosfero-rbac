@@ -301,7 +301,7 @@ module ProfileEditorHelper
   end
 
   def select_profile_country(object_name, profile, html_options = {}, options = {})
-    options[:selected] = profile.metadata['country']
+    options[:selected] = profile.country
     select(object_name, :country, [[_('Select a country...'), nil]] + country_helper.countries, options, html_options)
   end
 
@@ -313,7 +313,7 @@ module ProfileEditorHelper
        !states.find { |c| c[1] == profile.metadata['state'] }
       states.unshift [profile.state, profile.state]
     end
-    options[:selected] = profile.metadata['state']
+    options[:selected] = profile.state
     select(object_name, :state, [[_('Select a state...'), nil]] + states, options, html_options)
   end
 
@@ -325,7 +325,7 @@ module ProfileEditorHelper
        !cities.find { |c| c[1] == profile.metadata['city'] }
       cities.unshift [profile.city, profile.city]
     end
-    options[:selected] = profile.metadata['city']
+    options[:selected] = profile.city
     select(object_name, :city, [[_('Select a city...'), nil]] + cities, options, html_options)
   end
 
