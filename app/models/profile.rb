@@ -933,6 +933,16 @@ private :generate_url, :url_options
     end
   end
 
+  def update_mirrored_profiles_theme
+    environment.profiles.where(template_id: id).update_all('theme = ' + (theme.nil? ? 'NULL' : "'#{theme}'"))
+  end
+
+  def update_mirrored_profiles_blocks
+    environment.profiles.where(template_id: id).each do |profile|
+      profile.copy_blocks_from(self)
+    end
+  end
+
   def accept_category?(cat)
     true
   end
