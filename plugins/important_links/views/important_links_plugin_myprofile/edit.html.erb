@@ -1,10 +1,16 @@
 <h1><%= _('Edit Important Links')%></h1>
 
-<%= form_for(:block, {url: {action: :update}}) do |f| %>
-  <%= labelled_form_field 'Nome', f.text_field("name", placeholder: 'Nome do Link') %>
-  <%= labelled_form_field 'Imagem', f.text_field("image", placeholder: 'Imagem do Link') %>
-  <%= labelled_form_field 'Descrição', f.text_field("description", placeholder: 'Descrição do Link') %>
-  <%= labelled_form_field 'Link', f.text_field("link", placeholder: 'Endereço do Link') %>
+<%= form_with(model: @block, url: {action: :update}) do |f| %>
+  <%= f.fields_for :links do |ff| %>
+    <div class="edit-important-link">
+      <%= labelled_form_field 'Nome', ff.text_field("name", placeholder: 'Nome do Link') %>
+      <%#= labelled_form_field 'Imagem', ff.text_field("image", placeholder: 'Imagem do Link') %>
+      <%= labelled_form_field 'Descrição', ff.text_field("description", placeholder: 'Descrição do Link') %>
+      <%= labelled_form_field 'Endereço', ff.text_field("address", placeholder: 'Endereço do Link') %>
+    </div>
+  <% end %>
+  
+  <%= button_to_function(:add, _('New link'), 'add_new_link();', :class => 'button icon-add with-text') %>
 
   <%= button_bar do %>
     <%= submit_button(:save, c_('Save')) %>
