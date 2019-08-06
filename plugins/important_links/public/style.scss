@@ -8,6 +8,8 @@
   .link-img {
     float: left;
     padding: 1rem;
+    width: 110px;
+    height: 110px;
   }
 
   .text-box {
@@ -21,9 +23,12 @@
   .link-text {
     margin: 0;
   }
-
 }
 
 .edit-important-link {
   margin-bottom: 20px;
+}
+
+.edit-important-link.template {
+  display: none;
 }

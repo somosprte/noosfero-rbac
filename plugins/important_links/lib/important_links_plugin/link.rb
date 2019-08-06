@@ -1,6 +1,6 @@
 class ImportantLinksPlugin::Link < ApplicationRecord
 
-    attr_accessible :name, :address, :description
+    attr_accessible :name, :address, :description, :image_builder
 
     belongs_to :block, class_name: 'ImportantLinksPlugin::ImportantLinksBlock'
 
