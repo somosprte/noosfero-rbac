@@ -4,7 +4,8 @@ class ActivityGalleryPluginActivityController < PublicController
     no_design_blocks
     before_action :logged_user
     before_action :activity_authors, only: %i[edit destroy update]
-    skip_before_action :logged_user, only: %i[index show about library]
+    skip_before_action :logged_user, only: %i[index show about library license_types download_pdf new_popup remix toggle_save]
+
 
     def about
     end
@@ -59,11 +60,16 @@ class ActivityGalleryPluginActivityController < PublicController
     end
 
     def remix
-        @activity = ActivityGalleryPlugin::Activity.new(get("gallery/v1/activities/#{params['id']}"))
-        @activity.inspirations = [{ activity_two_id: params['id'], title: @activity.title }]
-        @activity.title += ' (Remixada)'
-        @activity.authors = [{ id: session['activity_gallery_plugin_user_id'], name: user.name, email: user.email }]
-        @page = @activity
+        if !logged_in?
+            session[:notice] = _('Por favor faça o login para poder Remixar a Atividade')
+            redirect_to :controller => 'account', :action => 'login'
+        else
+            @activity = ActivityGalleryPlugin::Activity.new(get("gallery/v1/activities/#{params['id']}"))
+            @activity.inspirations = [{ activity_two_id: params['id'], title: @activity.title }]
+            @activity.title += ' (Remixada)'
+            @activity.authors = [{ id: session['activity_gallery_plugin_user_id'], name: user.name, email: user.email }]
+            @page = @activity
+        end
     end
 
     def create
@@ -94,21 +100,25 @@ class ActivityGalleryPluginActivityController < PublicController
     end
 
     def download_pdf
-        url = "/gallery/v1/activities/#{params['id']}/pdf"
-        ActivityGalleryPlugin::Request.get(url, nil, session['activity_gallery_plugin_jwt'])
-        redirect_to "https://devapi.aprendizagemcriativa.org/#{params['id']}.pdf"
-    end
-
-    def toggle_like
-        url = "/gallery/v1/activities/#{params['id']}/like"
-        ActivityGalleryPlugin::Request.get(url, nil, session['activity_gallery_plugin_jwt'])
-        redirect_to "/galeria/#{params['id']}"
+        if !logged_in?
+            session[:notice] = _('Por favor faça o login para poder baixar a Atividade')
+            redirect_to :controller => 'account', :action => 'login'
+        else
+            url = "/gallery/v1/activities/#{params['id']}/pdf"
+            ActivityGalleryPlugin::Request.get(url, nil, session['activity_gallery_plugin_jwt'])
+            redirect_to "https://devapi.aprendizagemcriativa.org/#{params['id']}.pdf"
+        end
     end
 
     def toggle_save
-        url = "/gallery/v1/activities/#{params['id']}/favorite"
-        ActivityGalleryPlugin::Request.get(url, nil, session['activity_gallery_plugin_jwt'])
-        redirect_to "/galeria/#{params['id']}"
+        if !logged_in?
+            session[:notice] = _('Por favor faça o login para poder Curtir a Atividade')
+            redirect_to :controller => 'account', :action => 'login'
+        else
+            url = "/gallery/v1/activities/#{params['id']}/favorite"
+            ActivityGalleryPlugin::Request.get(url, nil, session['activity_gallery_plugin_jwt'])
+            redirect_to "/galeria/#{params['id']}"
+        end
     end
 
     def search_authors
