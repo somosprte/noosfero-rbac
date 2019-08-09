@@ -1,13 +1,17 @@
 class ActivityGalleryPluginImplementationController < PublicController
 
     def new
+        if !logged_in?
+            redirect_to :controller => 'account', :action => 'login'
+        else
+        end
     end
         
     def create
-        params[:implementation][:person_ids] ||= ''
-        params[:implementation][:person_ids] = params[:implementation][:person_ids].split(',')
-        result = ActivityGalleryPlugin::Request.post("/gallery/v1/activities/#{params[:activity_id]}/implement", params[:implementation].to_h, session['activity_gallery_plugin_jwt'])
-        redirect_to "/galeria/#{params[:activity_id]}"
+            params[:implementation][:person_ids] ||= ''
+            params[:implementation][:person_ids] = params[:implementation][:person_ids].split(',')
+            result = ActivityGalleryPlugin::Request.post("/gallery/v1/activities/#{params[:activity_id]}/implement", params[:implementation].to_h, session['activity_gallery_plugin_jwt'])
+            redirect_to "/galeria/#{params[:activity_id]}"
     end
 
     def edit

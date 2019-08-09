@@ -1,8 +1,13 @@
 class ActivityGalleryPluginCommentController < PublicController
 
     def create
-        ActivityGalleryPlugin::Request.post("/gallery/v1/activities/#{params[:activity_id]}/comment", params[:comment].to_h, session['activity_gallery_plugin_jwt'])
-        redirect_to "/galeria/#{params[:activity_id]}"
+        if !logged_in?
+            session[:notice] = _('Por favor faça o login para poder Comentar a Atividade')
+            redirect_to :controller => 'account', :action => 'login'
+        else
+            ActivityGalleryPlugin::Request.post("/gallery/v1/activities/#{params[:activity_id]}/comment", params[:comment].to_h, session['activity_gallery_plugin_jwt'])
+            redirect_to "/galeria/#{params[:activity_id]}"
+        end
     end
 
     def edit
